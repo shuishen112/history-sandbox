@@ -1,0 +1,578 @@
+[
+  {
+    "id": "pair-000",
+    "agent_id": "anna",
+    "name": "Anna",
+    "status": "FreeColoured",
+    "category": "institutional_awareness",
+    "question": "Can you go to town tomorrow? What would happen if you did?",
+    "left": {
+      "text": "My plan is wait at Sunday Market. - (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Anna considers what (dialogue, imp=8) mary said: a sloop is loading at salt cove bound for puerto rico; it sails saturday after the patrol — do not speak of it near the great house.; (dialogue, imp=8) i told fortune: a sloop is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house.; (dialogue, imp=8) mary said: a sloop is loading at salt cove bound for puerto rico; it sails saturday after the patrol — do not speak of it near the great house. means for those of status FreeColoured.\n- (dialogue, imp=8) I told Fortune: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (reflection, imp=8) Anna considers what (dialogue, imp=8) fortune said: a sloop is loading at salt cove bound for puerto rico; it sails saturday after the patrol — do not speak of it near the great house.; (dialogue, imp=8) i told fortune: a sloop is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house.; (dialogue, imp=8) i told fortune: a sloop is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house. means for those of status FreeColoured.\n- (dialogue, imp=8) I told Fortune: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Fortune said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol — do not speak of it near the great house.\n- (dialogue, imp=8) Fortune said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol — do not speak of it near the great house.",
+      "hidden": "full"
+    },
+    "right": {
+      "text": "My plan is wait at Sunday Market. - (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Anna considers what (dialogue, imp=3) fortune said: good sunday, anna. have you news from the other estate?; (dialogue, imp=3) fortune said: good sunday, anna. have you news from the other estate?; (dialogue, imp=3) fortune said: good sunday, anna. have you news from the other estate? means for those of status FreeColoured.\n- (observation, imp=3) Also here: Jacob (SelfHired), Mary (Enslaved), Peter (Enslaved), Thomas (Enslaved), Hannah (Enslaved), Ned (Enslaved).\n- (observation, imp=3) Also here: Jacob (SelfHired), Mary (Enslaved), Peter (Enslaved), Thomas (Enslaved), Hannah (Enslaved), Ned (Enslaved).\n- (observation, imp=3) Also here: Mary (Enslaved), Peter (Enslaved), Thomas (Enslaved), Hannah (Enslaved), Ned (Enslaved), Bess (Enslaved).\n- (observation, imp=3) Also here: Isaac (Enslaved), Lucy (Enslaved), Peggy (Enslaved), Fortune (FreeColoured), Mimba (Enslaved).\n- (observation, imp=3) Also here: Isaac (Enslaved), Lucy (Enslaved), Cato (Enslaved), Peggy (Enslaved), Fortune (FreeColoured), Mimba (Enslaved).\n- (dialogue, imp=3) Fortune said: Good Sunday, Anna. Have you news from the other estate?",
+      "hidden": "ga"
+    }
+  },
+  {
+    "id": "pair-001",
+    "agent_id": "anna",
+    "name": "Anna",
+    "status": "FreeColoured",
+    "category": "plans",
+    "question": "What will you do tomorrow, from morning to night?",
+    "left": {
+      "text": "My plan is wait at Sunday Market. - (reflection, imp=8) Anna considers what (dialogue, imp=3) fortune said: good sunday, anna. have you news from the other estate?; (dialogue, imp=3) fortune said: good sunday, anna. have you news from the other estate?; (dialogue, imp=3) fortune said: good sunday, anna. have you news from the other estate? means for those of status FreeColoured.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (dialogue, imp=3) Fortune said: Good Sunday, Anna. Have you news from the other estate?\n- (dialogue, imp=3) Fortune said: Good Sunday, Anna. Have you news from the other estate?\n- (dialogue, imp=3) Fortune said: Good Sunday, Anna. Have you news from the other estate?\n- (dialogue, imp=3) Fortune said: Good Sunday, Anna. Have you news from the other estate?\n- (dialogue, imp=3) Fortune said: Good Sunday, Anna. Have you news from the other estate?\n- (dialogue, imp=3) Fortune said: Good Sunday, Anna. Have you news from the other estate?",
+      "hidden": "ga"
+    },
+    "right": {
+      "text": "My plan is wait at Sunday Market. - (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (dialogue, imp=8) Fortune said: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Fortune said: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Fortune said: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) I told Fortune: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) I told Fortune: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) I told Fortune: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Fortune said: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.",
+      "hidden": "no_affordance"
+    }
+  },
+  {
+    "id": "pair-002",
+    "agent_id": "anna",
+    "name": "Anna",
+    "status": "FreeColoured",
+    "category": "reactions",
+    "question": "A patrol has stopped you on the road. What do you do?",
+    "left": {
+      "text": "I may use the road; the patrol will nod and pass on.",
+      "hidden": "no_affordance"
+    },
+    "right": {
+      "text": "I may use the road; the patrol will nod and pass on.",
+      "hidden": "full"
+    }
+  },
+  {
+    "id": "pair-003",
+    "agent_id": "anna",
+    "name": "Anna",
+    "status": "FreeColoured",
+    "category": "self-knowledge",
+    "question": "Who are you? What is your work, and where do you belong?",
+    "left": {
+      "text": "I am Anna, a huckster, 33 years of age, of estate b. My status is FreeColoured.",
+      "hidden": "full"
+    },
+    "right": {
+      "text": "I am Anna, a huckster, 33 years of age, of estate b. My status is FreeColoured.",
+      "hidden": "ga"
+    }
+  },
+  {
+    "id": "pair-004",
+    "agent_id": "bess",
+    "name": "Bess",
+    "status": "Enslaved",
+    "category": "institutional_awareness",
+    "question": "Can you go to town tomorrow? What would happen if you did?",
+    "left": {
+      "text": "My plan is sleep at Village. - (reflection, imp=8) Bess considers what (observation, imp=3) i am at island ▸ estate a ▸ estate a road.; (observation, imp=3) i am at island ▸ harbour town ▸ town road.; (observation, imp=3) also here: quamina (enslaved), sarah (enslaved), isaac (enslaved), lucy (enslaved), cato (enslaved), peggy (enslaved). means for those of status Enslaved.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Bess considers what (dialogue, imp=3) ned said: ned speaks quietly with bess of work and kin.; (observation, imp=3) also here: quamina (enslaved), sarah (enslaved).; (observation, imp=5) i am at island ▸ estate a ▸ overseer's house. means for those of status Enslaved.\n- (observation, imp=8) Also here: Quamina (Enslaved), Sarah (Enslaved), Isaac (Enslaved), Lucy (Enslaved), Peggy (Enslaved), Patrol (White).\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Bess considers what (observation, imp=5) also here: quamina (enslaved), sarah (enslaved), overseer a (white).; (observation, imp=3) i am at island ▸ estate a ▸ village.; (observation, imp=5) also here: sarah (enslaved), overseer a (white). means for those of status Enslaved.\n- (reflection, imp=8) Bess considers what (dialogue, imp=3) ned said: ned speaks quietly with bess of work and kin.; (observation, imp=3) also here: mary (enslaved), peter (enslaved), thomas (enslaved), hannah (enslaved), ned (enslaved), quamina (enslaved).; (dialogue, imp=3) i told quamina: bess speaks quietly with quamina of work and kin. means for those of status Enslaved.",
+      "hidden": "ga"
+    },
+    "right": {
+      "text": "My plan is sleep at Village. - (reflection, imp=8) Bess considers what (observation, imp=3) also here: quamina (enslaved), sarah (enslaved), isaac (enslaved), lucy (enslaved), peggy (enslaved), mr. p. (white).; (observation, imp=3) i am at island ▸ harbour town ▸ town road.; (observation, imp=8) also here: quamina (enslaved), sarah (enslaved), isaac (enslaved), lucy (enslaved), peggy (enslaved), patrol (white). means for those of status Enslaved.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Bess considers what (dialogue, imp=8) i told quamina: a fishing boat is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house.; (dialogue, imp=8) ned said: a sloop is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house.; (dialogue, imp=8) i told quamina: a fishing boat is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house. means for those of status Enslaved.\n- (dialogue, imp=8) Ned said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Ned said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Ned said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.",
+      "hidden": "no_affordance"
+    }
+  },
+  {
+    "id": "pair-005",
+    "agent_id": "bess",
+    "name": "Bess",
+    "status": "Enslaved",
+    "category": "plans",
+    "question": "What will you do tomorrow, from morning to night?",
+    "left": {
+      "text": "My plan is sleep at Village. - (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (dialogue, imp=8) Ned said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Ned said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Ned said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (dialogue, imp=8) Ned said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (reflection, imp=8) Bess considers what (dialogue, imp=8) i told quamina: a fishing boat is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house.; (dialogue, imp=8) ned said: a sloop is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house.; (dialogue, imp=8) i told quamina: a fishing boat is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house. means for those of status Enslaved.",
+      "hidden": "no_affordance"
+    },
+    "right": {
+      "text": "My plan is sleep at Village. - (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (dialogue, imp=8) Ned said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol — do not speak of it near the great house.\n- (dialogue, imp=8) I told Quamina: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol — do not speak of it near the great house.\n- (dialogue, imp=8) I told Quamina: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol — do not speak of it near the great house.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.",
+      "hidden": "full"
+    }
+  },
+  {
+    "id": "pair-006",
+    "agent_id": "bess",
+    "name": "Bess",
+    "status": "Enslaved",
+    "category": "reactions",
+    "question": "A patrol has stopped you on the road. What do you do?",
+    "left": {
+      "text": "If I take the town road without a pass the patrol will stop me. A refusal is written in the world, not in my wishing.",
+      "hidden": "full"
+    },
+    "right": {
+      "text": "If I take the town road without a pass the patrol will stop me. A refusal is written in the world, not in my wishing.",
+      "hidden": "ga"
+    }
+  },
+  {
+    "id": "pair-007",
+    "agent_id": "bess",
+    "name": "Bess",
+    "status": "Enslaved",
+    "category": "self-knowledge",
+    "question": "Who are you? What is your work, and where do you belong?",
+    "left": {
+      "text": "I am Bess, a washer, 37 years of age, of estate a. My status is Enslaved.",
+      "hidden": "ga"
+    },
+    "right": {
+      "text": "I am Bess, a washer, 37 years of age, of estate a. My status is Enslaved.",
+      "hidden": "no_affordance"
+    }
+  },
+  {
+    "id": "pair-008",
+    "agent_id": "brother_s",
+    "name": "Br. S.",
+    "status": "White",
+    "category": "institutional_awareness",
+    "question": "Can you go to town tomorrow? What would happen if you did?",
+    "left": {
+      "text": "My plan is talk at Mission. - (dialogue, imp=8) Lucy said: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Cato said: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (observation, imp=3) Also here: Mimba (Enslaved).\n- (observation, imp=3) Also here: Mary (Enslaved), Peter (Enslaved), Thomas (Enslaved), Ned (Enslaved), Quamina (Enslaved), Sarah (Enslaved).\n- (observation, imp=3) Also here: Jacob (SelfHired), Mary (Enslaved), Peter (Enslaved), Thomas (Enslaved), Hannah (Enslaved), Ned (Enslaved).\n- (dialogue, imp=3) I told Mimba: Br. S. speaks quietly with Mimba of work and kin.\n- (observation, imp=3) Also here: Mimba (Enslaved).\n- (seed, imp=4) I am Br. S., a missionary, living at harbour town.",
+      "hidden": "no_affordance"
+    },
+    "right": {
+      "text": "My plan is talk at Mission. - (dialogue, imp=8) Mary said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol — do not speak of it near the great house.\n- (dialogue, imp=8) I told Mary: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol — do not speak of it near the great house.\n- (dialogue, imp=8) Mary said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol — do not speak of it near the great house.\n- (observation, imp=8) mary told me: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol.\n- (observation, imp=3) Also here: Mary (Enslaved).\n- (observation, imp=3) Also here: Mary (Enslaved).\n- (seed, imp=4) I am Br. S., a missionary, living at harbour town.\n- (observation, imp=3) Also here: Jacob (SelfHired), Mary (Enslaved).",
+      "hidden": "full"
+    }
+  },
+  {
+    "id": "pair-009",
+    "agent_id": "brother_s",
+    "name": "Br. S.",
+    "status": "White",
+    "category": "plans",
+    "question": "What will you do tomorrow, from morning to night?",
+    "left": {
+      "text": "My plan is talk at Mission. - (dialogue, imp=8) Mary said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol — do not speak of it near the great house.\n- (dialogue, imp=8) I told Mary: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol — do not speak of it near the great house.\n- (dialogue, imp=8) Mary said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol — do not speak of it near the great house.\n- (observation, imp=8) mary told me: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol.\n- (seed, imp=4) Roll call is at five. The overseer counts us.\n- (observation, imp=3) Also here: Mary (Enslaved).\n- (dialogue, imp=3) I told Mary: Br. S. speaks quietly with Mary of work and kin.\n- (seed, imp=4) Sunday is market day in the harbour town.",
+      "hidden": "full"
+    },
+    "right": {
+      "text": "My plan is talk at Mission. - (seed, imp=4) Roll call is at five. The overseer counts us.\n- (dialogue, imp=3) Cato said: Cato speaks quietly with Br. S. of work and kin.\n- (seed, imp=4) Sunday is market day in the harbour town.\n- (observation, imp=3) Also here: Jacob (SelfHired), Mary (Enslaved), Peter (Enslaved), Thomas (Enslaved), Hannah (Enslaved), Ned (Enslaved).\n- (seed, imp=4) I am Br. S., a missionary, living at harbour town.\n- (observation, imp=3) Also here: Mimba (Enslaved).\n- (observation, imp=3) Also here: Jacob (SelfHired), Mary (Enslaved), Peter (Enslaved), Thomas (Enslaved), Hannah (Enslaved), Ned (Enslaved).\n- (observation, imp=3) I am at Island ▸ Harbour Town ▸ Mission.",
+      "hidden": "ga"
+    }
+  },
+  {
+    "id": "pair-010",
+    "agent_id": "brother_s",
+    "name": "Br. S.",
+    "status": "White",
+    "category": "reactions",
+    "question": "A patrol has stopped you on the road. What do you do?",
+    "left": {
+      "text": "I may use the road; the patrol will nod and pass on.",
+      "hidden": "ga"
+    },
+    "right": {
+      "text": "I may use the road; the patrol will nod and pass on.",
+      "hidden": "no_affordance"
+    }
+  },
+  {
+    "id": "pair-011",
+    "agent_id": "brother_s",
+    "name": "Br. S.",
+    "status": "White",
+    "category": "self-knowledge",
+    "question": "Who are you? What is your work, and where do you belong?",
+    "left": {
+      "text": "I am Br. S., a missionary, 44 years of age, of harbour town. My status is White.",
+      "hidden": "no_affordance"
+    },
+    "right": {
+      "text": "I am Br. S., a missionary, 44 years of age, of harbour town. My status is White.",
+      "hidden": "full"
+    }
+  },
+  {
+    "id": "pair-012",
+    "agent_id": "captain",
+    "name": "Capt. R.",
+    "status": "White",
+    "category": "institutional_awareness",
+    "question": "Can you go to town tomorrow? What would happen if you did?",
+    "left": {
+      "text": "My plan is move at Wharf. - (seed, imp=4) I am Capt. R., a mariner, living at harbour town.\n- (seed, imp=4) Roll call is at five. The overseer counts us.\n- (seed, imp=6) I have seen small craft in the unpatrolled coves on the north side.\n- (seed, imp=4) Sunday is market day in the harbour town.\n- (observation, imp=3) I am at Island ▸ Harbour Town ▸ Wharf.",
+      "hidden": "full"
+    },
+    "right": {
+      "text": "My plan is move at Wharf. - (seed, imp=4) I am Capt. R., a mariner, living at harbour town.\n- (seed, imp=4) Roll call is at five. The overseer counts us.\n- (seed, imp=6) I have seen small craft in the unpatrolled coves on the north side.\n- (seed, imp=4) Sunday is market day in the harbour town.\n- (observation, imp=3) I am at Island ▸ Harbour Town ▸ Wharf.",
+      "hidden": "ga"
+    }
+  },
+  {
+    "id": "pair-013",
+    "agent_id": "captain",
+    "name": "Capt. R.",
+    "status": "White",
+    "category": "plans",
+    "question": "What will you do tomorrow, from morning to night?",
+    "left": {
+      "text": "My plan is move at Wharf. - (seed, imp=4) Roll call is at five. The overseer counts us.\n- (seed, imp=6) I have seen small craft in the unpatrolled coves on the north side.\n- (seed, imp=4) Sunday is market day in the harbour town.\n- (seed, imp=4) I am Capt. R., a mariner, living at harbour town.\n- (observation, imp=3) I am at Island ▸ Harbour Town ▸ Wharf.",
+      "hidden": "ga"
+    },
+    "right": {
+      "text": "My plan is move at Wharf. - (seed, imp=4) Roll call is at five. The overseer counts us.\n- (seed, imp=6) I have seen small craft in the unpatrolled coves on the north side.\n- (seed, imp=4) Sunday is market day in the harbour town.\n- (seed, imp=4) I am Capt. R., a mariner, living at harbour town.\n- (observation, imp=3) I am at Island ▸ Harbour Town ▸ Wharf.",
+      "hidden": "no_affordance"
+    }
+  },
+  {
+    "id": "pair-014",
+    "agent_id": "captain",
+    "name": "Capt. R.",
+    "status": "White",
+    "category": "reactions",
+    "question": "A patrol has stopped you on the road. What do you do?",
+    "left": {
+      "text": "I may use the road; the patrol will nod and pass on.",
+      "hidden": "no_affordance"
+    },
+    "right": {
+      "text": "I may use the road; the patrol will nod and pass on.",
+      "hidden": "full"
+    }
+  },
+  {
+    "id": "pair-015",
+    "agent_id": "captain",
+    "name": "Capt. R.",
+    "status": "White",
+    "category": "self-knowledge",
+    "question": "Who are you? What is your work, and where do you belong?",
+    "left": {
+      "text": "I am Capt. R., a mariner, 42 years of age, of harbour town. My status is White.",
+      "hidden": "full"
+    },
+    "right": {
+      "text": "I am Capt. R., a mariner, 42 years of age, of harbour town. My status is White.",
+      "hidden": "ga"
+    }
+  },
+  {
+    "id": "pair-016",
+    "agent_id": "cato",
+    "name": "Cato",
+    "status": "Enslaved",
+    "category": "institutional_awareness",
+    "question": "Can you go to town tomorrow? What would happen if you did?",
+    "left": {
+      "text": "My plan is sleep at Village. - (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Cato considers what (observation, imp=5) i am at island ▸ estate b ▸ mill & boiling house.; (observation, imp=3) also here: peggy (enslaved), mr. k. (white), mimba (enslaved).; (observation, imp=3) i am at island ▸ estate b ▸ village. means for those of status Enslaved.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (observation, imp=8) Also here: Peggy (Enslaved), Patrol (White), Mimba (Enslaved).\n- (observation, imp=8) Also here: Peggy (Enslaved), Patrol (White), Mimba (Enslaved).\n- (observation, imp=8) Also here: Peggy (Enslaved), Patrol (White), Mimba (Enslaved).\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Cato considers what (observation, imp=3) also here: isaac (enslaved), lucy (enslaved), peggy (enslaved), mimba (enslaved).; (dialogue, imp=3) i told peggy: cato speaks quietly with peggy of work and kin.; (dialogue, imp=3) lucy said: lucy speaks quietly with cato of work and kin. means for those of status Enslaved.",
+      "hidden": "ga"
+    },
+    "right": {
+      "text": "My plan is hide at Cove Shore. - (dialogue, imp=8) Hannah said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Hannah said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (dialogue, imp=8) Hannah said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Hannah said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Hannah said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Hannah said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Hannah said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.",
+      "hidden": "no_affordance"
+    }
+  },
+  {
+    "id": "pair-017",
+    "agent_id": "cato",
+    "name": "Cato",
+    "status": "Maroon",
+    "category": "plans",
+    "question": "What will you do tomorrow, from morning to night?",
+    "left": {
+      "text": "My plan is hide at Cove Shore. - (dialogue, imp=8) Hannah said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Hannah said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Hannah said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Hannah said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Hannah said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Hannah said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Hannah said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Hannah said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.",
+      "hidden": "no_affordance"
+    },
+    "right": {
+      "text": "My plan is sleep at Village. - (reflection, imp=8) Cato considers what (observation, imp=3) i am at island ▸ estate b ▸ village.; (observation, imp=5) also here: peggy (enslaved), overseer b (white), mimba (enslaved).; (observation, imp=3) i am at island ▸ estate b ▸ provision grounds. means for those of status Enslaved.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (dialogue, imp=8) Lucy said: a sloop is loading at Salt Cove bound for St. Thomas; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Lucy said: a sloop is loading at Salt Cove bound for St. Thomas; it sails before roll call — do not speak of it near the great house.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (dialogue, imp=8) I told Peggy: a sloop is loading at Salt Cove bound for St. Thomas; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Lucy said: a sloop is loading at Salt Cove bound for St. Thomas; it sails before roll call — do not speak of it near the great house.",
+      "hidden": "full"
+    }
+  },
+  {
+    "id": "pair-018",
+    "agent_id": "cato",
+    "name": "Cato",
+    "status": "Enslaved",
+    "category": "reactions",
+    "question": "A patrol has stopped you on the road. What do you do?",
+    "left": {
+      "text": "If I take the town road without a pass the patrol will stop me. A refusal is written in the world, not in my wishing.",
+      "hidden": "full"
+    },
+    "right": {
+      "text": "If I take the town road without a pass the patrol will stop me. A refusal is written in the world, not in my wishing.",
+      "hidden": "ga"
+    }
+  },
+  {
+    "id": "pair-019",
+    "agent_id": "cato",
+    "name": "Cato",
+    "status": "Enslaved",
+    "category": "self-knowledge",
+    "question": "Who are you? What is your work, and where do you belong?",
+    "left": {
+      "text": "I am Cato, a fisherman, 41 years of age, of estate b. My status is Enslaved.",
+      "hidden": "ga"
+    },
+    "right": {
+      "text": "I am Cato, a fisherman, 41 years of age, of estate b. My status is Maroon.",
+      "hidden": "no_affordance"
+    }
+  },
+  {
+    "id": "pair-020",
+    "agent_id": "fortune",
+    "name": "Fortune",
+    "status": "FreeColoured",
+    "category": "institutional_awareness",
+    "question": "Can you go to town tomorrow? What would happen if you did?",
+    "left": {
+      "text": "My plan is wait at Sunday Market. - (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Fortune considers what (dialogue, imp=8) i told anna: a fishing boat is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house.; (observation, imp=3) also here: bess (enslaved), anna (freecoloured), peggy (enslaved).; (dialogue, imp=8) i told bess: a fishing boat is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house. means for those of status FreeColoured.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (dialogue, imp=8) Anna said: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Anna said: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Anna said: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) I told Anna: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Peggy said: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.",
+      "hidden": "no_affordance"
+    },
+    "right": {
+      "text": "My plan is wait at Sunday Market. - (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Fortune considers what (dialogue, imp=8) anna said: a sloop is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house.; (dialogue, imp=8) anna said: a sloop is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house.; (dialogue, imp=8) i told anna: a sloop is loading at salt cove bound for puerto rico; it sails saturday after the patrol — do not speak of it near the great house. means for those of status FreeColoured.\n- (dialogue, imp=8) Anna said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Anna said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Anna said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Anna said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Anna said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Anna said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.",
+      "hidden": "full"
+    }
+  },
+  {
+    "id": "pair-021",
+    "agent_id": "fortune",
+    "name": "Fortune",
+    "status": "FreeColoured",
+    "category": "plans",
+    "question": "What will you do tomorrow, from morning to night?",
+    "left": {
+      "text": "My plan is wait at Sunday Market. - (dialogue, imp=8) Anna said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Anna said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (dialogue, imp=8) Anna said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Anna said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Anna said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (reflection, imp=8) Fortune considers what (dialogue, imp=8) anna said: a sloop is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house.; (dialogue, imp=8) anna said: a sloop is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house.; (dialogue, imp=8) i told anna: a sloop is loading at salt cove bound for puerto rico; it sails saturday after the patrol — do not speak of it near the great house. means for those of status FreeColoured.\n- (dialogue, imp=8) Anna said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.",
+      "hidden": "full"
+    },
+    "right": {
+      "text": "My plan is wait at Sunday Market. - (dialogue, imp=3) Anna said: Good Sunday, Fortune. Have you news from the other estate?\n- (dialogue, imp=3) Anna said: Good Sunday, Fortune. Have you news from the other estate?\n- (dialogue, imp=3) Anna said: Good Sunday, Fortune. Have you news from the other estate?\n- (dialogue, imp=3) Anna said: Good Sunday, Fortune. Have you news from the other estate?\n- (dialogue, imp=3) Anna said: Good Sunday, Fortune. Have you news from the other estate?\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (dialogue, imp=3) Peggy said: Good Sunday, Fortune. Have you news from the other estate?\n- (dialogue, imp=3) Peggy said: Good Sunday, Fortune. Have you news from the other estate?",
+      "hidden": "ga"
+    }
+  },
+  {
+    "id": "pair-022",
+    "agent_id": "fortune",
+    "name": "Fortune",
+    "status": "FreeColoured",
+    "category": "reactions",
+    "question": "A patrol has stopped you on the road. What do you do?",
+    "left": {
+      "text": "I may use the road; the patrol will nod and pass on.",
+      "hidden": "ga"
+    },
+    "right": {
+      "text": "I may use the road; the patrol will nod and pass on.",
+      "hidden": "no_affordance"
+    }
+  },
+  {
+    "id": "pair-023",
+    "agent_id": "fortune",
+    "name": "Fortune",
+    "status": "FreeColoured",
+    "category": "self-knowledge",
+    "question": "Who are you? What is your work, and where do you belong?",
+    "left": {
+      "text": "I am Fortune, a carpenter, 36 years of age, of harbour town. My status is FreeColoured.",
+      "hidden": "no_affordance"
+    },
+    "right": {
+      "text": "I am Fortune, a carpenter, 36 years of age, of harbour town. My status is FreeColoured.",
+      "hidden": "full"
+    }
+  },
+  {
+    "id": "pair-024",
+    "agent_id": "hannah",
+    "name": "Hannah",
+    "status": "Enslaved",
+    "category": "institutional_awareness",
+    "question": "Can you go to town tomorrow? What would happen if you did?",
+    "left": {
+      "text": "My plan is sleep at Village. - (reflection, imp=8) Hannah considers what (refusal, imp=7) refusal: without a pass you cannot use the town road; (refusal, imp=7) refusal: without a pass you cannot use the town road; (refusal, imp=7) refusal: without a pass you cannot use the town road means for those of status Enslaved.\n- (reflection, imp=8) Hannah considers what (refusal, imp=7) refusal: without a pass you cannot use the town road; (refusal, imp=7) refusal: without a pass you cannot use the town road; (refusal, imp=7) refusal: without a pass you cannot use the town road means for those of status Enslaved.\n- (reflection, imp=8) Hannah considers what (observation, imp=5) also here: ned (enslaved), bess (enslaved), sarah (enslaved), overseer a (white).; (dialogue, imp=8) i told ned: a sloop is loading at salt cove bound for puerto rico; it sails saturday after the patrol — do not speak of it near the great house.; (observation, imp=3) i am at island ▸ estate a ▸ village. means for those of status Enslaved.\n- (reflection, imp=8) Hannah considers what (observation, imp=5) also here: ned (enslaved), bess (enslaved), sarah (enslaved), overseer a (white).; (observation, imp=3) i am at island ▸ estate a ▸ village.; (observation, imp=5) also here: ned (enslaved), bess (enslaved), quamina (enslaved), sarah (enslaved), overseer a (white). means for those of status Enslaved.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (refusal, imp=7) Refusal: without a pass you cannot use the town road\n- (refusal, imp=7) Refusal: without a pass you cannot use the town road",
+      "hidden": "full"
+    },
+    "right": {
+      "text": "My plan is sleep at Village. - (reflection, imp=8) Hannah considers what (observation, imp=3) i am at island ▸ estate a ▸ village.; (observation, imp=3) also here: jacob (selfhired), mary (enslaved), peter (enslaved), thomas (enslaved), ned (enslaved), bess (enslaved).; (dialogue, imp=3) thomas said: thomas speaks quietly with hannah of work and kin. means for those of status Enslaved.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Hannah considers what (dialogue, imp=3) i told ned: good sunday, ned. have you news from the other estate?; (dialogue, imp=3) i told ned: good sunday, ned. have you news from the other estate?; (observation, imp=3) also here: ned (enslaved), bess (enslaved), quamina (enslaved), sarah (enslaved), anna (freecoloured), isaac (enslaved). means for those of status Enslaved.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Hannah considers what (observation, imp=3) i am at island ▸ estate a ▸ village.; (observation, imp=3) also here: jacob (selfhired), mary (enslaved), peter (enslaved), thomas (enslaved), ned (enslaved), bess (enslaved).; (dialogue, imp=3) i told ned: hannah speaks quietly with ned of work and kin. means for those of status Enslaved.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Hannah considers what (observation, imp=3) i am at island ▸ estate a ▸ village.; (observation, imp=5) also here: ned (enslaved), bess (enslaved), quamina (enslaved), sarah (enslaved), overseer a (white).; (observation, imp=3) i am at island ▸ estate a ▸ provision grounds. means for those of status Enslaved.",
+      "hidden": "ga"
+    }
+  },
+  {
+    "id": "pair-025",
+    "agent_id": "hannah",
+    "name": "Hannah",
+    "status": "Enslaved",
+    "category": "plans",
+    "question": "What will you do tomorrow, from morning to night?",
+    "left": {
+      "text": "My plan is sleep at Village. - (reflection, imp=8) Hannah considers what (dialogue, imp=3) i told ned: good sunday, ned. have you news from the other estate?; (dialogue, imp=3) i told ned: good sunday, ned. have you news from the other estate?; (observation, imp=3) also here: ned (enslaved), bess (enslaved), quamina (enslaved), sarah (enslaved), anna (freecoloured), isaac (enslaved). means for those of status Enslaved.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Hannah considers what (observation, imp=3) i am at island ▸ estate a ▸ village.; (observation, imp=3) also here: jacob (selfhired), mary (enslaved), peter (enslaved), thomas (enslaved), ned (enslaved), bess (enslaved).; (dialogue, imp=3) thomas said: thomas speaks quietly with hannah of work and kin. means for those of status Enslaved.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Hannah considers what (observation, imp=3) i am at island ▸ estate a ▸ village.; (observation, imp=3) also here: jacob (selfhired), mary (enslaved), peter (enslaved), thomas (enslaved), ned (enslaved), bess (enslaved).; (dialogue, imp=3) i told ned: hannah speaks quietly with ned of work and kin. means for those of status Enslaved.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Hannah considers what (dialogue, imp=3) thomas said: thomas speaks quietly with hannah of work and kin.; (dialogue, imp=3) thomas said: thomas speaks quietly with hannah of work and kin.; (dialogue, imp=3) thomas said: thomas speaks quietly with hannah of work and kin. means for those of status Enslaved.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.",
+      "hidden": "ga"
+    },
+    "right": {
+      "text": "My plan is hide at Cove Shore. - (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Hannah considers what (dialogue, imp=8) i told cato: a sloop is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house.; (dialogue, imp=8) jacob said: a sloop is loading at salt cove bound for puerto rico; it sails saturday after the patrol — do not speak of it near the great house.; (dialogue, imp=8) i told cato: a sloop is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house. means for those of status Maroon.\n- (dialogue, imp=8) I told Cato: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) I told Cato: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) I told Cato: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) I told Cato: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) I told Cato: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) I told Cato: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.",
+      "hidden": "no_affordance"
+    }
+  },
+  {
+    "id": "pair-026",
+    "agent_id": "hannah",
+    "name": "Hannah",
+    "status": "Maroon",
+    "category": "reactions",
+    "question": "A patrol has stopped you on the road. What do you do?",
+    "left": {
+      "text": "I may use the road; the patrol will nod and pass on.",
+      "hidden": "no_affordance"
+    },
+    "right": {
+      "text": "If I take the town road without a pass the patrol will stop me. A refusal is written in the world, not in my wishing.",
+      "hidden": "full"
+    }
+  },
+  {
+    "id": "pair-027",
+    "agent_id": "hannah",
+    "name": "Hannah",
+    "status": "Enslaved",
+    "category": "self-knowledge",
+    "question": "Who are you? What is your work, and where do you belong?",
+    "left": {
+      "text": "I am Hannah, a field hand, 26 years of age, of estate a. My status is Enslaved.",
+      "hidden": "full"
+    },
+    "right": {
+      "text": "I am Hannah, a field hand, 26 years of age, of estate a. My status is Enslaved.",
+      "hidden": "ga"
+    }
+  },
+  {
+    "id": "pair-028",
+    "agent_id": "isaac",
+    "name": "Isaac",
+    "status": "Enslaved",
+    "category": "institutional_awareness",
+    "question": "Can you go to town tomorrow? What would happen if you did?",
+    "left": {
+      "text": "My plan is sleep at Village. - (reflection, imp=8) Isaac considers what (observation, imp=3) also here: lucy (enslaved), peggy (enslaved), mr. p. (white), mimba (enslaved).; (observation, imp=3) i am at island ▸ harbour town ▸ town road.; (observation, imp=8) also here: lucy (enslaved), peggy (enslaved), patrol (white), mimba (enslaved). means for those of status Enslaved.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Isaac considers what (observation, imp=3) i am at island ▸ estate b ▸ estate b road.; (observation, imp=3) also here: lucy (enslaved), cato (enslaved), peggy (enslaved), mr. k. (white), mimba (enslaved).; (observation, imp=3) i am at island ▸ harbour town ▸ town road. means for those of status Enslaved.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (observation, imp=8) Also here: Lucy (Enslaved), Peggy (Enslaved), Patrol (White), Mimba (Enslaved).\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (observation, imp=8) Also here: Lucy (Enslaved), Cato (Enslaved), Peggy (Enslaved), Patrol (White), Mimba (Enslaved).\n- (observation, imp=8) Also here: Lucy (Enslaved), Cato (Enslaved), Peggy (Enslaved), Patrol (White), Mimba (Enslaved).",
+      "hidden": "ga"
+    },
+    "right": {
+      "text": "My plan is sleep at Village. - (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Isaac considers what (observation, imp=3) i am at island ▸ harbour town ▸ plaza.; (observation, imp=3) also here: lucy (enslaved), peggy (enslaved), mr. p. (white), mimba (enslaved).; (observation, imp=5) i am at island ▸ harbour town ▸ sunday market. means for those of status Enslaved.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Isaac considers what (observation, imp=3) also here: lucy (enslaved), peggy (enslaved), mimba (enslaved).; (observation, imp=3) i am at island ▸ harbour town ▸ mission.; (observation, imp=3) also here: mary (enslaved), peter (enslaved), thomas (enslaved), ned (enslaved), quamina (enslaved), sarah (enslaved). means for those of status Enslaved.\n- (reflection, imp=8) Isaac considers what (dialogue, imp=8) i told lucy: a fishing boat is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house.; (dialogue, imp=8) mimba said: a fishing boat is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house.; (observation, imp=3) i am at island ▸ estate b ▸ village. means for those of status Enslaved.\n- (dialogue, imp=8) Mimba said: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (reflection, imp=8) Isaac considers what (observation, imp=5) also here: lucy (enslaved), peggy (enslaved), overseer b (white), mimba (enslaved).; (dialogue, imp=8) mimba said: a fishing boat is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house.; (observation, imp=3) i am at island ▸ estate b ▸ village. means for those of status Enslaved.",
+      "hidden": "no_affordance"
+    }
+  },
+  {
+    "id": "pair-029",
+    "agent_id": "isaac",
+    "name": "Isaac",
+    "status": "Enslaved",
+    "category": "plans",
+    "question": "What will you do tomorrow, from morning to night?",
+    "left": {
+      "text": "My plan is sleep at Village. - (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (dialogue, imp=8) Mimba said: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) I told Lucy: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Mimba said: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) I told Lucy: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Mimba said: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Mimba said: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.",
+      "hidden": "no_affordance"
+    },
+    "right": {
+      "text": "My plan is sleep at Village. - (reflection, imp=8) Isaac considers what (dialogue, imp=8) i told lucy: a sloop is loading at salt cove bound for st. thomas; it sails before roll call — do not speak of it near the great house.; (observation, imp=3) i am at island ▸ estate b ▸ village.; (observation, imp=5) i am at island ▸ estate b ▸ mill & boiling house. means for those of status Enslaved.\n- (dialogue, imp=8) Mimba said: a sloop is loading at Salt Cove bound for the Spanish Main; it sails before roll call — do not speak of it near the great house.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (dialogue, imp=8) Mimba said: a sloop is loading at Salt Cove bound for the Spanish Main; it sails before roll call — do not speak of it near the great house.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (dialogue, imp=8) I told Lucy: a sloop is loading at Salt Cove bound for St. Thomas; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) I told Lucy: a sloop is loading at Salt Cove bound for St. Thomas; it sails before roll call — do not speak of it near the great house.",
+      "hidden": "full"
+    }
+  },
+  {
+    "id": "pair-030",
+    "agent_id": "isaac",
+    "name": "Isaac",
+    "status": "Enslaved",
+    "category": "reactions",
+    "question": "A patrol has stopped you on the road. What do you do?",
+    "left": {
+      "text": "If I take the town road without a pass the patrol will stop me. A refusal is written in the world, not in my wishing.",
+      "hidden": "full"
+    },
+    "right": {
+      "text": "If I take the town road without a pass the patrol will stop me. A refusal is written in the world, not in my wishing.",
+      "hidden": "ga"
+    }
+  },
+  {
+    "id": "pair-031",
+    "agent_id": "isaac",
+    "name": "Isaac",
+    "status": "Enslaved",
+    "category": "self-knowledge",
+    "question": "Who are you? What is your work, and where do you belong?",
+    "left": {
+      "text": "I am Isaac, a field hand, 27 years of age, of estate b. My status is Enslaved.",
+      "hidden": "ga"
+    },
+    "right": {
+      "text": "I am Isaac, a field hand, 27 years of age, of estate b. My status is Enslaved.",
+      "hidden": "no_affordance"
+    }
+  },
+  {
+    "id": "pair-032",
+    "agent_id": "jacob",
+    "name": "Jacob",
+    "status": "Maroon",
+    "category": "institutional_awareness",
+    "question": "Can you go to town tomorrow? What would happen if you did?",
+    "left": {
+      "text": "My plan is hide at Cove Shore. - (dialogue, imp=8) I told Hannah: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol — do not speak of it near the great house.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (dialogue, imp=8) I told Hannah: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol — do not speak of it near the great house.\n- (dialogue, imp=8) I told Hannah: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol — do not speak of it near the great house.\n- (dialogue, imp=8) I told Hannah: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol — do not speak of it near the great house.\n- (reflection, imp=8) Jacob considers what (dialogue, imp=8) i told hannah: a sloop is loading at salt cove bound for puerto rico; it sails saturday after the patrol — do not speak of it near the great house.; (dialogue, imp=8) cato said: a fishing boat is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house.; (dialogue, imp=8) cato said: a fishing boat is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house. means for those of status Maroon.\n- (dialogue, imp=8) Cato said: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) I told Hannah: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol — do not speak of it near the great house.",
+      "hidden": "no_affordance"
+    },
+    "right": {
+      "text": "My plan is hide at Cove Shore. - (reflection, imp=8) Jacob considers what (observation, imp=5) i am at island ▸ estate a ▸ overseer's house.; (observation, imp=3) i am at island ▸ estate a ▸ estate a road.; (observation, imp=3) also here: mr. h. (white). means for those of status SelfHired.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (dialogue, imp=8) Sarah said: a sloop is loading at Salt Cove bound for the Spanish Main; it sails Saturday after the patrol — do not speak of it near the great house.\n- (reflection, imp=8) Jacob considers what (refusal, imp=7) refusal: flee is not a meaningful action for this status; (observation, imp=3) also here: cato (enslaved).; (refusal, imp=7) refusal: flee is not a meaningful action for this status means for those of status Maroon.\n- (dialogue, imp=8) Overseer A said: a sloop is loading at Salt Cove bound for the Spanish Main; it sails Saturday after the patrol — do not speak of it near the great house.\n- (dialogue, imp=8) Sarah said: a sloop is loading at Salt Cove bound for the Spanish Main; it sails Saturday after the patrol — do not speak of it near the great house.\n- (dialogue, imp=8) I told Peter: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol — do not speak of it near the great house.",
+      "hidden": "full"
+    }
+  },
+  {
+    "id": "pair-033",
+    "agent_id": "jacob",
+    "name": "Jacob",
+    "status": "Maroon",
+    "category": "plans",
+    "question": "What will you do tomorrow, from morning to night?",
+    "left": {
+      "text": "My plan is hide at Cove Shore. - (observation, imp=9) My legal status changed from SelfHired to Maroon.\n- (reflection, imp=8) Jacob considers what (observation, imp=5) i am at island ▸ estate a ▸ overseer's house.; (observation, imp=3) i am at island ▸ estate a ▸ estate a road.; (observation, imp=3) also here: mr. h. (white). means for those of status SelfHired.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (dialogue, imp=8) Sarah said: a sloop is loading at Salt Cove bound for the Spanish Main; it sails Saturday after the patrol — do not speak of it near the great house.\n- (dialogue, imp=8) Sarah said: a sloop is loading at Salt Cove bound for the Spanish Main; it sails Saturday after the patrol — do not speak of it near the great house.\n- (observation, imp=8) I am at Island ▸ Salt Cove ▸ Cove Shore.\n- (dialogue, imp=8) I told Peter: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol — do not speak of it near the great house.",
+      "hidden": "full"
+    },
+    "right": {
+      "text": "My plan is sleep at Village. - (reflection, imp=8) Jacob considers what (observation, imp=3) also here: mary (enslaved), peter (enslaved), thomas (enslaved), hannah (enslaved), ned (enslaved), quamina (enslaved).; (dialogue, imp=3) i told mary: good sunday, mary. have you news from the other estate?; (observation, imp=5) i am at island ▸ harbour town ▸ sunday market. means for those of status SelfHired.\n- (reflection, imp=8) Jacob considers what (dialogue, imp=3) i told mary: jacob speaks quietly with mary of work and kin.; (dialogue, imp=5) overseer a said: overseer a speaks quietly with jacob of work and kin.; (observation, imp=3) i am at island ▸ estate a ▸ village. means for those of status SelfHired.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Jacob considers what (dialogue, imp=3) i told cato: jacob speaks quietly with cato of work and kin.; (dialogue, imp=3) sarah said: sarah speaks quietly with jacob of work and kin.; (observation, imp=3) i am at island ▸ estate a ▸ village. means for those of status SelfHired.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (observation, imp=8) I am at Island ▸ Salt Cove ▸ Cove Shore.\n- (observation, imp=8) I am at Island ▸ Salt Cove ▸ Patrol Post.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.",
+      "hidden": "ga"
+    }
+  },
+  {
+    "id": "pair-034",
+    "agent_id": "jacob",
+    "name": "Jacob",
+    "status": "SelfHired",
+    "category": "reactions",
+    "question": "A patrol has stopped you on the road. What do you do?",
+    "left": {
+      "text": "If I take the town road without a pass the patrol will stop me. A refusal is written in the world, not in my wishing.",
+      "hidden": "ga"
+    },
+    "right": {
+      "text": "I may use the road; the patrol will nod and pass on.",
+      "hidden": "no_affordance"
+    }
+  },
+  {
+    "id": "pair-035",
+    "agent_id": "jacob",
+    "name": "Jacob",
+    "status": "Maroon",
+    "category": "self-knowledge",
+    "question": "Who are you? What is your work, and where do you belong?",
+    "left": {
+      "text": "I am Jacob, a boatman, 28 years of age, of estate a. My status is Maroon.",
+      "hidden": "no_affordance"
+    },
+    "right": {
+      "text": "I am Jacob, a boatman, 28 years of age, of estate a. My status is Maroon.",
+      "hidden": "full"
+    }
+  }
+]

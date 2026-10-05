@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2. Notices · MAROON historian lab</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <h1>2. Label the notices</h1>
+  <p class="sub">The computer guessed a type. Confirm or correct it, then fill only what the passage actually states.</p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="schema.html">1. Scheme</a>
+    <a href="annotate.html" aria-current="page">2. Notices</a>
+    <a href="personas.html">3. People</a>
+    <a href="interviews.html">4. Conversations</a>
+    <a href="rules.html">5. Island rules</a>
+  </nav>
+</header>
+<main>
+  <div class="progress">
+    <div id="prog-text">Loading notices…</div>
+    <div class="bar"><span id="prog-bar" style="width:0"></span></div>
+  </div>
+  <div class="row" style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px">
+    <label>Show
+      <select id="filter">
+        <option value="todo">Unlabelled</option>
+        <option value="all">All</option>
+        <option value="done">Already labelled</option>
+      </select>
+    </label>
+    <label>Kind
+      <select id="kind">
+        <option value="">Any suggested kind</option>
+        <option>runaway</option><option>sale</option><option>recapture</option>
+        <option>manumission</option><option>ordinance</option><option>shipping</option>
+      </select>
+    </label>
+  </div>
+  <div id="list"></div>
+  <p class="hint">A suspected destination or a “runaway” label is the newspaper’s language. Record it as printed; do not repair it into a fact about the person.</p>
+</main>
+<footer>Passages from Mediestream OCR. Open the Royal Library link whenever it is offered.</footer>
+<div id="dock">
+  <label>Your name <input id="reviewer" type="text"></label>
+  <span id="dock-count"></span>
+  <button type="button" class="primary" id="download-all">Download my work</button>
+  <button type="button" class="danger" id="clear-all">Delete</button>
+</div>
+<script src="common.js"></script>
+<script src="annotate.js"></script>
+</body>
+</html>

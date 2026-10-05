@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MAROON historian lab</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <h1>MAROON historian lab</h1>
+  <p class="sub">A labelling site for the sandbox paper. Nothing to install: work in the browser, then download a file and send it to the project.</p>
+  <nav>
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="schema.html">1. Scheme</a>
+    <a href="annotate.html">2. Notices</a>
+    <a href="personas.html">3. People</a>
+    <a href="interviews.html">4. Conversations</a>
+    <a href="rules.html">5. Island rules</a>
+  </nav>
+</header>
+<main>
+  <div class="note">
+    <b>Content note.</b> These pages quote colonial newspapers about slavery, sale, pursuit, and punishment.
+    The people in the sandbox are invented; no labelled person is a documented historical individual.
+  </div>
+  <p>We are building a computer simulation of a Danish West Indies island in the years before emancipation.
+    The computer can only be as careful as the records and rules we give it. That is the part we need you for.
+    You do not need to know how the program is written.</p>
+  <p>There are five short tasks. You can stop at any time; your answers are kept in this browser until you
+    press <b>Download my work</b> at the bottom of the page, then email that file to us.</p>
+  <div class="cards">
+    <a class="card" href="schema.html">
+      <h2>1. The scheme</h2>
+      <p>Check the six kinds of newspaper notice we extract (runaway, sale, recapture, manumission, ordinance, shipping), and say which fields belong.</p>
+      <p class="meta">About 20 minutes</p>
+    </a>
+    <a class="card" href="annotate.html">
+      <h2>2. Label notices</h2>
+      <p>Read computer-found passages from <i>Dansk Vestindisk Regierings Avis</i> and <i>St. Croix Avis</i>. Say what kind of notice it is, and fill the fields. Always prefer the original page over the computer’s reading.</p>
+      <p class="meta">The main task · aim for 300 notices between two readers</p>
+    </a>
+    <a class="card" href="personas.html">
+      <h2>3. Invented people</h2>
+      <p>Read a sample of sandbox characters. Flag any that sound like a real, documented person, or that misstate island society.</p>
+      <p class="meta">About 30 minutes</p>
+    </a>
+    <a class="card" href="interviews.html">
+      <h2>4. Conversations</h2>
+      <p>We paused the sandbox and asked agents questions. For each pair of answers, say which is more believable, and which is more historically plausible.</p>
+      <p class="meta">About 45 minutes</p>
+    </a>
+    <a class="card" href="rules.html">
+      <h2>5. Island rules</h2>
+      <p>Confirm the map (a composite, not a real estate), the pass and curfew rules, and how often an owner would print a notice.</p>
+      <p class="meta">About 25 minutes</p>
+    </a>
+  </div>
+  <details class="item" style="margin-top:20px">
+    <summary>How to use this site</summary>
+    <ol>
+      <li>Put your name in the bar at the bottom so we know whose file we received.</li>
+      <li>Open a task. Click through the items. Your clicks are saved as you go.</li>
+      <li>The computer’s reading of old print is full of errors. When a Royal Library link is present, open the page and trust the picture.</li>
+      <li>A “suspected destination” in a runaway notice is what the advertiser claimed, not a fact about the fugitive. Mark it that way.</li>
+      <li>When you stop, press <b>Download my work</b> and email the file. If you change computers, download first; the browser copy will not follow you.</li>
+    </ol>
+  </details>
+</main>
+<footer>
+  Newspaper scans: Det Kgl. Bibliotek, Mediestream (public domain for issues older than 100 years).
+  This site does not host the PDF files; it only stores short computer-read passages and links.
+</footer>
+<div id="dock">
+  <label>Your name <input id="reviewer" type="text" placeholder="so we know who labelled"></label>
+  <span id="dock-count"></span>
+  <button type="button" class="primary" id="download-all">Download my work</button>
+  <button type="button" class="danger" id="clear-all">Delete</button>
+</div>
+<script src="common.js"></script>
+</body>
+</html>

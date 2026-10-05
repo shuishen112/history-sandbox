@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>4. Conversations · MAROON historian lab</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <h1>4. Rank the conversations</h1>
+  <p class="sub">Two answers to the same question. Which sounds more like a person, and which is more historically plausible?</p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="schema.html">1. Scheme</a>
+    <a href="annotate.html">2. Notices</a>
+    <a href="personas.html">3. People</a>
+    <a href="interviews.html" aria-current="page">4. Conversations</a>
+    <a href="rules.html">5. Island rules</a>
+  </nav>
+</header>
+<main>
+  <p>We paused the sandbox and asked agents questions. You are not told which computer program wrote which answer.
+    Rank <b>believability</b> (does this sound like a situated person, not a lecture?) and
+    <b>historical plausibility</b> (would someone of that legal status, in that world of passes and patrols, speak this way?).
+    You may also write a short reference answer of your own.</p>
+  <div class="progress"><div id="prog-text"></div><div class="bar"><span id="prog-bar"></span></div></div>
+  <div id="list"></div>
+</main>
+<footer>Answers are model artefacts, not recovered speech.</footer>
+<div id="dock">
+  <label>Your name <input id="reviewer" type="text"></label>
+  <span id="dock-count"></span>
+  <button type="button" class="primary" id="download-all">Download my work</button>
+  <button type="button" class="danger" id="clear-all">Delete</button>
+</div>
+<script src="common.js"></script>
+<script src="interviews.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>5. Island rules · MAROON historian lab</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <h1>5. Island rules and the map</h1>
+  <p class="sub">The island is a composite. It should feel right for the Danish West Indies, and match no real estate.</p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="schema.html">1. Scheme</a>
+    <a href="annotate.html">2. Notices</a>
+    <a href="personas.html">3. People</a>
+    <a href="interviews.html">4. Conversations</a>
+    <a href="rules.html" aria-current="page">5. Island rules</a>
+  </nav>
+</header>
+<main>
+  <article class="item">
+    <h3>The map</h3>
+    <p>Two sugar estates, a harbour town (fort, market, mission, printing office, wharf), the northside hills, and an unpatrolled cove. Agents are uniform tokens; colour is legal status only.</p>
+    <img class="map" src="figs/sandbox.png" alt="Fictional composite island used in the sandbox">
+    <div class="rank">
+      <span>Does this layout feel historically reasonable, without copying a real plantation?</span>
+    </div>
+    <div class="rank" id="map-btns">
+      <button type="button" data-map="yes">Yes, reasonable composite</button>
+      <button type="button" data-map="tweaks">Mostly, with tweaks</button>
+      <button type="button" data-map="no">No — it evokes a real place, or is wrong</button>
+    </div>
+    <label class="stack">What to change (distances, missing institutions, a place that is too specific)
+      <textarea id="map-note" rows="2"></textarea>
+    </label>
+  </article>
+
+  <article class="item">
+    <h3>Rules of movement</h3>
+    <p>These are the constraints the sandbox enforces. For each: agree, revise, or reject.</p>
+    <div id="rules"></div>
+  </article>
+
+  <article class="item">
+    <h3>When would an owner print a notice?</h3>
+    <p>Not every absence was advertised. How often, roughly, would you expect a notice for the following? Slide from “almost never” to “almost always”.</p>
+    <div id="pi"></div>
+  </article>
+</main>
+<footer>Rules can be corrected later; this is the first pass.</footer>
+<div id="dock">
+  <label>Your name <input id="reviewer" type="text"></label>
+  <span id="dock-count"></span>
+  <button type="button" class="primary" id="download-all">Download my work</button>
+  <button type="button" class="danger" id="clear-all">Delete</button>
+</div>
+<script src="common.js"></script>
+<script src="rules.js"></script>
+</body>
+</html>

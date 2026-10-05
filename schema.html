@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1. Scheme · MAROON historian lab</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <h1>1. The extraction scheme</h1>
+  <p class="sub">Are these the right kinds of notice, and the right facts to take from each?</p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="schema.html" aria-current="page">1. Scheme</a>
+    <a href="annotate.html">2. Notices</a>
+    <a href="personas.html">3. People</a>
+    <a href="interviews.html">4. Conversations</a>
+    <a href="rules.html">5. Island rules</a>
+  </nav>
+</header>
+<main>
+  <p>We will ask a language model to turn each newspaper notice into a short record.
+    Please say, for each kind, whether to <b>keep</b> it, <b>change</b> it (leave a note), or <b>drop</b> it.
+    Fields listed in grey are what the computer will try to fill. Remember: a runaway advertisement records the enslaver’s claim, not the fugitive’s own destination.</p>
+  <div id="types"></div>
+</main>
+<footer>Your answers are stored in this browser until you download them.</footer>
+<div id="dock">
+  <label>Your name <input id="reviewer" type="text"></label>
+  <span id="dock-count"></span>
+  <button type="button" class="primary" id="download-all">Download my work</button>
+  <button type="button" class="danger" id="clear-all">Delete</button>
+</div>
+<script src="common.js"></script>
+<script src="schema.js"></script>
+</body>
+</html>
