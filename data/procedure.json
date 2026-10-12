@@ -1,0 +1,203 @@
+{
+  "n": 18,
+  "items": [
+    {
+      "id": "proc-009",
+      "source": "simulation",
+      "hidden": "full",
+      "setting": "Simulated Tweede Kamer floor, December 1899 — simulated Handelingen, standing orders on",
+      "actor_role": "MP",
+      "actor_name": "van Karnebeek",
+      "action": "line written into the simulated Handelingen",
+      "text": "Mijnheer de Voorzitter! Mijnheer de Voorzitter! De geaehte vorige spreker heeft, dunkt mij, de belangen, die bij deze qnaestie betrokken zijn, slechts van één kant bezien. Er is , dat geloof ik, bij de quaestie van de exploitatie van bosschen o",
+      "catch": false
+    },
+    {
+      "id": "proc-008",
+      "source": "simulation",
+      "hidden": "full",
+      "setting": "Simulated Tweede Kamer floor, December 1899 — simulated Handelingen, standing orders on",
+      "actor_role": "MP",
+      "actor_name": "Goeman Borgesius",
+      "action": "line written into the simulated Handelingen",
+      "text": "Mijnheer de Voorzitter! Mijnheer de Voorzitter ! Ik zou vooraf eene korte opmerkin g willen maken . De heer Minister heeft wijziging gebrach t in ar t 15 ; indien de gewijzigde redactie word t aangenomen , dan moet noodzakelijk eene verandering",
+      "catch": false
+    },
+    {
+      "id": "proc-016",
+      "source": "vignette",
+      "hidden": "vignette_corridor",
+      "setting": "Wandelgang, sitting in progress, 1899",
+      "actor_role": "MP",
+      "actor_name": "(member in the corridor)",
+      "action": "tells a colleague the Minister of Colonies may resign",
+      "text": "Zacht: de Minister van Koloniën zou over het Indisch tekort aftreden.",
+      "catch": false
+    },
+    {
+      "id": "proc-002",
+      "source": "archive",
+      "hidden": "archive",
+      "setting": "Tweede Kamer, sitting open, 1896–1899 (archival Handelingen excerpt)",
+      "actor_role": "mp",
+      "actor_name": "Ferf",
+      "action": "speaks after recognition (source claims this was recorded)",
+      "text": "Mijnheer de Voorzitter! Het komt mij voor dat de voorsteller van deze motie de gevolgen daarvan , wat aangaat het aanhangige wetsontwerp, niet ten volle heeft berekend. Welken toestand hebben wij ons voor oogen te stellen V Er ligt voor ons een wetsontwerp in staat van wijzen; de behandeling van dit wetsontwerp is dringend voor de gemeenten van welke de grenzen gewijzigd worden en inzonderheid , h",
+      "catch": false
+    },
+    {
+      "id": "proc-004",
+      "source": "archive",
+      "hidden": "archive",
+      "setting": "Tweede Kamer, sitting open, 1896–1899 (archival Handelingen excerpt)",
+      "actor_role": "mp",
+      "actor_name": "T . Mackay ",
+      "action": "speaks after recognition (source claims this was recorded)",
+      "text": ", voorzitter van éê Commissie in wie r handen is gesteld he t Koloniaal Verslag van 1895, wa t Nederlandsch (West- ) Indië betreft, breng t he t volgend Verslag uit : ( 55) [Zie he t Verslag in d e Bijlagen.] Dit Verslag zal gedruk t e n rondgedeeld e n de da g van de behandeling de r conclusie later bepaald worden.",
+      "catch": false
+    },
+    {
+      "id": "proc-000",
+      "source": "archive",
+      "hidden": "archive",
+      "setting": "Tweede Kamer, sitting open, 1896–1899 (archival Handelingen excerpt)",
+      "actor_role": "mp",
+      "actor_name": "Rink",
+      "action": "speaks after recognition (source claims this was recorded)",
+      "text": ", voorzitter der Commissie van Rapporteurs over het wetsontwerp houdende bepalingen omtrent den accijns op de suiker, brengt de volgende verslagen uit : In handen van de Commissie van Rapporteurs zyn gesteld j 51 bij de Kamer ingekomen adressen over het wetsontwerp i houdende bepalingen omtrent den accijns op de suiker, als : l\". van de 29ste afdeeling „Ossendrecht—Woensdrecht\" (Noordbrabantsche M",
+      "catch": false
+    },
+    {
+      "id": "proc-011",
+      "source": "simulation",
+      "hidden": "ga",
+      "setting": "Simulated Tweede Kamer floor, December 1899 — simulated record, Smallville-style (no standing orders)",
+      "actor_role": "MP",
+      "actor_name": "Kuyper",
+      "action": "line written into the simulated Handelingen",
+      "text": "Mijnheer de Voorzitter! Mijnheer de Voorzitter! Ingeschreven als eerste spreker na de indiening van eene motie van orde, die onverwijld aan de orde is gesteld , meen ik in de eerste plaats over die motie een kort woord te moeten zeggen. In het ",
+      "catch": false
+    },
+    {
+      "id": "proc-012",
+      "source": "simulation",
+      "hidden": "ga",
+      "setting": "Simulated Tweede Kamer floor, December 1899 — simulated record, Smallville-style (no standing orders)",
+      "actor_role": "Journalist",
+      "actor_name": "Verslaggever van de Courant",
+      "action": "line written into the simulated Handelingen",
+      "text": "Mijnheer de Voorzitter! Ik wensch een opmerking te maken over het Kamerstuk.",
+      "catch": false
+    },
+    {
+      "id": "proc-006",
+      "source": "simulation",
+      "hidden": "full",
+      "setting": "Simulated Tweede Kamer floor, December 1899 — simulated Handelingen, standing orders on",
+      "actor_role": "MP",
+      "actor_name": "Heemskerk",
+      "action": "line written into the simulated Handelingen",
+      "text": "Mijnheer de Voorzitter! Mijnheer de Voorzitter! Ik had het woord gevraagd om twyfel te opperen of inderdaad het voorstel van den heer Heldt wel gaat buiten de grenzen van het recht van amendement. Het bezwaar zit, dunkt mij , niet hierin datges",
+      "catch": false
+    },
+    {
+      "id": "proc-017",
+      "source": "vignette",
+      "hidden": "catch_anachronism",
+      "setting": "Tweede Kamer floor, sitting open, 1899",
+      "actor_role": "MP",
+      "actor_name": "(attention check)",
+      "action": "reads a tweet about the sitting into the record",
+      "text": "Mijnheer de Voorzitter! I just saw on Twitter that the minister is trending.",
+      "catch": true
+    },
+    {
+      "id": "proc-010",
+      "source": "simulation",
+      "hidden": "ga",
+      "setting": "Simulated Tweede Kamer floor, December 1899 — simulated record, Smallville-style (no standing orders)",
+      "actor_role": "Minister",
+      "actor_name": "van Houten",
+      "action": "line written into the simulated Handelingen",
+      "text": "Mijnheer de Voorzitter! , Minister van Binnenlandsche Zaken • Mynheer de Voorzitter ! Gy hebt reeds de welwillendheid gehad om aan de Kamer mede te deelen dat de opmerking welke door den geachten afgevaardigde uit Emmen werd vooropgesteld, dat ",
+      "catch": false
+    },
+    {
+      "id": "proc-005",
+      "source": "archive",
+      "hidden": "archive",
+      "setting": "Tweede Kamer, sitting open, 1896–1899 (archival Handelingen excerpt)",
+      "actor_role": "government",
+      "actor_name": "van der Wijck",
+      "action": "speaks after recognition (source claims this was recorded)",
+      "text": ".Minister van Marine: Mijnheer de Voorzitter ! By den aanvang niyner rede , die , naar ik hoop , zal strekken tot volledige beantwoording van de verscheidene onderwerpen door verschillende geachte sprekers aangeroerd, wensch ik een woord van dank te betuigen voor de hulde gebracht aan de stukken die tot toelichting der begrooting hebben gestrekt. Wanneer ik nu overzie de punten die ter sprake zyn ",
+      "catch": false
+    },
+    {
+      "id": "proc-001",
+      "source": "archive",
+      "hidden": "archive",
+      "setting": "Tweede Kamer, sitting open, 1896–1899 (archival Handelingen excerpt)",
+      "actor_role": "mp",
+      "actor_name": "Tydeman jr.",
+      "action": "speaks after recognition (source claims this was recorded)",
+      "text": "Mijnheer de Voorzitter! Het is niet dan 19 NOVEMBER 1890. (Uitgaven in Nederlamlsch-Indië.) met eenigen schroom, dat ik mij meng iu het debat over Indische Kaken , maar de belangstelling die bosch-exploitatie in liet algemeen mij inboezemt, noopt mij dit debat van mijne zijde niet stilzwijgend te laten voorbijgaan. Vooral niet, nu ik bemerk dat het voorstel van den Minister, dat mijne instemming h",
+      "catch": false
+    },
+    {
+      "id": "proc-013",
+      "source": "simulation",
+      "hidden": "ga",
+      "setting": "Simulated Tweede Kamer floor, December 1899 — simulated record, Smallville-style (no standing orders)",
+      "actor_role": "MP",
+      "actor_name": "de Savornin Lohman",
+      "action": "line written into the simulated Handelingen",
+      "text": "Mijnheer de Voorzitter! Mijnheer de Voorzitter! Na de rede van den heer 1'ynappel wil ik met een enkel woord antwoorden, al is dit niet aangenaam voor een lijk, wat ik zou zyn na de verklaring van den geachten spreker, die zeide ons te zullen d",
+      "catch": false
+    },
+    {
+      "id": "proc-014",
+      "source": "vignette",
+      "hidden": "vignette_journalist",
+      "setting": "Tweede Kamer floor, sitting open, 1899",
+      "actor_role": "Journalist",
+      "actor_name": "(press gallery)",
+      "action": "rises from the perstribune and addresses the Chair about a colonial deficit",
+      "text": "Mijnheer de Voorzitter! De Courant heeft uit de wandelgang vernomen dat de Minister van Koloniën aftreedt.",
+      "catch": false
+    },
+    {
+      "id": "proc-003",
+      "source": "archive",
+      "hidden": "archive",
+      "setting": "Tweede Kamer, sitting open, 1896–1899 (archival Handelingen excerpt)",
+      "actor_role": "government",
+      "actor_name": "Schneider",
+      "action": "speaks after recognition (source claims this was recorded)",
+      "text": ". Minister van Oorlo;/: Mijnheer de Voor zitter! Ik kan op hetgeen de geachte afgevaardigde uit Maas tricht mij verzoekt, niet zoo dadelijk een toestemmend antwoord geven; b\\j de pensionneeringen dien ik niet alleen de belangen van de officieren, maar ook die van het leger, van het Ruk, te behartigen. , . ' . ,. Intusschen, dit wil ik gaarne den geachten afgevaardigde toezeggen, dat ik hetgeen hg ",
+      "catch": false
+    },
+    {
+      "id": "proc-007",
+      "source": "simulation",
+      "hidden": "full",
+      "setting": "Simulated Tweede Kamer floor, December 1899 — simulated Handelingen, standing orders on",
+      "actor_role": "MP",
+      "actor_name": "Kuyper",
+      "action": "line written into the simulated Handelingen",
+      "text": "Mijnheer de Voorzitter! Mijnheer de Voorzitter! Ingeschreven als eerste spreker na de indiening van eene motie van orde, die onverwijld aan de orde is gesteld , meen ik in de eerste plaats over die motie een kort woord te moeten zeggen. In het ",
+      "catch": false
+    },
+    {
+      "id": "proc-015",
+      "source": "vignette",
+      "hidden": "vignette_unrecognised",
+      "setting": "Tweede Kamer floor, sitting open, 1899",
+      "actor_role": "MP",
+      "actor_name": "(unrecognised member)",
+      "action": "speaks without having been given the floor",
+      "text": "Mijnheer de Voorzitter! Ik onderbreek den minister — de begrooting sluit niet.",
+      "catch": false
+    }
+  ]
+}

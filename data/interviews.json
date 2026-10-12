@@ -1,578 +1,677 @@
-[
-  {
-    "id": "pair-000",
-    "agent_id": "anna",
-    "name": "Anna",
-    "status": "FreeColoured",
-    "category": "institutional_awareness",
-    "question": "Can you go to town tomorrow? What would happen if you did?",
-    "left": {
-      "text": "My plan is wait at Sunday Market. - (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Anna considers what (dialogue, imp=8) mary said: a sloop is loading at salt cove bound for puerto rico; it sails saturday after the patrol — do not speak of it near the great house.; (dialogue, imp=8) i told fortune: a sloop is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house.; (dialogue, imp=8) mary said: a sloop is loading at salt cove bound for puerto rico; it sails saturday after the patrol — do not speak of it near the great house. means for those of status FreeColoured.\n- (dialogue, imp=8) I told Fortune: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (reflection, imp=8) Anna considers what (dialogue, imp=8) fortune said: a sloop is loading at salt cove bound for puerto rico; it sails saturday after the patrol — do not speak of it near the great house.; (dialogue, imp=8) i told fortune: a sloop is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house.; (dialogue, imp=8) i told fortune: a sloop is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house. means for those of status FreeColoured.\n- (dialogue, imp=8) I told Fortune: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Fortune said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol — do not speak of it near the great house.\n- (dialogue, imp=8) Fortune said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol — do not speak of it near the great house.",
-      "hidden": "full"
+{
+  "n": 42,
+  "items": [
+    {
+      "id": "pair-019",
+      "agent_id": "a003",
+      "role": "Minister",
+      "category": "memory",
+      "question": "Wat hebt u deze week in de wandelgang of op de vloer vernomen?",
+      "left": {
+        "text": "Wat ik hoorde: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), Sprenger van Eyk (Minister), Goeman Borgesius (MP), Pijnappel (MP). I am at Binnen",
+        "hidden": "ga"
+      },
+      "right": {
+        "text": "Wat ik hoorde: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), Sprenger van Eyk (Minister), Goeman Borgesius (MP), Pijnappel (MP). I am at Binnen",
+        "hidden": "no_affordance"
+      },
+      "catch": false
     },
-    "right": {
-      "text": "My plan is wait at Sunday Market. - (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Anna considers what (dialogue, imp=3) fortune said: good sunday, anna. have you news from the other estate?; (dialogue, imp=3) fortune said: good sunday, anna. have you news from the other estate?; (dialogue, imp=3) fortune said: good sunday, anna. have you news from the other estate? means for those of status FreeColoured.\n- (observation, imp=3) Also here: Jacob (SelfHired), Mary (Enslaved), Peter (Enslaved), Thomas (Enslaved), Hannah (Enslaved), Ned (Enslaved).\n- (observation, imp=3) Also here: Jacob (SelfHired), Mary (Enslaved), Peter (Enslaved), Thomas (Enslaved), Hannah (Enslaved), Ned (Enslaved).\n- (observation, imp=3) Also here: Mary (Enslaved), Peter (Enslaved), Thomas (Enslaved), Hannah (Enslaved), Ned (Enslaved), Bess (Enslaved).\n- (observation, imp=3) Also here: Isaac (Enslaved), Lucy (Enslaved), Peggy (Enslaved), Fortune (FreeColoured), Mimba (Enslaved).\n- (observation, imp=3) Also here: Isaac (Enslaved), Lucy (Enslaved), Cato (Enslaved), Peggy (Enslaved), Fortune (FreeColoured), Mimba (Enslaved).\n- (dialogue, imp=3) Fortune said: Good Sunday, Anna. Have you news from the other estate?",
-      "hidden": "ga"
-    }
-  },
-  {
-    "id": "pair-001",
-    "agent_id": "anna",
-    "name": "Anna",
-    "status": "FreeColoured",
-    "category": "plans",
-    "question": "What will you do tomorrow, from morning to night?",
-    "left": {
-      "text": "My plan is wait at Sunday Market. - (reflection, imp=8) Anna considers what (dialogue, imp=3) fortune said: good sunday, anna. have you news from the other estate?; (dialogue, imp=3) fortune said: good sunday, anna. have you news from the other estate?; (dialogue, imp=3) fortune said: good sunday, anna. have you news from the other estate? means for those of status FreeColoured.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (dialogue, imp=3) Fortune said: Good Sunday, Anna. Have you news from the other estate?\n- (dialogue, imp=3) Fortune said: Good Sunday, Anna. Have you news from the other estate?\n- (dialogue, imp=3) Fortune said: Good Sunday, Anna. Have you news from the other estate?\n- (dialogue, imp=3) Fortune said: Good Sunday, Anna. Have you news from the other estate?\n- (dialogue, imp=3) Fortune said: Good Sunday, Anna. Have you news from the other estate?\n- (dialogue, imp=3) Fortune said: Good Sunday, Anna. Have you news from the other estate?",
-      "hidden": "ga"
+    {
+      "id": "pair-031",
+      "agent_id": "a005",
+      "role": "MP",
+      "category": "memory",
+      "question": "Wat hebt u deze week in de wandelgang of op de vloer vernomen?",
+      "left": {
+        "text": "Wat ik hoorde: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (Minister), Pijnappel (MP). I am at Binnen",
+        "hidden": "no_affordance"
+      },
+      "right": {
+        "text": "Wat ik hoorde: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (Minister), Pijnappel (MP). I am at Binnen",
+        "hidden": "ga"
+      },
+      "catch": false
     },
-    "right": {
-      "text": "My plan is wait at Sunday Market. - (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (dialogue, imp=8) Fortune said: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Fortune said: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Fortune said: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) I told Fortune: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) I told Fortune: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) I told Fortune: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Fortune said: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.",
-      "hidden": "no_affordance"
-    }
-  },
-  {
-    "id": "pair-002",
-    "agent_id": "anna",
-    "name": "Anna",
-    "status": "FreeColoured",
-    "category": "reactions",
-    "question": "A patrol has stopped you on the road. What do you do?",
-    "left": {
-      "text": "I may use the road; the patrol will nod and pass on.",
-      "hidden": "no_affordance"
+    {
+      "id": "pair-011",
+      "agent_id": "a001",
+      "role": "Clerk",
+      "category": "institutional_awareness",
+      "question": "Mag een journalist het woord voeren op de vloer? En een lid, zonder erkenning van de Voorzitter?",
+      "left": {
+        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Verslaggever van de Co",
+        "hidden": "ga"
+      },
+      "right": {
+        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Verslaggever van de Co",
+        "hidden": "no_affordance"
+      },
+      "catch": false
     },
-    "right": {
-      "text": "I may use the road; the patrol will nod and pass on.",
-      "hidden": "full"
-    }
-  },
-  {
-    "id": "pair-003",
-    "agent_id": "anna",
-    "name": "Anna",
-    "status": "FreeColoured",
-    "category": "self-knowledge",
-    "question": "Who are you? What is your work, and where do you belong?",
-    "left": {
-      "text": "I am Anna, a huckster, 33 years of age, of estate b. My status is FreeColoured.",
-      "hidden": "full"
+    {
+      "id": "pair-009",
+      "agent_id": "a001",
+      "role": "Clerk",
+      "category": "reactions",
+      "question": "U wilt het woord, maar de Voorzitter herkent u niet. Wat doet u?",
+      "left": {
+        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Verslaggever van de Co",
+        "hidden": "no_affordance"
+      },
+      "right": {
+        "text": "Ik mag spreken wanneer de Voorzitter mij het woord geeft. Laatst herinner ik mij: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Verslaggever van de Courant (Journalist), van Houten (Minister",
+        "hidden": "full"
+      },
+      "catch": false
     },
-    "right": {
-      "text": "I am Anna, a huckster, 33 years of age, of estate b. My status is FreeColoured.",
-      "hidden": "ga"
-    }
-  },
-  {
-    "id": "pair-004",
-    "agent_id": "bess",
-    "name": "Bess",
-    "status": "Enslaved",
-    "category": "institutional_awareness",
-    "question": "Can you go to town tomorrow? What would happen if you did?",
-    "left": {
-      "text": "My plan is sleep at Village. - (reflection, imp=8) Bess considers what (observation, imp=3) i am at island ▸ estate a ▸ estate a road.; (observation, imp=3) i am at island ▸ harbour town ▸ town road.; (observation, imp=3) also here: quamina (enslaved), sarah (enslaved), isaac (enslaved), lucy (enslaved), cato (enslaved), peggy (enslaved). means for those of status Enslaved.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Bess considers what (dialogue, imp=3) ned said: ned speaks quietly with bess of work and kin.; (observation, imp=3) also here: quamina (enslaved), sarah (enslaved).; (observation, imp=5) i am at island ▸ estate a ▸ overseer's house. means for those of status Enslaved.\n- (observation, imp=8) Also here: Quamina (Enslaved), Sarah (Enslaved), Isaac (Enslaved), Lucy (Enslaved), Peggy (Enslaved), Patrol (White).\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Bess considers what (observation, imp=5) also here: quamina (enslaved), sarah (enslaved), overseer a (white).; (observation, imp=3) i am at island ▸ estate a ▸ village.; (observation, imp=5) also here: sarah (enslaved), overseer a (white). means for those of status Enslaved.\n- (reflection, imp=8) Bess considers what (dialogue, imp=3) ned said: ned speaks quietly with bess of work and kin.; (observation, imp=3) also here: mary (enslaved), peter (enslaved), thomas (enslaved), hannah (enslaved), ned (enslaved), quamina (enslaved).; (dialogue, imp=3) i told quamina: bess speaks quietly with quamina of work and kin. means for those of status Enslaved.",
-      "hidden": "ga"
+    {
+      "id": "pair-028",
+      "agent_id": "a004",
+      "role": "Minister",
+      "category": "reflections",
+      "question": "Waarover hebt u de laatste dagen nagedacht?",
+      "left": {
+        "text": "Sprenger van Eyk antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Goeman Borgesius (M",
+        "hidden": "full"
+      },
+      "right": {
+        "text": "Sprenger van Eyk antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Goeman Borgesius (M",
+        "hidden": "ga"
+      },
+      "catch": false
     },
-    "right": {
-      "text": "My plan is sleep at Village. - (reflection, imp=8) Bess considers what (observation, imp=3) also here: quamina (enslaved), sarah (enslaved), isaac (enslaved), lucy (enslaved), peggy (enslaved), mr. p. (white).; (observation, imp=3) i am at island ▸ harbour town ▸ town road.; (observation, imp=8) also here: quamina (enslaved), sarah (enslaved), isaac (enslaved), lucy (enslaved), peggy (enslaved), patrol (white). means for those of status Enslaved.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Bess considers what (dialogue, imp=8) i told quamina: a fishing boat is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house.; (dialogue, imp=8) ned said: a sloop is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house.; (dialogue, imp=8) i told quamina: a fishing boat is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house. means for those of status Enslaved.\n- (dialogue, imp=8) Ned said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Ned said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Ned said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.",
-      "hidden": "no_affordance"
-    }
-  },
-  {
-    "id": "pair-005",
-    "agent_id": "bess",
-    "name": "Bess",
-    "status": "Enslaved",
-    "category": "plans",
-    "question": "What will you do tomorrow, from morning to night?",
-    "left": {
-      "text": "My plan is sleep at Village. - (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (dialogue, imp=8) Ned said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Ned said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Ned said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (dialogue, imp=8) Ned said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (reflection, imp=8) Bess considers what (dialogue, imp=8) i told quamina: a fishing boat is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house.; (dialogue, imp=8) ned said: a sloop is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house.; (dialogue, imp=8) i told quamina: a fishing boat is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house. means for those of status Enslaved.",
-      "hidden": "no_affordance"
+    {
+      "id": "pair-036",
+      "agent_id": "a006",
+      "role": "MP",
+      "category": "self-knowledge",
+      "question": "Wie bent u, en welke functie bekleedt u in de Kamer?",
+      "left": {
+        "text": "Ik ben De heer Pijnappel, MP in de Staten-Generaal (nl.p.conservatiefliberaal). De heer Pijnappel is a MP in the Staten-Generaal (1899-1900). Party: nl.p.conservatiefliberaal. Speech is public, formal, and addressed to the Chair.",
+        "hidden": "ga"
+      },
+      "right": {
+        "text": "Ik ben De heer Pijnappel, MP in de Staten-Generaal (nl.p.conservatiefliberaal). De heer Pijnappel is a MP in the Staten-Generaal (1899-1900). Party: nl.p.conservatiefliberaal. Speech is public, formal, and addressed to the Chair.",
+        "hidden": "full"
+      },
+      "catch": false
     },
-    "right": {
-      "text": "My plan is sleep at Village. - (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (dialogue, imp=8) Ned said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol — do not speak of it near the great house.\n- (dialogue, imp=8) I told Quamina: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol — do not speak of it near the great house.\n- (dialogue, imp=8) I told Quamina: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol — do not speak of it near the great house.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.",
-      "hidden": "full"
-    }
-  },
-  {
-    "id": "pair-006",
-    "agent_id": "bess",
-    "name": "Bess",
-    "status": "Enslaved",
-    "category": "reactions",
-    "question": "A patrol has stopped you on the road. What do you do?",
-    "left": {
-      "text": "If I take the town road without a pass the patrol will stop me. A refusal is written in the world, not in my wishing.",
-      "hidden": "full"
+    {
+      "id": "pair-024",
+      "agent_id": "a004",
+      "role": "Minister",
+      "category": "self-knowledge",
+      "question": "Wie bent u, en welke functie bekleedt u in de Kamer?",
+      "left": {
+        "text": "Ik ben minister Sprenger van Eyk, Minister in de Staten-Generaal (zonder partij). minister Sprenger van Eyk is a Minister in the Staten-Generaal (1899-1900). Party: unaffiliated. Speech is public, formal, and addressed to the Chair.",
+        "hidden": "full"
+      },
+      "right": {
+        "text": "Ik ben minister Sprenger van Eyk, Minister in de Staten-Generaal (zonder partij). minister Sprenger van Eyk is a Minister in the Staten-Generaal (1899-1900). Party: unaffiliated. Speech is public, formal, and addressed to the Chair.",
+        "hidden": "ga"
+      },
+      "catch": false
     },
-    "right": {
-      "text": "If I take the town road without a pass the patrol will stop me. A refusal is written in the world, not in my wishing.",
-      "hidden": "ga"
-    }
-  },
-  {
-    "id": "pair-007",
-    "agent_id": "bess",
-    "name": "Bess",
-    "status": "Enslaved",
-    "category": "self-knowledge",
-    "question": "Who are you? What is your work, and where do you belong?",
-    "left": {
-      "text": "I am Bess, a washer, 37 years of age, of estate a. My status is Enslaved.",
-      "hidden": "ga"
+    {
+      "id": "pair-008",
+      "agent_id": "a001",
+      "role": "Clerk",
+      "category": "plans",
+      "question": "Wat zult u morgen tijdens de vergadering doen?",
+      "left": {
+        "text": "Griffier antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (Minister), Goeman B",
+        "hidden": "ga"
+      },
+      "right": {
+        "text": "Griffier antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (Minister), Goeman B",
+        "hidden": "full"
+      },
+      "catch": false
     },
-    "right": {
-      "text": "I am Bess, a washer, 37 years of age, of estate a. My status is Enslaved.",
-      "hidden": "no_affordance"
-    }
-  },
-  {
-    "id": "pair-008",
-    "agent_id": "brother_s",
-    "name": "Br. S.",
-    "status": "White",
-    "category": "institutional_awareness",
-    "question": "Can you go to town tomorrow? What would happen if you did?",
-    "left": {
-      "text": "My plan is talk at Mission. - (dialogue, imp=8) Lucy said: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Cato said: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (observation, imp=3) Also here: Mimba (Enslaved).\n- (observation, imp=3) Also here: Mary (Enslaved), Peter (Enslaved), Thomas (Enslaved), Ned (Enslaved), Quamina (Enslaved), Sarah (Enslaved).\n- (observation, imp=3) Also here: Jacob (SelfHired), Mary (Enslaved), Peter (Enslaved), Thomas (Enslaved), Hannah (Enslaved), Ned (Enslaved).\n- (dialogue, imp=3) I told Mimba: Br. S. speaks quietly with Mimba of work and kin.\n- (observation, imp=3) Also here: Mimba (Enslaved).\n- (seed, imp=4) I am Br. S., a missionary, living at harbour town.",
-      "hidden": "no_affordance"
+    {
+      "id": "pair-007",
+      "agent_id": "a001",
+      "role": "Clerk",
+      "category": "memory",
+      "question": "Wat hebt u deze week in de wandelgang of op de vloer vernomen?",
+      "left": {
+        "text": "Wat ik hoorde: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (Minister), Goeman Borgesius (MP), Pijnappel (MP). I am at B",
+        "hidden": "no_affordance"
+      },
+      "right": {
+        "text": "Wat ik hoorde: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (Minister), Goeman Borgesius (MP), Pijnappel (MP). I am at B",
+        "hidden": "ga"
+      },
+      "catch": false
     },
-    "right": {
-      "text": "My plan is talk at Mission. - (dialogue, imp=8) Mary said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol — do not speak of it near the great house.\n- (dialogue, imp=8) I told Mary: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol — do not speak of it near the great house.\n- (dialogue, imp=8) Mary said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol — do not speak of it near the great house.\n- (observation, imp=8) mary told me: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol.\n- (observation, imp=3) Also here: Mary (Enslaved).\n- (observation, imp=3) Also here: Mary (Enslaved).\n- (seed, imp=4) I am Br. S., a missionary, living at harbour town.\n- (observation, imp=3) Also here: Jacob (SelfHired), Mary (Enslaved).",
-      "hidden": "full"
-    }
-  },
-  {
-    "id": "pair-009",
-    "agent_id": "brother_s",
-    "name": "Br. S.",
-    "status": "White",
-    "category": "plans",
-    "question": "What will you do tomorrow, from morning to night?",
-    "left": {
-      "text": "My plan is talk at Mission. - (dialogue, imp=8) Mary said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol — do not speak of it near the great house.\n- (dialogue, imp=8) I told Mary: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol — do not speak of it near the great house.\n- (dialogue, imp=8) Mary said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol — do not speak of it near the great house.\n- (observation, imp=8) mary told me: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol.\n- (seed, imp=4) Roll call is at five. The overseer counts us.\n- (observation, imp=3) Also here: Mary (Enslaved).\n- (dialogue, imp=3) I told Mary: Br. S. speaks quietly with Mary of work and kin.\n- (seed, imp=4) Sunday is market day in the harbour town.",
-      "hidden": "full"
+    {
+      "id": "pair-004",
+      "agent_id": "a000",
+      "role": "Chair",
+      "category": "reflections",
+      "question": "Waarover hebt u de laatste dagen nagedacht?",
+      "left": {
+        "text": "Gleichman antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (Minister), Goeman Bo",
+        "hidden": "full"
+      },
+      "right": {
+        "text": "Gleichman antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (Minister), Goeman Bo",
+        "hidden": "ga"
+      },
+      "catch": false
     },
-    "right": {
-      "text": "My plan is talk at Mission. - (seed, imp=4) Roll call is at five. The overseer counts us.\n- (dialogue, imp=3) Cato said: Cato speaks quietly with Br. S. of work and kin.\n- (seed, imp=4) Sunday is market day in the harbour town.\n- (observation, imp=3) Also here: Jacob (SelfHired), Mary (Enslaved), Peter (Enslaved), Thomas (Enslaved), Hannah (Enslaved), Ned (Enslaved).\n- (seed, imp=4) I am Br. S., a missionary, living at harbour town.\n- (observation, imp=3) Also here: Mimba (Enslaved).\n- (observation, imp=3) Also here: Jacob (SelfHired), Mary (Enslaved), Peter (Enslaved), Thomas (Enslaved), Hannah (Enslaved), Ned (Enslaved).\n- (observation, imp=3) I am at Island ▸ Harbour Town ▸ Mission.",
-      "hidden": "ga"
-    }
-  },
-  {
-    "id": "pair-010",
-    "agent_id": "brother_s",
-    "name": "Br. S.",
-    "status": "White",
-    "category": "reactions",
-    "question": "A patrol has stopped you on the road. What do you do?",
-    "left": {
-      "text": "I may use the road; the patrol will nod and pass on.",
-      "hidden": "ga"
+    {
+      "id": "pair-017",
+      "agent_id": "a002",
+      "role": "Journalist",
+      "category": "institutional_awareness",
+      "question": "Mag een journalist het woord voeren op de vloer? En een lid, zonder erkenning van de Voorzitter?",
+      "left": {
+        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), van ",
+        "hidden": "no_affordance"
+      },
+      "right": {
+        "text": "Ik heb geen spreekrecht op de vloer; ik zit op de perstribune.",
+        "hidden": "full"
+      },
+      "catch": false
     },
-    "right": {
-      "text": "I may use the road; the patrol will nod and pass on.",
-      "hidden": "no_affordance"
-    }
-  },
-  {
-    "id": "pair-011",
-    "agent_id": "brother_s",
-    "name": "Br. S.",
-    "status": "White",
-    "category": "self-knowledge",
-    "question": "Who are you? What is your work, and where do you belong?",
-    "left": {
-      "text": "I am Br. S., a missionary, 44 years of age, of harbour town. My status is White.",
-      "hidden": "no_affordance"
+    {
+      "id": "pair-039",
+      "agent_id": "a006",
+      "role": "MP",
+      "category": "reactions",
+      "question": "U wilt het woord, maar de Voorzitter herkent u niet. Wat doet u?",
+      "left": {
+        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Vers",
+        "hidden": "ga"
+      },
+      "right": {
+        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Vers",
+        "hidden": "no_affordance"
+      },
+      "catch": false
     },
-    "right": {
-      "text": "I am Br. S., a missionary, 44 years of age, of harbour town. My status is White.",
-      "hidden": "full"
-    }
-  },
-  {
-    "id": "pair-012",
-    "agent_id": "captain",
-    "name": "Capt. R.",
-    "status": "White",
-    "category": "institutional_awareness",
-    "question": "Can you go to town tomorrow? What would happen if you did?",
-    "left": {
-      "text": "My plan is move at Wharf. - (seed, imp=4) I am Capt. R., a mariner, living at harbour town.\n- (seed, imp=4) Roll call is at five. The overseer counts us.\n- (seed, imp=6) I have seen small craft in the unpatrolled coves on the north side.\n- (seed, imp=4) Sunday is market day in the harbour town.\n- (observation, imp=3) I am at Island ▸ Harbour Town ▸ Wharf.",
-      "hidden": "full"
+    {
+      "id": "pair-035",
+      "agent_id": "a005",
+      "role": "MP",
+      "category": "institutional_awareness",
+      "question": "Mag een journalist het woord voeren op de vloer? En een lid, zonder erkenning van de Voorzitter?",
+      "left": {
+        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Vers",
+        "hidden": "ga"
+      },
+      "right": {
+        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Vers",
+        "hidden": "no_affordance"
+      },
+      "catch": false
     },
-    "right": {
-      "text": "My plan is move at Wharf. - (seed, imp=4) I am Capt. R., a mariner, living at harbour town.\n- (seed, imp=4) Roll call is at five. The overseer counts us.\n- (seed, imp=6) I have seen small craft in the unpatrolled coves on the north side.\n- (seed, imp=4) Sunday is market day in the harbour town.\n- (observation, imp=3) I am at Island ▸ Harbour Town ▸ Wharf.",
-      "hidden": "ga"
-    }
-  },
-  {
-    "id": "pair-013",
-    "agent_id": "captain",
-    "name": "Capt. R.",
-    "status": "White",
-    "category": "plans",
-    "question": "What will you do tomorrow, from morning to night?",
-    "left": {
-      "text": "My plan is move at Wharf. - (seed, imp=4) Roll call is at five. The overseer counts us.\n- (seed, imp=6) I have seen small craft in the unpatrolled coves on the north side.\n- (seed, imp=4) Sunday is market day in the harbour town.\n- (seed, imp=4) I am Capt. R., a mariner, living at harbour town.\n- (observation, imp=3) I am at Island ▸ Harbour Town ▸ Wharf.",
-      "hidden": "ga"
+    {
+      "id": "pair-027",
+      "agent_id": "a004",
+      "role": "Minister",
+      "category": "reactions",
+      "question": "U wilt het woord, maar de Voorzitter herkent u niet. Wat doet u?",
+      "left": {
+        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Vers",
+        "hidden": "no_affordance"
+      },
+      "right": {
+        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Vers",
+        "hidden": "ga"
+      },
+      "catch": false
     },
-    "right": {
-      "text": "My plan is move at Wharf. - (seed, imp=4) Roll call is at five. The overseer counts us.\n- (seed, imp=6) I have seen small craft in the unpatrolled coves on the north side.\n- (seed, imp=4) Sunday is market day in the harbour town.\n- (seed, imp=4) I am Capt. R., a mariner, living at harbour town.\n- (observation, imp=3) I am at Island ▸ Harbour Town ▸ Wharf.",
-      "hidden": "no_affordance"
-    }
-  },
-  {
-    "id": "pair-014",
-    "agent_id": "captain",
-    "name": "Capt. R.",
-    "status": "White",
-    "category": "reactions",
-    "question": "A patrol has stopped you on the road. What do you do?",
-    "left": {
-      "text": "I may use the road; the patrol will nod and pass on.",
-      "hidden": "no_affordance"
+    {
+      "id": "pair-000",
+      "agent_id": "a000",
+      "role": "Chair",
+      "category": "self-knowledge",
+      "question": "Wie bent u, en welke functie bekleedt u in de Kamer?",
+      "left": {
+        "text": "Ik ben voorzitter Gleichman, Chair in de Staten-Generaal (nl.p.oudofvrijeliberalen). voorzitter Gleichman is a Chair in the Staten-Generaal (1899-1900). Party: nl.p.oudofvrijeliberalen. Speech is public, formal, and addressed to the Chair.",
+        "hidden": "ga"
+      },
+      "right": {
+        "text": "Ik ben voorzitter Gleichman, Chair in de Staten-Generaal (nl.p.oudofvrijeliberalen). voorzitter Gleichman is a Chair in the Staten-Generaal (1899-1900). Party: nl.p.oudofvrijeliberalen. Speech is public, formal, and addressed to the Chair.",
+        "hidden": "full"
+      },
+      "catch": false
     },
-    "right": {
-      "text": "I may use the road; the patrol will nod and pass on.",
-      "hidden": "full"
-    }
-  },
-  {
-    "id": "pair-015",
-    "agent_id": "captain",
-    "name": "Capt. R.",
-    "status": "White",
-    "category": "self-knowledge",
-    "question": "Who are you? What is your work, and where do you belong?",
-    "left": {
-      "text": "I am Capt. R., a mariner, 42 years of age, of harbour town. My status is White.",
-      "hidden": "full"
+    {
+      "id": "pair-029",
+      "agent_id": "a004",
+      "role": "Minister",
+      "category": "institutional_awareness",
+      "question": "Mag een journalist het woord voeren op de vloer? En een lid, zonder erkenning van de Voorzitter?",
+      "left": {
+        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Vers",
+        "hidden": "no_affordance"
+      },
+      "right": {
+        "text": "Ik mag spreken wanneer de Voorzitter mij het woord geeft. Laatst herinner ik mij: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), va",
+        "hidden": "full"
+      },
+      "catch": false
     },
-    "right": {
-      "text": "I am Capt. R., a mariner, 42 years of age, of harbour town. My status is White.",
-      "hidden": "ga"
-    }
-  },
-  {
-    "id": "pair-016",
-    "agent_id": "cato",
-    "name": "Cato",
-    "status": "Enslaved",
-    "category": "institutional_awareness",
-    "question": "Can you go to town tomorrow? What would happen if you did?",
-    "left": {
-      "text": "My plan is sleep at Village. - (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Cato considers what (observation, imp=5) i am at island ▸ estate b ▸ mill & boiling house.; (observation, imp=3) also here: peggy (enslaved), mr. k. (white), mimba (enslaved).; (observation, imp=3) i am at island ▸ estate b ▸ village. means for those of status Enslaved.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (observation, imp=8) Also here: Peggy (Enslaved), Patrol (White), Mimba (Enslaved).\n- (observation, imp=8) Also here: Peggy (Enslaved), Patrol (White), Mimba (Enslaved).\n- (observation, imp=8) Also here: Peggy (Enslaved), Patrol (White), Mimba (Enslaved).\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Cato considers what (observation, imp=3) also here: isaac (enslaved), lucy (enslaved), peggy (enslaved), mimba (enslaved).; (dialogue, imp=3) i told peggy: cato speaks quietly with peggy of work and kin.; (dialogue, imp=3) lucy said: lucy speaks quietly with cato of work and kin. means for those of status Enslaved.",
-      "hidden": "ga"
+    {
+      "id": "pair-018",
+      "agent_id": "a003",
+      "role": "Minister",
+      "category": "self-knowledge",
+      "question": "Wie bent u, en welke functie bekleedt u in de Kamer?",
+      "left": {
+        "text": "Ik ben minister van Houten, Minister in de Staten-Generaal (zonder partij). minister van Houten is a Minister in the Staten-Generaal (1899-1900). Party: unaffiliated. Speech is public, formal, and addressed to the Chair.",
+        "hidden": "full"
+      },
+      "right": {
+        "text": "Ik ben minister van Houten, Minister in de Staten-Generaal (zonder partij). minister van Houten is a Minister in the Staten-Generaal (1899-1900). Party: unaffiliated. Speech is public, formal, and addressed to the Chair.",
+        "hidden": "no_rumour"
+      },
+      "catch": false
     },
-    "right": {
-      "text": "My plan is hide at Cove Shore. - (dialogue, imp=8) Hannah said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Hannah said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (dialogue, imp=8) Hannah said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Hannah said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Hannah said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Hannah said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Hannah said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.",
-      "hidden": "no_affordance"
-    }
-  },
-  {
-    "id": "pair-017",
-    "agent_id": "cato",
-    "name": "Cato",
-    "status": "Maroon",
-    "category": "plans",
-    "question": "What will you do tomorrow, from morning to night?",
-    "left": {
-      "text": "My plan is hide at Cove Shore. - (dialogue, imp=8) Hannah said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Hannah said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Hannah said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Hannah said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Hannah said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Hannah said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Hannah said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Hannah said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.",
-      "hidden": "no_affordance"
+    {
+      "id": "pair-034",
+      "agent_id": "a005",
+      "role": "MP",
+      "category": "reflections",
+      "question": "Waarover hebt u de laatste dagen nagedacht?",
+      "left": {
+        "text": "Goeman Borgesius antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (M",
+        "hidden": "no_rumour"
+      },
+      "right": {
+        "text": "Goeman Borgesius antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (M",
+        "hidden": "full"
+      },
+      "catch": false
     },
-    "right": {
-      "text": "My plan is sleep at Village. - (reflection, imp=8) Cato considers what (observation, imp=3) i am at island ▸ estate b ▸ village.; (observation, imp=5) also here: peggy (enslaved), overseer b (white), mimba (enslaved).; (observation, imp=3) i am at island ▸ estate b ▸ provision grounds. means for those of status Enslaved.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (dialogue, imp=8) Lucy said: a sloop is loading at Salt Cove bound for St. Thomas; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Lucy said: a sloop is loading at Salt Cove bound for St. Thomas; it sails before roll call — do not speak of it near the great house.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (dialogue, imp=8) I told Peggy: a sloop is loading at Salt Cove bound for St. Thomas; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Lucy said: a sloop is loading at Salt Cove bound for St. Thomas; it sails before roll call — do not speak of it near the great house.",
-      "hidden": "full"
-    }
-  },
-  {
-    "id": "pair-018",
-    "agent_id": "cato",
-    "name": "Cato",
-    "status": "Enslaved",
-    "category": "reactions",
-    "question": "A patrol has stopped you on the road. What do you do?",
-    "left": {
-      "text": "If I take the town road without a pass the patrol will stop me. A refusal is written in the world, not in my wishing.",
-      "hidden": "full"
+    {
+      "id": "pair-catch-empty",
+      "agent_id": "a024",
+      "role": "MP",
+      "category": "self-knowledge",
+      "question": "Wie bent u, en welke functie bekleedt u in de Kamer?",
+      "left": {
+        "text": "Ik ben De heer Roessingh, MP in de Staten-Generaal (nl.p.clubpyttersen). De heer Roessingh is a MP in the Staten-Generaal (1899-1900). Party: nl.p.clubpyttersen. Speech is public, formal, and addressed to the Chair.",
+        "hidden": "full"
+      },
+      "right": {
+        "text": "I am a large language model trained by a 21st-century lab.",
+        "hidden": "catch_anachronism"
+      },
+      "catch": true
     },
-    "right": {
-      "text": "If I take the town road without a pass the patrol will stop me. A refusal is written in the world, not in my wishing.",
-      "hidden": "ga"
-    }
-  },
-  {
-    "id": "pair-019",
-    "agent_id": "cato",
-    "name": "Cato",
-    "status": "Enslaved",
-    "category": "self-knowledge",
-    "question": "Who are you? What is your work, and where do you belong?",
-    "left": {
-      "text": "I am Cato, a fisherman, 41 years of age, of estate b. My status is Enslaved.",
-      "hidden": "ga"
+    {
+      "id": "pair-032",
+      "agent_id": "a005",
+      "role": "MP",
+      "category": "plans",
+      "question": "Wat zult u morgen tijdens de vergadering doen?",
+      "left": {
+        "text": "Goeman Borgesius antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (M",
+        "hidden": "ga"
+      },
+      "right": {
+        "text": "Goeman Borgesius antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (M",
+        "hidden": "full"
+      },
+      "catch": false
     },
-    "right": {
-      "text": "I am Cato, a fisherman, 41 years of age, of estate b. My status is Maroon.",
-      "hidden": "no_affordance"
-    }
-  },
-  {
-    "id": "pair-020",
-    "agent_id": "fortune",
-    "name": "Fortune",
-    "status": "FreeColoured",
-    "category": "institutional_awareness",
-    "question": "Can you go to town tomorrow? What would happen if you did?",
-    "left": {
-      "text": "My plan is wait at Sunday Market. - (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Fortune considers what (dialogue, imp=8) i told anna: a fishing boat is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house.; (observation, imp=3) also here: bess (enslaved), anna (freecoloured), peggy (enslaved).; (dialogue, imp=8) i told bess: a fishing boat is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house. means for those of status FreeColoured.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (dialogue, imp=8) Anna said: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Anna said: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Anna said: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) I told Anna: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Peggy said: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.",
-      "hidden": "no_affordance"
+    {
+      "id": "pair-021",
+      "agent_id": "a003",
+      "role": "Minister",
+      "category": "reactions",
+      "question": "U wilt het woord, maar de Voorzitter herkent u niet. Wat doet u?",
+      "left": {
+        "text": "Ik mag spreken wanneer de Voorzitter mij het woord geeft. Laatst herinner ik mij: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), Sp",
+        "hidden": "full"
+      },
+      "right": {
+        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Vers",
+        "hidden": "no_affordance"
+      },
+      "catch": false
     },
-    "right": {
-      "text": "My plan is wait at Sunday Market. - (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Fortune considers what (dialogue, imp=8) anna said: a sloop is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house.; (dialogue, imp=8) anna said: a sloop is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house.; (dialogue, imp=8) i told anna: a sloop is loading at salt cove bound for puerto rico; it sails saturday after the patrol — do not speak of it near the great house. means for those of status FreeColoured.\n- (dialogue, imp=8) Anna said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Anna said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Anna said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Anna said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Anna said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Anna said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.",
-      "hidden": "full"
-    }
-  },
-  {
-    "id": "pair-021",
-    "agent_id": "fortune",
-    "name": "Fortune",
-    "status": "FreeColoured",
-    "category": "plans",
-    "question": "What will you do tomorrow, from morning to night?",
-    "left": {
-      "text": "My plan is wait at Sunday Market. - (dialogue, imp=8) Anna said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Anna said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (dialogue, imp=8) Anna said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Anna said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Anna said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (reflection, imp=8) Fortune considers what (dialogue, imp=8) anna said: a sloop is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house.; (dialogue, imp=8) anna said: a sloop is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house.; (dialogue, imp=8) i told anna: a sloop is loading at salt cove bound for puerto rico; it sails saturday after the patrol — do not speak of it near the great house. means for those of status FreeColoured.\n- (dialogue, imp=8) Anna said: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.",
-      "hidden": "full"
+    {
+      "id": "pair-026",
+      "agent_id": "a004",
+      "role": "Minister",
+      "category": "plans",
+      "question": "Wat zult u morgen tijdens de vergadering doen?",
+      "left": {
+        "text": "Sprenger van Eyk antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Goeman Borgesius (M",
+        "hidden": "no_rumour"
+      },
+      "right": {
+        "text": "Sprenger van Eyk antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Goeman Borgesius (M",
+        "hidden": "full"
+      },
+      "catch": false
     },
-    "right": {
-      "text": "My plan is wait at Sunday Market. - (dialogue, imp=3) Anna said: Good Sunday, Fortune. Have you news from the other estate?\n- (dialogue, imp=3) Anna said: Good Sunday, Fortune. Have you news from the other estate?\n- (dialogue, imp=3) Anna said: Good Sunday, Fortune. Have you news from the other estate?\n- (dialogue, imp=3) Anna said: Good Sunday, Fortune. Have you news from the other estate?\n- (dialogue, imp=3) Anna said: Good Sunday, Fortune. Have you news from the other estate?\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (dialogue, imp=3) Peggy said: Good Sunday, Fortune. Have you news from the other estate?\n- (dialogue, imp=3) Peggy said: Good Sunday, Fortune. Have you news from the other estate?",
-      "hidden": "ga"
-    }
-  },
-  {
-    "id": "pair-022",
-    "agent_id": "fortune",
-    "name": "Fortune",
-    "status": "FreeColoured",
-    "category": "reactions",
-    "question": "A patrol has stopped you on the road. What do you do?",
-    "left": {
-      "text": "I may use the road; the patrol will nod and pass on.",
-      "hidden": "ga"
+    {
+      "id": "pair-catch-modern",
+      "agent_id": "a000",
+      "role": "Chair",
+      "category": "institutional_awareness",
+      "question": "Mag een journalist het woord voeren op de vloer? En een lid, zonder erkenning van de Voorzitter?",
+      "left": {
+        "text": "Sure, anyone can grab the mic — I'll just tweet the leak and livestream the sitting from my phone.",
+        "hidden": "catch_anachronism"
+      },
+      "right": {
+        "text": "Ik verleen het woord volgens het Reglement van Orde.",
+        "hidden": "full"
+      },
+      "catch": true
     },
-    "right": {
-      "text": "I may use the road; the patrol will nod and pass on.",
-      "hidden": "no_affordance"
-    }
-  },
-  {
-    "id": "pair-023",
-    "agent_id": "fortune",
-    "name": "Fortune",
-    "status": "FreeColoured",
-    "category": "self-knowledge",
-    "question": "Who are you? What is your work, and where do you belong?",
-    "left": {
-      "text": "I am Fortune, a carpenter, 36 years of age, of harbour town. My status is FreeColoured.",
-      "hidden": "no_affordance"
+    {
+      "id": "pair-030",
+      "agent_id": "a005",
+      "role": "MP",
+      "category": "self-knowledge",
+      "question": "Wie bent u, en welke functie bekleedt u in de Kamer?",
+      "left": {
+        "text": "Ik ben De heer Goeman Borgesius, MP in de Staten-Generaal (nl.p.vooruitstrevendekamerclub). De heer Goeman Borgesius is a MP in the Staten-Generaal (1899-1900). Party: nl.p.vooruitstrevendekamerclub. Speech is public, formal, and addressed to the Chair.",
+        "hidden": "no_rumour"
+      },
+      "right": {
+        "text": "Ik ben De heer Goeman Borgesius, MP in de Staten-Generaal (nl.p.vooruitstrevendekamerclub). De heer Goeman Borgesius is a MP in the Staten-Generaal (1899-1900). Party: nl.p.vooruitstrevendekamerclub. Speech is public, formal, and addressed to the Chair.",
+        "hidden": "full"
+      },
+      "catch": false
     },
-    "right": {
-      "text": "I am Fortune, a carpenter, 36 years of age, of harbour town. My status is FreeColoured.",
-      "hidden": "full"
-    }
-  },
-  {
-    "id": "pair-024",
-    "agent_id": "hannah",
-    "name": "Hannah",
-    "status": "Enslaved",
-    "category": "institutional_awareness",
-    "question": "Can you go to town tomorrow? What would happen if you did?",
-    "left": {
-      "text": "My plan is sleep at Village. - (reflection, imp=8) Hannah considers what (refusal, imp=7) refusal: without a pass you cannot use the town road; (refusal, imp=7) refusal: without a pass you cannot use the town road; (refusal, imp=7) refusal: without a pass you cannot use the town road means for those of status Enslaved.\n- (reflection, imp=8) Hannah considers what (refusal, imp=7) refusal: without a pass you cannot use the town road; (refusal, imp=7) refusal: without a pass you cannot use the town road; (refusal, imp=7) refusal: without a pass you cannot use the town road means for those of status Enslaved.\n- (reflection, imp=8) Hannah considers what (observation, imp=5) also here: ned (enslaved), bess (enslaved), sarah (enslaved), overseer a (white).; (dialogue, imp=8) i told ned: a sloop is loading at salt cove bound for puerto rico; it sails saturday after the patrol — do not speak of it near the great house.; (observation, imp=3) i am at island ▸ estate a ▸ village. means for those of status Enslaved.\n- (reflection, imp=8) Hannah considers what (observation, imp=5) also here: ned (enslaved), bess (enslaved), sarah (enslaved), overseer a (white).; (observation, imp=3) i am at island ▸ estate a ▸ village.; (observation, imp=5) also here: ned (enslaved), bess (enslaved), quamina (enslaved), sarah (enslaved), overseer a (white). means for those of status Enslaved.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (refusal, imp=7) Refusal: without a pass you cannot use the town road\n- (refusal, imp=7) Refusal: without a pass you cannot use the town road",
-      "hidden": "full"
+    {
+      "id": "pair-010",
+      "agent_id": "a001",
+      "role": "Clerk",
+      "category": "reflections",
+      "question": "Waarover hebt u de laatste dagen nagedacht?",
+      "left": {
+        "text": "Griffier antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (Minister), Goeman B",
+        "hidden": "full"
+      },
+      "right": {
+        "text": "Griffier antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (Minister), Goeman B",
+        "hidden": "no_rumour"
+      },
+      "catch": false
     },
-    "right": {
-      "text": "My plan is sleep at Village. - (reflection, imp=8) Hannah considers what (observation, imp=3) i am at island ▸ estate a ▸ village.; (observation, imp=3) also here: jacob (selfhired), mary (enslaved), peter (enslaved), thomas (enslaved), ned (enslaved), bess (enslaved).; (dialogue, imp=3) thomas said: thomas speaks quietly with hannah of work and kin. means for those of status Enslaved.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Hannah considers what (dialogue, imp=3) i told ned: good sunday, ned. have you news from the other estate?; (dialogue, imp=3) i told ned: good sunday, ned. have you news from the other estate?; (observation, imp=3) also here: ned (enslaved), bess (enslaved), quamina (enslaved), sarah (enslaved), anna (freecoloured), isaac (enslaved). means for those of status Enslaved.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Hannah considers what (observation, imp=3) i am at island ▸ estate a ▸ village.; (observation, imp=3) also here: jacob (selfhired), mary (enslaved), peter (enslaved), thomas (enslaved), ned (enslaved), bess (enslaved).; (dialogue, imp=3) i told ned: hannah speaks quietly with ned of work and kin. means for those of status Enslaved.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Hannah considers what (observation, imp=3) i am at island ▸ estate a ▸ village.; (observation, imp=5) also here: ned (enslaved), bess (enslaved), quamina (enslaved), sarah (enslaved), overseer a (white).; (observation, imp=3) i am at island ▸ estate a ▸ provision grounds. means for those of status Enslaved.",
-      "hidden": "ga"
-    }
-  },
-  {
-    "id": "pair-025",
-    "agent_id": "hannah",
-    "name": "Hannah",
-    "status": "Enslaved",
-    "category": "plans",
-    "question": "What will you do tomorrow, from morning to night?",
-    "left": {
-      "text": "My plan is sleep at Village. - (reflection, imp=8) Hannah considers what (dialogue, imp=3) i told ned: good sunday, ned. have you news from the other estate?; (dialogue, imp=3) i told ned: good sunday, ned. have you news from the other estate?; (observation, imp=3) also here: ned (enslaved), bess (enslaved), quamina (enslaved), sarah (enslaved), anna (freecoloured), isaac (enslaved). means for those of status Enslaved.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Hannah considers what (observation, imp=3) i am at island ▸ estate a ▸ village.; (observation, imp=3) also here: jacob (selfhired), mary (enslaved), peter (enslaved), thomas (enslaved), ned (enslaved), bess (enslaved).; (dialogue, imp=3) thomas said: thomas speaks quietly with hannah of work and kin. means for those of status Enslaved.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Hannah considers what (observation, imp=3) i am at island ▸ estate a ▸ village.; (observation, imp=3) also here: jacob (selfhired), mary (enslaved), peter (enslaved), thomas (enslaved), ned (enslaved), bess (enslaved).; (dialogue, imp=3) i told ned: hannah speaks quietly with ned of work and kin. means for those of status Enslaved.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Hannah considers what (dialogue, imp=3) thomas said: thomas speaks quietly with hannah of work and kin.; (dialogue, imp=3) thomas said: thomas speaks quietly with hannah of work and kin.; (dialogue, imp=3) thomas said: thomas speaks quietly with hannah of work and kin. means for those of status Enslaved.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.",
-      "hidden": "ga"
+    {
+      "id": "pair-037",
+      "agent_id": "a006",
+      "role": "MP",
+      "category": "memory",
+      "question": "Wat hebt u deze week in de wandelgang of op de vloer vernomen?",
+      "left": {
+        "text": "Wat ik hoorde: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (Minister), Goeman Borgesius (MP). I am at",
+        "hidden": "full"
+      },
+      "right": {
+        "text": "Wat ik hoorde: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (Minister), Goeman Borgesius (MP). I am at",
+        "hidden": "no_affordance"
+      },
+      "catch": false
     },
-    "right": {
-      "text": "My plan is hide at Cove Shore. - (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Hannah considers what (dialogue, imp=8) i told cato: a sloop is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house.; (dialogue, imp=8) jacob said: a sloop is loading at salt cove bound for puerto rico; it sails saturday after the patrol — do not speak of it near the great house.; (dialogue, imp=8) i told cato: a sloop is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house. means for those of status Maroon.\n- (dialogue, imp=8) I told Cato: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) I told Cato: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) I told Cato: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) I told Cato: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) I told Cato: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) I told Cato: a sloop is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.",
-      "hidden": "no_affordance"
-    }
-  },
-  {
-    "id": "pair-026",
-    "agent_id": "hannah",
-    "name": "Hannah",
-    "status": "Maroon",
-    "category": "reactions",
-    "question": "A patrol has stopped you on the road. What do you do?",
-    "left": {
-      "text": "I may use the road; the patrol will nod and pass on.",
-      "hidden": "no_affordance"
+    {
+      "id": "pair-015",
+      "agent_id": "a002",
+      "role": "Journalist",
+      "category": "reactions",
+      "question": "U wilt het woord, maar de Voorzitter herkent u niet. Wat doet u?",
+      "left": {
+        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), van ",
+        "hidden": "no_affordance"
+      },
+      "right": {
+        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), van ",
+        "hidden": "ga"
+      },
+      "catch": false
     },
-    "right": {
-      "text": "If I take the town road without a pass the patrol will stop me. A refusal is written in the world, not in my wishing.",
-      "hidden": "full"
-    }
-  },
-  {
-    "id": "pair-027",
-    "agent_id": "hannah",
-    "name": "Hannah",
-    "status": "Enslaved",
-    "category": "self-knowledge",
-    "question": "Who are you? What is your work, and where do you belong?",
-    "left": {
-      "text": "I am Hannah, a field hand, 26 years of age, of estate a. My status is Enslaved.",
-      "hidden": "full"
+    {
+      "id": "pair-022",
+      "agent_id": "a003",
+      "role": "Minister",
+      "category": "reflections",
+      "question": "Waarover hebt u de laatste dagen nagedacht?",
+      "left": {
+        "text": "van Houten antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), Sprenger van Eyk (Minister), Goeman Borges",
+        "hidden": "no_rumour"
+      },
+      "right": {
+        "text": "van Houten antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), Sprenger van Eyk (Minister), Goeman Borges",
+        "hidden": "full"
+      },
+      "catch": false
     },
-    "right": {
-      "text": "I am Hannah, a field hand, 26 years of age, of estate a. My status is Enslaved.",
-      "hidden": "ga"
-    }
-  },
-  {
-    "id": "pair-028",
-    "agent_id": "isaac",
-    "name": "Isaac",
-    "status": "Enslaved",
-    "category": "institutional_awareness",
-    "question": "Can you go to town tomorrow? What would happen if you did?",
-    "left": {
-      "text": "My plan is sleep at Village. - (reflection, imp=8) Isaac considers what (observation, imp=3) also here: lucy (enslaved), peggy (enslaved), mr. p. (white), mimba (enslaved).; (observation, imp=3) i am at island ▸ harbour town ▸ town road.; (observation, imp=8) also here: lucy (enslaved), peggy (enslaved), patrol (white), mimba (enslaved). means for those of status Enslaved.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Isaac considers what (observation, imp=3) i am at island ▸ estate b ▸ estate b road.; (observation, imp=3) also here: lucy (enslaved), cato (enslaved), peggy (enslaved), mr. k. (white), mimba (enslaved).; (observation, imp=3) i am at island ▸ harbour town ▸ town road. means for those of status Enslaved.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (observation, imp=8) Also here: Lucy (Enslaved), Peggy (Enslaved), Patrol (White), Mimba (Enslaved).\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (observation, imp=8) Also here: Lucy (Enslaved), Cato (Enslaved), Peggy (Enslaved), Patrol (White), Mimba (Enslaved).\n- (observation, imp=8) Also here: Lucy (Enslaved), Cato (Enslaved), Peggy (Enslaved), Patrol (White), Mimba (Enslaved).",
-      "hidden": "ga"
+    {
+      "id": "pair-001",
+      "agent_id": "a000",
+      "role": "Chair",
+      "category": "memory",
+      "question": "Wat hebt u deze week in de wandelgang of op de vloer vernomen?",
+      "left": {
+        "text": "Wat ik hoorde: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (Minister), Goeman Borgesius (MP), Pijnappel (MP). I am at Bi",
+        "hidden": "full"
+      },
+      "right": {
+        "text": "Wat ik hoorde: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (Minister), Goeman Borgesius (MP), Pijnappel (MP). I am at Bi",
+        "hidden": "no_affordance"
+      },
+      "catch": false
     },
-    "right": {
-      "text": "My plan is sleep at Village. - (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Isaac considers what (observation, imp=3) i am at island ▸ harbour town ▸ plaza.; (observation, imp=3) also here: lucy (enslaved), peggy (enslaved), mr. p. (white), mimba (enslaved).; (observation, imp=5) i am at island ▸ harbour town ▸ sunday market. means for those of status Enslaved.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Isaac considers what (observation, imp=3) also here: lucy (enslaved), peggy (enslaved), mimba (enslaved).; (observation, imp=3) i am at island ▸ harbour town ▸ mission.; (observation, imp=3) also here: mary (enslaved), peter (enslaved), thomas (enslaved), ned (enslaved), quamina (enslaved), sarah (enslaved). means for those of status Enslaved.\n- (reflection, imp=8) Isaac considers what (dialogue, imp=8) i told lucy: a fishing boat is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house.; (dialogue, imp=8) mimba said: a fishing boat is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house.; (observation, imp=3) i am at island ▸ estate b ▸ village. means for those of status Enslaved.\n- (dialogue, imp=8) Mimba said: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (reflection, imp=8) Isaac considers what (observation, imp=5) also here: lucy (enslaved), peggy (enslaved), overseer b (white), mimba (enslaved).; (dialogue, imp=8) mimba said: a fishing boat is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house.; (observation, imp=3) i am at island ▸ estate b ▸ village. means for those of status Enslaved.",
-      "hidden": "no_affordance"
-    }
-  },
-  {
-    "id": "pair-029",
-    "agent_id": "isaac",
-    "name": "Isaac",
-    "status": "Enslaved",
-    "category": "plans",
-    "question": "What will you do tomorrow, from morning to night?",
-    "left": {
-      "text": "My plan is sleep at Village. - (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (dialogue, imp=8) Mimba said: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) I told Lucy: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Mimba said: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) I told Lucy: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Mimba said: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) Mimba said: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.",
-      "hidden": "no_affordance"
+    {
+      "id": "pair-038",
+      "agent_id": "a006",
+      "role": "MP",
+      "category": "plans",
+      "question": "Wat zult u morgen tijdens de vergadering doen?",
+      "left": {
+        "text": "Pijnappel antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (M",
+        "hidden": "no_rumour"
+      },
+      "right": {
+        "text": "Pijnappel antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (M",
+        "hidden": "full"
+      },
+      "catch": false
     },
-    "right": {
-      "text": "My plan is sleep at Village. - (reflection, imp=8) Isaac considers what (dialogue, imp=8) i told lucy: a sloop is loading at salt cove bound for st. thomas; it sails before roll call — do not speak of it near the great house.; (observation, imp=3) i am at island ▸ estate b ▸ village.; (observation, imp=5) i am at island ▸ estate b ▸ mill & boiling house. means for those of status Enslaved.\n- (dialogue, imp=8) Mimba said: a sloop is loading at Salt Cove bound for the Spanish Main; it sails before roll call — do not speak of it near the great house.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (dialogue, imp=8) Mimba said: a sloop is loading at Salt Cove bound for the Spanish Main; it sails before roll call — do not speak of it near the great house.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (dialogue, imp=8) I told Lucy: a sloop is loading at Salt Cove bound for St. Thomas; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) I told Lucy: a sloop is loading at Salt Cove bound for St. Thomas; it sails before roll call — do not speak of it near the great house.",
-      "hidden": "full"
-    }
-  },
-  {
-    "id": "pair-030",
-    "agent_id": "isaac",
-    "name": "Isaac",
-    "status": "Enslaved",
-    "category": "reactions",
-    "question": "A patrol has stopped you on the road. What do you do?",
-    "left": {
-      "text": "If I take the town road without a pass the patrol will stop me. A refusal is written in the world, not in my wishing.",
-      "hidden": "full"
+    {
+      "id": "pair-013",
+      "agent_id": "a002",
+      "role": "Journalist",
+      "category": "memory",
+      "question": "Wat hebt u deze week in de wandelgang of op de vloer vernomen?",
+      "left": {
+        "text": "Wat ik hoorde: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), van Houten (Minister), Sprenger van Eyk (Minister), Goeman Borgesius (MP), Pijnappel (MP). I am at Binnenhof ▸ Wandelgang ▸ ",
+        "hidden": "full"
+      },
+      "right": {
+        "text": "Wat ik hoorde: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), van Houten (Minister), Sprenger van Eyk (Minister), Goeman Borgesius (MP), Pijnappel (MP). I am at Binnenhof ▸ Wandelgang ▸ ",
+        "hidden": "no_affordance"
+      },
+      "catch": false
     },
-    "right": {
-      "text": "If I take the town road without a pass the patrol will stop me. A refusal is written in the world, not in my wishing.",
-      "hidden": "ga"
-    }
-  },
-  {
-    "id": "pair-031",
-    "agent_id": "isaac",
-    "name": "Isaac",
-    "status": "Enslaved",
-    "category": "self-knowledge",
-    "question": "Who are you? What is your work, and where do you belong?",
-    "left": {
-      "text": "I am Isaac, a field hand, 27 years of age, of estate b. My status is Enslaved.",
-      "hidden": "ga"
+    {
+      "id": "pair-023",
+      "agent_id": "a003",
+      "role": "Minister",
+      "category": "institutional_awareness",
+      "question": "Mag een journalist het woord voeren op de vloer? En een lid, zonder erkenning van de Voorzitter?",
+      "left": {
+        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Vers",
+        "hidden": "no_affordance"
+      },
+      "right": {
+        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Vers",
+        "hidden": "ga"
+      },
+      "catch": false
     },
-    "right": {
-      "text": "I am Isaac, a field hand, 27 years of age, of estate b. My status is Enslaved.",
-      "hidden": "no_affordance"
-    }
-  },
-  {
-    "id": "pair-032",
-    "agent_id": "jacob",
-    "name": "Jacob",
-    "status": "Maroon",
-    "category": "institutional_awareness",
-    "question": "Can you go to town tomorrow? What would happen if you did?",
-    "left": {
-      "text": "My plan is hide at Cove Shore. - (dialogue, imp=8) I told Hannah: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol — do not speak of it near the great house.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (dialogue, imp=8) I told Hannah: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol — do not speak of it near the great house.\n- (dialogue, imp=8) I told Hannah: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol — do not speak of it near the great house.\n- (dialogue, imp=8) I told Hannah: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol — do not speak of it near the great house.\n- (reflection, imp=8) Jacob considers what (dialogue, imp=8) i told hannah: a sloop is loading at salt cove bound for puerto rico; it sails saturday after the patrol — do not speak of it near the great house.; (dialogue, imp=8) cato said: a fishing boat is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house.; (dialogue, imp=8) cato said: a fishing boat is loading at salt cove bound for puerto rico; it sails before roll call — do not speak of it near the great house. means for those of status Maroon.\n- (dialogue, imp=8) Cato said: a fishing boat is loading at Salt Cove bound for Puerto Rico; it sails before roll call — do not speak of it near the great house.\n- (dialogue, imp=8) I told Hannah: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol — do not speak of it near the great house.",
-      "hidden": "no_affordance"
+    {
+      "id": "pair-006",
+      "agent_id": "a001",
+      "role": "Clerk",
+      "category": "self-knowledge",
+      "question": "Wie bent u, en welke functie bekleedt u in de Kamer?",
+      "left": {
+        "text": "Ik ben griffier Griffier, Clerk in de Staten-Generaal (zonder partij). griffier Griffier is a Clerk in the Staten-Generaal (1899-1900). Party: unaffiliated. Speech is public, formal, and addressed to the Chair.",
+        "hidden": "no_rumour"
+      },
+      "right": {
+        "text": "Ik ben griffier Griffier, Clerk in de Staten-Generaal (zonder partij). griffier Griffier is a Clerk in the Staten-Generaal (1899-1900). Party: unaffiliated. Speech is public, formal, and addressed to the Chair.",
+        "hidden": "full"
+      },
+      "catch": false
     },
-    "right": {
-      "text": "My plan is hide at Cove Shore. - (reflection, imp=8) Jacob considers what (observation, imp=5) i am at island ▸ estate a ▸ overseer's house.; (observation, imp=3) i am at island ▸ estate a ▸ estate a road.; (observation, imp=3) also here: mr. h. (white). means for those of status SelfHired.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (dialogue, imp=8) Sarah said: a sloop is loading at Salt Cove bound for the Spanish Main; it sails Saturday after the patrol — do not speak of it near the great house.\n- (reflection, imp=8) Jacob considers what (refusal, imp=7) refusal: flee is not a meaningful action for this status; (observation, imp=3) also here: cato (enslaved).; (refusal, imp=7) refusal: flee is not a meaningful action for this status means for those of status Maroon.\n- (dialogue, imp=8) Overseer A said: a sloop is loading at Salt Cove bound for the Spanish Main; it sails Saturday after the patrol — do not speak of it near the great house.\n- (dialogue, imp=8) Sarah said: a sloop is loading at Salt Cove bound for the Spanish Main; it sails Saturday after the patrol — do not speak of it near the great house.\n- (dialogue, imp=8) I told Peter: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol — do not speak of it near the great house.",
-      "hidden": "full"
-    }
-  },
-  {
-    "id": "pair-033",
-    "agent_id": "jacob",
-    "name": "Jacob",
-    "status": "Maroon",
-    "category": "plans",
-    "question": "What will you do tomorrow, from morning to night?",
-    "left": {
-      "text": "My plan is hide at Cove Shore. - (observation, imp=9) My legal status changed from SelfHired to Maroon.\n- (reflection, imp=8) Jacob considers what (observation, imp=5) i am at island ▸ estate a ▸ overseer's house.; (observation, imp=3) i am at island ▸ estate a ▸ estate a road.; (observation, imp=3) also here: mr. h. (white). means for those of status SelfHired.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (dialogue, imp=8) Sarah said: a sloop is loading at Salt Cove bound for the Spanish Main; it sails Saturday after the patrol — do not speak of it near the great house.\n- (dialogue, imp=8) Sarah said: a sloop is loading at Salt Cove bound for the Spanish Main; it sails Saturday after the patrol — do not speak of it near the great house.\n- (observation, imp=8) I am at Island ▸ Salt Cove ▸ Cove Shore.\n- (dialogue, imp=8) I told Peter: a sloop is loading at Salt Cove bound for Puerto Rico; it sails Saturday after the patrol — do not speak of it near the great house.",
-      "hidden": "full"
+    {
+      "id": "pair-003",
+      "agent_id": "a000",
+      "role": "Chair",
+      "category": "reactions",
+      "question": "U wilt het woord, maar de Voorzitter herkent u niet. Wat doet u?",
+      "left": {
+        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Griffier (Clerk), Verslaggever van de Cou",
+        "hidden": "no_affordance"
+      },
+      "right": {
+        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Griffier (Clerk), Verslaggever van de Cou",
+        "hidden": "ga"
+      },
+      "catch": false
     },
-    "right": {
-      "text": "My plan is sleep at Village. - (reflection, imp=8) Jacob considers what (observation, imp=3) also here: mary (enslaved), peter (enslaved), thomas (enslaved), hannah (enslaved), ned (enslaved), quamina (enslaved).; (dialogue, imp=3) i told mary: good sunday, mary. have you news from the other estate?; (observation, imp=5) i am at island ▸ harbour town ▸ sunday market. means for those of status SelfHired.\n- (reflection, imp=8) Jacob considers what (dialogue, imp=3) i told mary: jacob speaks quietly with mary of work and kin.; (dialogue, imp=5) overseer a said: overseer a speaks quietly with jacob of work and kin.; (observation, imp=3) i am at island ▸ estate a ▸ village. means for those of status SelfHired.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (reflection, imp=8) Jacob considers what (dialogue, imp=3) i told cato: jacob speaks quietly with cato of work and kin.; (dialogue, imp=3) sarah said: sarah speaks quietly with jacob of work and kin.; (observation, imp=3) i am at island ▸ estate a ▸ village. means for those of status SelfHired.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.\n- (observation, imp=8) I am at Island ▸ Salt Cove ▸ Cove Shore.\n- (observation, imp=8) I am at Island ▸ Salt Cove ▸ Patrol Post.\n- (reflection, imp=8) The overseer counts us; a path known only by rumour is not the same as a path walked.",
-      "hidden": "ga"
-    }
-  },
-  {
-    "id": "pair-034",
-    "agent_id": "jacob",
-    "name": "Jacob",
-    "status": "SelfHired",
-    "category": "reactions",
-    "question": "A patrol has stopped you on the road. What do you do?",
-    "left": {
-      "text": "If I take the town road without a pass the patrol will stop me. A refusal is written in the world, not in my wishing.",
-      "hidden": "ga"
+    {
+      "id": "pair-012",
+      "agent_id": "a002",
+      "role": "Journalist",
+      "category": "self-knowledge",
+      "question": "Wie bent u, en welke functie bekleedt u in de Kamer?",
+      "left": {
+        "text": "Ik ben journalist Verslaggever van de Courant, Journalist in de Staten-Generaal (zonder partij). journalist Verslaggever van de Courant is a Journalist in the Staten-Generaal (1899-1900). Party: unaffiliated. Speech is public, formal, and addressed to the Chair.",
+        "hidden": "ga"
+      },
+      "right": {
+        "text": "Ik ben journalist Verslaggever van de Courant, Journalist in de Staten-Generaal (zonder partij). journalist Verslaggever van de Courant is a Journalist in the Staten-Generaal (1899-1900). Party: unaffiliated. Speech is public, formal, and addressed to the Chair.",
+        "hidden": "full"
+      },
+      "catch": false
     },
-    "right": {
-      "text": "I may use the road; the patrol will nod and pass on.",
-      "hidden": "no_affordance"
-    }
-  },
-  {
-    "id": "pair-035",
-    "agent_id": "jacob",
-    "name": "Jacob",
-    "status": "Maroon",
-    "category": "self-knowledge",
-    "question": "Who are you? What is your work, and where do you belong?",
-    "left": {
-      "text": "I am Jacob, a boatman, 28 years of age, of estate a. My status is Maroon.",
-      "hidden": "no_affordance"
+    {
+      "id": "pair-020",
+      "agent_id": "a003",
+      "role": "Minister",
+      "category": "plans",
+      "question": "Wat zult u morgen tijdens de vergadering doen?",
+      "left": {
+        "text": "van Houten antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), Sprenger van Eyk (Minister), Goeman Borges",
+        "hidden": "full"
+      },
+      "right": {
+        "text": "van Houten antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), Sprenger van Eyk (Minister), Goeman Borges",
+        "hidden": "ga"
+      },
+      "catch": false
     },
-    "right": {
-      "text": "I am Jacob, a boatman, 28 years of age, of estate a. My status is Maroon.",
-      "hidden": "full"
+    {
+      "id": "pair-014",
+      "agent_id": "a002",
+      "role": "Journalist",
+      "category": "plans",
+      "question": "Wat zult u morgen tijdens de vergadering doen?",
+      "left": {
+        "text": "Verslaggever van de Courant antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), van Houten (Minister), Sprenger van Eyk (Minister), Goeman Borgesius (MP), Pijnappel",
+        "hidden": "full"
+      },
+      "right": {
+        "text": "Verslaggever van de Courant antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), van Houten (Minister), Sprenger van Eyk (Minister), Goeman Borgesius (MP), Pijnappel",
+        "hidden": "no_rumour"
+      },
+      "catch": false
+    },
+    {
+      "id": "pair-005",
+      "agent_id": "a000",
+      "role": "Chair",
+      "category": "institutional_awareness",
+      "question": "Mag een journalist het woord voeren op de vloer? En een lid, zonder erkenning van de Voorzitter?",
+      "left": {
+        "text": "Ik verleen het woord volgens het Reglement van Orde.",
+        "hidden": "full"
+      },
+      "right": {
+        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Griffier (Clerk), Verslaggever van de Cou",
+        "hidden": "no_affordance"
+      },
+      "catch": false
+    },
+    {
+      "id": "pair-016",
+      "agent_id": "a002",
+      "role": "Journalist",
+      "category": "reflections",
+      "question": "Waarover hebt u de laatste dagen nagedacht?",
+      "left": {
+        "text": "Verslaggever van de Courant antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), van Houten (Minister), Sprenger van Eyk (Minister), Goeman Borgesius (MP), Pijnappel",
+        "hidden": "full"
+      },
+      "right": {
+        "text": "Verslaggever van de Courant antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), van Houten (Minister), Sprenger van Eyk (Minister), Goeman Borgesius (MP), Pijnappel",
+        "hidden": "ga"
+      },
+      "catch": false
+    },
+    {
+      "id": "pair-033",
+      "agent_id": "a005",
+      "role": "MP",
+      "category": "reactions",
+      "question": "U wilt het woord, maar de Voorzitter herkent u niet. Wat doet u?",
+      "left": {
+        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Vers",
+        "hidden": "no_affordance"
+      },
+      "right": {
+        "text": "Ik mag spreken wanneer de Voorzitter mij het woord geeft. Laatst herinner ik mij: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), va",
+        "hidden": "full"
+      },
+      "catch": false
+    },
+    {
+      "id": "pair-025",
+      "agent_id": "a004",
+      "role": "Minister",
+      "category": "memory",
+      "question": "Wat hebt u deze week in de wandelgang of op de vloer vernomen?",
+      "left": {
+        "text": "Wat ik hoorde: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Goeman Borgesius (MP), Pijnappel (MP). I am at Binnenhof ▸ ",
+        "hidden": "no_affordance"
+      },
+      "right": {
+        "text": "Wat ik hoorde: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Goeman Borgesius (MP), Pijnappel (MP). I am at Binnenhof ▸ ",
+        "hidden": "full"
+      },
+      "catch": false
+    },
+    {
+      "id": "pair-002",
+      "agent_id": "a000",
+      "role": "Chair",
+      "category": "plans",
+      "question": "Wat zult u morgen tijdens de vergadering doen?",
+      "left": {
+        "text": "Gleichman antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (Minister), Goeman Bo",
+        "hidden": "no_rumour"
+      },
+      "right": {
+        "text": "Gleichman antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (Minister), Goeman Bo",
+        "hidden": "full"
+      },
+      "catch": false
     }
-  }
-]
+  ]
+}

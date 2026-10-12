@@ -2,77 +2,47 @@
 
 const TYPES = [
   {
-    id: "runaway",
-    title: "Runaway / absence notice",
-    blurb: "An owner advertises that someone is missing, often with a description and a suspected destination.",
+    id: "attested_speaker",
+    title: "Attested speaker card",
+    blurb: "A person who actually speaks in the 1896–1899 Tweede Kamer XML: name, role, function, party-ref, member-ref, and up to three short excerpts.",
     fields: [
-      ["sex", "Sex as stated"],
-      ["age", "Stated age"],
-      ["occupation", "Occupation or skill"],
-      ["languages", "Languages mentioned"],
-      ["estate", "Estate or owner named"],
-      ["date_absent", "Date last seen / date of the notice"],
-      ["suspected_destination", "Suspected destination (the advertiser’s suspicion, not a fact)"],
-      ["reward", "Reward offered"],
+      ["name", "Printed speaker name (OCR)"],
+      ["role", "pm:role — chair / mp / government"],
+      ["function", "pm:function (voorzitter, minister van …, De heer)"],
+      ["party", "pm:party-ref, often empty"],
+      ["member_ref", "pm:member-ref when the file has one"],
+      ["excerpts", "Short on-record passages, not a biography"],
     ],
   },
   {
-    id: "sale",
-    title: "Sale or auction notice",
-    blurb: "People, or a gang, offered for sale or at vendue.",
-    fields: [
-      ["n_persons", "How many people"],
-      ["sex_mix", "Men / women / children as stated"],
-      ["estate", "Estate or seller"],
-      ["date", "Date of sale"],
-      ["kind", "Private sale, auction, or sheriff’s sale"],
-    ],
+    id: "chair",
+    title: "Role: Voorzitter",
+    blurb: "Opens and adjourns, recognises speakers, does not debate the substance. One chair in the S1 cast.",
+    fields: [["home", "chair_dais"], ["may_speak", "Always, as chair"], ["on_record", "Yes"]],
   },
   {
-    id: "recapture",
-    title: "Recapture or jail notice",
-    blurb: "Someone taken up and lodged in the fort or jail, to be claimed.",
-    fields: [
-      ["sex", "Sex as stated"],
-      ["age", "Stated age"],
-      ["jail", "Fort / jail named"],
-      ["date", "Date"],
-      ["claimed_by", "Who is asked to claim the person"],
-    ],
+    id: "mp",
+    title: "Role: Kamerlid",
+    blurb: "Speaks on the floor only when recognised. May talk in the wandelgang off the record.",
+    fields: [["home", "benches"], ["may_speak", "If recognised"], ["on_record", "Only recognised floor speech"]],
   },
   {
-    id: "manumission",
-    title: "Manumission notice",
-    blurb: "A person is legally freed, or free papers are announced.",
-    fields: [
-      ["name_type", "How the person is named (given name, byname)"],
-      ["sex", "Sex as stated"],
-      ["date", "Date"],
-      ["by", "By owner, by self-purchase, or by will — if stated"],
-    ],
+    id: "minister",
+    title: "Role: Minister",
+    blurb: "Government bench. Addresses the Chair. Not a private citizen in this sandbox.",
+    fields: [["home", "ministers_bench"], ["may_speak", "If recognised or answering"], ["on_record", "Yes, when on the floor"]],
   },
   {
-    id: "ordinance",
-    title: "Ordinance or proclamation",
-    blurb: "A government rule: passes, patrols, market days, curfews, militia.",
-    fields: [
-      ["topic", "What the rule is about"],
-      ["date", "Date"],
-      ["jurisdiction", "Island / town / fort"],
-      ["constraint", "What people are required or forbidden to do"],
-    ],
+    id: "clerk",
+    title: "Role: Griffier / stenographer (synthetic)",
+    blurb: "Writes the Handelingen. We invented a clerk token; the XML names the function, not always a person we should dramatise.",
+    fields: [["synthetic", "Yes"], ["may_speak", "No"], ["on_record", "Writes, does not orate"]],
   },
   {
-    id: "shipping",
-    title: "Shipping news",
-    blurb: "A vessel arrived or sailed: sloop, brig, schooner, port, date.",
-    fields: [
-      ["vessel", "Name of the vessel if given"],
-      ["type", "Sloop / brig / schooner / other"],
-      ["arrival_or_departure", "Arrived or sailed"],
-      ["port", "Port or destination"],
-      ["date", "Date"],
-    ],
+    id: "journalist",
+    title: "Role: journalist (synthetic, press gallery)",
+    blurb: "Observes; never takes the floor. The archive has 0% journalist lines. Keep this as a nameless gallery role, not a historical reporter.",
+    fields: [["synthetic", "Yes"], ["may_speak", "No"], ["on_record", "Never"]],
   },
 ];
 
@@ -87,14 +57,14 @@ function render() {
     article.innerHTML = `
       <h3>${t.title}</h3>
       <p>${t.blurb}</p>
-      <p class="hint">Fields we currently extract: ${t.fields.map((f) => f[1]).join("; ")}.</p>
+      <p class="hint">Fields / facts we currently use: ${t.fields.map((f) => f[1]).join("; ")}.</p>
       <div class="rank">
-        <span>This kind of notice:</span>
+        <span>This kind:</span>
         <button type="button" data-v="keep" aria-pressed="${rec.verdict === "keep"}">Keep</button>
         <button type="button" data-v="change" aria-pressed="${rec.verdict === "change"}">Change</button>
         <button type="button" data-v="drop" aria-pressed="${rec.verdict === "drop"}">Drop</button>
       </div>
-      <label class="stack">Note (missing field, wrong name, split this type, …)
+      <label class="stack">Note (missing field, wrong role, split this type, …)
         <textarea rows="2">${rec.note || ""}</textarea>
       </label>`;
     const saveOne = () => {

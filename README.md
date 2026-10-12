@@ -1,49 +1,21 @@
-# MAROON historian lab
+# Kamer historian lab
 
-A static website for historian collaborators who do not need a programming
-environment. They open the site, label notices and conversations in the
-browser, then download a file and email it to the project.
+Same labelling pattern as the earlier historian lab: five static pages, a bottom bar, download-a-JSON.
 
-The interaction copies the companion newspaper search site in
-`historical_nlp/www_experiments/site`: GitHub Pages, no login, answers in
-`localStorage`, CSV/JSON download. Newspaper **PDFs are not hosted** (they
-are several gigabytes). Each notice links to the Royal Library page through
-its permanent handle; the computer-read snippet is from
-`historical_nlp/data/www_search.sqlite`, itself built from
-`historical_nlp/mediastream_pdfs`.
+Live (GitHub Pages): https://shuishen112.github.io/history-sandbox/
 
-## Pages
+1. **Scheme** — speaker fields and sandbox roles  
+2. **Names** — OCR / name / party review  
+3. **People** — the 25 S1 agents  
+4. **Conversations** — blinded TrueSkill pairs  
+5. **Standing orders** — map, Reglement, floor clips  
 
-| Page | Task |
-|---|---|
-| `index.html` | Plain-language briefing |
-| `schema.html` | Keep / change / drop the six notice types |
-| `annotate.html` | Label ~300 OCR passages (Table 2) |
-| `personas.html` | Review synthetic people (no documented individual) |
-| `interviews.html` | Pairwise believability + historical plausibility |
-| `rules.html` | Map, pass/curfew rules, advertising prior π |
-
-## Rebuild the notice sample
+Raters keep work in the browser, then **Download my work** and email the file.
 
 ```bash
-podman exec conda bash -c 'cd /workspace/history-sandbox && PYTHONPATH=. python scripts/build_historian_site.py'
+PYTHONPATH=. python scripts/build_historian_site.py
+python -m http.server 8766 --directory historian-site
+# publish the site repo (does not touch the paper repo's main):
+bash scripts/publish_historian_site.sh
+PYTHONPATH=. python scripts/score_historian_labels.py exports/*.json
 ```
-
-Needs the companion index at `/workspace/historical_nlp/data/www_search.sqlite`.
-
-## Preview locally
-
-```bash
-cd historian-site && python3 -m http.server 8766
-```
-
-Then open http://localhost:8766 — do not open the HTML file directly from
-disk; the browser will block `fetch` of `data/records.json`.
-
-## Publish to GitHub Pages
-
-```bash
-bash scripts/publish_historian_site.sh https://github.com/<user>/<repo>.git
-```
-
-On GitHub: Settings → Pages → Deploy from branch `main`, folder `/`.

@@ -6,9 +6,9 @@ const BEL = [
   ["R", "Right more believable"],
 ];
 const HIS = [
-  ["L", "Left more historically plausible"],
+  ["L", "Left more procedurally plausible"],
   ["tie", "About the same"],
-  ["R", "Right more historically plausible"],
+  ["R", "Right more procedurally plausible"],
 ];
 
 function buttons(name, options, value) {
@@ -16,8 +16,16 @@ function buttons(name, options, value) {
     `<button type="button" data-k="${name}" data-v="${v}" aria-pressed="${value === v}">${lab}</button>`).join("");
 }
 
+function esc(s) {
+  return String(s ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+}
+
 async function main() {
-  const pairs = await (await fetch("data/interviews.json")).json();
+  const raw = await (await fetch("data/interviews.json")).json();
+  const pairs = raw.items || raw;
   const box = document.getElementById("list");
   const saved = store().interviews || {};
 
@@ -32,16 +40,16 @@ async function main() {
     const art = document.createElement("article");
     art.className = "item";
     art.innerHTML = `
-      <h3>${p.name} · ${p.status}</h3>
-      <p><b>Question.</b> ${p.question}</p>
+      <h3><span class="badge">${esc(p.role)}</span> · ${esc(p.category)}</h3>
+      <p><b>Question.</b> ${esc(p.question)}</p>
       <div class="pair">
-        <div class="answer"><b>Left</b><p>${p.left.text}</p></div>
-        <div class="answer"><b>Right</b><p>${p.right.text}</p></div>
+        <div class="answer"><b>Left</b><p>${esc(p.left.text)}</p></div>
+        <div class="answer"><b>Right</b><p>${esc(p.right.text)}</p></div>
       </div>
       <div class="rank"><span>Believability:</span>${buttons("bel", BEL, rec.bel)}</div>
-      <div class="rank"><span>Historical plausibility:</span>${buttons("hist", HIS, rec.hist)}</div>
-      <label class="stack">Optional reference answer (what a careful historian would write from this person’s situation)
-        <textarea rows="3">${rec.ref || ""}</textarea>
+      <div class="rank"><span>Procedural plausibility:</span>${buttons("hist", HIS, rec.hist)}</div>
+      <label class="stack">Optional reference answer (what a careful historian would write from this public role)
+        <textarea rows="3">${esc(rec.ref || "")}</textarea>
       </label>`;
     const persist = () => {
       const all = store();
@@ -54,7 +62,9 @@ async function main() {
         left: p.left.hidden,
         right: p.right.hidden,
         category: p.category,
+        role: p.role,
         agent_id: p.agent_id,
+        catch: !!p.catch,
       };
       save(all);
       progress();
@@ -62,9 +72,8 @@ async function main() {
     for (const btn of art.querySelectorAll("button[data-k]")) {
       btn.onclick = () => {
         const k = btn.dataset.k;
-        const on = btn.getAttribute("aria-pressed") === "true";
         for (const x of art.querySelectorAll(`[data-k="${k}"]`)) x.setAttribute("aria-pressed", "false");
-        if (!on) btn.setAttribute("aria-pressed", "true");
+        btn.setAttribute("aria-pressed", "true");
         persist();
       };
     }
