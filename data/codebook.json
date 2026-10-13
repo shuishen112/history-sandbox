@@ -3,7 +3,7 @@
   "corpus": "Dutch Parliamentary Proceedings 1814–2012 (PoliticalMashup / Marx et al.), doi:10.17026/DANS-XK5-DW3S, CC0. Working slice 1814–1899.",
   "period": "Tweede Kamer, late 1890s (seed week December 1899).",
   "tasks": {
-    "rank": "Blind pairwise ranking of pause-and-interview answers. Rate believability (could this public person have said this?) and historical-procedural plausibility (does it respect the Reglement van Orde?). Conditions are hidden. Two items are attention checks.",
+    "rank": "Blind pairwise ranking of pause-and-interview answers given off the floor (wandelgang / side room), not as Tweede Kamer speeches. They should not open by addressing the Chair. Rate believability (could this public person have said this, in late-1890s Dutch?) and historical-procedural plausibility (does it respect the Reglement van Orde?). Conditions are hidden. Two items are attention checks.",
     "speakers": "Check names, roles, and parties parsed from OCR'd Handelingen XML. Mark garbled readings. Flag synthetic or invented cards. We do not ask you to reconstruct private lives.",
     "procedure": "For each clip or vignette: would the Chair have allowed it, and would the stenographer have written it into the Handelingen?"
   },
