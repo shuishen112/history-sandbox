@@ -16,7 +16,13 @@ async function main() {
     const rec = saved[p.id] || {};
     const art = document.createElement("article");
     art.className = "item";
-    const ex = (p.excerpts || []).slice(0, 1).map((e) => `<div class="excerpt">${esc(e)}</div>`).join("");
+    const ex = (p.excerpts || []).slice(0, 1).map((e) => {
+      const text = typeof e === "string" ? e : (e && e.text) || "";
+      const ident = typeof e === "object" && e ? (e.identifier || "") : "";
+      const url = typeof e === "object" && e ? (e.url || "") : "";
+      const link = url ? ` <p class="source">Original PDF: <a href="${esc(url)}" target="_blank" rel="noopener">${esc(ident)}</a></p>` : "";
+      return `<div class="excerpt">${esc(text)}${link}</div>`;
+    }).join("");
     art.innerHTML = `
       <h3>${esc(p.name)} · ${esc(p.status)}</h3>
       <div class="where">${p.synthetic ? "Synthetic role seed" : "Intended as an attested speaker"}

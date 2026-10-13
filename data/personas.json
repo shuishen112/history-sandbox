@@ -8,9 +8,27 @@
     "party": "nl.p.oudofvrijeliberalen",
     "synthetic": false,
     "excerpts": [
-      "Ik heb thans de eer aan de Kamer voor te j stellen om in eene vergadering aan te vangen eerstkomendeu | Dinsdag, des voormiddags te 11 uren , de geschorste beraadslaging j te hervatten over het wetsontwerp tot herziening der belasting op het personeel. (!•>) Daartoe wordt besloten.",
-      "Ik stel aan de \\ ergadering voor de algemeene beraadslaging te houden over de drie wetsontwerpen te zamen. ! Daartoe wordt besloten. De algemeene beraadslaging wordt geopend.",
-      "Than s is aan de orde de beraadslaging over de AiiTT. 11 en 15 , betreffende den maatstaf van de belastin g naa r de haardsteden . terwijl he t bedra g later zal behandeld worde n bij art . 16. I n art . 15 is sedert de beraadslaging ge schorst werd , door de Regeering eene wijziging gebracht . waar over ik zoo vrij ben de meening der Oommissie van Rapporteurs te vragen ."
+      {
+        "text": "Ik heb thans de eer aan de Kamer voor te j stellen om in eene vergadering aan te vangen eerstkomendeu | Dinsdag, des voormiddags te 11 uren , de geschorste beraadslaging j te hervatten over het wetsontwerp tot herziening der belasting op het personeel. (!•>) Daartoe wordt besloten.",
+        "identifier": "0000374800",
+        "url": "https://zoek.officielebekendmakingen.nl/0000374800",
+        "source": "1896-02-21 Handelingen Tweede Kamer 843 - 852 id 0000374800.xml",
+        "date": "1896-02-21"
+      },
+      {
+        "text": "Ik stel aan de \\ ergadering voor de algemeene beraadslaging te houden over de drie wetsontwerpen te zamen. ! Daartoe wordt besloten. De algemeene beraadslaging wordt geopend.",
+        "identifier": "0000374800",
+        "url": "https://zoek.officielebekendmakingen.nl/0000374800",
+        "source": "1896-02-21 Handelingen Tweede Kamer 843 - 852 id 0000374800.xml",
+        "date": "1896-02-21"
+      },
+      {
+        "text": "Than s is aan de orde de beraadslaging over de AiiTT. 11 en 15 , betreffende den maatstaf van de belastin g naa r de haardsteden . terwijl he t bedra g later zal behandeld worde n bij art . 16. I n art . 15 is sedert de beraadslaging ge schorst werd , door de Regeering eene wijziging gebracht . waar over ik zoo vrij ben de meening der Oommissie van Rapporteurs te vragen .",
+        "identifier": "0000374801",
+        "url": "https://zoek.officielebekendmakingen.nl/0000374801",
+        "source": "1896-02-25 Handelingen Tweede Kamer 853 - 872 id 0000374801.xml",
+        "date": "1896-02-25"
+      }
     ]
   },
   {
@@ -22,7 +40,13 @@
     "party": "",
     "synthetic": true,
     "excerpts": [
-      "Synthetic clerk. The XML names a griffier; this card is a role seed."
+      {
+        "text": "Synthetic clerk. The XML names a griffier; this card is a role seed.",
+        "identifier": "",
+        "url": "",
+        "source": "",
+        "date": ""
+      }
     ]
   },
   {
@@ -34,7 +58,13 @@
     "party": "",
     "synthetic": true,
     "excerpts": [
-      "Synthetic press-gallery persona. Not attested in the Handelingen."
+      {
+        "text": "Synthetic press-gallery persona. Not attested in the Handelingen.",
+        "identifier": "",
+        "url": "",
+        "source": "",
+        "date": ""
+      }
     ]
   },
   {
@@ -46,9 +76,27 @@
     "party": "",
     "synthetic": false,
     "excerpts": [
-      ", Minister van Binnenlandsche Zaken • Mynheer de Voorzitter ! Gy hebt reeds de welwillendheid gehad om aan de Kamer mede te deelen dat de opmerking welke door den geachten afgevaardigde uit Emmen werd vooropgesteld, dat nog naar aanleiding van het Eindverslag eene wijziging in het wetsontwerp betreffende de grensregeling tusschen Amsterdam en Nieuwer-Amstel te wachten is, geen kracht meer kan hebb",
-      ", Minister van Binnenlandsche Zaken: Mijnheer de Voorzitter! De weinige woorden die ik in het midden heb gebracht, en welke naar ik meende tot geen debat en allerminst tot misverstand aanleiding kouden geven, hebben dit blykbaar toch gedaan. Ik meende door mijne eerste rede het bewijs te moeten geven dat ik aandacht had geschonken aan hetgeen heden door twee geachte sprekers was gezegd. Ik heb in ",
-      ". Minisier tan BinnimUndtckt Zaken; Mijnheer de Voorzitter! Naar aanleiding van de bedenkingen , , welke hier in het debat zijn bijgebracht, wensch ik een en ander te zeggen tot aanvulling van hetgeen in de stukken gezegd is. Bij dit wetsontwerp hebben wij in zooverre een voordeel, dat alles wat daarover te zeggen valt uitvoerig, pro en contra, in de stukken behandeld is . en dat . voor zoover daa"
+      {
+        "text": ", Minister van Binnenlandsche Zaken • Mynheer de Voorzitter ! Gy hebt reeds de welwillendheid gehad om aan de Kamer mede te deelen dat de opmerking welke door den geachten afgevaardigde uit Emmen werd vooropgesteld, dat nog naar aanleiding van het Eindverslag eene wijziging in het wetsontwerp betreffende de grensregeling tusschen Amsterdam en Nieuwer-Amstel te wachten is, geen kracht meer kan hebb",
+        "identifier": "0000374804",
+        "url": "https://zoek.officielebekendmakingen.nl/0000374804",
+        "source": "1896-02-28 Handelingen Tweede Kamer 911 - 930 id 0000374804.xml",
+        "date": "1896-02-28"
+      },
+      {
+        "text": ", Minister van Binnenlandsche Zaken: Mijnheer de Voorzitter! De weinige woorden die ik in het midden heb gebracht, en welke naar ik meende tot geen debat en allerminst tot misverstand aanleiding kouden geven, hebben dit blykbaar toch gedaan. Ik meende door mijne eerste rede het bewijs te moeten geven dat ik aandacht had geschonken aan hetgeen heden door twee geachte sprekers was gezegd. Ik heb in ",
+        "identifier": "0000374805",
+        "url": "https://zoek.officielebekendmakingen.nl/0000374805",
+        "source": "1896-03-03 Handelingen Tweede Kamer 931 - 952 id 0000374805.xml",
+        "date": "1896-03-03"
+      },
+      {
+        "text": ". Minisier tan BinnimUndtckt Zaken; Mijnheer de Voorzitter! Naar aanleiding van de bedenkingen , , welke hier in het debat zijn bijgebracht, wensch ik een en ander te zeggen tot aanvulling van hetgeen in de stukken gezegd is. Bij dit wetsontwerp hebben wij in zooverre een voordeel, dat alles wat daarover te zeggen valt uitvoerig, pro en contra, in de stukken behandeld is . en dat . voor zoover daa",
+        "identifier": "0000374805",
+        "url": "https://zoek.officielebekendmakingen.nl/0000374805",
+        "source": "1896-03-03 Handelingen Tweede Kamer 931 - 952 id 0000374805.xml",
+        "date": "1896-03-03"
+      }
     ]
   },
   {
@@ -70,9 +118,27 @@
     "party": "nl.p.vooruitstrevendekamerclub",
     "synthetic": false,
     "excerpts": [
-      "Mijnheer de Voorzitter ! Ik zou vooraf eene korte opmerkin g willen maken . De heer Minister heeft wijziging gebrach t in ar t 15 ; indien de gewijzigde redactie word t aangenomen , dan moet noodzakelijk eene verandering worden gebrach t in ons amendemen t op art . 16. W ü meenen echter op di t oogenblik zoodanige wijziging no g niet te kunne n aanbrengen , omdat wij natuurlijk nie t weten 1 I wa ",
-      "Mijnheer de Voorzitter! Ik dank i U voor uwe toezegging en kan mij n u geheel bij uw gevoelen \\ aansluiten.",
-      "Mijnheer de Voorzitter ! Slechts een zeer kort woord. Toen ik den heer Kolkman zooeven hoorde beweren, dat ook de kleine man in deze belasting toch iets moest betalen en dat men daarom dit voorstel van de Regeering, waarbij althans eenige verlichting wordt gegeven, niet moest aannemen, dacht ik : is de geachte spreker dan de geheele discussie vergeten, die wij hier in November omtrent dit punt heb"
+      {
+        "text": "Mijnheer de Voorzitter ! Ik zou vooraf eene korte opmerkin g willen maken . De heer Minister heeft wijziging gebrach t in ar t 15 ; indien de gewijzigde redactie word t aangenomen , dan moet noodzakelijk eene verandering worden gebrach t in ons amendemen t op art . 16. W ü meenen echter op di t oogenblik zoodanige wijziging no g niet te kunne n aanbrengen , omdat wij natuurlijk nie t weten 1 I wa ",
+        "identifier": "0000374801",
+        "url": "https://zoek.officielebekendmakingen.nl/0000374801",
+        "source": "1896-02-25 Handelingen Tweede Kamer 853 - 872 id 0000374801.xml",
+        "date": "1896-02-25"
+      },
+      {
+        "text": "Mijnheer de Voorzitter! Ik dank i U voor uwe toezegging en kan mij n u geheel bij uw gevoelen \\ aansluiten.",
+        "identifier": "0000374801",
+        "url": "https://zoek.officielebekendmakingen.nl/0000374801",
+        "source": "1896-02-25 Handelingen Tweede Kamer 853 - 872 id 0000374801.xml",
+        "date": "1896-02-25"
+      },
+      {
+        "text": "Mijnheer de Voorzitter ! Slechts een zeer kort woord. Toen ik den heer Kolkman zooeven hoorde beweren, dat ook de kleine man in deze belasting toch iets moest betalen en dat men daarom dit voorstel van de Regeering, waarbij althans eenige verlichting wordt gegeven, niet moest aannemen, dacht ik : is de geachte spreker dan de geheele discussie vergeten, die wij hier in November omtrent dit punt heb",
+        "identifier": "0000374801",
+        "url": "https://zoek.officielebekendmakingen.nl/0000374801",
+        "source": "1896-02-25 Handelingen Tweede Kamer 853 - 872 id 0000374801.xml",
+        "date": "1896-02-25"
+      }
     ]
   },
   {
@@ -104,9 +170,27 @@
     "party": "nl.p.arp",
     "synthetic": false,
     "excerpts": [
-      "Mijnheer de Voorzitter! Ingeschreven als eerste spreker na de indiening van eene motie van orde, die onverwijld aan de orde is gesteld , meen ik in de eerste plaats over die motie een kort woord te moeten zeggen. In het algemeen juich ik het indienen van die motie toe , zonder daarom nog te beslissen welk karakter aan die motie moet worden toegekend. Zulk eene motie kan de bedoeling hebben om uits",
-      "Mynhee r de Voorzitter! Aa n de koffie en het djatihout besteedde de Kamer een niet onbelangrijk deel van den beschikbaren parlementairen tijd. E n ongetwijfeld zyn ook die materieele belangen van gewicht , en vereischen , als van ernstigen aard , hun ty'd. N u echter die materieele belangen zijn afgedaan en wy genaderd zyn to t de afdeeling Onderwys en Eeredienst komen er belangen van hoogere ord",
-      "Mynheer de Voorzitter! Ik ga mede met — 1 DECEMBER 1896. dienstjaar 1897. (Algemeen* beraadslaging.) den geachten afgevaardigde uit Delft, en ik ga mede met het j Voorloopig Verslag, dat breed opgezette algemeene beraadslaj gingen bij deze begrooting misplaatst zouden zyn. Ook beaam ! ik uw wenk by het koloniaal debat gegeven, dat wy' beter doen ons te onthouden vau het bespreken der politieke pro"
+      {
+        "text": "Mijnheer de Voorzitter! Ingeschreven als eerste spreker na de indiening van eene motie van orde, die onverwijld aan de orde is gesteld , meen ik in de eerste plaats over die motie een kort woord te moeten zeggen. In het algemeen juich ik het indienen van die motie toe , zonder daarom nog te beslissen welk karakter aan die motie moet worden toegekend. Zulk eene motie kan de bedoeling hebben om uits",
+        "identifier": "0000372950",
+        "url": "https://zoek.officielebekendmakingen.nl/0000372950",
+        "source": "1896-11-17 Handelingen Tweede Kamer 137 - 154 id 0000372950.xml",
+        "date": "1896-11-17"
+      },
+      {
+        "text": "Mynhee r de Voorzitter! Aa n de koffie en het djatihout besteedde de Kamer een niet onbelangrijk deel van den beschikbaren parlementairen tijd. E n ongetwijfeld zyn ook die materieele belangen van gewicht , en vereischen , als van ernstigen aard , hun ty'd. N u echter die materieele belangen zijn afgedaan en wy genaderd zyn to t de afdeeling Onderwys en Eeredienst komen er belangen van hoogere ord",
+        "identifier": "0000372953",
+        "url": "https://zoek.officielebekendmakingen.nl/0000372953",
+        "source": "1896-11-20 Handelingen Tweede Kamer 195 - 214 id 0000372953.xml",
+        "date": "1896-11-20"
+      },
+      {
+        "text": "Mynheer de Voorzitter! Ik ga mede met — 1 DECEMBER 1896. dienstjaar 1897. (Algemeen* beraadslaging.) den geachten afgevaardigde uit Delft, en ik ga mede met het j Voorloopig Verslag, dat breed opgezette algemeene beraadslaj gingen bij deze begrooting misplaatst zouden zyn. Ook beaam ! ik uw wenk by het koloniaal debat gegeven, dat wy' beter doen ons te onthouden vau het bespreken der politieke pro",
+        "identifier": "0000372958",
+        "url": "https://zoek.officielebekendmakingen.nl/0000372958",
+        "source": "1896-12-01 Handelingen Tweede Kamer 299 - 320 id 0000372958.xml",
+        "date": "1896-12-01"
+      }
     ]
   },
   {
@@ -148,9 +232,27 @@
     "party": "nl.p.oudofvrijeliberalen",
     "synthetic": false,
     "excerpts": [
-      "Mijnheer de Voorzitter! Het is niet dan 19 NOVEMBER 1890. (Uitgaven in Nederlamlsch-Indië.) met eenigen schroom, dat ik mij meng iu het debat over Indische Kaken , maar de belangstelling die bosch-exploitatie in liet algemeen mij inboezemt, noopt mij dit debat van mijne zijde niet stilzwijgend te laten voorbijgaan. Vooral niet, nu ik bemerk dat het voorstel van den Minister, dat mijne instemming h",
-      "Mijnheer de Voorzitter! Ik zal gaarne van uw verlof gebruik maken. De Voorzitter deelt mede, dat de Commissiën van Rapporteurs gereed zyn niet hunne Verslagen over de wetsontwerpen: wyziging van het IXde hoofdstuk der Staatsbegrooting voor het dienstjaar 1895; verhooging en aanvulling van het IXde hoofdstuk der Staatsbegrooting voor het dienstjaar 189G. Deze stukken zullen gedrukt en rondgedeeld e",
-      "Mijnheer de Voorzitter! Zooals ik gisteren reeds heb gezegd, heb ik de voorstellen van den Minister met instemming begroet, omdat zij hoop geven, dat de betere aera, die ten aanzien van het boschwezen in en buiten Europa sedert een tal vanjaren is aangebroken , ook eindelijk voor NederlandschIndië , misschien binnenkort ook voor Nederland. zijn invloed zal doen gelden. Te recht ziet men in, dat he"
+      {
+        "text": "Mijnheer de Voorzitter! Het is niet dan 19 NOVEMBER 1890. (Uitgaven in Nederlamlsch-Indië.) met eenigen schroom, dat ik mij meng iu het debat over Indische Kaken , maar de belangstelling die bosch-exploitatie in liet algemeen mij inboezemt, noopt mij dit debat van mijne zijde niet stilzwijgend te laten voorbijgaan. Vooral niet, nu ik bemerk dat het voorstel van den Minister, dat mijne instemming h",
+        "identifier": "0000372952",
+        "url": "https://zoek.officielebekendmakingen.nl/0000372952",
+        "source": "1896-11-19 Handelingen Tweede Kamer 173 - 194 id 0000372952.xml",
+        "date": "1896-11-19"
+      },
+      {
+        "text": "Mijnheer de Voorzitter! Ik zal gaarne van uw verlof gebruik maken. De Voorzitter deelt mede, dat de Commissiën van Rapporteurs gereed zyn niet hunne Verslagen over de wetsontwerpen: wyziging van het IXde hoofdstuk der Staatsbegrooting voor het dienstjaar 1895; verhooging en aanvulling van het IXde hoofdstuk der Staatsbegrooting voor het dienstjaar 189G. Deze stukken zullen gedrukt en rondgedeeld e",
+        "identifier": "0000372952",
+        "url": "https://zoek.officielebekendmakingen.nl/0000372952",
+        "source": "1896-11-19 Handelingen Tweede Kamer 173 - 194 id 0000372952.xml",
+        "date": "1896-11-19"
+      },
+      {
+        "text": "Mijnheer de Voorzitter! Zooals ik gisteren reeds heb gezegd, heb ik de voorstellen van den Minister met instemming begroet, omdat zij hoop geven, dat de betere aera, die ten aanzien van het boschwezen in en buiten Europa sedert een tal vanjaren is aangebroken , ook eindelijk voor NederlandschIndië , misschien binnenkort ook voor Nederland. zijn invloed zal doen gelden. Te recht ziet men in, dat he",
+        "identifier": "0000372953",
+        "url": "https://zoek.officielebekendmakingen.nl/0000372953",
+        "source": "1896-11-20 Handelingen Tweede Kamer 195 - 214 id 0000372953.xml",
+        "date": "1896-11-20"
+      }
     ]
   },
   {
@@ -182,9 +284,27 @@
     "party": "nl.p.oudofvrijeliberalen",
     "synthetic": false,
     "excerpts": [
-      ", voorzitter der Commissie van Rapporteurs, het woord verkregen hebbende om , namens deze . haar gevoelen mede te deelen over de wijziging door de Kegeering in de artt. 14 en 15 gebracht , zegt : Mijnheer de Voorzitter ! N a al hetgeen zoowel bij de algemeene beraadslaging als bij de behandelin g Fan art . 14 , v/aarmede in November reeds een aanvang was gemaakt, zoowel over den grondslag .haardst",
-      "Voorzitter der Commissie Ma Rapporteurs: I De Commissie heeft eene opmerking te maken over een gedeelte van het artikel, dat weinig aandacht heeft getrokken. 1 In § 2 van art. 16 staat: „Met afwijking van de vorige paragraaf bedraagt de belasting wegens de haardsteden van pereeelen en gedeelten van pereeelen , uitsluitend dienende tot uitoefening van het bedryf van logementhouder of tot openbare b",
-      ", voorzitter der Commissievan Rapporteurs. het woord verkregen hebbend e tot toelichting van het amende ment , zegt : Mijnheer de Voorzitter ! Ik wil met een enkel woord de bedoeling van het amendemen t der Commissie uiteen zetten. De Minister stelt in § 2 voor, dat staldienst , tuindienst en huisbewaardersdienst niet to t de persoonlijke diensten zullen geacht worden te behooreu. Wa t den stal - "
+      {
+        "text": ", voorzitter der Commissie van Rapporteurs, het woord verkregen hebbende om , namens deze . haar gevoelen mede te deelen over de wijziging door de Kegeering in de artt. 14 en 15 gebracht , zegt : Mijnheer de Voorzitter ! N a al hetgeen zoowel bij de algemeene beraadslaging als bij de behandelin g Fan art . 14 , v/aarmede in November reeds een aanvang was gemaakt, zoowel over den grondslag .haardst",
+        "identifier": "0000374801",
+        "url": "https://zoek.officielebekendmakingen.nl/0000374801",
+        "source": "1896-02-25 Handelingen Tweede Kamer 853 - 872 id 0000374801.xml",
+        "date": "1896-02-25"
+      },
+      {
+        "text": "Voorzitter der Commissie Ma Rapporteurs: I De Commissie heeft eene opmerking te maken over een gedeelte van het artikel, dat weinig aandacht heeft getrokken. 1 In § 2 van art. 16 staat: „Met afwijking van de vorige paragraaf bedraagt de belasting wegens de haardsteden van pereeelen en gedeelten van pereeelen , uitsluitend dienende tot uitoefening van het bedryf van logementhouder of tot openbare b",
+        "identifier": "0000374801",
+        "url": "https://zoek.officielebekendmakingen.nl/0000374801",
+        "source": "1896-02-25 Handelingen Tweede Kamer 853 - 872 id 0000374801.xml",
+        "date": "1896-02-25"
+      },
+      {
+        "text": ", voorzitter der Commissievan Rapporteurs. het woord verkregen hebbend e tot toelichting van het amende ment , zegt : Mijnheer de Voorzitter ! Ik wil met een enkel woord de bedoeling van het amendemen t der Commissie uiteen zetten. De Minister stelt in § 2 voor, dat staldienst , tuindienst en huisbewaardersdienst niet to t de persoonlijke diensten zullen geacht worden te behooreu. Wa t den stal - ",
+        "identifier": "0000374802",
+        "url": "https://zoek.officielebekendmakingen.nl/0000374802",
+        "source": "1896-02-26 Handelingen Tweede Kamer 873 - 890 id 0000374802.xml",
+        "date": "1896-02-26"
+      }
     ]
   },
   {
@@ -216,9 +336,27 @@
     "party": "nl.p.bahlmanniaan",
     "synthetic": false,
     "excerpts": [
-      "Mijnheer de Voorzitter! Eenigejaren geleden zeide ik op deze plaats, dat ik, bij de beoordeeling van den toestand onzer Oost-Indische koloniën, mij niet wilde doen leiden door eenige politieke overweging, en geheel objectief de zaken wenschte te beschouwen. Aan dit denkbeeld getrouw, ga ik eenige oogenblikken spreken over Insulinde, in verband met de ons aangeboden begrooting voor het jaar 1897. D",
-      "Mijnheer de Voorzitter! Alvorens te komen tot de motie wensch ik enkele vragen te beantwoorden, die naar aanleiding van de discussie zijn gerezen, 18 NOVEMBER 1896. (Algemeene beraadslaging.) Gelyk de heer Cremer reeds heeft gezegd, ben ook ik van oordeel, dat er in de Kamer begripsverwarring heerscht betreffende de grootte van het eigeulyk oorlogstooneel in Atjeh. Daarom liet ik hedenmorgen het b",
-      "Mijnheer de Voor/.icter! , Ieder die Indië liefheeft weet welk een pest het Chiueesche element is. O, mochten er in de Kamer in Holland leden gevonden worden , die den strijd aanbonden tegen die ('hineezenpest. Laat uien toch een voorbeeld nemen aan Australië, Canada en Amerika, lauden waar de Chinees niet zoo gevaarlijk kan zijn als hier, daar in die landen andere toestanden zijn dan hier, en toc"
+      {
+        "text": "Mijnheer de Voorzitter! Eenigejaren geleden zeide ik op deze plaats, dat ik, bij de beoordeeling van den toestand onzer Oost-Indische koloniën, mij niet wilde doen leiden door eenige politieke overweging, en geheel objectief de zaken wenschte te beschouwen. Aan dit denkbeeld getrouw, ga ik eenige oogenblikken spreken over Insulinde, in verband met de ons aangeboden begrooting voor het jaar 1897. D",
+        "identifier": "0000372950",
+        "url": "https://zoek.officielebekendmakingen.nl/0000372950",
+        "source": "1896-11-17 Handelingen Tweede Kamer 137 - 154 id 0000372950.xml",
+        "date": "1896-11-17"
+      },
+      {
+        "text": "Mijnheer de Voorzitter! Alvorens te komen tot de motie wensch ik enkele vragen te beantwoorden, die naar aanleiding van de discussie zijn gerezen, 18 NOVEMBER 1896. (Algemeene beraadslaging.) Gelyk de heer Cremer reeds heeft gezegd, ben ook ik van oordeel, dat er in de Kamer begripsverwarring heerscht betreffende de grootte van het eigeulyk oorlogstooneel in Atjeh. Daarom liet ik hedenmorgen het b",
+        "identifier": "0000372951",
+        "url": "https://zoek.officielebekendmakingen.nl/0000372951",
+        "source": "1896-11-18 Handelingen Tweede Kamer 155 - 172 id 0000372951.xml",
+        "date": "1896-11-18"
+      },
+      {
+        "text": "Mijnheer de Voor/.icter! , Ieder die Indië liefheeft weet welk een pest het Chiueesche element is. O, mochten er in de Kamer in Holland leden gevonden worden , die den strijd aanbonden tegen die ('hineezenpest. Laat uien toch een voorbeeld nemen aan Australië, Canada en Amerika, lauden waar de Chinees niet zoo gevaarlijk kan zijn als hier, daar in die landen andere toestanden zijn dan hier, en toc",
+        "identifier": "0000372952",
+        "url": "https://zoek.officielebekendmakingen.nl/0000372952",
+        "source": "1896-11-19 Handelingen Tweede Kamer 173 - 194 id 0000372952.xml",
+        "date": "1896-11-19"
+      }
     ]
   },
   {

@@ -44,6 +44,7 @@ async function main() {
       corrected_name: art.querySelector("[data-field=corrected]").value,
       note: art.querySelector("textarea").value,
       suggested_role: it.suggested_role,
+      identifiers: (it.excerpts || []).map((e) => (typeof e === "object" && e ? e.identifier : "")).filter(Boolean),
       synthetic: !!it.synthetic,
       catch: !!it.catch,
     };
@@ -62,7 +63,18 @@ async function main() {
       if (mode === "done" && !done) continue;
       const art = document.createElement("article");
       art.className = "item";
-      const excerpts = (it.excerpts || []).map((e) => `<div class="excerpt">${esc(e)}</div>`).join("");
+      const excerpts = (it.excerpts || []).map((e) => {
+        const rec = typeof e === "string" ? { text: e } : (e || {});
+        const ident = rec.identifier || "";
+        const url = rec.url || (ident ? `https://zoek.officielebekendmakingen.nl/${ident}` : "");
+        const src = rec.source ? rec.source.replace(/\.xml$/i, "") : "";
+        const link = url
+          ? `<p class="source">Original PDF:
+              <a href="${esc(url)}" target="_blank" rel="noopener">${esc(ident)}</a>
+              ${src ? `<span class="hint"> · ${esc(src)}</span>` : ""}</p>`
+          : (it.synthetic ? `<p class="hint">No Officiële Bekendmakingen record (synthetic card).</p>` : "");
+        return `<div class="excerpt">${esc(rec.text || "")}${link}</div>`;
+      }).join("");
       art.innerHTML = `
         <h3>${esc(it.name)} · <span class="badge">${esc(it.suggested_role)}</span>
           <span class="badge">${esc(it.suggested_function || "")}</span>

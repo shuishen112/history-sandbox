@@ -78,3 +78,5 @@ input[type=text], input[type=number], select, textarea {
 footer { font-size: 13px; padding: 24px 20px 30px; }
 .badge { display: inline-block; background: #efe6d2; color: #14324a; padding: 1px 7px; border-radius: 999px; font-size: 13px; }
 .excerpt { background: #f7f3ea; border-left: 3px solid #c4a35a; padding: 8px 12px; margin: 8px 0; white-space: pre-wrap; }
+.source { margin: 8px 0 0; font-family: "Avenir Next", "Segoe UI", sans-serif; font-size: 14px; white-space: normal; }
+.source a { color: var(--accent); }
