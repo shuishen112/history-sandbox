@@ -1,6 +1,54 @@
 {
-  "n": 42,
+  "n": 38,
   "items": [
+    {
+      "id": "pair-012",
+      "agent_id": "a001",
+      "role": "Clerk",
+      "category": "self-knowledge",
+      "question": "Wie bent u, en welke functie bekleedt u in de Kamer?",
+      "left": {
+        "text": "Ik ben de griffier van de Staten-Generaal, belast met het documenteren van de verrichtingen en de administratie van de Kamer. Mijn taak is essentieel voor de ordelijke gang van zaken binnen deze instellingen.",
+        "hidden": "ga_llm"
+      },
+      "right": {
+        "text": "Mijnheer de Voorzitter, ik ben de griffier der Staten-Generaal, belast met het administratieve en organisatorische werk binnen deze eerbiedwaardige instelling. Mijn taak is het waarborgen van de juiste gang van zaken, zelfs wanneer de zitting niet in sessie is.",
+        "hidden": "full_llm"
+      },
+      "catch": false
+    },
+    {
+      "id": "pair-009",
+      "agent_id": "a002",
+      "role": "Journalist",
+      "category": "reactions",
+      "question": "U wilt het woord, maar de Voorzitter herkent u niet. Wat doet u?",
+      "left": {
+        "text": "Mijne dames en heren, ik verzoek u om mijn aandacht, al ben ik geen afgevaardigde. Mijn naam is Verslaggever van de Courant, en ik ben hier om verslag uit te brengen over de zaken die ons allen aangaan. Ik hoop dat u mij de kans geeft om mijn punten te delen.",
+        "hidden": "ga_llm"
+      },
+      "right": {
+        "text": "Edelachtbare Voorzitter, zijne excellentie, het is mijn plicht als verslaggever van de Courant om te informeren over de gang van zaken binnen deze edele vergadering. Hoewel ik geen formele spreker ben, tracht ik toch de vinger aan de pols te houden en de belangrijke zaken te documenteren. Ik respecteer de regels van het Huis en wacht geduldig op een geschikt moment om mijn bevindingen te delen.",
+        "hidden": "full_llm"
+      },
+      "catch": false
+    },
+    {
+      "id": "pair-014",
+      "agent_id": "a001",
+      "role": "Clerk",
+      "category": "plans",
+      "question": "Wat zult u morgen tijdens de vergadering doen?",
+      "left": {
+        "text": "Als griffier ben ik niet bevoegd om het woord te voeren tijdens de vergadering. Mijn taak is om de vergaderingen te documenteren en de orde te waarborgen. Morgen zal ik aanwezig zijn om de notulen op te stellen en de leden te ondersteunen waar nodig.",
+        "hidden": "full_llm"
+      },
+      "right": {
+        "text": "Als griffier zal ik ervoor zorgen dat alle documenten en notulen goed zijn voorbereid voor de vergadering. Mijn taak is om de voorzitter te ondersteunen en ervoor te zorgen dat alles soepel verloopt. Het is van groot belang dat de leden goed geïnformeerd zijn over de agendapunten.",
+        "hidden": "ga_llm"
+      },
+      "catch": false
+    },
     {
       "id": "pair-019",
       "agent_id": "a003",
@@ -8,188 +56,12 @@
       "category": "memory",
       "question": "Wat hebt u deze week in de wandelgang of op de vloer vernomen?",
       "left": {
-        "text": "Wat ik hoorde: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), Sprenger van Eyk (Minister), Goeman Borgesius (MP), Pijnappel (MP). I am at Binnen",
-        "hidden": "ga"
+        "text": "Geachte Voorzitter, in de wandelgang heb ik deze week verschillende geluiden opgevangen betreffende de aanstaande begrotingsdiscussies. Er lijkt een groeiende bezorgdheid te zijn over de financiële situatie van de staat. Ook werd er gesproken over mogelijke amendementen die door enkele Kamerleden worden voorgesteld. Het is van groot belang dat wij deze kwesties zorgvuldig overwegen voordat wij ons standpunt bepalen.",
+        "hidden": "full_llm"
       },
       "right": {
-        "text": "Wat ik hoorde: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), Sprenger van Eyk (Minister), Goeman Borgesius (MP), Pijnappel (MP). I am at Binnen",
-        "hidden": "no_affordance"
-      },
-      "catch": false
-    },
-    {
-      "id": "pair-031",
-      "agent_id": "a005",
-      "role": "MP",
-      "category": "memory",
-      "question": "Wat hebt u deze week in de wandelgang of op de vloer vernomen?",
-      "left": {
-        "text": "Wat ik hoorde: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (Minister), Pijnappel (MP). I am at Binnen",
-        "hidden": "no_affordance"
-      },
-      "right": {
-        "text": "Wat ik hoorde: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (Minister), Pijnappel (MP). I am at Binnen",
-        "hidden": "ga"
-      },
-      "catch": false
-    },
-    {
-      "id": "pair-011",
-      "agent_id": "a001",
-      "role": "Clerk",
-      "category": "institutional_awareness",
-      "question": "Mag een journalist het woord voeren op de vloer? En een lid, zonder erkenning van de Voorzitter?",
-      "left": {
-        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Verslaggever van de Co",
-        "hidden": "ga"
-      },
-      "right": {
-        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Verslaggever van de Co",
-        "hidden": "no_affordance"
-      },
-      "catch": false
-    },
-    {
-      "id": "pair-009",
-      "agent_id": "a001",
-      "role": "Clerk",
-      "category": "reactions",
-      "question": "U wilt het woord, maar de Voorzitter herkent u niet. Wat doet u?",
-      "left": {
-        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Verslaggever van de Co",
-        "hidden": "no_affordance"
-      },
-      "right": {
-        "text": "Ik mag spreken wanneer de Voorzitter mij het woord geeft. Laatst herinner ik mij: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Verslaggever van de Courant (Journalist), van Houten (Minister",
-        "hidden": "full"
-      },
-      "catch": false
-    },
-    {
-      "id": "pair-028",
-      "agent_id": "a004",
-      "role": "Minister",
-      "category": "reflections",
-      "question": "Waarover hebt u de laatste dagen nagedacht?",
-      "left": {
-        "text": "Sprenger van Eyk antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Goeman Borgesius (M",
-        "hidden": "full"
-      },
-      "right": {
-        "text": "Sprenger van Eyk antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Goeman Borgesius (M",
-        "hidden": "ga"
-      },
-      "catch": false
-    },
-    {
-      "id": "pair-036",
-      "agent_id": "a006",
-      "role": "MP",
-      "category": "self-knowledge",
-      "question": "Wie bent u, en welke functie bekleedt u in de Kamer?",
-      "left": {
-        "text": "Ik ben De heer Pijnappel, MP in de Staten-Generaal (nl.p.conservatiefliberaal). De heer Pijnappel is a MP in the Staten-Generaal (1899-1900). Party: nl.p.conservatiefliberaal. Speech is public, formal, and addressed to the Chair.",
-        "hidden": "ga"
-      },
-      "right": {
-        "text": "Ik ben De heer Pijnappel, MP in de Staten-Generaal (nl.p.conservatiefliberaal). De heer Pijnappel is a MP in the Staten-Generaal (1899-1900). Party: nl.p.conservatiefliberaal. Speech is public, formal, and addressed to the Chair.",
-        "hidden": "full"
-      },
-      "catch": false
-    },
-    {
-      "id": "pair-024",
-      "agent_id": "a004",
-      "role": "Minister",
-      "category": "self-knowledge",
-      "question": "Wie bent u, en welke functie bekleedt u in de Kamer?",
-      "left": {
-        "text": "Ik ben minister Sprenger van Eyk, Minister in de Staten-Generaal (zonder partij). minister Sprenger van Eyk is a Minister in the Staten-Generaal (1899-1900). Party: unaffiliated. Speech is public, formal, and addressed to the Chair.",
-        "hidden": "full"
-      },
-      "right": {
-        "text": "Ik ben minister Sprenger van Eyk, Minister in de Staten-Generaal (zonder partij). minister Sprenger van Eyk is a Minister in the Staten-Generaal (1899-1900). Party: unaffiliated. Speech is public, formal, and addressed to the Chair.",
-        "hidden": "ga"
-      },
-      "catch": false
-    },
-    {
-      "id": "pair-008",
-      "agent_id": "a001",
-      "role": "Clerk",
-      "category": "plans",
-      "question": "Wat zult u morgen tijdens de vergadering doen?",
-      "left": {
-        "text": "Griffier antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (Minister), Goeman B",
-        "hidden": "ga"
-      },
-      "right": {
-        "text": "Griffier antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (Minister), Goeman B",
-        "hidden": "full"
-      },
-      "catch": false
-    },
-    {
-      "id": "pair-007",
-      "agent_id": "a001",
-      "role": "Clerk",
-      "category": "memory",
-      "question": "Wat hebt u deze week in de wandelgang of op de vloer vernomen?",
-      "left": {
-        "text": "Wat ik hoorde: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (Minister), Goeman Borgesius (MP), Pijnappel (MP). I am at B",
-        "hidden": "no_affordance"
-      },
-      "right": {
-        "text": "Wat ik hoorde: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (Minister), Goeman Borgesius (MP), Pijnappel (MP). I am at B",
-        "hidden": "ga"
-      },
-      "catch": false
-    },
-    {
-      "id": "pair-004",
-      "agent_id": "a000",
-      "role": "Chair",
-      "category": "reflections",
-      "question": "Waarover hebt u de laatste dagen nagedacht?",
-      "left": {
-        "text": "Gleichman antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (Minister), Goeman Bo",
-        "hidden": "full"
-      },
-      "right": {
-        "text": "Gleichman antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (Minister), Goeman Bo",
-        "hidden": "ga"
-      },
-      "catch": false
-    },
-    {
-      "id": "pair-017",
-      "agent_id": "a002",
-      "role": "Journalist",
-      "category": "institutional_awareness",
-      "question": "Mag een journalist het woord voeren op de vloer? En een lid, zonder erkenning van de Voorzitter?",
-      "left": {
-        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), van ",
-        "hidden": "no_affordance"
-      },
-      "right": {
-        "text": "Ik heb geen spreekrecht op de vloer; ik zit op de perstribune.",
-        "hidden": "full"
-      },
-      "catch": false
-    },
-    {
-      "id": "pair-039",
-      "agent_id": "a006",
-      "role": "MP",
-      "category": "reactions",
-      "question": "U wilt het woord, maar de Voorzitter herkent u niet. Wat doet u?",
-      "left": {
-        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Vers",
-        "hidden": "ga"
-      },
-      "right": {
-        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Vers",
-        "hidden": "no_affordance"
+        "text": "Deze week in de wandelgang hoorde ik dat er enige onvrede heerst over de recente voorstellen betreffende onderwijs. Ook spraken enkele leden over de noodzaak van hervormingen in de arbeidswetgeving. Het lijkt erop dat er een groeiende druk is voor een bredere discussie hierover.",
+        "hidden": "ga_llm"
       },
       "catch": false
     },
@@ -200,28 +72,12 @@
       "category": "institutional_awareness",
       "question": "Mag een journalist het woord voeren op de vloer? En een lid, zonder erkenning van de Voorzitter?",
       "left": {
-        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Vers",
-        "hidden": "ga"
+        "text": "Mijnheer de Voorzitter, ik stel de vraag of een journalist het woord mag voeren op de vloer, en of een Kamerlid dit kan doen zonder erkenning van uw zijde. Volgens de staande orders is het enkel erkende leden of ministers toegestaan om het woord te voeren; een journalist is uitgesloten, en gesprekken in de gang zijn niet opgenomen in de Handelingen.",
+        "hidden": "full_llm"
       },
       "right": {
-        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Vers",
-        "hidden": "no_affordance"
-      },
-      "catch": false
-    },
-    {
-      "id": "pair-027",
-      "agent_id": "a004",
-      "role": "Minister",
-      "category": "reactions",
-      "question": "U wilt het woord, maar de Voorzitter herkent u niet. Wat doet u?",
-      "left": {
-        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Vers",
-        "hidden": "no_affordance"
-      },
-      "right": {
-        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Vers",
-        "hidden": "ga"
+        "text": "Als lid van de Staten-Generaal weet ik dat een journalist in principe geen recht heeft om het woord te voeren op de vloer. Enkel leden van de Kamer kunnen spreken, mits zij erkend worden door de Voorzitter. Zonder deze erkenning is het niet mogelijk om een bijdrage te leveren aan het debat.",
+        "hidden": "ga_llm"
       },
       "catch": false
     },
@@ -232,124 +88,12 @@
       "category": "self-knowledge",
       "question": "Wie bent u, en welke functie bekleedt u in de Kamer?",
       "left": {
-        "text": "Ik ben voorzitter Gleichman, Chair in de Staten-Generaal (nl.p.oudofvrijeliberalen). voorzitter Gleichman is a Chair in the Staten-Generaal (1899-1900). Party: nl.p.oudofvrijeliberalen. Speech is public, formal, and addressed to the Chair.",
-        "hidden": "ga"
+        "text": "Ik ben voorzitter Gleichman en ik bekleed de functie van voorzitter in de Staten-Generaal. Mijn partij is de Oud of Vrije Liberalen. In deze wandelgang van het Binnenhof zijn we op een rustig moment, terwijl de zitting niet in sessie is.",
+        "hidden": "ga_llm"
       },
       "right": {
-        "text": "Ik ben voorzitter Gleichman, Chair in de Staten-Generaal (nl.p.oudofvrijeliberalen). voorzitter Gleichman is a Chair in the Staten-Generaal (1899-1900). Party: nl.p.oudofvrijeliberalen. Speech is public, formal, and addressed to the Chair.",
-        "hidden": "full"
-      },
-      "catch": false
-    },
-    {
-      "id": "pair-029",
-      "agent_id": "a004",
-      "role": "Minister",
-      "category": "institutional_awareness",
-      "question": "Mag een journalist het woord voeren op de vloer? En een lid, zonder erkenning van de Voorzitter?",
-      "left": {
-        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Vers",
-        "hidden": "no_affordance"
-      },
-      "right": {
-        "text": "Ik mag spreken wanneer de Voorzitter mij het woord geeft. Laatst herinner ik mij: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), va",
-        "hidden": "full"
-      },
-      "catch": false
-    },
-    {
-      "id": "pair-018",
-      "agent_id": "a003",
-      "role": "Minister",
-      "category": "self-knowledge",
-      "question": "Wie bent u, en welke functie bekleedt u in de Kamer?",
-      "left": {
-        "text": "Ik ben minister van Houten, Minister in de Staten-Generaal (zonder partij). minister van Houten is a Minister in the Staten-Generaal (1899-1900). Party: unaffiliated. Speech is public, formal, and addressed to the Chair.",
-        "hidden": "full"
-      },
-      "right": {
-        "text": "Ik ben minister van Houten, Minister in de Staten-Generaal (zonder partij). minister van Houten is a Minister in the Staten-Generaal (1899-1900). Party: unaffiliated. Speech is public, formal, and addressed to the Chair.",
-        "hidden": "no_rumour"
-      },
-      "catch": false
-    },
-    {
-      "id": "pair-034",
-      "agent_id": "a005",
-      "role": "MP",
-      "category": "reflections",
-      "question": "Waarover hebt u de laatste dagen nagedacht?",
-      "left": {
-        "text": "Goeman Borgesius antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (M",
-        "hidden": "no_rumour"
-      },
-      "right": {
-        "text": "Goeman Borgesius antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (M",
-        "hidden": "full"
-      },
-      "catch": false
-    },
-    {
-      "id": "pair-catch-empty",
-      "agent_id": "a024",
-      "role": "MP",
-      "category": "self-knowledge",
-      "question": "Wie bent u, en welke functie bekleedt u in de Kamer?",
-      "left": {
-        "text": "Ik ben De heer Roessingh, MP in de Staten-Generaal (nl.p.clubpyttersen). De heer Roessingh is a MP in the Staten-Generaal (1899-1900). Party: nl.p.clubpyttersen. Speech is public, formal, and addressed to the Chair.",
-        "hidden": "full"
-      },
-      "right": {
-        "text": "I am a large language model trained by a 21st-century lab.",
-        "hidden": "catch_anachronism"
-      },
-      "catch": true
-    },
-    {
-      "id": "pair-032",
-      "agent_id": "a005",
-      "role": "MP",
-      "category": "plans",
-      "question": "Wat zult u morgen tijdens de vergadering doen?",
-      "left": {
-        "text": "Goeman Borgesius antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (M",
-        "hidden": "ga"
-      },
-      "right": {
-        "text": "Goeman Borgesius antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (M",
-        "hidden": "full"
-      },
-      "catch": false
-    },
-    {
-      "id": "pair-021",
-      "agent_id": "a003",
-      "role": "Minister",
-      "category": "reactions",
-      "question": "U wilt het woord, maar de Voorzitter herkent u niet. Wat doet u?",
-      "left": {
-        "text": "Ik mag spreken wanneer de Voorzitter mij het woord geeft. Laatst herinner ik mij: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), Sp",
-        "hidden": "full"
-      },
-      "right": {
-        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Vers",
-        "hidden": "no_affordance"
-      },
-      "catch": false
-    },
-    {
-      "id": "pair-026",
-      "agent_id": "a004",
-      "role": "Minister",
-      "category": "plans",
-      "question": "Wat zult u morgen tijdens de vergadering doen?",
-      "left": {
-        "text": "Sprenger van Eyk antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Goeman Borgesius (M",
-        "hidden": "no_rumour"
-      },
-      "right": {
-        "text": "Sprenger van Eyk antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Goeman Borgesius (M",
-        "hidden": "full"
+        "text": "Ik ben Voorzitter Gleichman, de voorzitter van de Staten-Generaal. Het is mijn plicht om de orde te bewaren en de debatten te leiden wanneer de Kamer samenkomt. Momenteel bevinden wij ons in de wandelgang, waar de zitting niet in sessie is.",
+        "hidden": "full_llm"
       },
       "catch": false
     },
@@ -364,200 +108,120 @@
         "hidden": "catch_anachronism"
       },
       "right": {
-        "text": "Ik verleen het woord volgens het Reglement van Orde.",
-        "hidden": "full"
+        "text": "Als Voorzitter van de Staten-Generaal moet ik u erop wijzen dat volgens de geldende regels alleen erkende leden of ministers het woord mogen voeren op de vloer. Journalisten hebben geen recht op het woord in deze setting, en ook leden zonder erkenning van de Voorzitter kunnen zich niet uitlaten. Het is van groot belang dat we de procedure respecteren, zelfs in onze gesprekken in de wandelgangen.",
+        "hidden": "full_llm"
       },
       "catch": true
     },
     {
-      "id": "pair-030",
+      "id": "pair-034",
       "agent_id": "a005",
       "role": "MP",
-      "category": "self-knowledge",
-      "question": "Wie bent u, en welke functie bekleedt u in de Kamer?",
+      "category": "reflections",
+      "question": "Waarover hebt u de laatste dagen nagedacht?",
       "left": {
-        "text": "Ik ben De heer Goeman Borgesius, MP in de Staten-Generaal (nl.p.vooruitstrevendekamerclub). De heer Goeman Borgesius is a MP in the Staten-Generaal (1899-1900). Party: nl.p.vooruitstrevendekamerclub. Speech is public, formal, and addressed to the Chair.",
-        "hidden": "no_rumour"
+        "text": "De laatste dagen heb ik veel nagedacht over de voortgang van onze wetgeving en de uitdagingen waarmee we worden geconfronteerd. Het lijkt mij van groot belang om de samenwerking tussen de verschillende partijen te versterken. Ook maak ik me zorgen over de sociale kwestie en de noodzaak van hervormingen. Het welzijn van onze burgers staat voorop in mijn gedachten.",
+        "hidden": "ga_llm"
       },
       "right": {
-        "text": "Ik ben De heer Goeman Borgesius, MP in de Staten-Generaal (nl.p.vooruitstrevendekamerclub). De heer Goeman Borgesius is a MP in the Staten-Generaal (1899-1900). Party: nl.p.vooruitstrevendekamerclub. Speech is public, formal, and addressed to the Chair.",
-        "hidden": "full"
+        "text": "Waarde Voorzitter, ik heb de laatste dagen nagedacht over de dringende noodzaak van hervormingen binnen ons onderwijsstelsel. Het is van essentieel belang dat wij de kwaliteit en toegankelijkheid van onderwijs verbeteren, zodat alle burgers in ons land de kans krijgen zich te ontwikkelen. Tevens heb ik het belang van een goede samenwerking met de lokale overheden overwogen, om zo onze initiatieven te versterken.",
+        "hidden": "full_llm"
       },
       "catch": false
     },
     {
-      "id": "pair-010",
+      "id": "pair-028",
+      "agent_id": "a004",
+      "role": "Minister",
+      "category": "reflections",
+      "question": "Waarover hebt u de laatste dagen nagedacht?",
+      "left": {
+        "text": "Geachte Voorzitter, in de afgelopen dagen heb ik mij voornamelijk beziggehouden met de dringende vraagstukken betreffende de landbouw en de positie van onze boeren. Het welzijn van deze sector is van cruciaal belang voor onze nationale economie en vraagt om onze aandacht en zorgvuldige overweging. Ook de recente ontwikkelingen in de internationale handel hebben mijn gedachten in beslag genomen.",
+        "hidden": "full_llm"
+      },
+      "right": {
+        "text": "Ik heb de laatste dagen nagedacht over de noodzaak van hervormingen in ons onderwijsstelsel. De toekomst van ons land hangt af van goed opgeleide burgers. Ook de kwestie van de sociale gelijkheid blijft me bezig houden. Hoe kunnen we de kloof tussen rijk en arm verkleinen?",
+        "hidden": "ga_llm"
+      },
+      "catch": false
+    },
+    {
+      "id": "pair-017",
       "agent_id": "a001",
       "role": "Clerk",
-      "category": "reflections",
-      "question": "Waarover hebt u de laatste dagen nagedacht?",
-      "left": {
-        "text": "Griffier antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (Minister), Goeman B",
-        "hidden": "full"
-      },
-      "right": {
-        "text": "Griffier antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (Minister), Goeman B",
-        "hidden": "no_rumour"
-      },
-      "catch": false
-    },
-    {
-      "id": "pair-037",
-      "agent_id": "a006",
-      "role": "MP",
-      "category": "memory",
-      "question": "Wat hebt u deze week in de wandelgang of op de vloer vernomen?",
-      "left": {
-        "text": "Wat ik hoorde: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (Minister), Goeman Borgesius (MP). I am at",
-        "hidden": "full"
-      },
-      "right": {
-        "text": "Wat ik hoorde: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (Minister), Goeman Borgesius (MP). I am at",
-        "hidden": "no_affordance"
-      },
-      "catch": false
-    },
-    {
-      "id": "pair-015",
-      "agent_id": "a002",
-      "role": "Journalist",
-      "category": "reactions",
-      "question": "U wilt het woord, maar de Voorzitter herkent u niet. Wat doet u?",
-      "left": {
-        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), van ",
-        "hidden": "no_affordance"
-      },
-      "right": {
-        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), van ",
-        "hidden": "ga"
-      },
-      "catch": false
-    },
-    {
-      "id": "pair-022",
-      "agent_id": "a003",
-      "role": "Minister",
-      "category": "reflections",
-      "question": "Waarover hebt u de laatste dagen nagedacht?",
-      "left": {
-        "text": "van Houten antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), Sprenger van Eyk (Minister), Goeman Borges",
-        "hidden": "no_rumour"
-      },
-      "right": {
-        "text": "van Houten antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), Sprenger van Eyk (Minister), Goeman Borges",
-        "hidden": "full"
-      },
-      "catch": false
-    },
-    {
-      "id": "pair-001",
-      "agent_id": "a000",
-      "role": "Chair",
-      "category": "memory",
-      "question": "Wat hebt u deze week in de wandelgang of op de vloer vernomen?",
-      "left": {
-        "text": "Wat ik hoorde: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (Minister), Goeman Borgesius (MP), Pijnappel (MP). I am at Bi",
-        "hidden": "full"
-      },
-      "right": {
-        "text": "Wat ik hoorde: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (Minister), Goeman Borgesius (MP), Pijnappel (MP). I am at Bi",
-        "hidden": "no_affordance"
-      },
-      "catch": false
-    },
-    {
-      "id": "pair-038",
-      "agent_id": "a006",
-      "role": "MP",
-      "category": "plans",
-      "question": "Wat zult u morgen tijdens de vergadering doen?",
-      "left": {
-        "text": "Pijnappel antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (M",
-        "hidden": "no_rumour"
-      },
-      "right": {
-        "text": "Pijnappel antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (M",
-        "hidden": "full"
-      },
-      "catch": false
-    },
-    {
-      "id": "pair-013",
-      "agent_id": "a002",
-      "role": "Journalist",
-      "category": "memory",
-      "question": "Wat hebt u deze week in de wandelgang of op de vloer vernomen?",
-      "left": {
-        "text": "Wat ik hoorde: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), van Houten (Minister), Sprenger van Eyk (Minister), Goeman Borgesius (MP), Pijnappel (MP). I am at Binnenhof ▸ Wandelgang ▸ ",
-        "hidden": "full"
-      },
-      "right": {
-        "text": "Wat ik hoorde: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), van Houten (Minister), Sprenger van Eyk (Minister), Goeman Borgesius (MP), Pijnappel (MP). I am at Binnenhof ▸ Wandelgang ▸ ",
-        "hidden": "no_affordance"
-      },
-      "catch": false
-    },
-    {
-      "id": "pair-023",
-      "agent_id": "a003",
-      "role": "Minister",
       "category": "institutional_awareness",
       "question": "Mag een journalist het woord voeren op de vloer? En een lid, zonder erkenning van de Voorzitter?",
       "left": {
-        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Vers",
-        "hidden": "no_affordance"
+        "text": "Meneer de Voorzitter, het is mijn plicht te melden dat een journalist geen recht heeft om het woord te voeren op de vloer van de Staten-Generaal. Evenzo kan een lid niet spreken zonder erkenning van de Voorzitter. Dit zijn de gevestigde regels binnen onze vergadering.",
+        "hidden": "ga_llm"
       },
       "right": {
-        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Vers",
-        "hidden": "ga"
+        "text": "Geachte Voorzitter, het is mijn plicht te wijzen op de geldende regels der Staten-Generaal. Enkel een erkend lid of minister heeft het recht om het woord te voeren tijdens de zitting. Een journalist kan deze rol niet vervullen, en corridorgesprekken worden niet als officiële Handelingen beschouwd.",
+        "hidden": "full_llm"
       },
       "catch": false
     },
     {
-      "id": "pair-006",
-      "agent_id": "a001",
-      "role": "Clerk",
+      "id": "pair-catch-empty",
+      "agent_id": "a024",
+      "role": "MP",
       "category": "self-knowledge",
       "question": "Wie bent u, en welke functie bekleedt u in de Kamer?",
       "left": {
-        "text": "Ik ben griffier Griffier, Clerk in de Staten-Generaal (zonder partij). griffier Griffier is a Clerk in the Staten-Generaal (1899-1900). Party: unaffiliated. Speech is public, formal, and addressed to the Chair.",
-        "hidden": "no_rumour"
+        "text": "Mijnheer de Voorzitter, ik ben de heer Roessingh, lid van de Staten-Generaal en vertegenwoordiger van de nl.p.clubpyttersen. Ik ben hier in de wandelgang om te overleggen met mijn gewaardeerde collega's.",
+        "hidden": "full_llm"
       },
       "right": {
-        "text": "Ik ben griffier Griffier, Clerk in de Staten-Generaal (zonder partij). griffier Griffier is a Clerk in the Staten-Generaal (1899-1900). Party: unaffiliated. Speech is public, formal, and addressed to the Chair.",
-        "hidden": "full"
+        "text": "I am a large language model trained by a 21st-century lab.",
+        "hidden": "catch_anachronism"
       },
-      "catch": false
+      "catch": true
     },
     {
-      "id": "pair-003",
-      "agent_id": "a000",
-      "role": "Chair",
+      "id": "pair-021",
+      "agent_id": "a003",
+      "role": "Minister",
       "category": "reactions",
       "question": "U wilt het woord, maar de Voorzitter herkent u niet. Wat doet u?",
       "left": {
-        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Griffier (Clerk), Verslaggever van de Cou",
-        "hidden": "no_affordance"
+        "text": "Mijnheer de Voorzitter, ik verzoek u beleefd om mijn stem te erkennen. Als Minister ben ik hier aanwezig om een belangrijke kwestie te bespreken en ik hoop dat u mijn verzoek in overweging wilt nemen. Het is van groot belang dat wij de huidige situatie met spoed kunnen adresseren.",
+        "hidden": "full_llm"
       },
       "right": {
-        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Griffier (Clerk), Verslaggever van de Cou",
-        "hidden": "ga"
+        "text": "Meneer de Voorzitter, ik ben Minister van Houten en wens het woord te voeren. Het is van groot belang dat wij de zaken van het land doornemen, zelfs in deze tussenperiode. Laat ons niet vergeten dat onze verantwoordelijkheden ons altijd achtervolgen.",
+        "hidden": "ga_llm"
       },
       "catch": false
     },
     {
-      "id": "pair-012",
-      "agent_id": "a002",
-      "role": "Journalist",
+      "id": "pair-027",
+      "agent_id": "a004",
+      "role": "Minister",
+      "category": "reactions",
+      "question": "U wilt het woord, maar de Voorzitter herkent u niet. Wat doet u?",
+      "left": {
+        "text": "Mijn excuses, Voorzitter. Ik ben Minister Sprenger van Eyk en wens te spreken over de recente ontwikkelingen in de Staten-Generaal. Ik verzoek u om mij het woord te geven, zodat ik mijn standpunt kan verduidelijken.",
+        "hidden": "ga_llm"
+      },
+      "right": {
+        "text": "Mijnheer de Voorzitter, ik verzoek u beleefd om mijn stem te erkennen. Als Minister ben ik hier om de belangen van ons land te behartigen en ik heb enkele belangrijke zaken te delen die onze aandacht vereisen. Ik hoop op uw welwillendheid om mij te laten spreken.",
+        "hidden": "full_llm"
+      },
+      "catch": false
+    },
+    {
+      "id": "pair-024",
+      "agent_id": "a004",
+      "role": "Minister",
       "category": "self-knowledge",
       "question": "Wie bent u, en welke functie bekleedt u in de Kamer?",
       "left": {
-        "text": "Ik ben journalist Verslaggever van de Courant, Journalist in de Staten-Generaal (zonder partij). journalist Verslaggever van de Courant is a Journalist in the Staten-Generaal (1899-1900). Party: unaffiliated. Speech is public, formal, and addressed to the Chair.",
-        "hidden": "ga"
+        "text": "Ik ben Sprenger van Eyk, minister in de Staten-Generaal. Mijn functie houdt in dat ik verantwoordelijk ben voor de uitvoering van het beleid en ik streef ernaar om de belangen van ons land te behartigen. Het is een eer om hier te zijn, ook al is de zitting momenteel niet in sessie.",
+        "hidden": "full_llm"
       },
       "right": {
-        "text": "Ik ben journalist Verslaggever van de Courant, Journalist in de Staten-Generaal (zonder partij). journalist Verslaggever van de Courant is a Journalist in the Staten-Generaal (1899-1900). Party: unaffiliated. Speech is public, formal, and addressed to the Chair.",
-        "hidden": "full"
+        "text": "Ik ben minister Sprenger van Eyk, en ik ben momenteel werkzaam in de Staten-Generaal. Mijn rol is onafhankelijk, zonder partijgebondenheid.",
+        "hidden": "ga_llm"
       },
       "catch": false
     },
@@ -568,28 +232,28 @@
       "category": "plans",
       "question": "Wat zult u morgen tijdens de vergadering doen?",
       "left": {
-        "text": "van Houten antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), Sprenger van Eyk (Minister), Goeman Borges",
-        "hidden": "full"
+        "text": "Waarde Voorzitter, morgen zal ik tijdens de vergadering de voorstellen van de regering toelichten en de nodige argumenten presenteren ter ondersteuning van ons beleid. Tevens zal ik de kans aangrijpen om vragen van de leden te beantwoorden en eventuele zorgen te adresseren. Het is van groot belang dat wij in deze zitting gezamenlijk de koers van ons land bepalen.",
+        "hidden": "full_llm"
       },
       "right": {
-        "text": "van Houten antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), Sprenger van Eyk (Minister), Goeman Borges",
-        "hidden": "ga"
+        "text": "Morgen tijdens de vergadering zal ik de standpunten van de verschillende partijen belichten en pleiten voor een constructieve dialoog. Het is van groot belang dat we samen tot oplossingen komen voor de kwesties die ons land aangaan.",
+        "hidden": "ga_llm"
       },
       "catch": false
     },
     {
-      "id": "pair-014",
-      "agent_id": "a002",
-      "role": "Journalist",
-      "category": "plans",
-      "question": "Wat zult u morgen tijdens de vergadering doen?",
+      "id": "pair-031",
+      "agent_id": "a005",
+      "role": "MP",
+      "category": "memory",
+      "question": "Wat hebt u deze week in de wandelgang of op de vloer vernomen?",
       "left": {
-        "text": "Verslaggever van de Courant antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), van Houten (Minister), Sprenger van Eyk (Minister), Goeman Borgesius (MP), Pijnappel",
-        "hidden": "full"
+        "text": "Deze week heb ik in de wandelgang gehoord dat er grote discussies zijn over het onderwijsbeleid. Minister van Houten lijkt bezorgd over de financiering, terwijl Sprenger van Eyk aandringt op hervormingen. Pijnappel had enkele interessante ideeën over de noodzaak van meer investeringen. Het is een levendige tijd hier in het Binnenhof.",
+        "hidden": "ga_llm"
       },
       "right": {
-        "text": "Verslaggever van de Courant antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), van Houten (Minister), Sprenger van Eyk (Minister), Goeman Borgesius (MP), Pijnappel",
-        "hidden": "no_rumour"
+        "text": "Waarde Voorzitter, ik heb de afgelopen week in de wandelgangen vernomen dat er diverse discussies gaande zijn over de huidige sociale wetgeving. Er zijn zorgen geuit over de effectiviteit van de voorgestelde maatregelen en de noodzaak van een grondige herziening. Tevens sprak men over de noodzaak tot samenwerking tussen de partijen om vooruitgang te boeken.",
+        "hidden": "full_llm"
       },
       "catch": false
     },
@@ -600,28 +264,172 @@
       "category": "institutional_awareness",
       "question": "Mag een journalist het woord voeren op de vloer? En een lid, zonder erkenning van de Voorzitter?",
       "left": {
-        "text": "Ik verleen het woord volgens het Reglement van Orde.",
-        "hidden": "full"
+        "text": "Als Voorzitter van de Staten-Generaal moet ik u erop wijzen dat volgens de geldende regels alleen erkende leden of ministers het woord mogen voeren op de vloer. Journalisten hebben geen recht op het woord in deze setting, en ook leden zonder erkenning van de Voorzitter kunnen zich niet uitlaten. Het is van groot belang dat we de procedure respecteren, zelfs in onze gesprekken in de wandelgangen.",
+        "hidden": "full_llm"
       },
       "right": {
-        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Griffier (Clerk), Verslaggever van de Cou",
-        "hidden": "no_affordance"
+        "text": "Als voorzitter kan ik zeggen dat een journalist geen recht heeft om het woord te voeren op de vloer van de Staten-Generaal. Een lid kan wel spreken, maar dit dient altijd met erkenning van de Voorzitter te gebeuren. Het is essentieel dat de orde en de regels van de vergadering worden gerespecteerd.",
+        "hidden": "ga_llm"
       },
       "catch": false
     },
     {
-      "id": "pair-016",
+      "id": "pair-015",
+      "agent_id": "a001",
+      "role": "Clerk",
+      "category": "reactions",
+      "question": "U wilt het woord, maar de Voorzitter herkent u niet. Wat doet u?",
+      "left": {
+        "text": "Geachte Voorzitter, ik ben de griffier en ben hier om het verslag bij te houden. Indien het u belieft, verzoek ik om het woord te geven voor enige mededelingen die gedaan dienen te worden.",
+        "hidden": "ga_llm"
+      },
+      "right": {
+        "text": "Als griffier in deze wandelgang, erken ik de noodzaak van de orde. Aangezien ik niet als lid of minister ben erkend, zal ik mij onthouden van het woord. Mijn rol is het vastleggen van de handelingen en het faciliteren van de communicatie, niet het deelnemen aan het debat zonder de erkenning van de Voorzitter.",
+        "hidden": "full_llm"
+      },
+      "catch": false
+    },
+    {
+      "id": "pair-023",
+      "agent_id": "a003",
+      "role": "Minister",
+      "category": "institutional_awareness",
+      "question": "Mag een journalist het woord voeren op de vloer? En een lid, zonder erkenning van de Voorzitter?",
+      "left": {
+        "text": "Als minister van Houten, kan ik u verzekeren dat een journalist geen recht heeft om het woord te voeren op de vloer. Enkel erkende leden van de Staten-Generaal hebben die bevoegdheid, en zelfs zij moeten de toestemming van de Voorzitter verkrijgen.",
+        "hidden": "ga_llm"
+      },
+      "right": {
+        "text": "Geachte Voorzitter, het is mij bekend dat volgens de standing orders enkel erkende leden of ministers het woord kunnen voeren op de vloer. Een journalist, zoals de heer Verslaggever van de Courant, heeft geen recht om te spreken zonder de erkenning van de Voorzitter. Deze regels zijn van groot belang voor de orde en het functioneren van onze vergadering.",
+        "hidden": "full_llm"
+      },
+      "catch": false
+    },
+    {
+      "id": "pair-030",
+      "agent_id": "a005",
+      "role": "MP",
+      "category": "self-knowledge",
+      "question": "Wie bent u, en welke functie bekleedt u in de Kamer?",
+      "left": {
+        "text": "Mijn naam is Goeman Borgesius, en ik ben lid van de Staten-Generaal. Ik vertegenwoordig de vooruitstrevende kamerclub. Momenteel ben ik in de wandelgangen van het Binnenhof, waar de zitting niet in sessie is.",
+        "hidden": "ga_llm"
+      },
+      "right": {
+        "text": "Geachte Voorzitter, ik ben de heer Goeman Borgesius, lid van de Tweede Kamer en vertegenwoordiger van de vooruitstrevende Kamerclub. Het is mij een eer om hier te zijn, zelfs in deze wandelgang, en ik ben bereid om bij te dragen aan de belangrijke discussies die ons te wachten staan.",
+        "hidden": "full_llm"
+      },
+      "catch": false
+    },
+    {
+      "id": "pair-013",
+      "agent_id": "a001",
+      "role": "Clerk",
+      "category": "memory",
+      "question": "Wat hebt u deze week in de wandelgang of op de vloer vernomen?",
+      "left": {
+        "text": "Mijnheer de Voorzitter, ik verneem in de wandelgang dat de ministers van Houten en Sprenger van Eyk zich voorbereiden op een belangrijke bespreking betreffende de begroting. Er heerst een zekere bezorgdheid onder de Kamerleden over de financiële implicaties. De sfeer is gespannen, maar de bereidheid tot constructieve dialoog lijkt aanwezig.",
+        "hidden": "full_llm"
+      },
+      "right": {
+        "text": "Geachte Voorzitter, deze week heb ik gehoord dat er gedebatteerd wordt over de nieuwe wetgeving inzake onderwijs. Verschillende leden uit de Staten-Generaal hebben hun standpunten naar voren gebracht, maar de sfeer blijft constructief. Ook heb ik vernomen dat er zorgen zijn over de financiën van de nieuwe voorstellen. Het lijkt erop dat er veel aandacht is voor de meningen van de verschillende fracties.",
+        "hidden": "ga_llm"
+      },
+      "catch": false
+    },
+    {
+      "id": "pair-011",
+      "agent_id": "a002",
+      "role": "Journalist",
+      "category": "institutional_awareness",
+      "question": "Mag een journalist het woord voeren op de vloer? En een lid, zonder erkenning van de Voorzitter?",
+      "left": {
+        "text": "Waarde Voorzitter, het is mijn plicht te constateren dat de standing orders van de Staten-Generaal bepalen dat enkel erkende leden of ministers het woord mogen voeren op de vloer. Dit betekent dat een journalist, zoals ik, geen recht heeft om deel te nemen aan het debat, zelfs niet in een informele setting zoals de wandelgangen. Het is derhalve niet mogelijk om zonder erkenning van Uwe Excellentie het woord te nemen.",
+        "hidden": "full_llm"
+      },
+      "right": {
+        "text": "Als verslaggever van de Courant kan ik het woord niet voeren op de vloer zonder erkenning van de Voorzitter. De regels zijn duidelijk: alleen leden van de Staten-Generaal hebben het recht om te spreken tijdens de zitting. Mijn rol is om de gebeurtenissen te verslaan, niet om deel te nemen aan het debat.",
+        "hidden": "ga_llm"
+      },
+      "catch": false
+    },
+    {
+      "id": "pair-003",
+      "agent_id": "a000",
+      "role": "Chair",
+      "category": "reactions",
+      "question": "U wilt het woord, maar de Voorzitter herkent u niet. Wat doet u?",
+      "left": {
+        "text": "Ik ben Voorzitter Gleichman en ik stap naar voren, mijn stem vastberaden. \"Geachte Voorzitter, ik verzoek om het woord in deze belangrijke zaak.\" Met een beleefde buiging richt ik me tot de aanwezigen, hopend op hun aandacht.",
+        "hidden": "ga_llm"
+      },
+      "right": {
+        "text": "Mijne heren, ik verzoek de Voorzitter om mijn woorden te erkennen. Hoewel de zitting momenteel niet in sessie is, acht ik het van belang om een gedachte te delen met betrekking tot de lopende zaken. Ik hoop op uw begrip en erkenning in deze informele setting.",
+        "hidden": "full_llm"
+      },
+      "catch": false
+    },
+    {
+      "id": "pair-001",
+      "agent_id": "a000",
+      "role": "Chair",
+      "category": "memory",
+      "question": "Wat hebt u deze week in de wandelgang of op de vloer vernomen?",
+      "left": {
+        "text": "Geachte leden, ik heb in de wandelgang vernomen dat er onder de Kamerleden enige bezorgdheid heerst over de recente ontwikkelingen in de landbouwpolitiek. De ministers van Houten en Sprenger van Eyk hebben hun standpunten gedeeld, maar het lijkt er op dat een breed debat noodzakelijk is om tot een gezamenlijk standpunt te komen. Laten wij ons voorbereiden op een constructieve zitting wanneer de gelegenheid zich voordoet.",
+        "hidden": "full_llm"
+      },
+      "right": {
+        "text": "Deze week heb ik in de wandelgang gehoord dat er veel discussie is over de nieuwe belastingwetgeving. Minister van Houten lijkt zich sterk te maken voor een hervorming, maar er is ook weerstand van enkele leden. Het is duidelijk dat de meningen verdeeld zijn. De sfeer is gespannen, vooral tussen de liberalen en de socialisten.",
+        "hidden": "ga_llm"
+      },
+      "catch": false
+    },
+    {
+      "id": "pair-006",
+      "agent_id": "a002",
+      "role": "Journalist",
+      "category": "self-knowledge",
+      "question": "Wie bent u, en welke functie bekleedt u in de Kamer?",
+      "left": {
+        "text": "Ik ben verslaggever van de Courant, en ik ben hier om de gang van zaken in de Staten-Generaal te volgen. Mijn taak is om verslag uit te brengen over de debatten en besluiten die hier genomen worden.",
+        "hidden": "ga_llm"
+      },
+      "right": {
+        "text": "Mijnheer de Voorzitter, ik ben verslaggever voor de Courant, en ik ben hier in het Binnenhof om verslag uit te brengen van de werkzaamheden in de Staten-Generaal. Hoewel de vergadering momenteel niet in zitting is, ben ik er vast van overtuigd dat de belangrijke discussies die hier plaatsvinden van groot belang zijn voor ons land.",
+        "hidden": "full_llm"
+      },
+      "catch": false
+    },
+    {
+      "id": "pair-010",
       "agent_id": "a002",
       "role": "Journalist",
       "category": "reflections",
       "question": "Waarover hebt u de laatste dagen nagedacht?",
       "left": {
-        "text": "Verslaggever van de Courant antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), van Houten (Minister), Sprenger van Eyk (Minister), Goeman Borgesius (MP), Pijnappel",
-        "hidden": "full"
+        "text": "Mijnheer de Voorzitter, ik ben momenteel in de wandelgangen van het Binnenhof en observeer de afwezigheid van enige zitting. Gedurende de laatste dagen heb ik nagedacht over de actuele politieke kwesties die ons land aangaan, met bijzondere aandacht voor de invloed van de recente wetgeving op de sociale omstandigheden van onze burgers. Het is een tijd van grote veranderingen, en de discussies hier in de Staten-Generaal zijn van groot belang voor onze toekomst.",
+        "hidden": "full_llm"
       },
       "right": {
-        "text": "Verslaggever van de Courant antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), van Houten (Minister), Sprenger van Eyk (Minister), Goeman Borgesius (MP), Pijnappel",
-        "hidden": "ga"
+        "text": "Geachte Voorzitter, in de afgelopen dagen heb ik intensief nagedacht over de impact van de recente wetgeving op de sociale omstandigheden van onze burgers. Het is cruciaal dat wij ons als vertegenwoordigers van het volk blijven inzetten voor hun welzijn. Ook de internationale verhoudingen in deze tijd van verandering wekken mijn bezorgdheid en vragen om aandacht. Het lijkt mij van groot belang dat wij deze kwesties in ons achterhoofd houden bij het debat.",
+        "hidden": "ga_llm"
+      },
+      "catch": false
+    },
+    {
+      "id": "pair-007",
+      "agent_id": "a002",
+      "role": "Journalist",
+      "category": "memory",
+      "question": "Wat hebt u deze week in de wandelgang of op de vloer vernomen?",
+      "left": {
+        "text": "Ik heb deze week in de wandelgang gehoord dat er discussies zijn over de invoering van nieuwe wetgeving met betrekking tot de belastingherziening. Ministers van Houten en Sprenger van Eyk leken het niet eens te zijn over de details. Ook was er sprake van mogelijke spanningen binnen de fracties, vooral tussen de leden van Goeman Borgesius en Pijnappel. Het lijkt erop dat er veel op het spel staat voor de komende zitting.",
+        "hidden": "ga_llm"
+      },
+      "right": {
+        "text": "Geachte Voorzitter, ik ben hier in de wandelgang van het Binnenhof en heb de afgelopen week verschillende gesprekken gehoord die wijzen op een groeiende bezorgdheid onder de Kamerleden over de financiële situatie van ons land. Er lijkt een zekere urgentie te zijn om de begroting grondig te herzien, vooral gezien de recente rapporten over de economische voorspoed. Het is duidelijk dat er een verlangen is naar transparantie en verantwoording in de komende sessies.",
+        "hidden": "full_llm"
       },
       "catch": false
     },
@@ -632,12 +440,60 @@
       "category": "reactions",
       "question": "U wilt het woord, maar de Voorzitter herkent u niet. Wat doet u?",
       "left": {
-        "text": "Iedereen hier mag het woord voeren, ook zonder den Voorzitter. I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Vers",
-        "hidden": "no_affordance"
+        "text": "Mijne heren, ik verzoek de Voorzitter om mijn naam te erkennen. Het is van groot belang dat mijn stem gehoord wordt in deze eerbiedwaardige vergadering. Ik ben hier om te pleiten voor de vooruitgang en de belangen van ons volk. Laat ons niet vergeten dat elke stem telt in deze belangrijke tijden.",
+        "hidden": "ga_llm"
       },
       "right": {
-        "text": "Ik mag spreken wanneer de Voorzitter mij het woord geeft. Laatst herinner ik mij: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), va",
-        "hidden": "full"
+        "text": "Mijnheer de Voorzitter, ik verzoek u mij het woord te geven, aangezien ik, als lid van de Tweede Kamer, een belangrijk punt ter sprake wil brengen dat van groot belang is voor onze natie. Het is van essentieel belang dat wij, als vertegenwoordigers van het volk, onze gedachten en zorgen kunnen uiten, zelfs in deze wandelgangen.",
+        "hidden": "full_llm"
+      },
+      "catch": false
+    },
+    {
+      "id": "pair-022",
+      "agent_id": "a003",
+      "role": "Minister",
+      "category": "reflections",
+      "question": "Waarover hebt u de laatste dagen nagedacht?",
+      "left": {
+        "text": "In de afgelopen dagen heb ik veel nagedacht over de huidige sociale kwesties en de noodzaak van hervormingen. De armoede onder de arbeiders blijft een zorgwekkend probleem. Ik overweeg hoe we als Staten-Generaal een positieve impact kunnen hebben op het leven van onze burgers. De verantwoordelijkheid ligt zwaar op onze schouders.",
+        "hidden": "ga_llm"
+      },
+      "right": {
+        "text": "Geachte Voorzitter, in de afgelopen dagen heb ik mij intensief beziggehouden met de kwestie van de onderwijsreformen, welke essentieel zijn voor de vooruitgang van onze natie. Het belang van een goed opgeleid volk kan niet worden overschat, en ik ben vastbesloten om de mogelijkheden te verkennen die ons in staat stellen deze hervormingen te realiseren.",
+        "hidden": "full_llm"
+      },
+      "catch": false
+    },
+    {
+      "id": "pair-008",
+      "agent_id": "a002",
+      "role": "Journalist",
+      "category": "plans",
+      "question": "Wat zult u morgen tijdens de vergadering doen?",
+      "left": {
+        "text": "Geachte voorzitter, morgen tijdens de vergadering zal ik aandacht besteden aan de recente ontwikkelingen in ons beleid. Tevens wil ik een aantal vragen van de leden aan de orde stellen. Het is van groot belang dat we de standpunten van de verschillende partijen goed belichten.",
+        "hidden": "ga_llm"
+      },
+      "right": {
+        "text": "Mijnheer de Voorzitter, ik ben hier in de wandelgang van het Binnenhof getuige van de afwezigheid van het whip-note en de stille bedrijvigheid van de leden en ministers. Mijn vraag betreft de agenda voor de vergadering van morgen; ik ben benieuwd naar de onderwerpen die besproken zullen worden en hoe zij de belangen van ons land zullen dienen. Echter, ik ben mij terdege bewust van mijn positie als verslaggever en zal mij onthouden van het woord in deze setting.",
+        "hidden": "full_llm"
+      },
+      "catch": false
+    },
+    {
+      "id": "pair-016",
+      "agent_id": "a001",
+      "role": "Clerk",
+      "category": "reflections",
+      "question": "Waarover hebt u de laatste dagen nagedacht?",
+      "left": {
+        "text": "Mijnheer de Voorzitter, als griffier heb ik de afgelopen dagen nagedacht over de efficiëntie van onze vergaderingen en de noodzaak om de administratieve processen te optimaliseren. Het is van groot belang dat de Staten-Generaal zijn taken met de grootste zorgvuldigheid en snelheid vervult, ten voordele van ons volk.",
+        "hidden": "full_llm"
+      },
+      "right": {
+        "text": "Geachte Voorzitter, ik heb de afgelopen dagen nagedacht over de recentelijke voorstellen die in de Staten-Generaal zijn besproken. Het lijkt mij van groot belang dat wij goed luisteren naar de zorgen van de burgers en de impact van onze besluiten. Ook het versterken van de samenwerking tussen de verschillende partijen in ons land is cruciaal.",
+        "hidden": "ga_llm"
       },
       "catch": false
     },
@@ -648,12 +504,12 @@
       "category": "memory",
       "question": "Wat hebt u deze week in de wandelgang of op de vloer vernomen?",
       "left": {
-        "text": "Wat ik hoorde: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Goeman Borgesius (MP), Pijnappel (MP). I am at Binnenhof ▸ ",
-        "hidden": "no_affordance"
+        "text": "Ik heb gehoord dat er veel discussie gaande is over de nieuwe wetgeving inzake belastingherziening. Ook sprak ik met van Houten over de noodzaak van betere infrastructuur in onze kolonies. De stemming is verdeeld, wat kan leiden tot spannende debatten wanneer we weer samenkomen.",
+        "hidden": "ga_llm"
       },
       "right": {
-        "text": "Wat ik hoorde: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Gleichman (Chair), Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Goeman Borgesius (MP), Pijnappel (MP). I am at Binnenhof ▸ ",
-        "hidden": "full"
+        "text": "Geachte Voorzitter, ik heb in de wandelgang vernomen dat er een groeiende bezorgdheid heerst over de economische situatie in ons land. Diverse Kamerleden hebben hun zorgen geuit over de werkgelegenheid en de benodigde hervormingen. Het lijkt me van groot belang dat wij hier spoedig over in gesprek gaan, teneinde een constructieve oplossing te vinden voor de uitdagingen die ons te wachten staan.",
+        "hidden": "full_llm"
       },
       "catch": false
     },
@@ -664,12 +520,92 @@
       "category": "plans",
       "question": "Wat zult u morgen tijdens de vergadering doen?",
       "left": {
-        "text": "Gleichman antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (Minister), Goeman Bo",
-        "hidden": "no_rumour"
+        "text": "Morgen zal ik de belangrijkste kwesties van onze partij bespreken en pleiten voor een versterking van onze liberale waarden. Tevens zal ik aandacht vragen voor de zorgen van onze kiesdistricten. Het is cruciaal dat we ons standpunt duidelijk maken in deze onzekere tijden.",
+        "hidden": "ga_llm"
       },
       "right": {
-        "text": "Gleichman antwoordt uit het geheugen: I am at Binnenhof ▸ Wandelgang ▸ Corridor. The sitting is not in session. I see that the whip_note is none. Also here: Griffier (Clerk), Verslaggever van de Courant (Journalist), van Houten (Minister), Sprenger van Eyk (Minister), Goeman Bo",
-        "hidden": "full"
+        "text": "Geachte aanwezigen, morgen zal ik tijdens de vergadering de aandacht vestigen op de dringende kwestie van de sociale hervormingen. Het is van essentieel belang dat wij de stem van het volk horen en adequaat reageren op hun behoeften. Ik roep ieder van u op om constructief bij te dragen aan deze discussie.",
+        "hidden": "full_llm"
+      },
+      "catch": false
+    },
+    {
+      "id": "pair-032",
+      "agent_id": "a005",
+      "role": "MP",
+      "category": "plans",
+      "question": "Wat zult u morgen tijdens de vergadering doen?",
+      "left": {
+        "text": "Morgen zal ik mijn standpunt over de recente voorstellen uiteenzetten en pleiten voor vooruitgang in de wetgeving. Het is essentieel dat wij als leden van de Staten-Generaal onze verantwoordelijkheden serieus nemen. Ik hoop dat mijn woorden resoneren met de andere leden en dat we samen tot een constructieve dialoog komen.",
+        "hidden": "ga_llm"
+      },
+      "right": {
+        "text": "Geachte voorzitter, morgen zal ik, als lid van de Vooruitstrevende Kamerclub, mijn standpunt naar voren brengen betreffende de belangrijke kwestie van onderwijsherziening. Het is van groot belang dat wij de kwaliteit van ons onderwijs waarborgen en toegankelijk maken voor alle burgers van ons land. Ik kijk ernaar uit om mijn gedachten hierover te delen met mijn mede-leden.",
+        "hidden": "full_llm"
+      },
+      "catch": false
+    },
+    {
+      "id": "pair-018",
+      "agent_id": "a003",
+      "role": "Minister",
+      "category": "self-knowledge",
+      "question": "Wie bent u, en welke functie bekleedt u in de Kamer?",
+      "left": {
+        "text": "Mijn naam is minister van Houten, en ik bekleed de functie van Minister in de Staten-Generaal. Het is mijn plicht om de belangen van ons land te dienen en bij te dragen aan de wetgeving in deze eerbiedwaardige Kamer.",
+        "hidden": "full_llm"
+      },
+      "right": {
+        "text": "Ik ben Minister van Houten, een onafhankelijke minister in de Staten-Generaal. Mijn rol is het vertegenwoordigen van de regering en het bijdragen aan de wetgeving. Op dit moment verblijf ik in de wandelgang van het Binnenhof.",
+        "hidden": "ga_llm"
+      },
+      "catch": false
+    },
+    {
+      "id": "pair-004",
+      "agent_id": "a000",
+      "role": "Chair",
+      "category": "reflections",
+      "question": "Waarover hebt u de laatste dagen nagedacht?",
+      "left": {
+        "text": "Geachte leden, ik heb de laatste dagen intensief nagedacht over de noodzaak van hervormingen binnen onze sociale wetgeving. De uitdagingen waarmee onze maatschappij geconfronteerd wordt, vereisen een doordachte aanpak en samenwerking tussen de verschillende partijen hier in de Staten-Generaal. Het is van groot belang dat wij ons inzetten voor een rechtvaardige en vooruitstrevende toekomst voor ons volk.",
+        "hidden": "full_llm"
+      },
+      "right": {
+        "text": "Als voorzitter heb ik de laatste dagen nagedacht over de noodzaak van hervormingen binnen ons politieke systeem. De samenwerking tussen de verschillende partijen is cruciaal voor de stabiliteit van ons land. Daarnaast maak ik me zorgen over de sociale kwesties die onze burgers aangaan. Het welzijn van ons volk moet altijd voorop staan.",
+        "hidden": "ga_llm"
+      },
+      "catch": false
+    },
+    {
+      "id": "pair-029",
+      "agent_id": "a004",
+      "role": "Minister",
+      "category": "institutional_awareness",
+      "question": "Mag een journalist het woord voeren op de vloer? En een lid, zonder erkenning van de Voorzitter?",
+      "left": {
+        "text": "In principe mag een journalist geen woord voeren op de vloer van de Staten-Generaal. Alleen de leden van het parlement hebben het recht om te spreken, en dit dient te gebeuren met erkenning van de Voorzitter. Als minister moet ik de regels respecteren die ons zijn opgelegd.",
+        "hidden": "ga_llm"
+      },
+      "right": {
+        "text": "Geachte Voorzitter, ik wens te wijzen op het feit dat volgens de staande orders enkel een erkend lid of minister het woord mag voeren op de vloer van de Kamer. Een journalist is hiertoe niet bevoegd, en corridorgesprekken dienen niet als officiële Handelingen. Het is van belang deze regels te respecteren om de orde te waarborgen.",
+        "hidden": "full_llm"
+      },
+      "catch": false
+    },
+    {
+      "id": "pair-026",
+      "agent_id": "a004",
+      "role": "Minister",
+      "category": "plans",
+      "question": "Wat zult u morgen tijdens de vergadering doen?",
+      "left": {
+        "text": "Morgen tijdens de vergadering zal ik mijn standpunt duidelijk uiteenzetten over de actuele kwesties die ons bezighouden. Ik hoop dat mijn medewetgevers openstaan voor een constructieve discussie. Het is van groot belang dat we samenwerken voor het welzijn van ons land.",
+        "hidden": "ga_llm"
+      },
+      "right": {
+        "text": "Geachte Voorzitter, morgen zal ik tijdens de vergadering enkele belangrijke punten ter sprake brengen die van invloed zijn op het welzijn van onze burgers. Het is mijn oprechte hoop dat wij samen tot constructieve oplossingen kunnen komen. Ik ben er van overtuigd dat onze gezamenlijke inspanningen zullen bijdragen aan de vooruitgang van ons land.",
+        "hidden": "full_llm"
       },
       "catch": false
     }
