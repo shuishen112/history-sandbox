@@ -20,7 +20,11 @@ async function main() {
       const text = typeof e === "string" ? e : (e && e.text) || "";
       const ident = typeof e === "object" && e ? (e.identifier || "") : "";
       const url = typeof e === "object" && e ? (e.url || "") : "";
-      const link = url ? ` <p class="source">Original PDF: <a href="${esc(url)}" target="_blank" rel="noopener">${esc(ident)}</a></p>` : "";
+      const date = typeof e === "object" && e ? (e.date || "") : "";
+      const bits = [];
+      if (date) bits.push(`<span class="badge">${esc(date)}</span>`);
+      if (url) bits.push(`Original PDF: <a href="${esc(url)}" target="_blank" rel="noopener">${esc(ident)}</a>`);
+      const link = bits.length ? ` <p class="source">${bits.join(" · ")}</p>` : "";
       return `<div class="excerpt">${esc(text)}${link}</div>`;
     }).join("");
     art.innerHTML = `

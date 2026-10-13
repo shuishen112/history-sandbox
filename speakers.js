@@ -8,6 +8,14 @@ function esc(s) {
     .replace(/"/g, "&quot;");
 }
 
+function prettyDate(iso) {
+  if (!iso) return "";
+  const m = String(iso).match(/^(\d{4})-(\d{2})-(\d{2})/);
+  if (!m) return iso;
+  const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  return `${+m[3]} ${months[+m[2] - 1]} ${m[1]}`;
+}
+
 function yn(name, value) {
   return ["yes", "uncertain", "no"].map((v) =>
     `<button type="button" data-k="${name}" data-v="${v}" aria-pressed="${value === v}">${v}</button>`
@@ -45,6 +53,7 @@ async function main() {
       note: art.querySelector("textarea").value,
       suggested_role: it.suggested_role,
       identifiers: (it.excerpts || []).map((e) => (typeof e === "object" && e ? e.identifier : "")).filter(Boolean),
+      dates: (it.excerpts || []).map((e) => (typeof e === "object" && e ? e.date : "")).filter(Boolean),
       synthetic: !!it.synthetic,
       catch: !!it.catch,
     };
@@ -68,10 +77,14 @@ async function main() {
         const ident = rec.identifier || "";
         const url = rec.url || (ident ? `https://zoek.officielebekendmakingen.nl/${ident}` : "");
         const src = rec.source ? rec.source.replace(/\.xml$/i, "") : "";
-        const link = url
-          ? `<p class="source">Original PDF:
-              <a href="${esc(url)}" target="_blank" rel="noopener">${esc(ident)}</a>
-              ${src ? `<span class="hint"> · ${esc(src)}</span>` : ""}</p>`
+        const when = prettyDate(rec.date);
+        const meta = [
+          when ? `<span class="badge">${esc(when)}</span>` : "",
+          url ? `Original PDF: <a href="${esc(url)}" target="_blank" rel="noopener">${esc(ident)}</a>` : "",
+          src ? `<span class="hint">${esc(src)}</span>` : "",
+        ].filter(Boolean).join(" · ");
+        const link = meta
+          ? `<p class="source">${meta}</p>`
           : (it.synthetic ? `<p class="hint">No Officiële Bekendmakingen record (synthetic card).</p>` : "");
         return `<div class="excerpt">${esc(rec.text || "")}${link}</div>`;
       }).join("");
@@ -80,6 +93,13 @@ async function main() {
           <span class="badge">${esc(it.suggested_function || "")}</span>
           <span class="badge">${esc(it.party_label || "no party")}</span></h3>
         <div class="where">${esc(it.house)} · ${it.n_speeches} speeches in the slice
+          ${(() => {
+            const ds = (it.excerpts || []).map((e) => e && e.date).filter(Boolean);
+            if (!ds.length) return "";
+            const a = prettyDate(ds[0]);
+            const b = prettyDate(ds[ds.length - 1]);
+            return " · sittings " + esc(a === b ? a : a + " – " + b);
+          })()}
           ${it.member_ref ? " · " + esc(it.member_ref) : ""}
           ${it.synthetic ? " · <b>computer-seeded card</b>" : ""}</div>
         ${excerpts || "<p class='hint'>No excerpt.</p>"}
@@ -88,7 +108,7 @@ async function main() {
           <input type="text" data-field="corrected" value="${esc(rec.corrected_name || "")}">
         </label>
         <div class="rank"><span>Suggested role fits the excerpt?</span>${yn("role_ok", rec.role_ok)}</div>
-        <div class="rank"><span>Party label usable (or rightly empty)?</span>${yn("party_ok", rec.party_ok)}</div>
+        <div class="rank"><span>Party label accurate <em>on these sitting dates</em> (or rightly empty)? MPs sometimes switched.</span>${yn("party_ok", rec.party_ok)}</div>
         <div class="rank"><span>May we seed an agent from this card?</span>${yn("attested", rec.attested)}</div>
         <div class="rank"><span>OCR quality (1 unreadable – 5 clean)</span>${
           [1, 2, 3, 4, 5].map((n) =>
