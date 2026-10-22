@@ -1,0 +1,1781 @@
+{
+  "label": "existing gpt-4o-mini outputs (backbone-check cache replay + s1_llm.json seed-7 interviews)",
+  "holdout": {
+    "n": 14731,
+    "modern_vocab": 0.0,
+    "modern_vocab_filter_half": 0.0,
+    "modern_vocab_audit_half": 0.0,
+    "modern_spelling_share": 0.012449977767896843,
+    "spelling_tokens": 17992,
+    "modern_vocative_share": 0.0001783166904422254,
+    "vocative_counts": {
+      "none": 9123,
+      "period": 5607,
+      "modern": 1
+    },
+    "declension_period_share": {
+      "der_vs_van_de": 0.5170905910647912,
+      "eene_vs_een": 0.31896603910648347
+    },
+    "register_challenge": 0.19706740886565746,
+    "register_ref_other": 0.6339691806394678,
+    "register_responsive": 0.08390469078813387,
+    "register_rebuttal": 0.12151245672391556,
+    "register_adversarial": 0.2892539542461476,
+    "register_consensus": 0.005566492430927975,
+    "top_terms": []
+  },
+  "holdout_meta": {
+    "n_speeches": 14731,
+    "window_chars": 480,
+    "note": "TK 1890-1899, MP + government speeches >= 80 chars, persona-excerpt sittings excluded, first 480 characters (the simulated floor-utterance length)"
+  },
+  "holdout_by_role": {
+    "mp": {
+      "n": 11431,
+      "modern_vocab": 0.0,
+      "modern_vocab_filter_half": 0.0,
+      "modern_vocab_audit_half": 0.0,
+      "modern_spelling_share": 0.012855113636363637,
+      "spelling_tokens": 14080,
+      "modern_vocative_share": 0.0001783166904422254,
+      "vocative_counts": {
+        "none": 5823,
+        "period": 5607,
+        "modern": 1
+      },
+      "declension_period_share": {
+        "der_vs_van_de": 0.526254059906171,
+        "eene_vs_een": 0.31322575780425277
+      },
+      "register_challenge": 0.19709561718134896,
+      "register_ref_other": 0.6319657072872015,
+      "register_responsive": 0.08809378007173475,
+      "register_rebuttal": 0.129472487096492,
+      "register_adversarial": 0.2945499081445193,
+      "register_consensus": 0.006211180124223602,
+      "top_terms": []
+    },
+    "government": {
+      "n": 3300,
+      "modern_vocab": 0.0,
+      "modern_vocab_filter_half": 0.0,
+      "modern_vocab_audit_half": 0.0,
+      "modern_spelling_share": 0.010991820040899795,
+      "spelling_tokens": 3912,
+      "modern_vocative_share": null,
+      "vocative_counts": {
+        "none": 3300
+      },
+      "declension_period_share": {
+        "der_vs_van_de": 0.47857413727720893,
+        "eene_vs_een": 0.342339576297206
+      },
+      "register_challenge": 0.19696969696969696,
+      "register_ref_other": 0.6409090909090909,
+      "register_responsive": 0.0693939393939394,
+      "register_rebuttal": 0.09393939393939393,
+      "register_adversarial": 0.27090909090909093,
+      "register_consensus": 0.0033333333333333335,
+      "top_terms": []
+    }
+  },
+  "attested": [
+    "aanpakken",
+    "budget",
+    "collega",
+    "communicatie",
+    "duurzaam",
+    "efficient",
+    "en_issue",
+    "en_okay",
+    "geachte_voorzitter",
+    "meneer",
+    "minister_president",
+    "moderne_wereld",
+    "netwerk",
+    "samenleving",
+    "stabiliteit",
+    "uitdaging"
+  ],
+  "lexicon": [
+    {
+      "id": "collega",
+      "category": "address",
+      "split": "filter",
+      "pattern": "\\bcollega('s)?\\b"
+    },
+    {
+      "id": "dames_en_heren",
+      "category": "address",
+      "split": "audit",
+      "pattern": "\\bdames en heren\\b"
+    },
+    {
+      "id": "geachte_voorzitter",
+      "category": "address",
+      "split": "filter",
+      "pattern": "\\bgeachte voorzitter\\b"
+    },
+    {
+      "id": "meneer",
+      "category": "address",
+      "split": "audit",
+      "pattern": "\\bmeneer\\b"
+    },
+    {
+      "id": "en_issue",
+      "category": "english",
+      "split": "filter",
+      "pattern": "\\b(issue|issues|feedback|update|deal)\\b"
+    },
+    {
+      "id": "en_lobby",
+      "category": "english",
+      "split": "audit",
+      "pattern": "\\blobby\\w*"
+    },
+    {
+      "id": "en_okay",
+      "category": "english",
+      "split": "filter",
+      "pattern": "\\b(okay|ok)\\b"
+    },
+    {
+      "id": "en_parliament",
+      "category": "english",
+      "split": "audit",
+      "pattern": "\\bparliament\\b|\\bdebate\\b|\\bspeaker\\b"
+    },
+    {
+      "id": "en_whip",
+      "category": "english",
+      "split": "filter",
+      "pattern": "\\bwhip\\b"
+    },
+    {
+      "id": "eu_navo_vn",
+      "category": "institution",
+      "split": "filter",
+      "pattern": "\\b(europese unie|navo|verenigde naties)\\b"
+    },
+    {
+      "id": "fractievoorzitter",
+      "category": "institution",
+      "split": "audit",
+      "pattern": "\\bfractievoorzitter\\w*"
+    },
+    {
+      "id": "minister_president",
+      "category": "institution",
+      "split": "filter",
+      "pattern": "\\bminister-?president\\b|\\bpremier\\b"
+    },
+    {
+      "id": "partijlijn",
+      "category": "institution",
+      "split": "audit",
+      "pattern": "\\bpartijlijn\\b|\\bpartijdiscipline\\b"
+    },
+    {
+      "id": "sessie",
+      "category": "institution",
+      "split": "filter",
+      "pattern": "\\bsessie\\b"
+    },
+    {
+      "id": "aanpakken",
+      "category": "policy",
+      "split": "filter",
+      "pattern": "\\b(aan te pakken|aanpakken|aanpak)\\b"
+    },
+    {
+      "id": "budget",
+      "category": "policy",
+      "split": "audit",
+      "pattern": "\\bbudget(ten)?\\b"
+    },
+    {
+      "id": "cohesie",
+      "category": "policy",
+      "split": "filter",
+      "pattern": "\\b(sociale )?cohesie\\b"
+    },
+    {
+      "id": "communicatie",
+      "category": "policy",
+      "split": "audit",
+      "pattern": "\\bcommunicatie\\b"
+    },
+    {
+      "id": "constructief",
+      "category": "policy",
+      "split": "filter",
+      "pattern": "\\bconstructie(f|ve)\\b"
+    },
+    {
+      "id": "diversiteit",
+      "category": "policy",
+      "split": "audit",
+      "pattern": "\\bdiversiteit\\b"
+    },
+    {
+      "id": "draagvlak",
+      "category": "policy",
+      "split": "filter",
+      "pattern": "\\bdraagvlak\\b"
+    },
+    {
+      "id": "duurzaam",
+      "category": "policy",
+      "split": "audit",
+      "pattern": "\\bduurza(am|me|amheid)\\b"
+    },
+    {
+      "id": "economische_groei",
+      "category": "policy",
+      "split": "filter",
+      "pattern": "\\beconomische groei\\b"
+    },
+    {
+      "id": "efficient",
+      "category": "policy",
+      "split": "audit",
+      "pattern": "\\beffici[eë]n(t|te|tie)\\b"
+    },
+    {
+      "id": "faciliteren",
+      "category": "policy",
+      "split": "filter",
+      "pattern": "\\bfacilit(eer|eren|eert|eerd)\\w*"
+    },
+    {
+      "id": "focus",
+      "category": "policy",
+      "split": "audit",
+      "pattern": "\\bfocus(sen)?\\b"
+    },
+    {
+      "id": "gelijke_kansen",
+      "category": "policy",
+      "split": "filter",
+      "pattern": "\\bgelijke kansen\\b"
+    },
+    {
+      "id": "generaties",
+      "category": "policy",
+      "split": "audit",
+      "pattern": "\\b(toekomstige|komende|jonge|jongere) generaties?\\b"
+    },
+    {
+      "id": "impact",
+      "category": "policy",
+      "split": "filter",
+      "pattern": "\\bimpact\\b"
+    },
+    {
+      "id": "inclusie",
+      "category": "policy",
+      "split": "audit",
+      "pattern": "\\binclusi(e|viteit)\\b|\\binclusieve\\b"
+    },
+    {
+      "id": "infrastructuur",
+      "category": "policy",
+      "split": "filter",
+      "pattern": "\\binfrastructu?u?r\\w*"
+    },
+    {
+      "id": "innovatie",
+      "category": "policy",
+      "split": "audit",
+      "pattern": "\\binnovatie(f|ve|s)?\\b"
+    },
+    {
+      "id": "kwaliteit_onderwijs",
+      "category": "policy",
+      "split": "filter",
+      "pattern": "\\bkwaliteit van (het|ons) onderwijs\\b"
+    },
+    {
+      "id": "mensenrechten",
+      "category": "policy",
+      "split": "audit",
+      "pattern": "\\bmensenrechten\\b"
+    },
+    {
+      "id": "moderne_wereld",
+      "category": "policy",
+      "split": "filter",
+      "pattern": "\\bmoderne (wereld|tijd|samenleving|maatschappij)\\b"
+    },
+    {
+      "id": "netwerk",
+      "category": "policy",
+      "split": "audit",
+      "pattern": "\\bnetwerk(en)?\\b"
+    },
+    {
+      "id": "participatie",
+      "category": "policy",
+      "split": "filter",
+      "pattern": "\\bparticipatie\\b"
+    },
+    {
+      "id": "polarisatie",
+      "category": "policy",
+      "split": "audit",
+      "pattern": "\\bpolari(satie|seren)\\b"
+    },
+    {
+      "id": "proactief",
+      "category": "policy",
+      "split": "filter",
+      "pattern": "\\bpro-?actie(f|ve)\\b"
+    },
+    {
+      "id": "samenleving",
+      "category": "policy",
+      "split": "audit",
+      "pattern": "\\bsamenleving\\b"
+    },
+    {
+      "id": "stabiliteit",
+      "category": "policy",
+      "split": "filter",
+      "pattern": "\\bstabiliteit\\b"
+    },
+    {
+      "id": "systeem_compound",
+      "category": "policy",
+      "split": "audit",
+      "pattern": "\\b(onderwijs|zorg|belasting|rechts|pensioen|bestuurs)systee?m\\b"
+    },
+    {
+      "id": "transparant",
+      "category": "policy",
+      "split": "filter",
+      "pattern": "\\btransparan(t|te|tie)\\b"
+    },
+    {
+      "id": "uitdaging",
+      "category": "policy",
+      "split": "audit",
+      "pattern": "\\buitdaging(en)?\\b"
+    },
+    {
+      "id": "verantwoordelijkheid_nemen",
+      "category": "policy",
+      "split": "filter",
+      "pattern": "\\bverantwoordelijkheid (te )?nemen\\b"
+    },
+    {
+      "id": "welzijn_burgers",
+      "category": "policy",
+      "split": "audit",
+      "pattern": "\\bwelzijn van (onze |de )?(burgers|bevolking|samenleving)\\b"
+    },
+    {
+      "id": "covid",
+      "category": "technology",
+      "split": "filter",
+      "pattern": "\\bcovid\\b|\\bcorona\\b|\\blgbt\\w*"
+    },
+    {
+      "id": "email",
+      "category": "technology",
+      "split": "audit",
+      "pattern": "\\be-?mail\\b"
+    },
+    {
+      "id": "internet",
+      "category": "technology",
+      "split": "filter",
+      "pattern": "\\binternet\\b|\\bonline\\b|\\bdigita(al|le)\\b"
+    },
+    {
+      "id": "klimaat",
+      "category": "technology",
+      "split": "audit",
+      "pattern": "\\bklimaat(verandering|crisis|beleid)\\b"
+    },
+    {
+      "id": "smartphone",
+      "category": "technology",
+      "split": "filter",
+      "pattern": "\\bsmartphone|\\bcomputer\\w*"
+    },
+    {
+      "id": "social_media",
+      "category": "technology",
+      "split": "audit",
+      "pattern": "\\btwitter\\b|\\bsociale media\\b|\\blivestream\\b"
+    },
+    {
+      "id": "televisie_radio",
+      "category": "technology",
+      "split": "filter",
+      "pattern": "\\btelevisie\\b|\\bradio\\b"
+    },
+    {
+      "id": "vliegtuig",
+      "category": "technology",
+      "split": "audit",
+      "pattern": "\\bvliegtuig\\w*"
+    }
+  ],
+  "order": [
+    "ga",
+    "kamer_noguard"
+  ],
+  "conditions": {
+    "ga": {
+      "record": {
+        "n_turns": 626,
+        "n_unique": 269,
+        "filtered": false,
+        "pre": {
+          "n": 269,
+          "modern_vocab": 0.06319702602230483,
+          "modern_vocab_filter_half": 0.040892193308550186,
+          "modern_vocab_audit_half": 0.022304832713754646,
+          "modern_spelling_share": 0.6954887218045113,
+          "spelling_tokens": 266,
+          "modern_vocative_share": 0.45353159851301117,
+          "vocative_counts": {
+            "period": 147,
+            "modern": 122
+          },
+          "declension_period_share": {
+            "der_vs_van_de": 0.05714285714285714,
+            "eene_vs_een": 0.0
+          },
+          "register_challenge": 0.0,
+          "register_ref_other": 0.022304832713754646,
+          "register_responsive": 0.0,
+          "register_rebuttal": 0.0,
+          "register_adversarial": 0.0,
+          "register_consensus": 0.10780669144981413,
+          "top_terms": [
+            [
+              "transparant",
+              6
+            ],
+            [
+              "welzijn_burgers",
+              3
+            ],
+            [
+              "generaties",
+              3
+            ],
+            [
+              "impact",
+              3
+            ],
+            [
+              "verantwoordelijkheid_nemen",
+              1
+            ],
+            [
+              "economische_groei",
+              1
+            ]
+          ],
+          "per_seed": {
+            "7": {
+              "n": 67,
+              "modern_vocab": 0.04477611940298507,
+              "modern_spelling_share": 0.64,
+              "modern_vocative_share": 0.26865671641791045,
+              "register_adversarial": 0.0,
+              "register_consensus": 0.07462686567164178
+            },
+            "11": {
+              "n": 83,
+              "modern_vocab": 0.04819277108433735,
+              "modern_spelling_share": 0.6823529411764706,
+              "modern_vocative_share": 0.40963855421686746,
+              "register_adversarial": 0.0,
+              "register_consensus": 0.0963855421686747
+            },
+            "19": {
+              "n": 119,
+              "modern_vocab": 0.08403361344537816,
+              "modern_spelling_share": 0.7452830188679245,
+              "modern_vocative_share": 0.5882352941176471,
+              "register_adversarial": 0.0,
+              "register_consensus": 0.13445378151260504
+            }
+          },
+          "ci95": {
+            "modern_vocab": [
+              0.027649769585253458,
+              0.09968847352024922
+            ],
+            "modern_vocab_audit_half": [
+              0.006557377049180328,
+              0.043478260869565216
+            ],
+            "register_adversarial": [
+              0.0,
+              0.0
+            ],
+            "register_consensus": [
+              0.056140350877192984,
+              0.1526479750778816
+            ]
+          },
+          "examples_modern": [
+            {
+              "hits": [
+                "welzijn_burgers"
+              ],
+              "text": "Voorzitter, ik verzoek u om ons te herinneren aan de urgentie van de herziening van de gemeentewet, welke de basis legt voor een efficiënter bestuur in onze steden. Het welzijn van onze burgers hangt af van de noodzakelijke aanpassingen die wij moeten doorvoer"
+            },
+            {
+              "hits": [
+                "generaties"
+              ],
+              "text": "Mijnheer de Voorzitter, ik verzoek u om de nodige aandacht voor de herziening van ons onderwijsstelsel, dat dringend behoeft te worden aangepakt ter bevordering van de toekomstige generatie. Het welzijn van ons volk hangt er immers van af."
+            },
+            {
+              "hits": [
+                "impact"
+              ],
+              "text": "Mijnheer de Voorzitter, ik dank u voor het woord en wens te benadrukken dat de sociale wetten, die wij thans overwegen, een fundamentele impact zullen hebben op het welzijn van onze medeburgers. Het is ons plicht om te zorgen voor een rechtvaardige samenleving"
+            },
+            {
+              "hits": [
+                "verantwoordelijkheid_nemen"
+              ],
+              "text": "Voorzitter, ik verzoek u om mijn aandacht te vestigen op de dringende noodzaak van wetgeving die de rechtszekerheid van onze burgers versterkt. Het is essentieel dat wij als Kamer onze verantwoordelijkheid nemen in deze kwestie."
+            },
+            {
+              "hits": [
+                "welzijn_burgers"
+              ],
+              "text": "Voorzitter, ik verzoek u om ons te herinneren aan de urgentie van de herziening van de gemeentewet, welke de basis legt voor een efficiënter bestuur in onze steden. Het welzijn van onze burgers hangt af van de noodzakelijke aanpassingen die wij moeten doorvoer"
+            }
+          ]
+        },
+        "post": null,
+        "filter_fired": 11,
+        "regenerated": 0,
+        "residual_after_filter": 11,
+        "rag_copy_rate": null
+      },
+      "floor": {
+        "n_turns": 626,
+        "n_unique": 269,
+        "filtered": false,
+        "pre": {
+          "n": 269,
+          "modern_vocab": 0.06319702602230483,
+          "modern_vocab_filter_half": 0.040892193308550186,
+          "modern_vocab_audit_half": 0.022304832713754646,
+          "modern_spelling_share": 0.6954887218045113,
+          "spelling_tokens": 266,
+          "modern_vocative_share": 0.45353159851301117,
+          "vocative_counts": {
+            "period": 147,
+            "modern": 122
+          },
+          "declension_period_share": {
+            "der_vs_van_de": 0.05714285714285714,
+            "eene_vs_een": 0.0
+          },
+          "register_challenge": 0.0,
+          "register_ref_other": 0.022304832713754646,
+          "register_responsive": 0.0,
+          "register_rebuttal": 0.0,
+          "register_adversarial": 0.0,
+          "register_consensus": 0.10780669144981413,
+          "top_terms": [
+            [
+              "transparant",
+              6
+            ],
+            [
+              "welzijn_burgers",
+              3
+            ],
+            [
+              "generaties",
+              3
+            ],
+            [
+              "impact",
+              3
+            ],
+            [
+              "verantwoordelijkheid_nemen",
+              1
+            ],
+            [
+              "economische_groei",
+              1
+            ]
+          ],
+          "per_seed": {
+            "7": {
+              "n": 67,
+              "modern_vocab": 0.04477611940298507,
+              "modern_spelling_share": 0.64,
+              "modern_vocative_share": 0.26865671641791045,
+              "register_adversarial": 0.0,
+              "register_consensus": 0.07462686567164178
+            },
+            "11": {
+              "n": 83,
+              "modern_vocab": 0.04819277108433735,
+              "modern_spelling_share": 0.6823529411764706,
+              "modern_vocative_share": 0.40963855421686746,
+              "register_adversarial": 0.0,
+              "register_consensus": 0.0963855421686747
+            },
+            "19": {
+              "n": 119,
+              "modern_vocab": 0.08403361344537816,
+              "modern_spelling_share": 0.7452830188679245,
+              "modern_vocative_share": 0.5882352941176471,
+              "register_adversarial": 0.0,
+              "register_consensus": 0.13445378151260504
+            }
+          },
+          "ci95": {
+            "modern_vocab": [
+              0.027649769585253458,
+              0.09968847352024922
+            ],
+            "modern_vocab_audit_half": [
+              0.006557377049180328,
+              0.043478260869565216
+            ],
+            "register_adversarial": [
+              0.0,
+              0.0
+            ],
+            "register_consensus": [
+              0.056140350877192984,
+              0.1526479750778816
+            ]
+          },
+          "examples_modern": [
+            {
+              "hits": [
+                "welzijn_burgers"
+              ],
+              "text": "Voorzitter, ik verzoek u om ons te herinneren aan de urgentie van de herziening van de gemeentewet, welke de basis legt voor een efficiënter bestuur in onze steden. Het welzijn van onze burgers hangt af van de noodzakelijke aanpassingen die wij moeten doorvoer"
+            },
+            {
+              "hits": [
+                "generaties"
+              ],
+              "text": "Mijnheer de Voorzitter, ik verzoek u om de nodige aandacht voor de herziening van ons onderwijsstelsel, dat dringend behoeft te worden aangepakt ter bevordering van de toekomstige generatie. Het welzijn van ons volk hangt er immers van af."
+            },
+            {
+              "hits": [
+                "impact"
+              ],
+              "text": "Mijnheer de Voorzitter, ik dank u voor het woord en wens te benadrukken dat de sociale wetten, die wij thans overwegen, een fundamentele impact zullen hebben op het welzijn van onze medeburgers. Het is ons plicht om te zorgen voor een rechtvaardige samenleving"
+            },
+            {
+              "hits": [
+                "verantwoordelijkheid_nemen"
+              ],
+              "text": "Voorzitter, ik verzoek u om mijn aandacht te vestigen op de dringende noodzaak van wetgeving die de rechtszekerheid van onze burgers versterkt. Het is essentieel dat wij als Kamer onze verantwoordelijkheid nemen in deze kwestie."
+            },
+            {
+              "hits": [
+                "welzijn_burgers"
+              ],
+              "text": "Voorzitter, ik verzoek u om ons te herinneren aan de urgentie van de herziening van de gemeentewet, welke de basis legt voor een efficiënter bestuur in onze steden. Het welzijn van onze burgers hangt af van de noodzakelijke aanpassingen die wij moeten doorvoer"
+            }
+          ]
+        },
+        "post": null,
+        "filter_fired": 11,
+        "regenerated": 0,
+        "residual_after_filter": 11,
+        "rag_copy_rate": null
+      },
+      "dialogue": {
+        "n_turns": 5035,
+        "n_unique": 225,
+        "filtered": false,
+        "pre": {
+          "n": 225,
+          "modern_vocab": 0.035555555555555556,
+          "modern_vocab_filter_half": 0.03111111111111111,
+          "modern_vocab_audit_half": 0.0044444444444444444,
+          "modern_spelling_share": 1.0,
+          "spelling_tokens": 65,
+          "modern_vocative_share": null,
+          "vocative_counts": {
+            "none": 225
+          },
+          "declension_period_share": {
+            "der_vs_van_de": 0.0,
+            "eene_vs_een": 0.0
+          },
+          "register_challenge": 0.0,
+          "register_ref_other": 0.29777777777777775,
+          "register_responsive": 0.0,
+          "register_rebuttal": 0.013333333333333334,
+          "register_adversarial": 0.013333333333333334,
+          "register_consensus": 0.035555555555555556,
+          "top_terms": [
+            [
+              "sessie",
+              4
+            ],
+            [
+              "impact",
+              3
+            ],
+            [
+              "focus",
+              1
+            ]
+          ],
+          "per_seed": {
+            "7": {
+              "n": 57,
+              "modern_vocab": 0.03508771929824561,
+              "modern_spelling_share": 1.0,
+              "modern_vocative_share": null,
+              "register_adversarial": 0.017543859649122806,
+              "register_consensus": 0.017543859649122806
+            },
+            "11": {
+              "n": 82,
+              "modern_vocab": 0.036585365853658534,
+              "modern_spelling_share": 1.0,
+              "modern_vocative_share": null,
+              "register_adversarial": 0.012195121951219513,
+              "register_consensus": 0.036585365853658534
+            },
+            "19": {
+              "n": 86,
+              "modern_vocab": 0.03488372093023256,
+              "modern_spelling_share": 1.0,
+              "modern_vocative_share": null,
+              "register_adversarial": 0.011627906976744186,
+              "register_consensus": 0.046511627906976744
+            }
+          },
+          "ci95": {
+            "modern_vocab": [
+              0.015,
+              0.06222222222222222
+            ],
+            "modern_vocab_audit_half": [
+              0.0,
+              0.01809954751131222
+            ],
+            "register_adversarial": [
+              0.0,
+              0.030612244897959183
+            ],
+            "register_consensus": [
+              0.01020408163265306,
+              0.06222222222222222
+            ]
+          },
+          "examples_modern": [
+            {
+              "hits": [
+                "sessie"
+              ],
+              "text": "\"Heer van Gennep, het lijkt wel of de sfeer hier altijd zo stil is wanneer er geen zitting is. Heb je gehoord over die nieuwe ontwikkelingen in de handel? Het lijkt alsof we ons moeten voorbereiden op een drukke sessie.\""
+            },
+            {
+              "hits": [
+                "impact"
+              ],
+              "text": "\"De sfeer is merkwaardig stil vandaag, niet waar? Het lijkt erop dat de debatten ons even ontglipt zijn.\" Ik kijk even om me heen, voordat ik verder fluister. \"Heb je al gehoord van de geruchten over de nieuwe wetgeving? Het zou wel eens veel impact kunnen heb"
+            },
+            {
+              "hits": [
+                "focus"
+              ],
+              "text": "\"Zou het niet beter zijn om wat meer op de inhoud te focussen, heer Roessingh? De stemming is inderdaad tamelijk somber, ik vrees dat we de passie missen die onze debatten levendig maakt.\""
+            },
+            {
+              "hits": [
+                "sessie"
+              ],
+              "text": "\"Heer van Gennep, het lijkt wel of de sfeer hier altijd zo stil is wanneer er geen zitting is. Heb je gehoord over die nieuwe ontwikkelingen in de handel? Het lijkt alsof we ons moeten voorbereiden op een drukke sessie.\""
+            },
+            {
+              "hits": [
+                "impact"
+              ],
+              "text": "\"De sfeer is merkwaardig stil vandaag, niet waar? Het lijkt erop dat de debatten ons even ontglipt zijn.\" Ik kijk even om me heen, voordat ik verder fluister. \"Heb je al gehoord van de geruchten over de nieuwe wetgeving? Het zou wel eens veel impact kunnen heb"
+            }
+          ]
+        },
+        "post": null,
+        "filter_fired": 7,
+        "regenerated": 0,
+        "residual_after_filter": 7,
+        "rag_copy_rate": null
+      },
+      "interview": {
+        "n_turns": 150,
+        "n_unique": 150,
+        "filtered": false,
+        "pre": {
+          "n": 150,
+          "modern_vocab": 0.29333333333333333,
+          "modern_vocab_filter_half": 0.26,
+          "modern_vocab_audit_half": 0.04666666666666667,
+          "modern_spelling_share": 1.0,
+          "spelling_tokens": 57,
+          "modern_vocative_share": 0.9,
+          "vocative_counts": {
+            "none": 140,
+            "modern": 9,
+            "period": 1
+          },
+          "declension_period_share": {
+            "der_vs_van_de": 0.01948051948051948,
+            "eene_vs_een": 0.0
+          },
+          "register_challenge": 0.013333333333333334,
+          "register_ref_other": 0.29333333333333333,
+          "register_responsive": 0.0,
+          "register_rebuttal": 0.0,
+          "register_adversarial": 0.013333333333333334,
+          "register_consensus": 0.18,
+          "top_terms": [
+            [
+              "constructief",
+              18
+            ],
+            [
+              "sessie",
+              9
+            ],
+            [
+              "impact",
+              5
+            ],
+            [
+              "dames_en_heren",
+              3
+            ],
+            [
+              "infrastructuur",
+              2
+            ],
+            [
+              "welzijn_burgers",
+              2
+            ],
+            [
+              "verantwoordelijkheid_nemen",
+              2
+            ],
+            [
+              "kwaliteit_onderwijs",
+              1
+            ],
+            [
+              "faciliteren",
+              1
+            ],
+            [
+              "focus",
+              1
+            ],
+            [
+              "generaties",
+              1
+            ],
+            [
+              "systeem_compound",
+              1
+            ]
+          ],
+          "per_seed": {
+            "7": {
+              "n": 150,
+              "modern_vocab": 0.29333333333333333,
+              "modern_spelling_share": 1.0,
+              "modern_vocative_share": 0.9,
+              "register_adversarial": 0.013333333333333334,
+              "register_consensus": 0.18
+            }
+          },
+          "ci95": {
+            "modern_vocab": [
+              0.22,
+              0.36666666666666664
+            ],
+            "modern_vocab_audit_half": [
+              0.02,
+              0.08
+            ],
+            "register_adversarial": [
+              0.0,
+              0.03333333333333333
+            ],
+            "register_consensus": [
+              0.12666666666666668,
+              0.24666666666666667
+            ]
+          },
+          "examples_modern": [
+            {
+              "hits": [
+                "sessie"
+              ],
+              "text": "Ik ben voorzitter Gleichman en ik bekleed de functie van voorzitter in de Staten-Generaal. Mijn partij is de Oud of Vrije Liberalen. In deze wandelgang van het Binnenhof zijn we op een rustig moment, terwijl de zitting niet in sessie is."
+            },
+            {
+              "hits": [
+                "constructief"
+              ],
+              "text": "Geachte Voorzitter, deze week heb ik gehoord dat er gedebatteerd wordt over de nieuwe wetgeving inzake onderwijs. Verschillende leden uit de Staten-Generaal hebben hun standpunten naar voren gebracht, maar de sfeer blijft constructief. Ook heb ik vernomen dat "
+            },
+            {
+              "hits": [
+                "impact"
+              ],
+              "text": "Geachte Voorzitter, ik heb de afgelopen dagen nagedacht over de recentelijke voorstellen die in de Staten-Generaal zijn besproken. Het lijkt mij van groot belang dat wij goed luisteren naar de zorgen van de burgers en de impact van onze besluiten. Ook het vers"
+            },
+            {
+              "hits": [
+                "dames_en_heren"
+              ],
+              "text": "Mijne dames en heren, ik verzoek u om mijn aandacht, al ben ik geen afgevaardigde. Mijn naam is Verslaggever van de Courant, en ik ben hier om verslag uit te brengen over de zaken die ons allen aangaan. Ik hoop dat u mij de kans geeft om mijn punten te delen."
+            },
+            {
+              "hits": [
+                "impact"
+              ],
+              "text": "Geachte Voorzitter, in de afgelopen dagen heb ik intensief nagedacht over de impact van de recente wetgeving op de sociale omstandigheden van onze burgers. Het is cruciaal dat wij ons als vertegenwoordigers van het volk blijven inzetten voor hun welzijn. Ook d"
+            }
+          ]
+        },
+        "post": null,
+        "filter_fired": 0,
+        "regenerated": 0,
+        "residual_after_filter": 0,
+        "rag_copy_rate": null
+      },
+      "self_desc": {
+        "self_knowledge": {
+          "n": 25,
+          "error_rate": 0.64,
+          "ci95": [
+            0.44518154601046633,
+            0.7975234356826436
+          ],
+          "codes": {
+            "lid_staten_generaal": 16
+          },
+          "examples": [
+            {
+              "status": "MP",
+              "errors": [
+                "lid_staten_generaal"
+              ],
+              "text": "Mijn naam is Goeman Borgesius, en ik ben lid van de Staten-Generaal. Ik vertegenwoordig de vooruitstrevende kamerclub. Momenteel ben ik in de wandelgangen van het Binnenhof, waar de zitting niet in sessie is."
+            },
+            {
+              "status": "MP",
+              "errors": [
+                "lid_staten_generaal"
+              ],
+              "text": "Ik ben de heer Pijnappel, lid van de Staten-Generaal en vertegenwoordig de partij van de conservatiefliberalen. Momenteel ben ik hier in de wandelgang van het Binnenhof, waar de zitting niet in sessie is."
+            },
+            {
+              "status": "MP",
+              "errors": [
+                "lid_staten_generaal"
+              ],
+              "text": "Ik ben de heer de Savornin Lohman, lid van de Staten-Generaal. Mijn partij is de Vrije Anti-Revolutionaire Partij. Momenteel ben ik in de wandelgang van het Binnenhof, waar de zitting niet is bijeen."
+            },
+            {
+              "status": "MP",
+              "errors": [
+                "lid_staten_generaal"
+              ],
+              "text": "Ik ben de heer de Beaufort, een onafhankelijk lid van de Staten-Generaal. Momenteel ben ik hier in de wandelgang van het Binnenhof. Mijn taak is om het welzijn van de burgers te behartigen en constructieve bijdragen te leveren aan de debatt"
+            },
+            {
+              "status": "MP",
+              "errors": [
+                "lid_staten_generaal"
+              ],
+              "text": "Ik ben de heer van Alphen, lid van de Staten-Generaal. Ik vertegenwoordig de ARP en ben momenteel aanwezig in de wandelgang van het Binnenhof."
+            },
+            {
+              "status": "MP",
+              "errors": [
+                "lid_staten_generaal"
+              ],
+              "text": "Ik ben de heer Staalman, lid van de Staten-Generaal en vertegenwoordiger van de nl.p.groepstaalman. Mijn taak is het bevorderen van de belangen van mijn kiezers en het bijdragen aan de wetgeving in ons land."
+            }
+          ],
+          "sg_as_chamber_rate": 0.88
+        },
+        "all": {
+          "n": 150,
+          "error_rate": 0.34,
+          "ci95": [
+            0.2690321465825542,
+            0.4189586179440758
+          ],
+          "codes": {
+            "lid_staten_generaal": 48,
+            "mp_english": 3,
+            "claims_journalist": 1
+          },
+          "examples": [
+            {
+              "status": "MP",
+              "errors": [
+                "lid_staten_generaal"
+              ],
+              "text": "Mijn naam is Goeman Borgesius, en ik ben lid van de Staten-Generaal. Ik vertegenwoordig de vooruitstrevende kamerclub. Momenteel ben ik in de wandelgangen van het Binnenhof, waar de zitting niet in sessie is."
+            },
+            {
+              "status": "MP",
+              "errors": [
+                "lid_staten_generaal"
+              ],
+              "text": "Als lid van de Staten-Generaal weet ik dat een journalist in principe geen recht heeft om het woord te voeren op de vloer. Enkel leden van de Kamer kunnen spreken, mits zij erkend worden door de Voorzitter. Zonder deze erkenning is het niet"
+            },
+            {
+              "status": "MP",
+              "errors": [
+                "lid_staten_generaal"
+              ],
+              "text": "Ik ben de heer Pijnappel, lid van de Staten-Generaal en vertegenwoordig de partij van de conservatiefliberalen. Momenteel ben ik hier in de wandelgang van het Binnenhof, waar de zitting niet in sessie is."
+            },
+            {
+              "status": "MP",
+              "errors": [
+                "lid_staten_generaal"
+              ],
+              "text": "Ik stap naar voren en knik beleefd naar de Voorzitter, terwijl ik mijn naam noem: \"Mijnheer de Voorzitter, ik ben de heer Pijnappel, lid van de Staten-Generaal.\" Vervolgens geef ik een korte samenvatting van mijn standpunt over het lopende "
+            },
+            {
+              "status": "MP",
+              "errors": [
+                "lid_staten_generaal"
+              ],
+              "text": "Ik ben de heer de Savornin Lohman, lid van de Staten-Generaal. Mijn partij is de Vrije Anti-Revolutionaire Partij. Momenteel ben ik in de wandelgang van het Binnenhof, waar de zitting niet is bijeen."
+            },
+            {
+              "status": "MP",
+              "errors": [
+                "lid_staten_generaal"
+              ],
+              "text": "Mijne heren, ik verzoek de Voorzitter om mijn aandacht. Ik ben de heer de Savornin Lohman, lid van de Staten-Generaal. Het is van groot belang dat ik mijn standpunt kan delen, al is het niet tijdens zitting. Mag ik een moment van uw tijd?"
+            }
+          ],
+          "sg_as_chamber_rate": 0.46
+        }
+      }
+    },
+    "kamer_noguard": {
+      "record": {
+        "n_turns": 60,
+        "n_unique": 7,
+        "filtered": false,
+        "pre": {
+          "n": 7,
+          "modern_vocab": 0.0,
+          "modern_vocab_filter_half": 0.0,
+          "modern_vocab_audit_half": 0.0,
+          "modern_spelling_share": 0.7777777777777778,
+          "spelling_tokens": 18,
+          "modern_vocative_share": 0.5714285714285714,
+          "vocative_counts": {
+            "modern": 4,
+            "period": 3
+          },
+          "declension_period_share": {
+            "der_vs_van_de": 0.8571428571428571,
+            "eene_vs_een": 0.8571428571428571
+          },
+          "register_challenge": 0.0,
+          "register_ref_other": 0.14285714285714285,
+          "register_responsive": 0.0,
+          "register_rebuttal": 0.0,
+          "register_adversarial": 0.0,
+          "register_consensus": 0.0,
+          "top_terms": [],
+          "per_seed": {
+            "7": {
+              "n": 2,
+              "modern_vocab": 0.0,
+              "modern_spelling_share": 0.8,
+              "modern_vocative_share": 0.5,
+              "register_adversarial": 0.0,
+              "register_consensus": 0.0
+            },
+            "11": {
+              "n": 2,
+              "modern_vocab": 0.0,
+              "modern_spelling_share": 0.8,
+              "modern_vocative_share": 0.5,
+              "register_adversarial": 0.0,
+              "register_consensus": 0.0
+            },
+            "19": {
+              "n": 3,
+              "modern_vocab": 0.0,
+              "modern_spelling_share": 0.75,
+              "modern_vocative_share": 0.6666666666666666,
+              "register_adversarial": 0.0,
+              "register_consensus": 0.0
+            }
+          },
+          "ci95": {
+            "modern_vocab": [
+              0.0,
+              0.0
+            ],
+            "modern_vocab_audit_half": [
+              0.0,
+              0.0
+            ],
+            "register_adversarial": [
+              0.0,
+              0.0
+            ],
+            "register_consensus": [
+              0.0,
+              0.0
+            ]
+          },
+          "examples_modern": []
+        },
+        "post": null,
+        "filter_fired": 0,
+        "regenerated": 0,
+        "residual_after_filter": 0,
+        "rag_copy_rate": null
+      },
+      "floor": {
+        "n_turns": 60,
+        "n_unique": 7,
+        "filtered": false,
+        "pre": {
+          "n": 7,
+          "modern_vocab": 0.0,
+          "modern_vocab_filter_half": 0.0,
+          "modern_vocab_audit_half": 0.0,
+          "modern_spelling_share": 0.7777777777777778,
+          "spelling_tokens": 18,
+          "modern_vocative_share": 0.5714285714285714,
+          "vocative_counts": {
+            "modern": 4,
+            "period": 3
+          },
+          "declension_period_share": {
+            "der_vs_van_de": 0.8571428571428571,
+            "eene_vs_een": 0.8571428571428571
+          },
+          "register_challenge": 0.0,
+          "register_ref_other": 0.14285714285714285,
+          "register_responsive": 0.0,
+          "register_rebuttal": 0.0,
+          "register_adversarial": 0.0,
+          "register_consensus": 0.0,
+          "top_terms": [],
+          "per_seed": {
+            "7": {
+              "n": 2,
+              "modern_vocab": 0.0,
+              "modern_spelling_share": 0.8,
+              "modern_vocative_share": 0.5,
+              "register_adversarial": 0.0,
+              "register_consensus": 0.0
+            },
+            "11": {
+              "n": 2,
+              "modern_vocab": 0.0,
+              "modern_spelling_share": 0.8,
+              "modern_vocative_share": 0.5,
+              "register_adversarial": 0.0,
+              "register_consensus": 0.0
+            },
+            "19": {
+              "n": 3,
+              "modern_vocab": 0.0,
+              "modern_spelling_share": 0.75,
+              "modern_vocative_share": 0.6666666666666666,
+              "register_adversarial": 0.0,
+              "register_consensus": 0.0
+            }
+          },
+          "ci95": {
+            "modern_vocab": [
+              0.0,
+              0.0
+            ],
+            "modern_vocab_audit_half": [
+              0.0,
+              0.0
+            ],
+            "register_adversarial": [
+              0.0,
+              0.0
+            ],
+            "register_consensus": [
+              0.0,
+              0.0
+            ]
+          },
+          "examples_modern": []
+        },
+        "post": null,
+        "filter_fired": 0,
+        "regenerated": 0,
+        "residual_after_filter": 0,
+        "rag_copy_rate": null
+      },
+      "dialogue": {
+        "n_turns": 39398,
+        "n_unique": 734,
+        "filtered": false,
+        "pre": {
+          "n": 734,
+          "modern_vocab": 0.09809264305177112,
+          "modern_vocab_filter_half": 0.09809264305177112,
+          "modern_vocab_audit_half": 0.0,
+          "modern_spelling_share": 0.4447632711621234,
+          "spelling_tokens": 697,
+          "modern_vocative_share": 1.0,
+          "vocative_counts": {
+            "modern": 368,
+            "none": 366
+          },
+          "declension_period_share": {
+            "der_vs_van_de": 0.5642361111111112,
+            "eene_vs_een": 0.3166904422253923
+          },
+          "register_challenge": 0.009536784741144414,
+          "register_ref_other": 0.49727520435967304,
+          "register_responsive": 0.013623978201634877,
+          "register_rebuttal": 0.010899182561307902,
+          "register_adversarial": 0.020435967302452316,
+          "register_consensus": 0.3787465940054496,
+          "top_terms": [
+            [
+              "en_whip",
+              68
+            ],
+            [
+              "sessie",
+              3
+            ],
+            [
+              "constructief",
+              1
+            ]
+          ],
+          "per_seed": {
+            "7": {
+              "n": 221,
+              "modern_vocab": 0.11764705882352941,
+              "modern_spelling_share": 0.44660194174757284,
+              "modern_vocative_share": 1.0,
+              "register_adversarial": 0.027149321266968326,
+              "register_consensus": 0.38461538461538464
+            },
+            "11": {
+              "n": 253,
+              "modern_vocab": 0.08695652173913043,
+              "modern_spelling_share": 0.4351464435146444,
+              "modern_vocative_share": 1.0,
+              "register_adversarial": 0.019762845849802372,
+              "register_consensus": 0.38735177865612647
+            },
+            "19": {
+              "n": 260,
+              "modern_vocab": 0.09230769230769231,
+              "modern_spelling_share": 0.4523809523809524,
+              "modern_vocative_share": 1.0,
+              "register_adversarial": 0.015384615384615385,
+              "register_consensus": 0.36538461538461536
+            }
+          },
+          "ci95": {
+            "modern_vocab": [
+              0.07378129117259552,
+              0.12535612535612536
+            ],
+            "modern_vocab_audit_half": [
+              0.0,
+              0.0
+            ],
+            "register_adversarial": [
+              0.010256410256410256,
+              0.03276353276353276
+            ],
+            "register_consensus": [
+              0.3419618528610354,
+              0.41595441595441596
+            ]
+          },
+          "examples_modern": [
+            {
+              "hits": [
+                "en_whip"
+              ],
+              "text": "Mijne waarde collega, 't is thans eene stille tijd, maar ik kan niet ontkennen dat de afwezigheid van den whip eene zekere onrust in de lucht brengt. Gij weet hoe de gemoederen soms oplaaien, zelfs wanneer de Kamer niet in zitting is. Laten wij hopen dat de za"
+            },
+            {
+              "hits": [
+                "en_whip"
+              ],
+              "text": "Mijn waarde collega, het schijnt dat de stemming der zaken thans niet in ons voordeel is. De afwezigheid van den whip doet ons bespeuren dat er mogelijk onrust heerscht binnen de gelederen. Laten wij ons echter niet laten ontmoedigen; er zijn altijd kansen, zo"
+            },
+            {
+              "hits": [
+                "en_whip"
+              ],
+              "text": "Geachte collega, ik kan niet om de opmerkelijke afwezigheid van de whip-notitie heen. Het lijkt er op dat wij thans in een periode van stilte verkeren, terwijl de zaken in de Kamer zich verder ontvouwen. Het is des te belangrijker dat wij ons goed voorbereiden"
+            },
+            {
+              "hits": [
+                "en_whip"
+              ],
+              "text": "Mijn waarde collega, ik kan thans niet anders dan mededeelen dat ik eene zekere bezorgdheid voel over de afwezigheid van onze whip. Het schijnt mij dat, zonder een goede aansturing, onze plannen wellicht in het gedrang zullen komen. Laat ons hopen dat wij spoe"
+            },
+            {
+              "hits": [
+                "en_whip"
+              ],
+              "text": "Gij zijt in de wandelgang, mijnheer Pijnappel, en het lijkt mij dat de stemming thans niet in ons voordeel is. De afwezigheid van de whip doet ons wel eens vrezen voor de uitkomst van de volgende zitting. Laat ons hopen dat de leden zich nog zullen verzamelen "
+            }
+          ]
+        },
+        "post": null,
+        "filter_fired": 72,
+        "regenerated": 0,
+        "residual_after_filter": 72,
+        "rag_copy_rate": null
+      },
+      "interview": {
+        "n_turns": 150,
+        "n_unique": 150,
+        "filtered": false,
+        "pre": {
+          "n": 150,
+          "modern_vocab": 0.36,
+          "modern_vocab_filter_half": 0.32,
+          "modern_vocab_audit_half": 0.06666666666666667,
+          "modern_spelling_share": 1.0,
+          "spelling_tokens": 103,
+          "modern_vocative_share": 0.5583333333333333,
+          "vocative_counts": {
+            "none": 30,
+            "modern": 67,
+            "period": 53
+          },
+          "declension_period_share": {
+            "der_vs_van_de": 0.0962962962962963,
+            "eene_vs_een": 0.0
+          },
+          "register_challenge": 0.006666666666666667,
+          "register_ref_other": 0.26666666666666666,
+          "register_responsive": 0.0,
+          "register_rebuttal": 0.006666666666666667,
+          "register_adversarial": 0.013333333333333334,
+          "register_consensus": 0.17333333333333334,
+          "top_terms": [
+            [
+              "sessie",
+              18
+            ],
+            [
+              "constructief",
+              16
+            ],
+            [
+              "systeem_compound",
+              7
+            ],
+            [
+              "kwaliteit_onderwijs",
+              6
+            ],
+            [
+              "verantwoordelijkheid_nemen",
+              3
+            ],
+            [
+              "faciliteren",
+              2
+            ],
+            [
+              "welzijn_burgers",
+              2
+            ],
+            [
+              "impact",
+              2
+            ],
+            [
+              "transparant",
+              1
+            ],
+            [
+              "en_whip",
+              1
+            ],
+            [
+              "gelijke_kansen",
+              1
+            ],
+            [
+              "generaties",
+              1
+            ]
+          ],
+          "per_seed": {
+            "7": {
+              "n": 150,
+              "modern_vocab": 0.36,
+              "modern_spelling_share": 1.0,
+              "modern_vocative_share": 0.5583333333333333,
+              "register_adversarial": 0.013333333333333334,
+              "register_consensus": 0.17333333333333334
+            }
+          },
+          "ci95": {
+            "modern_vocab": [
+              0.2866666666666667,
+              0.44
+            ],
+            "modern_vocab_audit_half": [
+              0.03333333333333333,
+              0.11333333333333333
+            ],
+            "register_adversarial": [
+              0.0,
+              0.03333333333333333
+            ],
+            "register_consensus": [
+              0.11333333333333333,
+              0.24
+            ]
+          },
+          "examples_modern": [
+            {
+              "hits": [
+                "sessie"
+              ],
+              "text": "Ik ben Voorzitter Gleichman, de voorzitter van de Staten-Generaal. Het is mijn plicht om de orde te bewaren en de debatten te leiden wanneer de Kamer samenkomt. Momenteel bevinden wij ons in de wandelgang, waar de zitting niet in sessie is."
+            },
+            {
+              "hits": [
+                "constructief"
+              ],
+              "text": "Geachte leden, ik heb in de wandelgang vernomen dat er onder de Kamerleden enige bezorgdheid heerst over de recente ontwikkelingen in de landbouwpolitiek. De ministers van Houten en Sprenger van Eyk hebben hun standpunten gedeeld, maar het lijkt er op dat een "
+            },
+            {
+              "hits": [
+                "constructief"
+              ],
+              "text": "Geachte aanwezigen, morgen zal ik tijdens de vergadering de aandacht vestigen op de dringende kwestie van de sociale hervormingen. Het is van essentieel belang dat wij de stem van het volk horen en adequaat reageren op hun behoeften. Ik roep ieder van u op om "
+            },
+            {
+              "hits": [
+                "sessie"
+              ],
+              "text": "Mijne heren, ik verzoek de Voorzitter om mijn woorden te erkennen. Hoewel de zitting momenteel niet in sessie is, acht ik het van belang om een gedachte te delen met betrekking tot de lopende zaken. Ik hoop op uw begrip en erkenning in deze informele setting."
+            },
+            {
+              "hits": [
+                "sessie"
+              ],
+              "text": "Mijnheer de Voorzitter, ik ben de griffier der Staten-Generaal, belast met het administratieve en organisatorische werk binnen deze eerbiedwaardige instelling. Mijn taak is het waarborgen van de juiste gang van zaken, zelfs wanneer de zitting niet in sessie is"
+            }
+          ]
+        },
+        "post": null,
+        "filter_fired": 0,
+        "regenerated": 0,
+        "residual_after_filter": 0,
+        "rag_copy_rate": null
+      },
+      "self_desc": {
+        "self_knowledge": {
+          "n": 25,
+          "error_rate": 0.16,
+          "ci95": [
+            0.06403347608577989,
+            0.34654013980238163
+          ],
+          "codes": {
+            "lid_staten_generaal": 3,
+            "voorzitter_staten_generaal": 1
+          },
+          "examples": [
+            {
+              "status": "Chair",
+              "errors": [
+                "voorzitter_staten_generaal"
+              ],
+              "text": "Ik ben Voorzitter Gleichman, de voorzitter van de Staten-Generaal. Het is mijn plicht om de orde te bewaren en de debatten te leiden wanneer de Kamer samenkomt. Momenteel bevinden wij ons in de wandelgang, waar de zitting niet in sessie is."
+            },
+            {
+              "status": "MP",
+              "errors": [
+                "lid_staten_generaal"
+              ],
+              "text": "Ik ben de heer Staalman, lid van de Staten-Generaal, vertegenwoordiger van de nl.p.groepstaalman. Mijn functie in de Kamer betreft het behartigen van de belangen van mijn kiezers en het deelnemen aan de debatten die onze natie aangaan."
+            },
+            {
+              "status": "MP",
+              "errors": [
+                "lid_staten_generaal"
+              ],
+              "text": "Mijne heren, ik ben de heer van Gennep, lid van de Staten-Generaal en vertegenwoordiger van de Oud- of Vrije Liberalen. Het is mijn plicht en eer om hier in deze eerbiedwaardige instelling te dienen, en ik ben bereid om mijn bijdrage te lev"
+            },
+            {
+              "status": "MP",
+              "errors": [
+                "lid_staten_generaal"
+              ],
+              "text": "Mijnheer de Voorzitter, ik ben de heer Roessingh, lid van de Staten-Generaal en vertegenwoordiger van de nl.p.clubpyttersen. Ik ben hier in de wandelgang om te overleggen met mijn gewaardeerde collega's."
+            }
+          ],
+          "sg_as_chamber_rate": 0.28
+        },
+        "all": {
+          "n": 150,
+          "error_rate": 0.05333333333333334,
+          "ci95": [
+            0.02726921289013246,
+            0.10170500474670958
+          ],
+          "codes": {
+            "lid_staten_generaal": 6,
+            "voorzitter_staten_generaal": 2
+          },
+          "examples": [
+            {
+              "status": "Chair",
+              "errors": [
+                "voorzitter_staten_generaal"
+              ],
+              "text": "Ik ben Voorzitter Gleichman, de voorzitter van de Staten-Generaal. Het is mijn plicht om de orde te bewaren en de debatten te leiden wanneer de Kamer samenkomt. Momenteel bevinden wij ons in de wandelgang, waar de zitting niet in sessie is."
+            },
+            {
+              "status": "Chair",
+              "errors": [
+                "voorzitter_staten_generaal"
+              ],
+              "text": "Als Voorzitter van de Staten-Generaal moet ik u erop wijzen dat volgens de geldende regels alleen erkende leden of ministers het woord mogen voeren op de vloer. Journalisten hebben geen recht op het woord in deze setting, en ook leden zonde"
+            },
+            {
+              "status": "MP",
+              "errors": [
+                "lid_staten_generaal"
+              ],
+              "text": "Ik ben de heer Staalman, lid van de Staten-Generaal, vertegenwoordiger van de nl.p.groepstaalman. Mijn functie in de Kamer betreft het behartigen van de belangen van mijn kiezers en het deelnemen aan de debatten die onze natie aangaan."
+            },
+            {
+              "status": "MP",
+              "errors": [
+                "lid_staten_generaal"
+              ],
+              "text": "Mijnheer de Voorzitter, ik verzoek u om mijn stem te erkennen, aangezien ik, als lid van de Staten-Generaal, een punt van orde wens te aankaarten. Het is mijn plicht om de belangen van mijn kiezers te behartigen, ook al is deze bijeenkomst "
+            },
+            {
+              "status": "MP",
+              "errors": [
+                "lid_staten_generaal"
+              ],
+              "text": "Mijnheer de Voorzitter, het is met groot respect dat ik het woord vraag. Als lid van de Staten-Generaal voel ik de noodzaak om mijn stem te laten horen, ook al is de zitting momenteel niet in sessie. Ik verzoek u vriendelijk mijn verzoek te"
+            },
+            {
+              "status": "MP",
+              "errors": [
+                "lid_staten_generaal"
+              ],
+              "text": "Mijne heren, ik ben de heer van Gennep, lid van de Staten-Generaal en vertegenwoordiger van de Oud- of Vrije Liberalen. Het is mijn plicht en eer om hier in deze eerbiedwaardige instelling te dienen, en ik ben bereid om mijn bijdrage te lev"
+            }
+          ],
+          "sg_as_chamber_rate": 0.11333333333333333
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "condition": "ga",
+      "seed": 7,
+      "backend": "replay",
+      "model": "gpt-4o-mini",
+      "debate_context": "off",
+      "n_record_lines": 4876,
+      "n_record_llm": 186,
+      "n_record_fallback": 4690,
+      "counts": {
+        "committee:miss": 720,
+        "dialogue:miss": 266,
+        "floor:cache": 186,
+        "floor:fallback_on_record": 4690,
+        "floor:miss": 4690,
+        "interview:miss": 150,
+        "solo_talk:cache": 1650,
+        "solo_talk:miss": 15350
+      },
+      "completions_requested": 23012,
+      "regenerations": 0,
+      "api_calls": 0,
+      "api_fail": 0,
+      "seconds": 3.9
+    },
+    {
+      "condition": "ga",
+      "seed": 11,
+      "backend": "replay",
+      "model": "gpt-4o-mini",
+      "debate_context": "off",
+      "n_record_lines": 4876,
+      "n_record_llm": 202,
+      "n_record_fallback": 4674,
+      "counts": {
+        "committee:miss": 720,
+        "dialogue:cache": 10,
+        "dialogue:miss": 240,
+        "floor:cache": 202,
+        "floor:fallback_on_record": 4674,
+        "floor:miss": 4674,
+        "interview:miss": 150,
+        "solo_talk:cache": 1674,
+        "solo_talk:miss": 15326
+      },
+      "completions_requested": 22996,
+      "regenerations": 0,
+      "api_calls": 0,
+      "api_fail": 0,
+      "seconds": 4.6
+    },
+    {
+      "condition": "ga",
+      "seed": 19,
+      "backend": "replay",
+      "model": "gpt-4o-mini",
+      "debate_context": "off",
+      "n_record_lines": 4876,
+      "n_record_llm": 238,
+      "n_record_fallback": 4638,
+      "counts": {
+        "committee:miss": 720,
+        "dialogue:cache": 11,
+        "dialogue:miss": 227,
+        "floor:cache": 238,
+        "floor:fallback_on_record": 4638,
+        "floor:miss": 4638,
+        "interview:miss": 150,
+        "solo_talk:cache": 1690,
+        "solo_talk:miss": 15310
+      },
+      "completions_requested": 22984,
+      "regenerations": 0,
+      "api_calls": 0,
+      "api_fail": 0,
+      "seconds": 4.6
+    },
+    {
+      "condition": "kamer_noguard",
+      "seed": 7,
+      "backend": "replay",
+      "model": "gpt-4o-mini",
+      "debate_context": "off",
+      "n_record_lines": 205,
+      "n_record_llm": 20,
+      "n_record_fallback": 185,
+      "counts": {
+        "committee:miss": 720,
+        "dialogue:cache": 3,
+        "dialogue:miss": 258,
+        "floor:cache": 20,
+        "floor:fallback_on_record": 185,
+        "floor:miss": 185,
+        "interview:miss": 150,
+        "solo_talk:cache": 13613,
+        "solo_talk:miss": 3417
+      },
+      "completions_requested": 18366,
+      "regenerations": 0,
+      "api_calls": 0,
+      "api_fail": 0,
+      "seconds": 7.8
+    },
+    {
+      "condition": "kamer_noguard",
+      "seed": 11,
+      "backend": "replay",
+      "model": "gpt-4o-mini",
+      "debate_context": "off",
+      "n_record_lines": 205,
+      "n_record_llm": 20,
+      "n_record_fallback": 185,
+      "counts": {
+        "committee:miss": 720,
+        "dialogue:cache": 10,
+        "dialogue:miss": 222,
+        "floor:cache": 20,
+        "floor:fallback_on_record": 185,
+        "floor:miss": 185,
+        "interview:miss": 150,
+        "solo_talk:cache": 12715,
+        "solo_talk:miss": 4315
+      },
+      "completions_requested": 18337,
+      "regenerations": 0,
+      "api_calls": 0,
+      "api_fail": 0,
+      "seconds": 8.9
+    },
+    {
+      "condition": "kamer_noguard",
+      "seed": 19,
+      "backend": "replay",
+      "model": "gpt-4o-mini",
+      "debate_context": "off",
+      "n_record_lines": 205,
+      "n_record_llm": 20,
+      "n_record_fallback": 185,
+      "counts": {
+        "committee:miss": 720,
+        "dialogue:cache": 15,
+        "dialogue:miss": 231,
+        "floor:cache": 20,
+        "floor:fallback_on_record": 185,
+        "floor:miss": 185,
+        "interview:miss": 150,
+        "solo_talk:cache": 13042,
+        "solo_talk:miss": 3988
+      },
+      "completions_requested": 18351,
+      "regenerations": 0,
+      "api_calls": 0,
+      "api_fail": 0,
+      "seconds": 8.2
+    }
+  ],
+  "n_records": 138903,
+  "n_llm_records": 45419,
+  "sources": {
+    "cache": 45119,
+    "miss": 78927,
+    "fallback": 14557,
+    "s1_llm.json": 300
+  }
+}

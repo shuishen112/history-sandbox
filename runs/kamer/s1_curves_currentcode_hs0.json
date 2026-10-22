@@ -1,0 +1,4266 @@
+{
+ "full|7|1.0|0.18": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.15,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.35,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.55,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.6,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.85,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "full|11|1.0|0.18": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.15,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.35,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.6,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.7,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 1.0,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 1.0,
+    "government": 0.5,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 1.0,
+    "government": 0.5,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "full|19|1.0|0.18": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.2,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.35,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.65,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.9,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.95,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 1.0,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 1.0,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "full|29|1.0|0.18": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.1,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.15,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.25,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.3,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.55,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.85,
+    "government": 0.5,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 1.0,
+    "government": 1.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 1.0,
+    "government": 1.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "full|31|1.0|0.18": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.15,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.25,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.35,
+    "government": 0.5,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.75,
+    "government": 0.5,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.9,
+    "government": 1.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.95,
+    "government": 1.0,
+    "institutional": 1.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 1.0,
+    "government": 1.0,
+    "institutional": 1.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 1.0,
+    "government": 1.0,
+    "institutional": 1.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "ga|7|1.0|0.18": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "ga|11|1.0|0.18": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "ga|19|1.0|0.18": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "ga|29|1.0|0.18": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "ga|31|1.0|0.18": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "no_affordance|7|1.0|0.18": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.15,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.35,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.55,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.6,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.85,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "no_affordance|11|1.0|0.18": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.15,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.35,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.6,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.7,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 1.0,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 1.0,
+    "government": 0.5,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 1.0,
+    "government": 0.5,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "no_affordance|19|1.0|0.18": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.2,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.35,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.65,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.9,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.95,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 1.0,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 1.0,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "no_affordance|29|1.0|0.18": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.1,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.15,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.25,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.3,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.55,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.85,
+    "government": 0.5,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 1.0,
+    "government": 1.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 1.0,
+    "government": 1.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "no_affordance|31|1.0|0.18": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.15,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.25,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.35,
+    "government": 0.5,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.75,
+    "government": 0.5,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.9,
+    "government": 1.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.95,
+    "government": 1.0,
+    "institutional": 1.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 1.0,
+    "government": 1.0,
+    "institutional": 1.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 1.0,
+    "government": 1.0,
+    "institutional": 1.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "no_automaton|7|1.0|0.18": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.15,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.35,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.55,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.6,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.85,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "no_automaton|11|1.0|0.18": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.15,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.35,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.6,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.7,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 1.0,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 1.0,
+    "government": 0.5,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 1.0,
+    "government": 0.5,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "no_automaton|19|1.0|0.18": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.2,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.35,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.65,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.9,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.95,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 1.0,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 1.0,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "no_automaton|29|1.0|0.18": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.1,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.15,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.25,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.3,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.55,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.85,
+    "government": 0.5,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 1.0,
+    "government": 1.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 1.0,
+    "government": 1.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "no_automaton|31|1.0|0.18": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.15,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.25,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.35,
+    "government": 0.5,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.75,
+    "government": 0.5,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.9,
+    "government": 1.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.95,
+    "government": 1.0,
+    "institutional": 1.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 1.0,
+    "government": 1.0,
+    "institutional": 1.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 1.0,
+    "government": 1.0,
+    "institutional": 1.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "no_rumour|7|1.0|0.18": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "no_rumour|11|1.0|0.18": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "no_rumour|19|1.0|0.18": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "no_rumour|29|1.0|0.18": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "no_rumour|31|1.0|0.18": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "full|7|0.25|0.05": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.35,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.75,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.95,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 1.0,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 1.0,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 1.0,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "full|11|0.25|0.05": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.15,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.35,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.6,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.7,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.85,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 0.95,
+    "government": 0.5,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 0.95,
+    "government": 0.5,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "full|19|0.25|0.05": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.2,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.35,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.7,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.9,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.95,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 1.0,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 1.0,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "full|7|0.25|0.18": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.15,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.35,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.55,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.6,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.85,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "full|11|0.25|0.18": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.15,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.35,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.6,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.7,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 1.0,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 1.0,
+    "government": 0.5,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 1.0,
+    "government": 0.5,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "full|19|0.25|0.18": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.2,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.35,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.65,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.9,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.95,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 1.0,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 1.0,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "full|7|0.5|0.05": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.35,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.75,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.95,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 1.0,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 1.0,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 1.0,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "full|11|0.5|0.05": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.15,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.35,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.6,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.7,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.85,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 0.95,
+    "government": 0.5,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 0.95,
+    "government": 0.5,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "full|19|0.5|0.05": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.2,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.35,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.7,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.9,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.95,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 1.0,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 1.0,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "full|7|0.5|0.18": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.15,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.35,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.55,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.6,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.85,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "full|11|0.5|0.18": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.15,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.35,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.6,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.7,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 1.0,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 1.0,
+    "government": 0.5,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 1.0,
+    "government": 0.5,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "full|19|0.5|0.18": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.2,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.35,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.65,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.9,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.95,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 1.0,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 1.0,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "full|7|1.0|0.05": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.35,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.75,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.95,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 1.0,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 1.0,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 1.0,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "full|11|1.0|0.05": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.15,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.35,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.6,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.7,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.85,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 0.95,
+    "government": 0.5,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 0.95,
+    "government": 0.5,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "full|19|1.0|0.05": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.2,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.35,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.7,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.9,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.95,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 1.0,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 1.0,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "full|7|2.0|0.05": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.35,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.75,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.95,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 1.0,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 1.0,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 1.0,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "full|11|2.0|0.05": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.15,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.35,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.6,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.7,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.85,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 0.95,
+    "government": 0.5,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 0.95,
+    "government": 0.5,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "full|19|2.0|0.05": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.2,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.35,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.7,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.9,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.95,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 1.0,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 1.0,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "full|7|2.0|0.18": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.15,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.35,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.55,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.6,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.85,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "full|11|2.0|0.18": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.15,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.35,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.6,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.7,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 1.0,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 1.0,
+    "government": 0.5,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 1.0,
+    "government": 0.5,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "full|19|2.0|0.18": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.2,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.35,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.65,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.9,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.95,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 1.0,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 1.0,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "full|7|4.0|0.05": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.35,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.75,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.95,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 1.0,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 1.0,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 1.0,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "full|11|4.0|0.05": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.15,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.35,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.6,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.7,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.85,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 0.95,
+    "government": 0.5,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 0.95,
+    "government": 0.5,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "full|19|4.0|0.05": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.2,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.35,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.7,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.9,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.95,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 1.0,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 1.0,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "full|7|4.0|0.18": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.05,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.15,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.35,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.55,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.6,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.85,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "full|11|4.0|0.18": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.15,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.35,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.6,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.7,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 1.0,
+    "government": 0.0,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 1.0,
+    "government": 0.5,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 1.0,
+    "government": 0.5,
+    "institutional": 0.5,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ],
+ "full|19|4.0|0.18": [
+  {
+   "day": 0,
+   "aware": {
+    "member": 0.2,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 1,
+   "aware": {
+    "member": 0.35,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 0.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 2,
+   "aware": {
+    "member": 0.65,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 3,
+   "aware": {
+    "member": 0.9,
+    "government": 0.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 4,
+   "aware": {
+    "member": 0.9,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 5,
+   "aware": {
+    "member": 0.95,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 6,
+   "aware": {
+    "member": 1.0,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  },
+  {
+   "day": 7,
+   "aware": {
+    "member": 1.0,
+    "government": 1.0,
+    "institutional": 0.0,
+    "press": 1.0,
+    "gallery": 0.0
+   }
+  }
+ ]
+}

@@ -1,0 +1,1697 @@
+{
+    "schema": {
+        "attested_speaker": {
+            "verdict": "keep",
+            "note": ""
+        },
+        "chair": {
+            "verdict": "keep",
+            "note": ""
+        },
+        "mp": {
+            "verdict": "change",
+            "note": "Like I said in my email, would also speak in meetings of afdeelingen. \nAlso, the way a Kamerlid and a Minister speak in Parliament is quite similar. Both speak only when recognized and both address the Chair."
+        },
+        "minister": {
+            "verdict": "change",
+            "note": "Minister might also speak in the wandelgangen."
+        },
+        "clerk": {
+            "verdict": "change",
+            "note": "Split this type: Griffier is not a stenographer. Stenographers write the minutes, griffier is in charge of the administrative side of the Kamer, but is not a stenographer. I don't know if you want to keep the role of Griffier, but it is definitely not the same as stenographer."
+        },
+        "journalist": {
+            "verdict": "keep",
+            "note": ""
+        }
+    },
+    "reviewer": "Ida",
+    "exported": "2026-10-14T12:00:30.167Z",
+    "speakers": {
+        "spk-nl.m.01613": {
+            "name": "Zijp Kzn.",
+            "name_ok": "yes",
+            "role_ok": "yes",
+            "party_ok": "yes",
+            "attested": "yes",
+            "ocr": "4",
+            "corrected_name": "",
+            "note": "",
+            "suggested_role": "mp",
+            "identifiers": [
+                "0000372959",
+                "0000372965",
+                "0000372973"
+            ],
+            "dates": [
+                "1896-12-02",
+                "1896-12-11",
+                "1896-12-22"
+            ],
+            "synthetic": false,
+            "catch": false
+        },
+        "spk-Sprentrer_van_Eyk_,_Munster_s_u_FfmueiH": {
+            "name": "Sprentrer van Eyk , Munster s u FfmueiH",
+            "name_ok": "no",
+            "role_ok": "no",
+            "party_ok": "",
+            "attested": "",
+            "ocr": "3",
+            "corrected_name": "Sprenger van Eyk",
+            "note": "",
+            "suggested_role": "mp",
+            "synthetic": false,
+            "catch": false
+        },
+        "spk-Alex_Rivera_(2024_intern)": {
+            "name": "Alex Rivera (2024 intern)",
+            "name_ok": "no",
+            "role_ok": "no",
+            "party_ok": "no",
+            "attested": "no",
+            "ocr": "5",
+            "corrected_name": "",
+            "note": "",
+            "suggested_role": "mp",
+            "synthetic": true,
+            "catch": true
+        },
+        "spk-nl.m.02014": {
+            "name": "Bergsma",
+            "name_ok": "yes",
+            "role_ok": "yes",
+            "party_ok": "yes",
+            "attested": "yes",
+            "ocr": "4",
+            "corrected_name": "",
+            "note": "",
+            "suggested_role": "government",
+            "synthetic": false,
+            "catch": false
+        },
+        "spk-nl.m.00087": {
+            "name": "van den Berch van Heemstede",
+            "name_ok": "yes",
+            "role_ok": "yes",
+            "party_ok": "uncertain",
+            "attested": "yes",
+            "ocr": "",
+            "corrected_name": "",
+            "note": "The Bahlmannianen merged into one roman catholic movement with the Schaepmannianen in 1896, though I don't know exactly when in that year. He would have been politically Roman Catholic before the merge too, so I would suggest putting him with \"Rooms Katholiek\" as his party (although it wasn't formally a party)",
+            "suggested_role": "mp",
+            "identifiers": [
+                "0000372957",
+                "0000372957",
+                "0000372969"
+            ],
+            "dates": [
+                "1896-11-27",
+                "1896-11-27",
+                "1896-12-17"
+            ],
+            "synthetic": false,
+            "catch": false
+        },
+        "spk-nl.m.00188": {
+            "name": "Bouman",
+            "name_ok": "yes",
+            "role_ok": "yes",
+            "party_ok": "yes",
+            "attested": "yes",
+            "ocr": "4",
+            "corrected_name": "",
+            "note": "",
+            "suggested_role": "mp",
+            "identifiers": [
+                "0000374802",
+                "0000374803",
+                "0000372960"
+            ],
+            "dates": [
+                "1896-02-26",
+                "1896-02-27",
+                "1896-12-03"
+            ],
+            "synthetic": false,
+            "catch": false
+        },
+        "spk-nl.m.02127": {
+            "name": "van der Wijck",
+            "name_ok": "yes",
+            "role_ok": "yes",
+            "party_ok": "yes",
+            "attested": "yes",
+            "ocr": "4",
+            "corrected_name": "",
+            "note": "He was indeed not a member of a party, but he was liberal. You might consider using that.",
+            "suggested_role": "government",
+            "identifiers": [
+                "0000372964",
+                "0000372964",
+                "0000372964"
+            ],
+            "dates": [
+                "1896-12-10",
+                "1896-12-10",
+                "1896-12-10"
+            ],
+            "synthetic": false,
+            "catch": false
+        },
+        "spk-nl.m.00299": {
+            "name": "van Delden",
+            "name_ok": "yes",
+            "role_ok": "yes",
+            "party_ok": "uncertain",
+            "attested": "yes",
+            "ocr": "4",
+            "corrected_name": "",
+            "note": "He was a member of a couple of different liberal parties during his tenure as MP, and I'm not entirely sure which was when.",
+            "suggested_role": "mp",
+            "identifiers": [
+                "0000374801",
+                "0000374801",
+                "0000374802"
+            ],
+            "dates": [
+                "1896-02-25",
+                "1896-02-25",
+                "1896-02-26"
+            ],
+            "synthetic": false,
+            "catch": false
+        },
+        "spk-T_._Mackay_": {
+            "name": "T . Mackay ",
+            "name_ok": "yes",
+            "role_ok": "yes",
+            "party_ok": "no",
+            "attested": "yes",
+            "ocr": "3",
+            "corrected_name": "",
+            "note": "Note that this man has an initial, rather than just a last name. This is because he was an MP at the same time as another man named Mackay, so they used their initials to distinguish the two.\n\nHe was member of the Anti-Revolutionalre Partij initially, and transferred to the Vrij-Antirevolutionaire Partij in 1896. I'm not sure which he was on this specific date, but he was not partyless. ",
+            "suggested_role": "mp",
+            "identifiers": [
+                "0000372945"
+            ],
+            "dates": [
+                "1896-10-01"
+            ],
+            "synthetic": false,
+            "catch": false
+        },
+        "spk-Bertrsnia": {
+            "name": "Bertrsnia",
+            "name_ok": "no",
+            "role_ok": "yes",
+            "party_ok": "uncertain",
+            "attested": "uncertain",
+            "ocr": "3",
+            "corrected_name": "Bergsma",
+            "note": "You have another agent for this man below, so you should merge the two.\nWhile he was partyless, he was a liberal.",
+            "suggested_role": "government",
+            "identifiers": [
+                "0000372954"
+            ],
+            "dates": [
+                "1896-11-24"
+            ],
+            "synthetic": false,
+            "catch": false
+        },
+        "spk-VJlll_Houten": {
+            "name": "VJlll Houten",
+            "name_ok": "no",
+            "role_ok": "yes",
+            "party_ok": "no",
+            "attested": "no",
+            "ocr": "3",
+            "corrected_name": "Van Houten",
+            "note": "You already have Minister van Houten elsewhere, you should merge them.\nHe was not partyless: he was an oud-liberaal in this year. ",
+            "suggested_role": "government",
+            "identifiers": [
+                "0000372962"
+            ],
+            "dates": [
+                "1896-12-08"
+            ],
+            "synthetic": false,
+            "catch": false
+        },
+        "spk-nl.m.00553": {
+            "name": "Heldt",
+            "name_ok": "yes",
+            "role_ok": "no",
+            "party_ok": "yes",
+            "attested": "yes",
+            "ocr": "4",
+            "corrected_name": "",
+            "note": "Since Heldt was not a chair, the speeches that are here attributed to him were not made by him (but by the actual Chair, Gleichman)",
+            "suggested_role": "chair",
+            "identifiers": [
+                "0000374801",
+                "0000374801",
+                "0000374801"
+            ],
+            "dates": [
+                "1896-02-25",
+                "1896-02-25",
+                "1896-02-25"
+            ],
+            "synthetic": false,
+            "catch": false
+        },
+        "spk-Hai'togll_": {
+            "name": "Hai'togll ",
+            "name_ok": "no",
+            "role_ok": "yes",
+            "party_ok": "no",
+            "attested": "uncertain",
+            "ocr": "2",
+            "corrected_name": "Hartogh",
+            "note": "He was not partyless, he was a member of the Vooruitstrevend-Liberale Kamerclub\nYou have Hartogh elsewhere; merge the two",
+            "suggested_role": "mp",
+            "identifiers": [
+                "0000372945"
+            ],
+            "dates": [
+                "1896-10-01"
+            ],
+            "synthetic": false,
+            "catch": false
+        },
+        "spk-nl.m.01384": {
+            "name": "Tydeman jr.",
+            "name_ok": "yes",
+            "role_ok": "yes",
+            "party_ok": "yes",
+            "attested": "yes",
+            "ocr": "4",
+            "corrected_name": "",
+            "note": "",
+            "suggested_role": "mp",
+            "identifiers": [
+                "0000372952",
+                "0000372952",
+                "0000372953"
+            ],
+            "dates": [
+                "1896-11-19",
+                "1896-11-19",
+                "1896-11-20"
+            ],
+            "synthetic": false,
+            "catch": false
+        },
+        "spk-nl.m.00172": {
+            "name": "van Borssele",
+            "name_ok": "yes",
+            "role_ok": "yes",
+            "party_ok": "yes",
+            "attested": "yes",
+            "ocr": "4",
+            "corrected_name": "",
+            "note": "",
+            "suggested_role": "mp",
+            "identifiers": [
+                "0000374803",
+                "0000374803",
+                "0000372944"
+            ],
+            "dates": [
+                "1896-02-27",
+                "1896-02-27",
+                "1896-09-30"
+            ],
+            "synthetic": false,
+            "catch": false
+        },
+        "spk-nl.m.00666": {
+            "name": "van der Kaay",
+            "name_ok": "yes",
+            "role_ok": "yes",
+            "party_ok": "no",
+            "attested": "yes",
+            "ocr": "4",
+            "corrected_name": "",
+            "note": "Again, parties are kind of complicated in this period, but I would describe him as \"liberaal\"",
+            "suggested_role": "government",
+            "identifiers": [
+                "0000372945",
+                "0000372946",
+                "0000372946"
+            ],
+            "dates": [
+                "1896-10-01",
+                "1896-10-02",
+                "1896-10-02"
+            ],
+            "synthetic": false,
+            "catch": false
+        },
+        "spk-van_der_Sfovdeu": {
+            "name": "van der Sfovdeu",
+            "name_ok": "no",
+            "role_ok": "yes",
+            "party_ok": "no",
+            "attested": "yes",
+            "ocr": "3",
+            "corrected_name": "van der Sleyden",
+            "note": "He was \"liberaal\"",
+            "suggested_role": "government",
+            "identifiers": [
+                "0000372968"
+            ],
+            "dates": [
+                "1896-12-16"
+            ],
+            "synthetic": false,
+            "catch": false
+        },
+        "spk-nl.m.00727": {
+            "name": "Kolkman",
+            "name_ok": "yes",
+            "role_ok": "yes",
+            "party_ok": "uncertain",
+            "attested": "yes",
+            "ocr": "4",
+            "corrected_name": "",
+            "note": "The Schaepmannianen merged into one roman catholic movement with the Bahlmannianen in 1896, though I don't know exactly when in that year. He would have been politically Roman Catholic before the merge too, so I would suggest putting him with \"Rooms Katholiek\" as his party (although it wasn't formally a party)",
+            "suggested_role": "mp",
+            "identifiers": [
+                "0000374801",
+                "0000374801",
+                "0000374801"
+            ],
+            "dates": [
+                "1896-02-25",
+                "1896-02-25",
+                "1896-02-25"
+            ],
+            "synthetic": false,
+            "catch": false
+        },
+        "spk-nl.m.00766": {
+            "name": "Kuyper",
+            "name_ok": "yes",
+            "role_ok": "yes",
+            "party_ok": "yes",
+            "attested": "yes",
+            "ocr": "4",
+            "corrected_name": "",
+            "note": "",
+            "suggested_role": "mp",
+            "identifiers": [
+                "0000372950",
+                "0000372953",
+                "0000372958"
+            ],
+            "dates": [
+                "1896-11-17",
+                "1896-11-20",
+                "1896-12-01"
+            ],
+            "synthetic": false,
+            "catch": false
+        },
+        "spk-Verslaggever_van_de_Courant": {
+            "name": "Verslaggever van de Courant",
+            "name_ok": "yes",
+            "role_ok": "yes",
+            "party_ok": "yes",
+            "attested": "yes",
+            "ocr": "5",
+            "corrected_name": "",
+            "note": "",
+            "suggested_role": "journalist",
+            "identifiers": [],
+            "dates": [],
+            "synthetic": true,
+            "catch": false
+        },
+        "spk-nl.m.00404": {
+            "name": "Ferf",
+            "name_ok": "yes",
+            "role_ok": "yes",
+            "party_ok": "yes",
+            "attested": "yes",
+            "ocr": "4",
+            "corrected_name": "",
+            "note": "",
+            "suggested_role": "mp",
+            "identifiers": [
+                "0000374805",
+                "0000372956",
+                "0000372958"
+            ],
+            "dates": [
+                "1896-03-03",
+                "1896-11-26",
+                "1896-12-01"
+            ],
+            "synthetic": false,
+            "catch": false
+        },
+        "spk-nl.m.01458": {
+            "name": "van Vlijmen",
+            "name_ok": "yes",
+            "role_ok": "yes",
+            "party_ok": "uncertain",
+            "attested": "",
+            "ocr": "4",
+            "corrected_name": "",
+            "note": "The Bahlmannianen merged into the Rooms-Katholieke Kamerclub in 1896, though I don't know exactly when in that year.",
+            "suggested_role": "mp",
+            "identifiers": [
+                "0000372950",
+                "0000372951",
+                "0000372952"
+            ],
+            "dates": [
+                "1896-11-17",
+                "1896-11-18",
+                "1896-11-19"
+            ],
+            "synthetic": false,
+            "catch": false
+        },
+        "spk-van_Dedem_geide": {
+            "name": "van Dedem geide",
+            "name_ok": "no",
+            "role_ok": "no",
+            "party_ok": "",
+            "attested": "uncertain",
+            "ocr": "3",
+            "corrected_name": "van Dedem",
+            "note": "This was a speech by someone else, who quoted Van Dedem. So this is not actually something that Van Dedem said. ",
+            "suggested_role": "mp",
+            "identifiers": [
+                "0000374800"
+            ],
+            "dates": [
+                "1896-02-21"
+            ],
+            "synthetic": false,
+            "catch": false
+        },
+        "spk-nl.m.00469": {
+            "name": "Goeman Borgesius",
+            "name_ok": "yes",
+            "role_ok": "yes",
+            "party_ok": "yes",
+            "attested": "yes",
+            "ocr": "4",
+            "corrected_name": "",
+            "note": "",
+            "suggested_role": "mp",
+            "identifiers": [
+                "0000374801",
+                "0000374801",
+                "0000374801"
+            ],
+            "dates": [
+                "1896-02-25",
+                "1896-02-25",
+                "1896-02-25"
+            ],
+            "synthetic": false,
+            "catch": false
+        },
+        "spk-nl.m.00264": {
+            "name": "Conrad",
+            "name_ok": "yes",
+            "role_ok": "yes",
+            "party_ok": "yes",
+            "attested": "yes",
+            "ocr": "4",
+            "corrected_name": "",
+            "note": "",
+            "suggested_role": "mp",
+            "identifiers": [
+                "0000372949",
+                "0000372949",
+                "0000372949"
+            ],
+            "dates": [
+                "1896-11-13",
+                "1896-11-13",
+                "1896-11-13"
+            ],
+            "synthetic": false,
+            "catch": false
+        },
+        "spk-Bergsma_,_'>_inistcr_van_Koloniën": {
+            "name": "Bergsma , '> inistcr van Koloniën",
+            "name_ok": "no",
+            "role_ok": "no",
+            "party_ok": "uncertain",
+            "attested": "uncertain",
+            "ocr": "3",
+            "corrected_name": "Bergsma",
+            "note": "You have another agent for this man below, so you should merge the two.\nThis man was a minister (the incorrect name here is due to an OCR mistake in \"Minister\")",
+            "suggested_role": "mp",
+            "identifiers": [
+                "0000372973"
+            ],
+            "dates": [
+                "1896-12-22"
+            ],
+            "synthetic": false,
+            "catch": false
+        },
+        "spk-nl.m.01118": {
+            "name": "Röell",
+            "name_ok": "yes",
+            "role_ok": "yes",
+            "party_ok": "uncertain",
+            "attested": "yes",
+            "ocr": "4",
+            "corrected_name": "",
+            "note": "\nTechnically partyless, but a liberal.",
+            "suggested_role": "government",
+            "identifiers": [
+                "0000374803",
+                "0000372942",
+                "0000372942"
+            ],
+            "dates": [
+                "1896-02-27",
+                "1896-09-22",
+                "1896-09-22"
+            ],
+            "synthetic": false,
+            "catch": false
+        },
+        "spk-nl.m.00607": {
+            "name": "van Houten",
+            "name_ok": "yes",
+            "role_ok": "yes",
+            "party_ok": "yes",
+            "attested": "yes",
+            "ocr": "3",
+            "corrected_name": "",
+            "note": "Like I said above, he was not partyless: he was an oud-liberaal in this year. ",
+            "suggested_role": "government",
+            "identifiers": [
+                "0000374804",
+                "0000374805",
+                "0000374805"
+            ],
+            "dates": [
+                "1896-02-28",
+                "1896-03-03",
+                "1896-03-03"
+            ],
+            "synthetic": false,
+            "catch": false
+        },
+        "spk-nl.m.01113": {
+            "name": "Rink",
+            "name_ok": "yes",
+            "role_ok": "yes",
+            "party_ok": "",
+            "attested": "yes",
+            "ocr": "4",
+            "corrected_name": "",
+            "note": "",
+            "suggested_role": "mp",
+            "identifiers": [
+                "0000372971",
+                "0000372974",
+                "0000372974"
+            ],
+            "dates": [
+                "1896-12-19",
+                "1896-12-23",
+                "1896-12-23"
+            ],
+            "synthetic": false,
+            "catch": false
+        },
+        "spk-Rciell,_Miihter_van_Buitenlamhi_Ie_Zalm": {
+            "name": "Rciell, Miihter van Buitenlamhi Ie Zalm",
+            "name_ok": "no",
+            "role_ok": "no",
+            "party_ok": "no",
+            "attested": "no",
+            "ocr": "3",
+            "corrected_name": "Roëll",
+            "note": "You already have an agent for Roëll, merge with that one.",
+            "suggested_role": "mp",
+            "identifiers": [
+                "0000372949"
+            ],
+            "dates": [
+                "1896-11-13"
+            ],
+            "synthetic": false,
+            "catch": false
+        },
+        "spk-nl.m.00297": {
+            "name": "van Deinse",
+            "name_ok": "yes",
+            "role_ok": "yes",
+            "party_ok": "yes",
+            "attested": "yes",
+            "ocr": "4",
+            "corrected_name": "",
+            "note": "",
+            "suggested_role": "mp",
+            "identifiers": [
+                "0000374802",
+                "0000372949"
+            ],
+            "dates": [
+                "1896-02-26",
+                "1896-11-13"
+            ],
+            "synthetic": false,
+            "catch": false
+        },
+        "spk-nl.m.01256": {
+            "name": "van der Sleijden",
+            "name_ok": "uncertain",
+            "role_ok": "yes",
+            "party_ok": "no",
+            "attested": "uncertain",
+            "ocr": "4",
+            "corrected_name": "His name is usually spelled van der Sleyden, but Sleijden might be a legitimate spelling alternative.",
+            "note": "You already have an agent for this man; merge",
+            "suggested_role": "government",
+            "identifiers": [
+                "0000372949",
+                "0000372956",
+                "0000372968"
+            ],
+            "dates": [
+                "1896-11-13",
+                "1896-11-26",
+                "1896-12-16"
+            ],
+            "synthetic": false,
+            "catch": false
+        },
+        "spk-de_Savoniiii_Lolunan": {
+            "name": "de Savoniiii Lolunan",
+            "name_ok": "",
+            "role_ok": "yes",
+            "party_ok": "yes",
+            "attested": "yes",
+            "ocr": "3",
+            "corrected_name": "de Savornin Lohman",
+            "note": "",
+            "suggested_role": "mp",
+            "identifiers": [
+                "0000372981"
+            ],
+            "dates": [
+                "1897-02-26"
+            ],
+            "synthetic": false,
+            "catch": false
+        },
+        "spk-nl.m.00462": {
+            "name": "Gleichman",
+            "name_ok": "yes",
+            "role_ok": "yes",
+            "party_ok": "no",
+            "attested": "yes",
+            "ocr": "4",
+            "corrected_name": "",
+            "note": "He was \"liberaal\"",
+            "suggested_role": "chair",
+            "identifiers": [
+                "0000374800",
+                "0000374800",
+                "0000374801"
+            ],
+            "dates": [
+                "1896-02-21",
+                "1896-02-21",
+                "1896-02-25"
+            ],
+            "synthetic": false,
+            "catch": false
+        },
+        "spk-nl.m.00684": {
+            "name": "van Kerkwijk",
+            "name_ok": "yes",
+            "role_ok": "yes",
+            "party_ok": "yes",
+            "attested": "no",
+            "ocr": "4",
+            "corrected_name": "",
+            "note": "",
+            "suggested_role": "mp",
+            "identifiers": [
+                "0000372942",
+                "0000372942",
+                "0000372954"
+            ],
+            "dates": [
+                "1896-09-22",
+                "1896-09-22",
+                "1896-11-24"
+            ],
+            "synthetic": false,
+            "catch": false
+        },
+        "spk-Griffier": {
+            "name": "Griffier",
+            "name_ok": "uncertain",
+            "role_ok": "yes",
+            "party_ok": "yes",
+            "attested": "yes",
+            "ocr": "5",
+            "corrected_name": "Arntzenius",
+            "note": "I said this elsewhere too I think, but from 1888-1920 the Griffier of the Tweede Kamer was Arntzenius",
+            "suggested_role": "clerk",
+            "identifiers": [],
+            "dates": [],
+            "synthetic": true,
+            "catch": false
+        },
+        "spk-de_Beaufor_t": {
+            "name": "de Beaufor t",
+            "name_ok": "no",
+            "role_ok": "yes",
+            "party_ok": "no",
+            "attested": "yes",
+            "ocr": "4",
+            "corrected_name": "de Beaufort",
+            "note": "he was \"liberaal\"",
+            "suggested_role": "mp",
+            "identifiers": [
+                "0000374802"
+            ],
+            "dates": [
+                "1896-02-26"
+            ],
+            "synthetic": false,
+            "catch": false
+        },
+        "spk-nl.m.00525": {
+            "name": "Hartogh",
+            "name_ok": "yes",
+            "role_ok": "yes",
+            "party_ok": "yes",
+            "attested": "yes",
+            "ocr": "4",
+            "corrected_name": "",
+            "note": "",
+            "suggested_role": "mp",
+            "identifiers": [
+                "0000372945",
+                "0000372946",
+                "0000372946"
+            ],
+            "dates": [
+                "1896-10-01",
+                "1896-10-02",
+                "1896-10-02"
+            ],
+            "synthetic": false,
+            "catch": false
+        },
+        "spk-nl.m.02098": {
+            "name": "Schneider",
+            "name_ok": "yes",
+            "role_ok": "yes",
+            "party_ok": "no",
+            "attested": "yes",
+            "ocr": "4",
+            "corrected_name": "",
+            "note": "He was \"Rooms Katholiek\", which I would put as party, even if it wasn't formally a party.",
+            "suggested_role": "government",
+            "identifiers": [
+                "0000372949",
+                "0000372966",
+                "0000372966"
+            ],
+            "dates": [
+                "1896-11-13",
+                "1896-12-14",
+                "1896-12-14"
+            ],
+            "synthetic": false,
+            "catch": false
+        },
+        "spk-unknown_voorzitter": {
+            "name": "unknown_voorzitter",
+            "name_ok": "no",
+            "role_ok": "no",
+            "party_ok": "no",
+            "attested": "uncertain",
+            "ocr": "",
+            "corrected_name": "Gleichman",
+            "note": "The first two excerpts are things that Chair Gleichman said. The final excerpt is by a temporary Chair, named Donner.\nI would suggest removing last excerpt and merging with Gleichman, or you could create a separate agent \"Donner\" for the final excerpt",
+            "suggested_role": "chair",
+            "identifiers": [
+                "0000374799",
+                "0000374799",
+                "0000372941"
+            ],
+            "dates": [
+                "1896-02-18",
+                "1896-02-18",
+                "1896-09-17"
+            ],
+            "synthetic": false,
+            "catch": false
+        },
+        "spk-nl.m.00076": {
+            "name": "Beelaerts van Blokland",
+            "name_ok": "yes",
+            "role_ok": "yes",
+            "party_ok": "no",
+            "attested": "yes",
+            "ocr": "4",
+            "corrected_name": "",
+            "note": "Party = \"arp\"",
+            "suggested_role": "mp",
+            "identifiers": [
+                "0000372952",
+                "0000372958",
+                "0000372958"
+            ],
+            "dates": [
+                "1896-11-19",
+                "1896-12-01",
+                "1896-12-01"
+            ],
+            "synthetic": false,
+            "catch": false
+        }
+    },
+    "personas": {
+        "a000": {
+            "verdict": "ok",
+            "note": "",
+            "name": "Gleichman",
+            "status": "Chair",
+            "synthetic": false
+        },
+        "a001": {
+            "verdict": "role_only",
+            "note": "The griffier in 1899-1900 was Arntzenius (see https://parlement.com/biografie/mr-ar-arntzenius)",
+            "name": "Griffier",
+            "status": "Clerk",
+            "synthetic": true
+        },
+        "a002": {
+            "verdict": "role_only",
+            "note": "\"Courant\" is basically Dutch for \"newspaper\". If you would like an actual historical newspaper I could provide you with one or more options.",
+            "name": "Verslaggever van de Courant",
+            "status": "Journalist",
+            "synthetic": true
+        },
+        "a003": {
+            "verdict": "off",
+            "note": "Van Houten was a minister, but not in 1899-1900.",
+            "name": "van Houten",
+            "status": "Minister",
+            "synthetic": false
+        },
+        "a004": {
+            "verdict": "off",
+            "note": "Sprenger was a Minister, but only until 1897, so not in 1899-1900.",
+            "name": "Sprenger van Eyk",
+            "status": "Minister",
+            "synthetic": false
+        },
+        "a005": {
+            "verdict": "off",
+            "note": "Everything is correct, except for his party: In 1899-1900 he was a member of the Liberale Unie. ",
+            "name": "Goeman Borgesius",
+            "status": "MP",
+            "synthetic": false
+        },
+        "a006": {
+            "verdict": "ok",
+            "note": "",
+            "name": "Pijnappel",
+            "status": "MP",
+            "synthetic": false
+        },
+        "a007": {
+            "verdict": "ok",
+            "note": "",
+            "name": "de Savornin Lohman",
+            "status": "MP",
+            "synthetic": false
+        },
+        "a008": {
+            "verdict": "ok",
+            "note": "",
+            "name": "Kuyper",
+            "status": "MP",
+            "synthetic": false
+        },
+        "a009": {
+            "verdict": "off",
+            "note": "I would put his party as \"liberaal\"",
+            "name": "de Beaufort",
+            "status": "MP",
+            "synthetic": false
+        },
+        "a010": {
+            "verdict": "ok",
+            "note": "",
+            "name": "van Alphen",
+            "status": "MP",
+            "synthetic": false
+        },
+        "a011": {
+            "verdict": "ok",
+            "note": "",
+            "name": "Staalman",
+            "status": "MP",
+            "synthetic": false
+        },
+        "a012": {
+            "verdict": "ok",
+            "note": "",
+            "name": "Tydeman jr.",
+            "status": "MP",
+            "synthetic": false
+        },
+        "a013": {
+            "verdict": "ok",
+            "note": "",
+            "name": "Heemskerk",
+            "status": "MP",
+            "synthetic": false
+        },
+        "a014": {
+            "verdict": "off",
+            "note": "He was a member of the Vooruitstrevend-Liberale Kamerklub (which I think is what is meant by vooruitstrevendekamerclub?) before 1894 and after 1902, but not in 1899-1900. I would put his party as \"liberaal\"",
+            "name": "Smeenge",
+            "status": "MP",
+            "synthetic": false
+        },
+        "a015": {
+            "verdict": "ok",
+            "note": "",
+            "name": "van Delden",
+            "status": "MP",
+            "synthetic": false
+        },
+        "a016": {
+            "verdict": "ok",
+            "note": "Like I said elsewhere, Balhmannianen more or less merged with the Schaepmannianen in 1896. By 1899-1900 I would therefore describe him as \"Rooms-Katholiek\"",
+            "name": "Bahlmann",
+            "status": "MP",
+            "synthetic": false
+        },
+        "a017": {
+            "verdict": "off",
+            "note": "Gerritsen stopped being an MP in 1997. ",
+            "name": "Gerritsen",
+            "status": "MP",
+            "synthetic": false
+        },
+        "a018": {
+            "verdict": "ok",
+            "note": "Like I said elsewhere, Balhmannianen more or less merged with the Schaepmannianen in 1896. By 1899-1900 I would therefore describe him as \"Rooms-Katholiek\"",
+            "name": "van Vlijmen",
+            "status": "MP",
+            "synthetic": false
+        },
+        "a019": {
+            "verdict": "off",
+            "note": "There is a sort of OCR error: It says \"Do heer\" instead of \"De heer\"",
+            "name": "van Karnebeek",
+            "status": "MP",
+            "synthetic": false
+        },
+        "a020": {
+            "verdict": "ok",
+            "note": "",
+            "name": "van Gennep",
+            "status": "MP",
+            "synthetic": false
+        },
+        "a021": {
+            "verdict": "ok",
+            "note": "",
+            "name": "baron van Dedem",
+            "status": "MP",
+            "synthetic": false
+        },
+        "a022": {
+            "verdict": "ok",
+            "note": "",
+            "name": "Seret",
+            "status": "MP",
+            "synthetic": false
+        },
+        "a023": {
+            "verdict": "ok",
+            "note": "",
+            "name": "Rutgers van Rozenburg",
+            "status": "MP",
+            "synthetic": false
+        },
+        "a024": {
+            "verdict": "ok",
+            "note": "",
+            "name": "Roessingh",
+            "status": "MP",
+            "synthetic": false
+        }
+    },
+    "interviews": {
+        "pair-019": {
+            "bel": "R",
+            "hist": "tie",
+            "ref": "",
+            "left": "full_llm",
+            "right": "ga_llm",
+            "category": "memory",
+            "role": "Minister",
+            "agent_id": "a003",
+            "catch": false
+        },
+        "pair-031": {
+            "bel": "tie",
+            "hist": "tie",
+            "ref": "",
+            "left": "ga_llm",
+            "right": "full_llm",
+            "category": "memory",
+            "role": "MP",
+            "agent_id": "a005",
+            "catch": false
+        },
+        "pair-011": {
+            "bel": "tie",
+            "hist": "tie",
+            "ref": "Nee, als journalist mag ik niet het woord voeren op de vloer. Leden mogen in principe ook niet het woord voeren zonder erkenning van de Voorzitter, maar zullen toch soms hardop reageren. ",
+            "left": "full_llm",
+            "right": "ga_llm",
+            "category": "institutional_awareness",
+            "role": "Journalist",
+            "agent_id": "a002",
+            "catch": false
+        },
+        "pair-009": {
+            "bel": "tie",
+            "hist": "R",
+            "ref": "",
+            "left": "ga_llm",
+            "right": "full_llm",
+            "category": "reactions",
+            "role": "Journalist",
+            "agent_id": "a002",
+            "catch": false
+        },
+        "pair-036": {
+            "bel": "",
+            "hist": "",
+            "ref": "\"MP\" as an abbreviation of Member of Parliament is not a term that is used in Dutch. They would be more likely to describe themselves as \"Kamerlid\". Furthermore, in 1899-1900, \"Staten-Generaal\" is needelessly unspecific. Someone would either be a member of the Eerste Kamer (Senate) or the Tweede Kamer (House of Representatives). So a more plausible answer would be \"Kamerlid in de Eerste/Tweede Kamer\"",
+            "left": "ga",
+            "right": "full",
+            "category": "self-knowledge",
+            "role": "MP",
+            "agent_id": "a006",
+            "catch": false
+        },
+        "pair-008": {
+            "bel": "L",
+            "hist": "L",
+            "ref": "",
+            "left": "ga_llm",
+            "right": "full_llm",
+            "category": "plans",
+            "role": "Journalist",
+            "agent_id": "a002",
+            "catch": false
+        },
+        "pair-012": {
+            "bel": "tie",
+            "hist": "R",
+            "ref": "",
+            "left": "ga_llm",
+            "right": "full_llm",
+            "category": "self-knowledge",
+            "role": "Clerk",
+            "agent_id": "a001",
+            "catch": false
+        },
+        "pair-014": {
+            "bel": "tie",
+            "hist": "R",
+            "ref": "",
+            "left": "full_llm",
+            "right": "ga_llm",
+            "category": "plans",
+            "role": "Clerk",
+            "agent_id": "a001",
+            "catch": false
+        },
+        "pair-035": {
+            "bel": "R",
+            "hist": "tie",
+            "ref": "",
+            "left": "full_llm",
+            "right": "ga_llm",
+            "category": "institutional_awareness",
+            "role": "MP",
+            "agent_id": "a005",
+            "catch": false
+        },
+        "pair-000": {
+            "bel": "R",
+            "hist": "tie",
+            "ref": "",
+            "left": "ga_llm",
+            "right": "full_llm",
+            "category": "self-knowledge",
+            "role": "Chair",
+            "agent_id": "a000",
+            "catch": false
+        },
+        "pair-catch-modern": {
+            "bel": "R",
+            "hist": "R",
+            "ref": "",
+            "left": "catch_anachronism",
+            "right": "full_llm",
+            "category": "institutional_awareness",
+            "role": "Chair",
+            "agent_id": "a000",
+            "catch": true
+        },
+        "pair-034": {
+            "bel": "R",
+            "hist": "R",
+            "ref": "",
+            "left": "ga_llm",
+            "right": "full_llm",
+            "category": "reflections",
+            "role": "MP",
+            "agent_id": "a005",
+            "catch": false
+        },
+        "pair-003": {
+            "bel": "tie",
+            "hist": "tie",
+            "ref": "Ik ben zelf de Voorzitter, dus hier kan geen sprake van zijn. ",
+            "left": "ga_llm",
+            "right": "full_llm",
+            "category": "reactions",
+            "role": "Chair",
+            "agent_id": "a000",
+            "catch": false
+        },
+        "pair-001": {
+            "bel": "R",
+            "hist": "tie",
+            "ref": "",
+            "left": "full_llm",
+            "right": "ga_llm",
+            "category": "memory",
+            "role": "Chair",
+            "agent_id": "a000",
+            "catch": false
+        },
+        "pair-006": {
+            "bel": "L",
+            "hist": "L",
+            "ref": "",
+            "left": "ga_llm",
+            "right": "full_llm",
+            "category": "self-knowledge",
+            "role": "Journalist",
+            "agent_id": "a002",
+            "catch": false
+        },
+        "pair-catch-empty": {
+            "bel": "L",
+            "hist": "L",
+            "ref": "",
+            "left": "full_llm",
+            "right": "catch_anachronism",
+            "category": "self-knowledge",
+            "role": "MP",
+            "agent_id": "a024",
+            "catch": true
+        },
+        "pair-021": {
+            "bel": "L",
+            "hist": "L",
+            "ref": "",
+            "left": "full_llm",
+            "right": "ga_llm",
+            "category": "reactions",
+            "role": "Minister",
+            "agent_id": "a003",
+            "catch": false
+        },
+        "pair-027": {
+            "bel": "R",
+            "hist": "R",
+            "ref": "",
+            "left": "ga_llm",
+            "right": "full_llm",
+            "category": "reactions",
+            "role": "Minister",
+            "agent_id": "a004",
+            "catch": false
+        },
+        "pair-028": {
+            "bel": "tie",
+            "hist": "tie",
+            "ref": "",
+            "left": "full_llm",
+            "right": "ga_llm",
+            "category": "reflections",
+            "role": "Minister",
+            "agent_id": "a004",
+            "catch": false
+        },
+        "pair-017": {
+            "bel": "L",
+            "hist": "tie",
+            "ref": "",
+            "left": "ga_llm",
+            "right": "full_llm",
+            "category": "institutional_awareness",
+            "role": "Clerk",
+            "agent_id": "a001",
+            "catch": false
+        },
+        "pair-024": {
+            "bel": "L",
+            "hist": "tie",
+            "ref": "",
+            "left": "full_llm",
+            "right": "ga_llm",
+            "category": "self-knowledge",
+            "role": "Minister",
+            "agent_id": "a004",
+            "catch": false
+        },
+        "pair-020": {
+            "bel": "L",
+            "hist": "L",
+            "ref": "",
+            "left": "full_llm",
+            "right": "ga_llm",
+            "category": "plans",
+            "role": "Minister",
+            "agent_id": "a003",
+            "catch": false
+        },
+        "pair-005": {
+            "bel": "tie",
+            "hist": "tie",
+            "ref": "",
+            "left": "full_llm",
+            "right": "ga_llm",
+            "category": "institutional_awareness",
+            "role": "Chair",
+            "agent_id": "a000",
+            "catch": false
+        },
+        "pair-015": {
+            "bel": "R",
+            "hist": "R",
+            "ref": "",
+            "left": "ga_llm",
+            "right": "full_llm",
+            "category": "reactions",
+            "role": "Clerk",
+            "agent_id": "a001",
+            "catch": false
+        },
+        "pair-023": {
+            "bel": "L",
+            "hist": "L",
+            "ref": "",
+            "left": "ga_llm",
+            "right": "full_llm",
+            "category": "institutional_awareness",
+            "role": "Minister",
+            "agent_id": "a003",
+            "catch": false
+        },
+        "pair-030": {
+            "bel": "tie",
+            "hist": "tie",
+            "ref": "",
+            "left": "ga_llm",
+            "right": "full_llm",
+            "category": "self-knowledge",
+            "role": "MP",
+            "agent_id": "a005",
+            "catch": false
+        },
+        "pair-013": {
+            "bel": "L",
+            "hist": "tie",
+            "ref": "",
+            "left": "full_llm",
+            "right": "ga_llm",
+            "category": "memory",
+            "role": "Clerk",
+            "agent_id": "a001",
+            "catch": false
+        },
+        "pair-010": {
+            "bel": "R",
+            "hist": "L",
+            "ref": "",
+            "left": "full_llm",
+            "right": "ga_llm",
+            "category": "reflections",
+            "role": "Journalist",
+            "agent_id": "a002",
+            "catch": false
+        },
+        "pair-007": {
+            "bel": "tie",
+            "hist": "L",
+            "ref": "",
+            "left": "ga_llm",
+            "right": "full_llm",
+            "category": "memory",
+            "role": "Journalist",
+            "agent_id": "a002",
+            "catch": false
+        },
+        "pair-033": {
+            "bel": "R",
+            "hist": "R",
+            "ref": "",
+            "left": "ga_llm",
+            "right": "full_llm",
+            "category": "reactions",
+            "role": "MP",
+            "agent_id": "a005",
+            "catch": false
+        },
+        "pair-022": {
+            "bel": "tie",
+            "hist": "tie",
+            "ref": "",
+            "left": "ga_llm",
+            "right": "full_llm",
+            "category": "reflections",
+            "role": "Minister",
+            "agent_id": "a003",
+            "catch": false
+        },
+        "pair-016": {
+            "bel": "L",
+            "hist": "L",
+            "ref": "",
+            "left": "full_llm",
+            "right": "ga_llm",
+            "category": "reflections",
+            "role": "Clerk",
+            "agent_id": "a001",
+            "catch": false
+        },
+        "pair-025": {
+            "bel": "R",
+            "hist": "tie",
+            "ref": "",
+            "left": "ga_llm",
+            "right": "full_llm",
+            "category": "memory",
+            "role": "Minister",
+            "agent_id": "a004",
+            "catch": false
+        },
+        "pair-002": {
+            "bel": "R",
+            "hist": "R",
+            "ref": "",
+            "left": "ga_llm",
+            "right": "full_llm",
+            "category": "plans",
+            "role": "Chair",
+            "agent_id": "a000",
+            "catch": false
+        },
+        "pair-032": {
+            "bel": "R",
+            "hist": "tie",
+            "ref": "",
+            "left": "ga_llm",
+            "right": "full_llm",
+            "category": "plans",
+            "role": "MP",
+            "agent_id": "a005",
+            "catch": false
+        },
+        "pair-018": {
+            "bel": "L",
+            "hist": "tie",
+            "ref": "",
+            "left": "full_llm",
+            "right": "ga_llm",
+            "category": "self-knowledge",
+            "role": "Minister",
+            "agent_id": "a003",
+            "catch": false
+        },
+        "pair-004": {
+            "bel": "L",
+            "hist": "tie",
+            "ref": "",
+            "left": "full_llm",
+            "right": "ga_llm",
+            "category": "reflections",
+            "role": "Chair",
+            "agent_id": "a000",
+            "catch": false
+        },
+        "pair-029": {
+            "bel": "R",
+            "hist": "R",
+            "ref": "",
+            "left": "ga_llm",
+            "right": "full_llm",
+            "category": "institutional_awareness",
+            "role": "Minister",
+            "agent_id": "a004",
+            "catch": false
+        },
+        "pair-026": {
+            "bel": "R",
+            "hist": "tie",
+            "ref": "",
+            "left": "ga_llm",
+            "right": "full_llm",
+            "category": "plans",
+            "role": "Minister",
+            "agent_id": "a004",
+            "catch": false
+        }
+    },
+    "rules": {
+        "recognition": {
+            "verdict": "agree",
+            "note": ""
+        },
+        "journalist": {
+            "verdict": "agree",
+            "note": ""
+        },
+        "corridor": {
+            "verdict": "agree",
+            "note": ""
+        },
+        "chair_opens": {
+            "verdict": "agree",
+            "note": ""
+        },
+        "stenographer": {
+            "verdict": "revise",
+            "note": "The stenographer records recognised floor speech and the Chair’s rulings. Asides and unrecognised interruptions are only recorded if the recognized speaker responds to them."
+        },
+        "no_possess": {
+            "verdict": "agree",
+            "note": ""
+        },
+        "public_only": {
+            "verdict": "agree",
+            "note": ""
+        },
+        "leak": {
+            "verdict": "agree",
+            "note": ""
+        }
+    },
+    "map": {
+        "verdict": "yes",
+        "note": ""
+    },
+    "procedure": {
+        "proc-009": {
+            "in_order": "yes",
+            "on_record": "yes",
+            "anachronism": "no",
+            "note": "It is unlikely that a speech would start with saying \"Mijnheer de Voorzitter!\" twice. I notice that it does appear twice in most of these excerpts. It would be more likely to have it once.",
+            "hidden": "full",
+            "source": "simulation",
+            "catch": false
+        },
+        "proc-008": {
+            "in_order": "yes",
+            "on_record": "yes",
+            "anachronism": "no",
+            "note": "OCR error: \"opmerkin g\" should be \"opmerking\"",
+            "hidden": "full",
+            "source": "simulation",
+            "catch": false
+        },
+        "proc-016": {
+            "in_order": "yes",
+            "on_record": "no",
+            "anachronism": "no",
+            "note": "",
+            "hidden": "vignette_corridor",
+            "source": "vignette",
+            "catch": false
+        },
+        "proc-002": {
+            "in_order": "yes",
+            "on_record": "yes",
+            "anachronism": "no",
+            "note": "OCR error: \"V\" should be \"?\"",
+            "hidden": "archive",
+            "source": "archive",
+            "catch": false
+        },
+        "proc-004": {
+            "in_order": "yes",
+            "on_record": "yes",
+            "anachronism": "no",
+            "note": "This is not someone's speech: this is the Handelingen describing what is happening (someone presents a report, and the decision is made to print and distribute the report is made, none of this is part of a speech). So: yes ,the Chair would have allowed this, the stenographer would have recorded it and there's no anachronism, but \"speaks after recognition\" is not an accurate description for what is happening here.\n\nAlso, various OCR mistakes. \"éê\" --> \"één\" \"he t Verslag in d e\" --> \"het Verslag in de\" and more",
+            "hidden": "archive",
+            "source": "archive",
+            "catch": false
+        },
+        "proc-000": {
+            "in_order": "yes",
+            "on_record": "yes",
+            "anachronism": "no",
+            "note": "This is not someone's speech: this is the Handelingen describing what is happening (someone presents reports, and the decision is made to print and distribute the report is made, none of this is part of a speech). So: yes ,the Chair would have allowed this, the stenographer would have recorded it and there's no anachronism, but \"speaks after recognition\" is not an accurate description for what is happening here.",
+            "hidden": "archive",
+            "source": "archive",
+            "catch": false
+        },
+        "proc-011": {
+            "in_order": "yes",
+            "on_record": "yes",
+            "anachronism": "no",
+            "note": "",
+            "hidden": "ga",
+            "source": "simulation",
+            "catch": false
+        },
+        "proc-012": {
+            "in_order": "yes",
+            "on_record": "yes",
+            "anachronism": "no",
+            "note": "",
+            "hidden": "ga",
+            "source": "simulation",
+            "catch": false
+        },
+        "proc-006": {
+            "in_order": "yes",
+            "on_record": "yes",
+            "anachronism": "no",
+            "note": "",
+            "hidden": "full",
+            "source": "simulation",
+            "catch": false
+        },
+        "proc-017": {
+            "in_order": "yes",
+            "on_record": "yes",
+            "anachronism": "yes",
+            "note": "Twitter did not exist in 1899.",
+            "hidden": "catch_anachronism",
+            "source": "vignette",
+            "catch": true
+        },
+        "proc-010": {
+            "in_order": "yes",
+            "on_record": "yes",
+            "anachronism": "no",
+            "note": "This is weirdly formatted, with \", Minister van Binnenlandsche Zaken •\" between the two \"Mijnheer de voorzitter\"s",
+            "hidden": "ga",
+            "source": "simulation",
+            "catch": false
+        },
+        "proc-005": {
+            "in_order": "yes",
+            "on_record": "yes",
+            "anachronism": "no",
+            "note": "",
+            "hidden": "archive",
+            "source": "archive",
+            "catch": false
+        },
+        "proc-001": {
+            "in_order": "yes",
+            "on_record": "yes",
+            "anachronism": "no",
+            "note": "OCR error: \"Nederlamlsch\" --> \"Nederlandsch\", \"iu\" --> \"in\"",
+            "hidden": "archive",
+            "source": "archive",
+            "catch": false
+        },
+        "proc-013": {
+            "in_order": "uncertain",
+            "on_record": "uncertain",
+            "anachronism": "no",
+            "note": "I don't know what the context is of him saying he would be a corpse after the declaration of another speaker. If he is being rude, the Chair would not allow it, and the chair might then tell the stenographer to not record it.\nDouble \"Mijnheer de Voorzitter\" would be unlikely.\nOCR error in \"1'ynappel\" (not sure what it should be)",
+            "hidden": "ga",
+            "source": "simulation",
+            "catch": false
+        },
+        "proc-014": {
+            "in_order": "no",
+            "on_record": "no",
+            "anachronism": "no",
+            "note": "",
+            "hidden": "vignette_journalist",
+            "source": "vignette",
+            "catch": false
+        },
+        "proc-003": {
+            "in_order": "yes",
+            "on_record": "yes",
+            "anachronism": "no",
+            "note": "OCR: \"Oorlo;/\" --> \"Oorlog\", and more.",
+            "hidden": "archive",
+            "source": "archive",
+            "catch": false
+        },
+        "proc-007": {
+            "in_order": "yes",
+            "on_record": "yes",
+            "anachronism": "no",
+            "note": "",
+            "hidden": "full",
+            "source": "simulation",
+            "catch": false
+        },
+        "proc-015": {
+            "in_order": "no",
+            "on_record": "no",
+            "anachronism": "no",
+            "note": "",
+            "hidden": "vignette_unrecognised",
+            "source": "vignette",
+            "catch": false
+        }
+    }
+}
