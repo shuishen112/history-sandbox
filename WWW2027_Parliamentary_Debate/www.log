@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.10.22)  22 OCT 2026 10:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.10.22)  22 OCT 2026 10:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1420,46 +1420,47 @@ Package pdftex.def Info: figure/fig_strictness.pdf  used on input line 718.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 6.2pt on input line 845.
  [7.7 <./figure/fig_diffusion.pdf> <./figure/fig_strictness.pdf>]
-Excluding 'acks' comment. (./www.bbl [8.8]
-LaTeX Info: Redefining \tempurl on input line 199.
-LaTeX Info: Redefining \tempurl on input line 250.
-LaTeX Info: Redefining \tempurl on input line 350.
+Underfull \vbox (badness 1137) has occurred while \output is active []
+
+
+Excluding 'acks' comment. (./www.bbl
+LaTeX Info: Redefining \tempurl on input line 187.
+ [8.8]
+LaTeX Info: Redefining \tempurl on input line 226.
+LaTeX Info: Redefining \tempurl on input line 326.
 )
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 982.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+put line 970.
 
 
 Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 1011.
+surrounding objects on input line 999.
 
-
-Underfull \vbox (badness 1072) has occurred while \output is active []
-
- [9.9]
-Overfull \hbox (11.02022pt too wide) in paragraph at lines 1140--1153
+[9.9]
+Overfull \hbox (11.02022pt too wide) in paragraph at lines 1128--1141
  [][] 
  []
 
 
-Overfull \hbox (2.65242pt too wide) in paragraph at lines 1159--1175
+Underfull \vbox (badness 2368) has occurred while \output is active []
+
+
+Overfull \hbox (2.65242pt too wide) in paragraph at lines 1147--1163
  [][] 
  []
 
-<figure/day_timeline.pdf, id=1934, 1355.0625pt x 1001.66219pt>
+<figure/day_timeline.pdf, id=1928, 1355.0625pt x 1001.66219pt>
 File: figure/day_timeline.pdf Graphic file (type pdf)
 <use figure/day_timeline.pdf>
-Package pdftex.def Info: figure/day_timeline.pdf  used on input line 1181.
+Package pdftex.def Info: figure/day_timeline.pdf  used on input line 1169.
 (pdftex.def)             Requested size: 506.295pt x 374.24683pt.
 [10.10]
 
 Class acmart Warning: CCS concepts are mandatory for papers over two pages.
 
 
-Package balance Warning: You have called \balance in second column
-(balance)                Columns might not be balanced.
+Overfull \vbox (2.0745pt too high) has occurred while \output is active []
+
 
 (/usr/share/texlive/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
@@ -1472,16 +1473,16 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `www.out' has not changed.
-(rerunfilecheck)             Checksum: 9BD7E2C50E6A5EA3D9CC1CFABDC164B8;4174.
+(rerunfilecheck)             Checksum: FB8CCF9717F975882056E0073ED23B4A;4174.
  ) 
 Here is how much of TeX's memory you used:
- 33759 strings out of 476106
- 616151 string characters out of 5793932
- 1970975 words of memory out of 5000000
- 54079 multiletter control sequences out of 15000+600000
- 798983 words of font info for 625 fonts, out of 8000000 for 9000
+ 33744 strings out of 476106
+ 615776 string characters out of 5793932
+ 1969975 words of memory out of 5000000
+ 54073 multiletter control sequences out of 15000+600000
+ 798456 words of font info for 621 fonts, out of 8000000 for 9000
  220 hyphenation exceptions out of 8191
- 90i,17n,131p,1000b,732s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,16n,131p,1000b,742s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4
 b.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/inconsolata/Inconsolata
 -zi4r.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/LibertineMath
@@ -1497,10 +1498,10 @@ texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/newtx/txmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/newtx/txsys.pfb>
-Output written on www.pdf (11 pages, 4840598 bytes).
+Output written on www.pdf (11 pages, 4839801 bytes).
 PDF statistics:
- 3048 PDF objects out of 3580 (max. 8388607)
- 824 compressed objects within 9 object streams
- 115 named destinations out of 1000 (max. 500000)
+ 3040 PDF objects out of 3580 (max. 8388607)
+ 816 compressed objects within 9 object streams
+ 112 named destinations out of 1000 (max. 500000)
  124665 words of extra memory for PDF output out of 128383 (max. 10000000)
 

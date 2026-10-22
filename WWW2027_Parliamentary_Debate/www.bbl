@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{28}
+\begin{thebibliography}{26}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -162,18 +162,6 @@
 \newblock
 
 
-\bibitem[Fuentes(2016)]%
-        {fuentes2016dispossessed}
-\bibfield{author}{\bibinfo{person}{Marisa~J. Fuentes}.}
-  \bibinfo{year}{2016}\natexlab{}.
-\newblock \bibinfo{booktitle}{\emph{Dispossessed Lives: Enslaved Women,
-  Violence, and the Archive}}.
-\newblock \bibinfo{publisher}{University of Pennsylvania Press}.
-\newblock
-\showISBNx{9780812293005}
-\href{https://doi.org/10.9783/9780812293005}{doi:\nolinkurl{10.9783/9780812293005}}
-
-
 \bibitem[Gao et~al\mbox{.}(2025)]%
         {gao2023s3}
 \bibfield{author}{\bibinfo{person}{Chen Gao}, \bibinfo{person}{Xiaochong Lan},
@@ -199,18 +187,6 @@
 \url{https://www.digitalhumanities.org/dhq/vol/8/4/000195/000195.html}
 \showURL{%
 \tempurl}
-
-
-\bibitem[Hartman(2008)]%
-        {hartman2008venus}
-\bibfield{author}{\bibinfo{person}{Saidiya Hartman}.}
-  \bibinfo{year}{2008}\natexlab{}.
-\newblock \showarticletitle{Venus in Two Acts}.
-\newblock \bibinfo{journal}{\emph{Small Axe: A Caribbean Journal of Criticism}}
-  \bibinfo{volume}{12}, \bibinfo{number}{2} (\bibinfo{year}{2008}),
-  \bibinfo{pages}{1--14}.
-\newblock
-\href{https://doi.org/10.1215/-12-2-1}{doi:\nolinkurl{10.1215/-12-2-1}}
 
 
 \bibitem[Herbrich et~al\mbox{.}(2007)]%

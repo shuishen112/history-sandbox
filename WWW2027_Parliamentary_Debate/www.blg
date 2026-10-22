@@ -15,51 +15,50 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty address in aher2023turing
 Warning--empty address in bender2021parrots
 Warning--empty address in epstein1996growing
-Warning--empty address in fuentes2016dispossessed
 Warning--page numbers missing in both pages and numpages fields in gavin2014abm
 Warning--empty address in herbrich2006trueskill
 Warning--page numbers missing in both pages and numpages fields in marx2010dutchparl
 Warning--empty address in park2023generative
 Warning--empty address in santurkar2023opinions
-You've used 28 entries,
+You've used 26 entries,
             6273 wiz_defined-function locations,
-            1708 strings with 24687 characters,
-and the built_in function-call counts, 29891 in all, are:
-= -- 3593
-> -- 1167
+            1692 strings with 24376 characters,
+and the built_in function-call counts, 28103 in all, are:
+= -- 3336
+> -- 1133
 < -- 0
-+ -- 387
-- -- 403
-* -- 2347
-:= -- 3115
-add.period$ -- 142
-call.type$ -- 28
-change.case$ -- 234
-chr.to.int$ -- 28
-cite$ -- 37
-duplicate$ -- 2522
-empty$ -- 1786
-format.name$ -- 479
-if$ -- 6965
++ -- 379
+- -- 389
+* -- 2236
+:= -- 2944
+add.period$ -- 131
+call.type$ -- 26
+change.case$ -- 224
+chr.to.int$ -- 26
+cite$ -- 34
+duplicate$ -- 2356
+empty$ -- 1668
+format.name$ -- 465
+if$ -- 6520
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 73
-newline$ -- 295
-num.names$ -- 197
-pop$ -- 952
+missing$ -- 67
+newline$ -- 276
+num.names$ -- 183
+pop$ -- 896
 preamble$ -- 1
-purify$ -- 453
+purify$ -- 427
 quote$ -- 0
-skip$ -- 932
+skip$ -- 877
 stack$ -- 0
-substring$ -- 2108
-swap$ -- 231
+substring$ -- 1966
+swap$ -- 217
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 638
-warning$ -- 9
-while$ -- 164
+type$ -- 607
+warning$ -- 8
+while$ -- 147
 width$ -- 0
-write$ -- 602
-(There were 9 warnings)
+write$ -- 561
+(There were 8 warnings)
