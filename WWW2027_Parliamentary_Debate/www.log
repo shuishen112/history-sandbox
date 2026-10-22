@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.10.22)  22 OCT 2026 12:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.10.22)  22 OCT 2026 12:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1395,24 +1395,24 @@ LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/it' will be
 
 [4.4] [5.5]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sc' will be
-(Font)              scaled to size 8.0pt on input line 719.
+(Font)              scaled to size 8.0pt on input line 717.
 LaTeX Font Info:    Font shape `T1/zi4/b/n' will be
-(Font)              scaled to size 9.0pt on input line 735.
+(Font)              scaled to size 9.0pt on input line 733.
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 8.0pt on input line 744.
+(Font)              scaled to size 8.0pt on input line 742.
 <figure/fig_diffusion.pdf, id=1847, 245.718pt x 166.22101pt>
 File: figure/fig_diffusion.pdf Graphic file (type pdf)
 <use figure/fig_diffusion.pdf>
-Package pdftex.def Info: figure/fig_diffusion.pdf  used on input line 755.
+Package pdftex.def Info: figure/fig_diffusion.pdf  used on input line 753.
 (pdftex.def)             Requested size: 245.55338pt x 166.11913pt.
 <figure/fig_strictness.pdf, id=1848, 245.718pt x 166.22101pt>
 File: figure/fig_strictness.pdf Graphic file (type pdf)
 <use figure/fig_strictness.pdf>
-Package pdftex.def Info: figure/fig_strictness.pdf  used on input line 761.
+Package pdftex.def Info: figure/fig_strictness.pdf  used on input line 759.
 (pdftex.def)             Requested size: 245.55338pt x 166.11913pt.
  [6.6] [7.7 <./figure/fig_diffusion.pdf> <./figure/fig_strictness.pdf>]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.2pt on input line 888.
+(Font)              scaled to size 6.2pt on input line 886.
  Excluding 'acks' comment. (./www.bbl
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1431,19 +1431,19 @@ LaTeX Info: Redefining \tempurl on input line 363.
 LaTeX Info: Redefining \tempurl on input line 514.
  [9.9])
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 1013.
+put line 1011.
 
 
 Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 1042.
+surrounding objects on input line 1040.
 
 [10.10]
-Overfull \hbox (11.02022pt too wide) in paragraph at lines 1171--1184
+Overfull \hbox (11.02022pt too wide) in paragraph at lines 1170--1183
  [][] 
  []
 
 
-Overfull \hbox (2.65242pt too wide) in paragraph at lines 1190--1206
+Overfull \hbox (2.65242pt too wide) in paragraph at lines 1189--1205
  [][] 
  []
 
@@ -1453,7 +1453,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <figure/day_timeline.pdf, id=2012, 1355.0625pt x 1001.66219pt>
 File: figure/day_timeline.pdf Graphic file (type pdf)
 <use figure/day_timeline.pdf>
-Package pdftex.def Info: figure/day_timeline.pdf  used on input line 1212.
+Package pdftex.def Info: figure/day_timeline.pdf  used on input line 1211.
 (pdftex.def)             Requested size: 506.295pt x 374.24683pt.
 
 
@@ -1474,14 +1474,14 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `www.out' has not changed.
-(rerunfilecheck)             Checksum: 13DBDED5F91E09A5B87EF08DCDC37470;3983.
+(rerunfilecheck)             Checksum: 1BA762F0F026A1EAB92ACC160D09F11F;4085.
  ) 
 Here is how much of TeX's memory you used:
- 33874 strings out of 476106
- 619078 string characters out of 5793932
+ 33880 strings out of 476106
+ 619250 string characters out of 5793932
  1980975 words of memory out of 5000000
  54151 multiletter control sequences out of 15000+600000
- 807112 words of font info for 641 fonts, out of 8000000 for 9000
+ 807631 words of font info for 645 fonts, out of 8000000 for 9000
  220 hyphenation exceptions out of 8191
  90i,16n,131p,1000b,807s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4
@@ -1500,7 +1500,7 @@ exlive/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/newtx/txexs.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/newtx/txmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/newtx/txsys.pfb>
-Output written on www.pdf (12 pages, 4889452 bytes).
+Output written on www.pdf (12 pages, 4889480 bytes).
 PDF statistics:
  3130 PDF objects out of 3580 (max. 8388607)
  902 compressed objects within 10 object streams

@@ -227,7 +227,7 @@ In summary, we make the following contributions:
   public speakers, seeded with their recorded speech, from PoliticalMashup
   XML (8{,}745 sittings and 138{,}214 speeches in the 1814--1899 slice). An
   in-world stenographer records only recognised floor speech, so that the
-  simulation can be calibrated against \emph{what the archive could have
+  simulation can be compared with \emph{what the archive could have
   recorded} (\S\ref{sec:pipeline}, \S\ref{sec:calibration}).
   \item \textbf{Evaluation.} Three experiments: a simulated one-week
   sitting in December 1899 (S1), with corridor-versus-floor leak diffusion,
@@ -313,7 +313,7 @@ members chose not to say on the floor, and the Tweede Kamer of the
 period built its authority through such rules and
 practices~\cite{turpijn2008mannen}. \sys{} uses the corpus both as a
 \emph{seed} (personas, speech style, sitting calendars) and as a
-\emph{calibration target} (who spoke, for how long, on which topics, and in
+\emph{validation target} (who spoke, for how long, on which topics, and in
 which house), and treats its selection as a design constraint: the sandbox
 generates hypotheses about \emph{processes}, including the process that
 produced the record, and never offers testimony about unrecorded inner
@@ -576,9 +576,7 @@ me: \ldots'' and may learn the places it names.
 Appendix~\ref{app:examples} gives an example remark from a
 \texttt{gpt-4o-mini} run.
 
-
-%% =====================================================================
-\section{Simulated Handelingen and Calibration}
+\subsection{Simulated Handelingen and selection-aware comparison}
 \label{sec:calibration}
 
 \paragraph{The simulated Handelingen.} While the sitting is open, the
@@ -587,9 +585,10 @@ the floor into the simulated Handelingen $Y^t$. Corridor talk, committee
 speech, and the journalist's notes never enter it. In the reported runs,
 the Chair's recognitions and rulings are logged as events but not written
 as lines, so the simulated record contains no speech by the Chair. This
-in-world process is the observation model $O_\phi$ used below. The griffier does not operate the stenograph.
+in-world process is the observation model $O_\phi$ used below. The
+griffier does not operate the stenograph.
 
-\paragraph{Selection-aware calibration.} Let $x$ denote the features of an
+\paragraph{Selection-aware comparison.} Let $x$ denote the features of an
 event such as a speech, a leak, or a
 vote (speaker role, party, house, topic, duration), and let
 $P^\theta_{\text{sim}}$ be the distribution of simulated events under
@@ -604,7 +603,8 @@ P_{\text{arch}}(x)=\frac{\pi(x)\,P_{\text{true}}(x)}{\int \pi(x')\,P_{\text{true
 \label{eq:selection}
 \end{equation}
 
-Equation~\eqref{eq:selection} has a direct consequence for calibration.
+Equation~\eqref{eq:selection} has a direct consequence for comparing a
+simulation with the archive.
 Whenever some events are more likely to be recorded than others, the
 archive over-represents the former, so a simulation tuned until everything
 its agents do matches the archive is tuned to the wrong target: it
@@ -621,12 +621,10 @@ distribution of events that actually took place.
 In \sys{}, $\pi$ is set by the stenographer's rule (record iff the
 location is on-record, the sitting is open, and the speaker is recognised
 or is the Chair) together with the rule by which members allude to rumours
-on the floor (\S\ref{sec:communication}). Calibration would then fit $\theta$ by
-matching $\tilde P^\theta_{\text{sim}}$ to $P_{\text{arch}}$ over several
-marginals (Appendix~\ref{app:calib}), with 1860--1889 reserved for
-calibration and 1890--1899 held out. In the runs reported here we do not
-fit $\theta$; we evaluate the default parameters against the holdout
-(\S\ref{sec:experiments}).
+on the floor (\S\ref{sec:communication}). The same comparison can serve
+as a calibration objective for $\theta$ (Appendix~\ref{app:calib}); in
+this paper we do not fit $\theta$ but evaluate the default parameters
+against held-out Handelingen (\S\ref{sec:experiments}).
 
 %% =====================================================================
 \section{Experimental Setup}
@@ -1083,7 +1081,8 @@ D\!\left(\tilde P^{\theta}_{\text{sim},f},\,P_{\text{arch},f}\right),
 \end{equation}
 over marginals $F$ (house, role, party, topic, speech length, month),
 using Jensen--Shannon divergence for categorical features and $W_1$ for
-ordinal ones. The runs reported in \S\ref{sec:results} use the default
+ordinal ones, with 1860--1889 reserved for calibration and 1890--1899
+held out. The runs reported in \S\ref{sec:results} use the default
 parameters and do not solve Eq.~\eqref{eq:calib}.
 
 \section{Simulated and real silence}
