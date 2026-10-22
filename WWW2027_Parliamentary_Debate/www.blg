@@ -1,54 +1,65 @@
-This is BibTeX, Version 0.99d
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: www.aux
 The style file: ACM-Reference-Format.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: references.bib
-Warning--no journal in aher2023turing
-Warning--no number and no volume in aher2023turing
-Warning--page numbers missing in both pages and numpages fields in aher2023turing
-Warning--no journal in al2024projectsid
-Warning--no number and no volume in al2024projectsid
-Warning--page numbers missing in both pages and numpages fields in al2024projectsid
-Warning--no number and no volume in argyle2023outofone
-Warning--page numbers missing in both pages and numpages fields in argyle2023outofone
-Warning--no number and no volume in axtell2002population
-Warning--page numbers missing in both pages and numpages fields in axtell2002population
-Warning--no journal in bender2021parrots
-Warning--no number and no volume in bender2021parrots
-Warning--page numbers missing in both pages and numpages fields in bender2021parrots
-Warning--no journal in ehrmann2023ner
-Warning--no number and no volume in ehrmann2023ner
-Warning--page numbers missing in both pages and numpages fields in ehrmann2023ner
-Warning--empty address in epstein2006generative
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--empty address in aher2023turing
+Warning--empty address in bender2021parrots
 Warning--empty address in epstein1996growing
 Warning--empty address in fuentes2016dispossessed
-Warning--no journal in gao2023s3
-Warning--no number and no volume in gao2023s3
-Warning--page numbers missing in both pages and numpages fields in gao2023s3
-Warning--no number and no volume in hartman2008venus
-Warning--page numbers missing in both pages and numpages fields in hartman2008venus
-Warning--page numbers missing in both pages and numpages fields in herbrich2006trueskill
-Warning--no journal in horton2023homosilicus
-Warning--no number and no volume in horton2023homosilicus
-Warning--page numbers missing in both pages and numpages fields in horton2023homosilicus
-Warning--empty publisher in marx2010dutchparl
-Warning--empty address in marx2010dutchparl
+Warning--page numbers missing in both pages and numpages fields in gavin2014abm
+Warning--empty address in herbrich2006trueskill
 Warning--page numbers missing in both pages and numpages fields in marx2010dutchparl
-Warning--empty publisher in park2023generative
 Warning--empty address in park2023generative
-Warning--page numbers missing in both pages and numpages fields in park2023generative
-Warning--no journal in piao2025agentsociety
-Warning--no number and no volume in piao2025agentsociety
-Warning--page numbers missing in both pages and numpages fields in piao2025agentsociety
-Warning--no number and no volume in schelling1971dynamic
-Warning--page numbers missing in both pages and numpages fields in schelling1971dynamic
-Warning--no journal in tornberg2023simulating
-Warning--no number and no volume in tornberg2023simulating
-Warning--page numbers missing in both pages and numpages fields in tornberg2023simulating
-Warning--empty address in trouillot1995silencing
-Warning--no journal in wang2025identity
-Warning--no number and no volume in wang2025identity
-Warning--page numbers missing in both pages and numpages fields in wang2025identity
-Warning--no number and no volume in ziems2024css
-Warning--page numbers missing in both pages and numpages fields in ziems2024css
-(There were 48 warnings)
+Warning--empty address in santurkar2023opinions
+You've used 28 entries,
+            6273 wiz_defined-function locations,
+            1708 strings with 24687 characters,
+and the built_in function-call counts, 29891 in all, are:
+= -- 3593
+> -- 1167
+< -- 0
++ -- 387
+- -- 403
+* -- 2347
+:= -- 3115
+add.period$ -- 142
+call.type$ -- 28
+change.case$ -- 234
+chr.to.int$ -- 28
+cite$ -- 37
+duplicate$ -- 2522
+empty$ -- 1786
+format.name$ -- 479
+if$ -- 6965
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 73
+newline$ -- 295
+num.names$ -- 197
+pop$ -- 952
+preamble$ -- 1
+purify$ -- 453
+quote$ -- 0
+skip$ -- 932
+stack$ -- 0
+substring$ -- 2108
+swap$ -- 231
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 638
+warning$ -- 9
+while$ -- 164
+width$ -- 0
+write$ -- 602
+(There were 9 warnings)
