@@ -212,31 +212,23 @@ are better secured by encoding procedure in the world than by relying on
 the language model, and that
 silence in the Handelingen cannot by itself be read as ignorance.
 
-\sys{} does not simulate enslaved people, private households, or colonised
-subjects as agents. An earlier design would have done so; historians we
-consulted judged it ethically unacceptable (\S\ref{sec:ethics}). The agents
-of \sys{} are public office-holders acting in public, whose words are
-already on the record.
-
 In summary, we make the following contributions:
 \begin{itemize}[leftmargin=*,nosep]
-  \item \textbf{Countering present-day bias outside the language model.} A design
-  that places historical constraints in the archive and in institutions
-  rather than relying on the prompt alone: attested personas and speech,
-  and procedural gating that holds regardless of the backbone (\S\ref{sec:pipeline}--\S\ref{sec:agents}).
-  \item \textbf{A role-constrained sandbox.} An interactive tile world of
-  the Binnenhof whose environment tree, object states, and affordances encode
-  the standing orders, including the split between the Tweede Kamer (lower
-  house) and the Eerste Kamer (upper house), together with a parliamentary
-  role automaton (\S\ref{sec:sandbox}, \S\ref{sec:agents}).
-  \item \textbf{An archive-to-sandbox pipeline.} We build the world, its
-  rules, and a population of attested public speakers from PoliticalMashup
-  XML (8{,}745 sittings and 138{,}214 speeches in the 1814--1899 slice)
-  (\S\ref{sec:pipeline}).
-  \item \textbf{A simulated Handelingen and selection-aware calibration.} An
+  \item \textbf{Countering present-day bias outside the language model.} A
+  design that places historical constraints in the archive and in the world
+  rather than in the prompt alone, implemented in \sys{}: an interactive
+  tile world of the Binnenhof whose environment tree, object states, and
+  affordances encode the standing orders, including the split between the
+  Tweede Kamer (lower house) and the Eerste Kamer (upper house), together
+  with a parliamentary role automaton. This procedural gating holds
+  regardless of the backbone (\S\ref{sec:sandbox}, \S\ref{sec:agents}).
+  \item \textbf{An archive-to-sandbox pipeline and a simulated
+  Handelingen.} We build the world, its rules, and a population of attested
+  public speakers, seeded with their recorded speech, from PoliticalMashup
+  XML (8{,}745 sittings and 138{,}214 speeches in the 1814--1899 slice). An
   in-world stenographer records only recognised floor speech, so that the
   simulation can be calibrated against \emph{what the archive could have
-  recorded} (\S\ref{sec:calibration}).
+  recorded} (\S\ref{sec:pipeline}, \S\ref{sec:calibration}).
   \item \textbf{Evaluation.} Three experiments: a simulated one-week
   sitting in December 1899 (S1), with corridor-versus-floor leak diffusion,
   ablations of the standing orders and the rumour network, and a backbone

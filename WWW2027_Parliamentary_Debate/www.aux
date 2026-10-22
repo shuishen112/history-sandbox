@@ -36,6 +36,7 @@
 \citation{trouillot1995silencing}
 \citation{park2023generative}
 \citation{pdc2024kamers}
+\citation{smallvillerepo}
 \@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{3}{section.2}\protected@file@percent }
 \newlabel{sec:related}{{2}{3}{Related Work}{section.2}{}}
 \@writefile{toc}{\contentsline {paragraph}{Generative agents and sandboxes.}{3}{section*.5}\protected@file@percent }
@@ -48,10 +49,9 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}World: tile map and environment tree}{3}{subsection.3.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Two chambers.}{3}{section*.10}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Stateful objects.}{3}{section*.11}\protected@file@percent }
-\citation{smallvillerepo}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Time, engine, and interface}{3}{subsection.3.2}\protected@file@percent }
 \citation{marx2012dutchparl}
 \citation{park2023generative}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Time, engine, and interface}{4}{subsection.3.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {4}Archive-to-Sandbox Pipeline}{4}{section.4}\protected@file@percent }
 \newlabel{sec:pipeline}{{4}{4}{Archive-to-Sandbox Pipeline}{section.4}{}}
 \@writefile{toc}{\contentsline {paragraph}{Sources.}{4}{section*.12}\protected@file@percent }
@@ -76,6 +76,7 @@
 \citation{epstein1996growing}
 \citation{herbrich2006trueskill}
 \citation{park2023generative}
+\citation{park2023generative}
 \@writefile{toc}{\contentsline {paragraph}{S1 (one-week sitting).}{6}{section*.23}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{S2 (selection-aware fidelity).}{6}{section*.24}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{S3 (intervention).}{6}{section*.25}\protected@file@percent }
@@ -83,15 +84,14 @@
 \newlabel{sec:eval-e2e}{{7.1}{6}{End-to-end evaluation}{subsection.7.1}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Historian review}{6}{subsection.7.2}\protected@file@percent }
 \newlabel{sec:eval-interview}{{7.2}{6}{Historian review}{subsection.7.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Results}{6}{section.8}\protected@file@percent }
+\newlabel{sec:results}{{8}{6}{Results}{section.8}{}}
+\@writefile{toc}{\contentsline {paragraph}{Leak diffusion.}{6}{section*.29}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces S1 outcomes (heuristic backend, $N{=}25$, 7 days, 5-seed mean). Memb.\ aware is the share of members who know the leak; Floor leak is the share of simulated Handelingen lines that mention it; Journ.\ \% is the journalists' share of those lines (archive: $0$).}}{6}{table.caption.26}\protected@file@percent }
 \newlabel{tab:interview}{{1}{6}{S1 outcomes (heuristic backend, $N{=}25$, 7 days, 5-seed mean). Memb.\ aware is the share of members who know the leak; Floor leak is the share of simulated Handelingen lines that mention it; Journ.\ \% is the journalists' share of those lines (archive: $0$)}{table.caption.26}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces S1 backbone check. Heuristic rows are the 5-seed means from Table\nonbreakingspace \ref {tab:interview}; \texttt  {gpt-4o-mini} rows are 3-seed means ($\{7,11,19\}$). Emb.\ is the share of rumour hops that embellish a detail. Journalist share and line count are unchanged; the LLM alludes to the leak on the floor more often (range $0.059$--$0.171$). Memb.\ and Emb.\ differ only through the seeds, since rumour transmission does not involve the model.}}{6}{table.caption.27}\protected@file@percent }
 \newlabel{tab:backbone}{{2}{6}{S1 backbone check. Heuristic rows are the 5-seed means from Table~\ref {tab:interview}; \texttt {gpt-4o-mini} rows are 3-seed means ($\{7,11,19\}$). Emb.\ is the share of rumour hops that embellish a detail. Journalist share and line count are unchanged; the LLM alludes to the leak on the floor more often (range $0.059$--$0.171$). Memb.\ and Emb.\ differ only through the seeds, since rumour transmission does not involve the model}{table.caption.27}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {8}Results}{6}{section.8}\protected@file@percent }
-\newlabel{sec:results}{{8}{6}{Results}{section.8}{}}
-\@writefile{toc}{\contentsline {paragraph}{Leak diffusion.}{6}{section*.29}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Mechanisms.}{6}{section*.30}\protected@file@percent }
-\citation{park2023generative}
 \citation{park2023generative}
 \citation{park2023generative}
 \newlabel{fig:diffusion}{{2a}{7}{Leak diffusion (S1, $N{=}25$, 5-seed mean)}{figure.caption.28}{}}
@@ -104,6 +104,8 @@
 \newlabel{tab:main}{{3}{7}{Selection-aware fidelity on held-out Tweede Kamer speeches (1890--1899). Role JSD: lower is better. Journalist \% should be $0$}{table.caption.31}{}}
 \@writefile{toc}{\contentsline {paragraph}{Macro fidelity.}{7}{section*.32}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Interventions.}{7}{section*.33}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces TrueSkill ranking of pause-and-interview answers by one historian (\textsc  {Kamer}{} with LLM vs.\ Smallville-style GA). Attention checks passed: $2/2$. Higher $\mu $ is better; $\sigma $ is the posterior uncertainty.}}{7}{table.caption.35}\protected@file@percent }
+\newlabel{tab:historian}{{4}{7}{TrueSkill ranking of pause-and-interview answers by one historian (\sys {} with LLM vs.\ Smallville-style GA). Attention checks passed: $2/2$. Higher $\mu $ is better; $\sigma $ is the posterior uncertainty}{table.caption.35}{}}
 \@writefile{toc}{\contentsline {paragraph}{Audit.}{7}{section*.34}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Historian review.}{7}{section*.36}\protected@file@percent }
 \citation{hartman2008venus,fuentes2016dispossessed}
@@ -115,8 +117,8 @@
 \bibcite{argyle2023outofone}{{3}{2023}{{Argyle et~al\mbox  {.}}}{{}}}
 \bibcite{axtell2002population}{{4}{2002}{{Axtell et~al\mbox  {.}}}{{}}}
 \bibcite{bender2021parrots}{{5}{2021}{{Bender et~al\mbox  {.}}}{{}}}
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces TrueSkill ranking of pause-and-interview answers by one historian (\textsc  {Kamer}{} with LLM vs.\ Smallville-style GA). Attention checks passed: $2/2$. Higher $\mu $ is better; $\sigma $ is the posterior uncertainty.}}{8}{table.caption.35}\protected@file@percent }
-\newlabel{tab:historian}{{4}{8}{TrueSkill ranking of pause-and-interview answers by one historian (\sys {} with LLM vs.\ Smallville-style GA). Attention checks passed: $2/2$. Higher $\mu $ is better; $\sigma $ is the posterior uncertainty}{table.caption.35}{}}
+\bibcite{ehrmann2023ner}{{6}{2023}{{Ehrmann et~al\mbox  {.}}}{{}}}
+\bibcite{epstein2006generative}{{7}{2006}{{Epstein}}{{}}}
 \@writefile{toc}{\contentsline {section}{\numberline {9}Discussion}{8}{section.9}\protected@file@percent }
 \newlabel{sec:discussion}{{9}{8}{Discussion}{section.9}{}}
 \@writefile{toc}{\contentsline {paragraph}{What a sandbox can claim.}{8}{section*.37}\protected@file@percent }
@@ -129,8 +131,6 @@
 \@writefile{toc}{\contentsline {section}{\numberline {11}Conclusion}{8}{section.11}\protected@file@percent }
 \newlabel{sec:conclusion}{{11}{8}{Conclusion}{section.11}{}}
 \@writefile{toc}{\contentsline {section}{References}{8}{section*.43}\protected@file@percent }
-\bibcite{ehrmann2023ner}{{6}{2023}{{Ehrmann et~al\mbox  {.}}}{{}}}
-\bibcite{epstein2006generative}{{7}{2006}{{Epstein}}{{}}}
 \bibcite{epstein1996growing}{{8}{1996}{{Epstein and Axtell}}{{}}}
 \bibcite{ferguson1997virtual}{{9}{1997}{{Ferguson}}{{}}}
 \bibcite{fuentes2016dispossessed}{{10}{2016}{{Fuentes}}{{}}}
@@ -152,10 +152,10 @@
 \bibcite{tornberg2023simulating}{{26}{2023}{{Törnberg et~al\mbox  {.}}}{{}}}
 \bibcite{wang2025identity}{{27}{2025}{{Wang et~al\mbox  {.}}}{{}}}
 \bibcite{ziems2024css}{{28}{2024}{{Ziems et~al\mbox  {.}}}{{}}}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces One sandbox step of \textsc  {Kamer}{}}}{9}{algorithm.1}\protected@file@percent }
-\newlabel{alg:step}{{1}{9}{One sandbox step of \sys {}}{algorithm.1}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {A}Sandbox step}{9}{appendix.A}\protected@file@percent }
 \newlabel{app:alg}{{A}{9}{Sandbox step}{appendix.A}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces One sandbox step of \textsc  {Kamer}{}}}{9}{algorithm.1}\protected@file@percent }
+\newlabel{alg:step}{{1}{9}{One sandbox step of \sys {}}{algorithm.1}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {B}Seed and utterance examples}{9}{appendix.B}\protected@file@percent }
 \newlabel{app:examples}{{B}{9}{Seed and utterance examples}{appendix.B}{}}
 \citation{trouillot1995silencing}
