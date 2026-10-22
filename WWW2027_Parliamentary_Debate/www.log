@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.10.22)  22 OCT 2026 13:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.10.22)  22 OCT 2026 16:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1413,10 +1413,7 @@ Package pdftex.def Info: figure/fig_strictness.pdf  used on input line 759.
  [6.6] [7.7 <./figure/fig_diffusion.pdf> <./figure/fig_strictness.pdf>]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 6.2pt on input line 886.
- Excluding 'acks' comment. (./www.bbl
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [8.8]
+ Excluding 'acks' comment. (./www.bbl [8.8]
 LaTeX Info: Redefining \tempurl on input line 299.
 
 Underfull \hbox (badness 1881) in paragraph at lines 332--338
@@ -1431,29 +1428,29 @@ LaTeX Info: Redefining \tempurl on input line 363.
 LaTeX Info: Redefining \tempurl on input line 514.
  [9.9])
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 1011.
+put line 1014.
 
 
 Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 1040.
+surrounding objects on input line 1043.
 
 [10.10]
-Overfull \hbox (11.02022pt too wide) in paragraph at lines 1170--1183
+Overfull \hbox (11.02022pt too wide) in paragraph at lines 1173--1186
  [][] 
  []
 
 
-Overfull \hbox (2.65242pt too wide) in paragraph at lines 1189--1205
+Overfull \hbox (2.65242pt too wide) in paragraph at lines 1192--1208
  [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<figure/day_timeline.pdf, id=2012, 1355.0625pt x 1001.66219pt>
+<figure/day_timeline.pdf, id=2013, 1355.0625pt x 1001.66219pt>
 File: figure/day_timeline.pdf Graphic file (type pdf)
 <use figure/day_timeline.pdf>
-Package pdftex.def Info: figure/day_timeline.pdf  used on input line 1211.
+Package pdftex.def Info: figure/day_timeline.pdf  used on input line 1214.
 (pdftex.def)             Requested size: 506.295pt x 374.24683pt.
 
 
@@ -1500,10 +1497,10 @@ exlive/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/newtx/txexs.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/newtx/txmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/newtx/txsys.pfb>
-Output written on www.pdf (12 pages, 4889445 bytes).
+Output written on www.pdf (12 pages, 4889590 bytes).
 PDF statistics:
- 3130 PDF objects out of 3580 (max. 8388607)
- 902 compressed objects within 10 object streams
+ 3131 PDF objects out of 3580 (max. 8388607)
+ 903 compressed objects within 10 object streams
  133 named destinations out of 1000 (max. 500000)
  128753 words of extra memory for PDF output out of 154059 (max. 10000000)
 

@@ -962,9 +962,7 @@ DutchParl parser.
 \paragraph{Commitments for a parliamentary sandbox.}
 (1)~\emph{Public persons in public roles.} Agents are seeded from
 attested speakers in CC0 proceedings; we do not invent private lives,
-families, or unrecorded interiors. Colonial policy appears only as it
-appears in the Handelingen: as speech by metropolitan office-holders,
-never as the inner life of the people discussed.
+families, or unrecorded interiors.
 (2)~\emph{No gamification.} There is no playable persona, no score, and
 no first-person control of the Chair or of ministers.
 (3)~\emph{Provenance.} All simulated text, including the simulated
@@ -982,15 +980,20 @@ Marx et al.~\cite{marx2012dutchparl} as the source of the corpus.
 \section{Conclusion}
 \label{sec:conclusion}
 
-We presented \sys{}, a generative agent sandbox of Dutch parliamentary
-debate in which roles, standing orders, corridor talk, and the selection
-behind the Handelingen are explicit parts of the world. In a one-week sitting, a leak known to almost all members
-appeared in only $4\%$ of official lines, and journalists stayed out of
-the record under both the heuristic planner and \texttt{gpt-4o-mini}:
-procedure alone separated what parliament knew from what its record says.
-Generative agents
-can thus generate historical hypotheses without asking a language model to
-stand in for people whom the archive has already silenced.
+LLM agents carry present-day bias, and simulating the past makes it
+visible. \sys{} counters this bias outside the language model: attested
+speakers and their speech supply the agents, and standing orders encoded
+in the world decide who may act and what is recorded. This procedure held
+regardless of the backbone: journalists never entered the simulated
+Handelingen, whereas without the floor rules they produced $4.3\%$ of it
+under both the heuristic planner and \texttt{gpt-4o-mini}. The record also
+diverged from what parliament knew: a rumour known to almost all members
+appeared in only $4\%$ of official lines, so silence in the record does
+not imply ignorance. Present-day bias in LLM agents thus lies in the worlds they
+are placed in as well as in what they say. Encoding the period's
+institutions removes the former; the latter remains with the language
+model and is the next target for archival retrieval and anachronism
+filtering (\S\ref{sec:discussion}).
 
 %% =====================================================================
 \begin{acks}
