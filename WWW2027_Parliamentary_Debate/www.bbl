@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{26}
+\begin{thebibliography}{50}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -35,6 +35,18 @@
 \providecommand\bibinfo[2]{#2}
 \providecommand\natexlab[1]{#1}
 \providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[Abercrombie and Batista-Navarro(2020)]%
+        {abercrombie2020sentiment}
+\bibfield{author}{\bibinfo{person}{Gavin Abercrombie} {and}
+  \bibinfo{person}{Riza Batista-Navarro}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Sentiment and Position-Taking Analysis of
+  Parliamentary Debates: A Systematic Literature Review}.
+\newblock \bibinfo{journal}{\emph{Journal of Computational Social Science}}
+  \bibinfo{volume}{3}, \bibinfo{number}{1} (\bibinfo{year}{2020}).
+\newblock
+\href{https://doi.org/10.1007/s42001-019-00060-w}{doi:\nolinkurl{10.1007/s42001-019-00060-w}}
+
 
 \bibitem[Aher et~al\mbox{.}(2023)]%
         {aher2023turing}
@@ -84,6 +96,16 @@
 \href{https://doi.org/10.1017/pan.2023.2}{doi:\nolinkurl{10.1017/pan.2023.2}}
 
 
+\bibitem[Atari et~al\mbox{.}(2023)]%
+        {atari2023which}
+\bibfield{author}{\bibinfo{person}{Mohammad Atari}, \bibinfo{person}{Mona~J.
+  Xue}, \bibinfo{person}{Peter~S. Park}, \bibinfo{person}{Dami{\'a}n~E. Blasi},
+  {and} \bibinfo{person}{Joseph Henrich}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{Which Humans?}
+\newblock \bibinfo{howpublished}{PsyArXiv preprint}.
+\newblock
+
+
 \bibitem[Axtell et~al\mbox{.}(2002)]%
         {axtell2002population}
 \bibfield{author}{\bibinfo{person}{Robert~L. Axtell},
@@ -101,6 +123,16 @@
 \href{https://doi.org/10.1073/pnas.092080799}{doi:\nolinkurl{10.1073/pnas.092080799}}
 
 
+\bibitem[Baker and Azher(2024)]%
+        {baker2024senate}
+\bibfield{author}{\bibinfo{person}{Zachary~R. Baker} {and}
+  \bibinfo{person}{Zarif~L. Azher}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{Simulating The {U.S.} {Senate}: An {LLM}-Driven Agent
+  Approach to Modeling Legislative Behavior and Bipartisanship}.
+\newblock
+\showeprint[arxiv]{2406.18702}~[cs.CL]
+
+
 \bibitem[Bender et~al\mbox{.}(2021)]%
         {bender2021parrots}
 \bibfield{author}{\bibinfo{person}{Emily~M. Bender}, \bibinfo{person}{Timnit
@@ -113,6 +145,42 @@
   \bibinfo{pages}{610--623}.
 \newblock
 \href{https://doi.org/10.1145/3442188.3445922}{doi:\nolinkurl{10.1145/3442188.3445922}}
+
+
+\bibitem[Cheng et~al\mbox{.}(2023)]%
+        {cheng2023compost}
+\bibfield{author}{\bibinfo{person}{Myra Cheng}, \bibinfo{person}{Tiziano
+  Piccardi}, {and} \bibinfo{person}{Diyi Yang}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{{CoMPosT}: Characterizing and Evaluating Caricature
+  in {LLM} Simulations}. In \bibinfo{booktitle}{\emph{Proceedings of the 2023
+  Conference on Empirical Methods in Natural Language Processing}}.
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{address}{Singapore}, \bibinfo{pages}{10853--10875}.
+\newblock
+\href{https://doi.org/10.18653/v1/2023.emnlp-main.669}{doi:\nolinkurl{10.18653/v1/2023.emnlp-main.669}}
+
+
+\bibitem[Crawford and Ostrom(1995)]%
+        {crawford1995grammar}
+\bibfield{author}{\bibinfo{person}{Sue E.~S. Crawford} {and}
+  \bibinfo{person}{Elinor Ostrom}.} \bibinfo{year}{1995}\natexlab{}.
+\newblock \showarticletitle{A Grammar of Institutions}.
+\newblock \bibinfo{journal}{\emph{American Political Science Review}}
+  \bibinfo{volume}{89}, \bibinfo{number}{3} (\bibinfo{year}{1995}),
+  \bibinfo{pages}{582--600}.
+\newblock
+\href{https://doi.org/10.2307/2082975}{doi:\nolinkurl{10.2307/2082975}}
+
+
+\bibitem[Durmus et~al\mbox{.}(2023)]%
+        {durmus2023global}
+\bibfield{author}{\bibinfo{person}{Esin Durmus} {et~al\mbox{.}}}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{Towards Measuring the Representation of Subjective
+  Global Opinions in Language Models}.
+\newblock
+\showeprint[arxiv]{2306.16388}~[cs.CL]
 
 
 \bibitem[Ehrmann et~al\mbox{.}(2023)]%
@@ -152,6 +220,35 @@
 \href{https://doi.org/10.7551/mitpress/3374.001.0001}{doi:\nolinkurl{10.7551/mitpress/3374.001.0001}}
 
 
+\bibitem[Erjavec et~al\mbox{.}(2023)]%
+        {erjavec2023parlamint}
+\bibfield{author}{\bibinfo{person}{Toma{\v{z}} Erjavec} {et~al\mbox{.}}}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{The {ParlaMint} Corpora of Parliamentary
+  Proceedings}.
+\newblock \bibinfo{journal}{\emph{Language Resources and Evaluation}}
+  \bibinfo{volume}{57}, \bibinfo{number}{1} (\bibinfo{year}{2023}),
+  \bibinfo{pages}{415--448}.
+\newblock
+\href{https://doi.org/10.1007/s10579-021-09574-0}{doi:\nolinkurl{10.1007/s10579-021-09574-0}}
+
+
+\bibitem[Esteva et~al\mbox{.}(2001)]%
+        {esteva2001electronic}
+\bibfield{author}{\bibinfo{person}{Marc Esteva}, \bibinfo{person}{Juan~A.
+  Rodr{\'\i}guez-Aguilar}, \bibinfo{person}{Carles Sierra},
+  \bibinfo{person}{Pere Garcia}, {and} \bibinfo{person}{Josep~L. Arcos}.}
+  \bibinfo{year}{2001}\natexlab{}.
+\newblock \showarticletitle{On the Formal Specification of Electronic
+  Institutions}. In \bibinfo{booktitle}{\emph{Agent Mediated Electronic
+  Commerce}} \emph{(\bibinfo{series}{Lecture Notes in Computer Science},
+  Vol.~\bibinfo{volume}{1991})}, \bibfield{editor}{\bibinfo{person}{Frank
+  Dignum} {and} \bibinfo{person}{Carles Sierra}} (Eds.).
+  \bibinfo{publisher}{Springer}, \bibinfo{address}{Berlin, Heidelberg}.
+\newblock
+\href{https://doi.org/10.1007/3-540-44682-6_8}{doi:\nolinkurl{10.1007/3-540-44682-6_8}}
+
+
 \bibitem[Ferguson(1997)]%
         {ferguson1997virtual}
 \bibfield{editor}{\bibinfo{person}{Niall Ferguson}} (Ed.).
@@ -160,6 +257,21 @@
   Counterfactuals}}.
 \newblock \bibinfo{publisher}{Picador}, \bibinfo{address}{London}.
 \newblock
+
+
+\bibitem[Gao et~al\mbox{.}(2024)]%
+        {gao2024llmabm}
+\bibfield{author}{\bibinfo{person}{Chen Gao}, \bibinfo{person}{Xiaochong Lan},
+  \bibinfo{person}{Nian Li}, \bibinfo{person}{Yuan Yuan},
+  \bibinfo{person}{Jingtao Ding}, \bibinfo{person}{Zhilun Zhou},
+  \bibinfo{person}{Fengli Xu}, {and} \bibinfo{person}{Yong Li}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Large Language Models Empowered Agent-based
+  Modeling and Simulation: A Survey and Perspectives}.
+\newblock \bibinfo{journal}{\emph{Humanities and Social Sciences
+  Communications}}  \bibinfo{volume}{11} (\bibinfo{year}{2024}).
+\newblock
+\href{https://doi.org/10.1057/s41599-024-03611-3}{doi:\nolinkurl{10.1057/s41599-024-03611-3}}
 
 
 \bibitem[Gao et~al\mbox{.}(2025)]%
@@ -212,6 +324,31 @@
 \showeprint[arxiv]{2301.07543}~[econ.GN]
 
 
+\bibitem[Hua et~al\mbox{.}(2023)]%
+        {hua2023waragent}
+\bibfield{author}{\bibinfo{person}{Wenyue Hua}, \bibinfo{person}{Lizhou Fan},
+  \bibinfo{person}{Lingyao Li}, \bibinfo{person}{Kai Mei},
+  \bibinfo{person}{Jianchao Ji}, \bibinfo{person}{Yingqiang Ge},
+  \bibinfo{person}{Libby Hemphill}, {and} \bibinfo{person}{Yongfeng Zhang}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{War and Peace ({WarAgent}): Large Language
+  Model-based Multi-Agent Simulation of World Wars}.
+\newblock
+\showeprint[arxiv]{2311.17227}~[cs.AI]
+
+
+\bibitem[Lazaridou et~al\mbox{.}(2021)]%
+        {lazaridou2021mind}
+\bibfield{author}{\bibinfo{person}{Angeliki Lazaridou},
+  \bibinfo{person}{Adhiguna Kuncoro}, {et~al\mbox{.}}}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Mind the Gap: Assessing Temporal Generalization in
+  Neural Language Models}. In \bibinfo{booktitle}{\emph{Advances in Neural
+  Information Processing Systems 34}}. \bibinfo{publisher}{Curran Associates,
+  Inc.}
+\newblock
+
+
 \bibitem[Marx and Schuth(2010)]%
         {marx2010dutchparl}
 \bibfield{author}{\bibinfo{person}{Maarten Marx} {and} \bibinfo{person}{Anne
@@ -244,6 +381,18 @@
 \href{https://doi.org/10.17026/DANS-XK5-DW3S}{doi:\nolinkurl{10.17026/DANS-XK5-DW3S}}
 
 
+\bibitem[Mollin(2007)]%
+        {mollin2007hansard}
+\bibfield{author}{\bibinfo{person}{Sandra Mollin}.}
+  \bibinfo{year}{2007}\natexlab{}.
+\newblock \showarticletitle{The {Hansard} Hazard: Gauging the Accuracy of
+  {British} Parliamentary Transcripts}.
+\newblock \bibinfo{journal}{\emph{Corpora}} \bibinfo{volume}{2},
+  \bibinfo{number}{2} (\bibinfo{year}{2007}), \bibinfo{pages}{187--210}.
+\newblock
+\href{https://doi.org/10.3366/cor.2007.2.2.187}{doi:\nolinkurl{10.3366/cor.2007.2.2.187}}
+
+
 \bibitem[{nmatter1}(2023)]%
         {smallvillerepo}
 \bibfield{author}{\bibinfo{person}{{nmatter1}}.}
@@ -267,6 +416,33 @@
   \bibinfo{pages}{1--22}.
 \newblock
 \href{https://doi.org/10.1145/3586183.3606763}{doi:\nolinkurl{10.1145/3586183.3606763}}
+
+
+\bibitem[Park et~al\mbox{.}(2022)]%
+        {park2022social}
+\bibfield{author}{\bibinfo{person}{Joon~Sung Park}, \bibinfo{person}{Lindsay
+  Popowski}, \bibinfo{person}{Carrie Cai}, \bibinfo{person}{Meredith~Ringel
+  Morris}, \bibinfo{person}{Percy Liang}, {and} \bibinfo{person}{Michael~S.
+  Bernstein}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Social Simulacra: Creating Populated Prototypes for
+  Social Computing Systems}. In \bibinfo{booktitle}{\emph{Proceedings of the
+  35th Annual ACM Symposium on User Interface Software and Technology}}
+  \emph{(\bibinfo{series}{UIST '22})}. \bibinfo{publisher}{ACM},
+  \bibinfo{pages}{1--18}.
+\newblock
+\href{https://doi.org/10.1145/3526113.3545616}{doi:\nolinkurl{10.1145/3526113.3545616}}
+
+
+\bibitem[Park et~al\mbox{.}(2024)]%
+        {park2024thousand}
+\bibfield{author}{\bibinfo{person}{Joon~Sung Park}, \bibinfo{person}{Carolyn~Q.
+  Zou}, \bibinfo{person}{Aaron Shaw}, \bibinfo{person}{Benjamin~Mako Hill},
+  \bibinfo{person}{Carrie Cai}, \bibinfo{person}{Meredith~Ringel Morris},
+  \bibinfo{person}{Robb Willer}, \bibinfo{person}{Percy Liang}, {and}
+  \bibinfo{person}{Michael~S. Bernstein}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{Generative Agent Simulations of 1,000 People}.
+\newblock
+\showeprint[arxiv]{2411.10109}~[cs.AI]
 
 
 \bibitem[{Parlementair Documentatie Centrum}(2024)]%
@@ -295,6 +471,18 @@
   Generative Agents Advances Understanding of Human Behaviors and Society}.
 \newblock
 \showeprint[arxiv]{2502.08691}~[cs.SI]
+
+
+\bibitem[Rauh and Schwalbach(2020)]%
+        {rauh2020parlspeech}
+\bibfield{author}{\bibinfo{person}{Christian Rauh} {and} \bibinfo{person}{Jan
+  Schwalbach}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{title}{The {ParlSpeech} {V2} Data Set: Full-Text Corpora of
+  6.3 Million Parliamentary Speeches in the Key Legislative Chambers of Nine
+  Representative Democracies}.
+\newblock \bibinfo{howpublished}{Harvard Dataverse}.
+\newblock
+\href{https://doi.org/10.7910/DVN/L4OAKN}{doi:\nolinkurl{10.7910/DVN/L4OAKN}}
 
 
 \bibitem[Romanowska et~al\mbox{.}(2021)]%
@@ -340,6 +528,79 @@
 \href{https://doi.org/10.1080/0022250x.1971.9989794}{doi:\nolinkurl{10.1080/0022250x.1971.9989794}}
 
 
+\bibitem[Shanahan et~al\mbox{.}(2023)]%
+        {shanahan2023roleplay}
+\bibfield{author}{\bibinfo{person}{Murray Shanahan}, \bibinfo{person}{Kyle
+  McDonell}, {and} \bibinfo{person}{Laria Reynolds}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Role Play with Large Language Models}.
+\newblock \bibinfo{journal}{\emph{Nature}} \bibinfo{volume}{623},
+  \bibinfo{number}{7987} (\bibinfo{year}{2023}), \bibinfo{pages}{493--498}.
+\newblock
+\href{https://doi.org/10.1038/s41586-023-06647-8}{doi:\nolinkurl{10.1038/s41586-023-06647-8}}
+
+
+\bibitem[Shao et~al\mbox{.}(2023)]%
+        {shao2023characterllm}
+\bibfield{author}{\bibinfo{person}{Yunfan Shao}, \bibinfo{person}{Linyang Li},
+  \bibinfo{person}{Junqi Dai}, {and} \bibinfo{person}{Xipeng Qiu}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{{Character-LLM}: A Trainable Agent for
+  Role-Playing}. In \bibinfo{booktitle}{\emph{Proceedings of the 2023
+  Conference on Empirical Methods in Natural Language Processing}}.
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{address}{Singapore}, \bibinfo{pages}{13153--13187}.
+\newblock
+\href{https://doi.org/10.18653/v1/2023.emnlp-main.814}{doi:\nolinkurl{10.18653/v1/2023.emnlp-main.814}}
+
+
+\bibitem[Slembrouck(1992)]%
+        {slembrouck1992hansard}
+\bibfield{author}{\bibinfo{person}{Stef Slembrouck}.}
+  \bibinfo{year}{1992}\natexlab{}.
+\newblock \showarticletitle{The Parliamentary {Hansard} `Verbatim' Report: The
+  Written Construction of Spoken Discourse}.
+\newblock \bibinfo{journal}{\emph{Language and Literature}}
+  \bibinfo{volume}{1}, \bibinfo{number}{2} (\bibinfo{year}{1992}),
+  \bibinfo{pages}{101--119}.
+\newblock
+
+
+\bibitem[Stoler(2009)]%
+        {stoler2009archival}
+\bibfield{author}{\bibinfo{person}{Ann~Laura Stoler}.}
+  \bibinfo{year}{2009}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Along the Archival Grain: Epistemic
+  Anxieties and Colonial Common Sense}}.
+\newblock \bibinfo{publisher}{Princeton University Press},
+  \bibinfo{address}{Princeton, NJ}.
+\newblock
+
+
+\bibitem[Tao et~al\mbox{.}(2024)]%
+        {tao2024cultural}
+\bibfield{author}{\bibinfo{person}{Yan Tao}, \bibinfo{person}{Olga Viberg},
+  \bibinfo{person}{Ryan~S. Baker}, {and} \bibinfo{person}{Ren{\'e}~F.
+  Kizilcec}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Cultural Bias and Cultural Alignment of Large
+  Language Models}.
+\newblock \bibinfo{journal}{\emph{PNAS Nexus}} \bibinfo{volume}{3},
+  \bibinfo{number}{9} (\bibinfo{year}{2024}), \bibinfo{pages}{pgae346}.
+\newblock
+\href{https://doi.org/10.1093/pnasnexus/pgae346}{doi:\nolinkurl{10.1093/pnasnexus/pgae346}}
+
+
+\bibitem[te~Velde(2015)]%
+        {tevelde2015sprekende}
+\bibfield{author}{\bibinfo{person}{Henk te Velde}.}
+  \bibinfo{year}{2015}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Sprekende politiek: Redenaars en hun
+  publiek in de parlementaire gouden eeuw}}.
+\newblock \bibinfo{publisher}{Prometheus/Bert Bakker},
+  \bibinfo{address}{Amsterdam}.
+\newblock
+
+
 \bibitem[Trouillot(1995)]%
         {trouillot1995silencing}
 \bibfield{author}{\bibinfo{person}{Michel-Rolph Trouillot}.}
@@ -347,6 +608,16 @@
 \newblock \bibinfo{booktitle}{\emph{Silencing the Past: Power and the
   Production of History}}.
 \newblock \bibinfo{publisher}{Beacon Press}, \bibinfo{address}{Boston, MA}.
+\newblock
+
+
+\bibitem[Turpijn(2008)]%
+        {turpijn2008mannen}
+\bibfield{author}{\bibinfo{person}{Jouke Turpijn}.}
+  \bibinfo{year}{2008}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Mannen van gezag: De uitvinding van de
+  {Tweede Kamer}, 1848--1888}}.
+\newblock \bibinfo{publisher}{Wereldbibliotheek}, \bibinfo{address}{Amsterdam}.
 \newblock
 
 
@@ -359,6 +630,35 @@
   to Evaluate Alternative News Feed Algorithms}.
 \newblock
 \showeprint[arxiv]{2310.05984}~[cs.SI]
+
+
+\bibitem[Varnum et~al\mbox{.}(2024)]%
+        {varnum2024historical}
+\bibfield{author}{\bibinfo{person}{Michael E.~W. Varnum},
+  \bibinfo{person}{Nicolas Baumard}, \bibinfo{person}{Mohammad Atari}, {and}
+  \bibinfo{person}{Kurt Gray}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Large Language Models Based on Historical Text
+  Could Offer Informative Tools for Behavioral Science}.
+\newblock \bibinfo{journal}{\emph{Proceedings of the National Academy of
+  Sciences}} \bibinfo{volume}{121}, \bibinfo{number}{42}
+  (\bibinfo{year}{2024}), \bibinfo{pages}{e2407639121}.
+\newblock
+\href{https://doi.org/10.1073/pnas.2407639121}{doi:\nolinkurl{10.1073/pnas.2407639121}}
+
+
+\bibitem[Vezhnevets et~al\mbox{.}(2023)]%
+        {vezhnevets2023concordia}
+\bibfield{author}{\bibinfo{person}{Alexander~Sasha Vezhnevets},
+  \bibinfo{person}{John~P. Agapiou}, \bibinfo{person}{Avia Aharon},
+  \bibinfo{person}{Ron Ziv}, \bibinfo{person}{Jayd Matyas},
+  \bibinfo{person}{Edgar~A. Du{\'e}{\~n}ez-Guzm{\'a}n},
+  \bibinfo{person}{William~A. Cunningham}, \bibinfo{person}{Simon Osindero},
+  \bibinfo{person}{Danny Karmon}, {and} \bibinfo{person}{Joel~Z. Leibo}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{Generative Agent-Based Modeling with Actions Grounded
+  in Physical, Social, or Digital Space using {Concordia}}.
+\newblock
+\showeprint[arxiv]{2312.03664}~[cs.AI]
 
 
 \bibitem[Wang et~al\mbox{.}(2025)]%

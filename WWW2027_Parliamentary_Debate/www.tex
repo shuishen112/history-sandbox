@@ -242,54 +242,79 @@ In summary, we make the following contributions:
 \section{Related Work}
 \label{sec:related}
 
-\paragraph{Generative agents and sandboxes.} Generative
-Agents~\cite{park2023generative} introduced a memory stream with retrieval
-by recency, importance, and relevance, together with periodic reflection and
-recursive planning, and situated 25 agents in Smallville. Open-source
-reimplementations package this loop as a simulation server with a
-dashboard~\cite{smallvillerepo}, and Project Sid~\cite{al2024projectsid} and
-AgentSociety~\cite{piao2025agentsociety} scale the pattern to larger
-populations. Related work uses LLMs as simulated survey
-respondents~\cite{argyle2023outofone,aher2023turing}, economic
-actors~\cite{horton2023homosilicus}, and social-network
-users~\cite{gao2023s3,tornberg2023simulating}. \sys{} adopts the sandbox
-and cognitive loop of Generative Agents~\cite{park2023generative}, but its
-world is defined by parliamentary procedure and it is validated against an
-official record.
-
-\paragraph{Agent-based social simulation.} Classical agent-based models
-(ABMs) explain macro phenomena from local
+\paragraph{Generative agents and social simulation.} Classical
+agent-based models (ABMs) explain macro phenomena from local
 rules~\cite{schelling1971dynamic,epstein1996growing}; the generative
 standard requires that a candidate explanation actually grow the
 phenomenon~\cite{epstein2006generative}. Historical ABMs, notably of
 Ancestral Pueblo settlement~\cite{axtell2002population}, rely on
-hand-crafted rules that cannot represent debate. \sys{} follows the
+hand-crafted rules that cannot represent debate. Social
+simulacra~\cite{park2022social} first used LLMs to populate prototypes of
+online communities, and Generative Agents~\cite{park2023generative} gave
+25 agents in Smallville a memory stream, reflection, and planning.
+Project Sid~\cite{al2024projectsid} and
+AgentSociety~\cite{piao2025agentsociety} scale the approach to larger populations,
+and agents built from qualitative interviews replicate their participants'
+survey answers~\cite{park2024thousand}. LLMs also serve as simulated survey
+respondents~\cite{argyle2023outofone,aher2023turing}, economic
+actors~\cite{horton2023homosilicus}, and social-network
+users~\cite{gao2023s3,tornberg2023simulating}, as surveyed
+in~\cite{gao2024llmabm}. Closer to our setting, LLM agents have simulated states on the road to the world
+wars~\cite{hua2023waragent} and deliberation in a US Senate
+committee~\cite{baker2024senate}. In Concordia~\cite{vezhnevets2023concordia},
+a game-master agent turns the actions that agents describe into outcomes
+in the world. Work on electronic institutions~\cite{esteva2001electronic}
+and the grammar of institutions~\cite{crawford1995grammar} specifies the
+roles, rules, and protocols of interaction outside the agents themselves.
+\sys{} adopts the sandbox and cognitive loop of Generative Agents but,
+like these institutional approaches, enforces its standing orders in the
+world rather than through a model. It also follows the
 generative standard: its claims concern which institutional rules suffice
 to produce the patterns in the record (\S\ref{sec:discussion}).
 
-\paragraph{Limits of LLM simulacra.} LLMs flatten identity
-groups~\cite{wang2025identity}, encode representational
-harms~\cite{bender2021parrots}, and may produce convincing but unfounded
-behaviour~\cite{ziems2024css}. In a parliament, these failures appear as
+\paragraph{Present-day bias in LLM simulacra.} LLMs trained on
+contemporary Web text reproduce the views of particular present-day
+populations: some US demographic groups~\cite{santurkar2023opinions}, the
+USA and parts of Europe~\cite{durmus2023global}, English-speaking and
+Protestant European countries~\cite{tao2024cultural}, and WEIRD
+populations more generally~\cite{atari2023which}. Simulated personas can
+flatten identity groups~\cite{wang2025identity}, exaggerate them into
+caricature~\cite{cheng2023compost}, and encode representational
+harms~\cite{bender2021parrots}, and convincing simulated behaviour may
+still be unfounded~\cite{ziems2024css}. Time adds a further axis: models
+degrade on text from beyond their training
+period~\cite{lazaridou2021mind}. Role-playing agents can be trained to
+imitate historical figures~\cite{shao2023characterllm}, though what they
+produce is better described as role play than as
+belief~\cite{shanahan2023roleplay}. Historical LLMs trained on period corpora have been proposed as simulated
+participants from past societies~\cite{varnum2024historical}. In a
+nineteenth-century parliament, whose culture prized oratory and principled
+debate~\cite{tevelde2015sprekende}, present-day bias appears as
 anachronistic vocabulary, sanitised conflict, and members who
-``cooperate'' instead of opposing. We audit for them explicitly
+``cooperate'' instead of opposing. Rather than retraining the model,
+\sys{} moves procedure out of it and audits the text it still writes
 (\S\ref{sec:results}).
 
-\paragraph{Computational parliamentary corpora.} DutchParl and
+\paragraph{Parliamentary records as selective archives.} DutchParl and
 PoliticalMashup encode the Handelingen as proceedings XML with speaker,
 role, party, and house metadata~\cite{marx2010dutchparl,marx2012dutchparl}.
-The source scans come from Staten-Generaal Digitaal (Koninklijke
-Bibliotheek), and the dataset is released under CC0 (\S\ref{sec:ethics}).
-NLP on historical proceedings must cope with OCR noise and spelling
-variation~\cite{ehrmann2023ner}. \sys{} uses the corpus both as a
+The scans come from Staten-Generaal Digitaal (Koninklijke Bibliotheek),
+and the data are CC0 (\S\ref{sec:ethics}). Comparable corpora cover other
+parliaments~\cite{erjavec2023parlamint,rauh2020parlspeech} and support
+analyses of sentiment and position-taking~\cite{abercrombie2020sentiment}.
+NLP on historical proceedings must cope with OCR noise and spelling variation~\cite{ehrmann2023ner}. Such
+records are not transparent windows onto
+events~\cite{trouillot1995silencing,stoler2009archival}. Studies of the
+British Hansard show that the official report drops features of spoken
+interaction, changes wording, and understates the force of
+exchanges~\cite{slembrouck1992hansard,mollin2007hansard}.
+The Handelingen likewise omit what the Chair did not recognise and what
+members chose not to say on the floor, and the Tweede Kamer of the
+period built its authority through such rules and
+practices~\cite{turpijn2008mannen}. \sys{} uses the corpus both as a
 \emph{seed} (personas, speech style, sitting calendars) and as a
 \emph{calibration target} (who spoke, for how long, on which topics, and in
-which house).
-
-\paragraph{Archives as selection.} Official records are not transparent
-windows onto events~\cite{trouillot1995silencing}. The Handelingen omit
-what the Chair did not recognise and what members chose not to say on the
-floor. \sys{} treats that selection as a design constraint: the sandbox
+which house), and treats its selection as a design constraint: the sandbox
 generates hypotheses about \emph{processes}, including the process that
 produced the record, and never offers testimony about unrecorded inner
 lives.
