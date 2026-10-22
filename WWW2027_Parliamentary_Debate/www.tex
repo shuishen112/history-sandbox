@@ -848,8 +848,9 @@ $0.129$).
 
 
 \paragraph{Interventions.} Floor mention falls from $14\%$ at
-$0.25\times$ Chair strictness to $3\%$ at the default and to $0$ at
-$2\times$ and above (Figure~\ref{fig:cf}). This follows from how
+$0.25\times$ Chair strictness to $3\%$ at the default ($4\%$ over the five
+seeds of Table~\ref{tab:interview}) and to $0$ at $2\times$ and above
+(Figure~\ref{fig:cf}). This follows from how
 strictness is encoded (\S\ref{sec:experiments}): it lowers the rate at
 which aware members allude to the rumour and, from $2\times$, halves or
 quarters the number of recognised speeches. Corridor distortion, which
@@ -884,8 +885,8 @@ GA~\cite{park2023generative} & 21.7 & 1.8 & 22.2 & 2.2 \\
 \bottomrule
 \end{tabular}\\[4pt]
 {\raggedright\scriptsize Pairwise (full vs.\ GA): believability 17--8--11
-(win--loss--tie); procedure 12--5--19. One pair was left unranked with a
-written comment (``Kamerlid der Tweede/Eerste Kamer'', not ``MP'').\par}
+(win--loss--tie); procedure 12--5--19. One further pair, from an earlier
+version of the task, was left unranked with a written comment (``Kamerlid der Tweede/Eerste Kamer'', not ``MP'').\par}
 \end{table}
 
 \paragraph{Historian review.} The rater passed both attention checks,
@@ -938,9 +939,8 @@ strings do not identify unique persons, and 1890s party labels denote
 kamerclubs rather than mass parties. The Binnenhof is a composite, and the
 journalist is a synthetic observer. S1 is a 25-agent Tweede Kamer week, so
 it cannot match the role mix of a full chamber, and it runs no Eerste Kamer
-sitting even though senate tiles and affordances exist in the world. S3
-does not simulate the 1848 constitutional revision, and a single historian
-ranked the interviews. The implementation is also simpler than the
+sitting even though senate tiles and affordances exist in the world. A
+single historian ranked the interviews. The implementation is also simpler than the
 Generative Agents architecture: it has no memory ranking, reflection, or
 model-driven planning; conversations are single remarks; agents do not
 hear the content of floor speeches; and archival retrieval and the
@@ -1148,9 +1148,14 @@ merge, as the Bahlmannianen and Schaepmannianen did into a Roman Catholic
 bloc in 1896. Following this review, S1 seeds the Pierson cabinet in office
 at $t_0$ (Cremer at Colonies, Goeman Borgesius at Interior, Gleichman in
 the chair, Arntzenius as griffier) and drops van Houten, Sprenger van Eyk,
-and Gerritsen, who did not hold those posts in December 1899. The
-heuristic leak results (Table~\ref{tab:interview}) predate this roster
-correction; minister identity does not change who may speak.
+and Gerritsen, who did not hold those posts in December 1899. The runs
+behind Tables~\ref{tab:interview}--\ref{tab:historian} and
+Figure~\ref{fig:s1s3}, including the \texttt{gpt-4o-mini} interviews and the
+remark in Appendix~\ref{app:examples}, predate this roster correction. A
+heuristic rerun with the corrected roster and \texttt{PYTHONHASHSEED=0}
+gives the same awareness, record length, journalist share, and role JSD;
+minister identity does not change who may speak. Appendix~\ref{app:day}
+traces a day of that rerun.
 
 \section{Sandbox objects and corpus slice}
 \label{app:tables}
@@ -1161,7 +1166,7 @@ seed \sys{} (\S\ref{sec:pipeline}).
 \begin{table}[H]
 \caption{Representative sandbox objects and their states.}
 \label{tab:objects}
-\centering\small
+\centering\footnotesize
 \setlength{\tabcolsep}{3pt}
 \begin{tabular}{lll}
 \toprule
@@ -1179,7 +1184,9 @@ Whip note & none, circulating, spent & members \\
 \end{table}
 
 \begin{table}[H]
-\caption{Working slice of DutchParl (1814--1899) used to seed \sys{}.}
+\caption{Working slice of DutchParl (1814--1899) used to seed \sys{}. The
+S1 speaker pool is the first 80 Tweede Kamer sittings of 1896--1899 and
+holds 205 distinct speaker strings.}
 \label{tab:corpus}
 \centering\small
 \begin{tabular}{lrrr}
@@ -1193,7 +1200,7 @@ Other / early Staten-Generaal & 369 & --- & --- \\
 All sittings in slice & 8{,}745 & 138{,}214 & 86 years \\
 \quad with $\geq$1 \texttt{speech} & 7{,}348 & 138{,}214 & --- \\
 Member identifiers & 852 & --- & --- \\
-S1 roster (TK 1896--99 sample) & 80 sittings & --- & 205 speakers \\
+S1 speaker pool (TK) & 80 & --- & 1896--1899 \\
 Holdout TK 1890--1899 (S2) & 731 & 20{,}166 & --- \\
 Calibration TK 1860--1889 (S2) & 2{,}821 & 72{,}112 & --- \\
 \bottomrule
@@ -1205,8 +1212,8 @@ Calibration TK 1860--1889 (S2) & 2{,}821 & 72{,}112 & --- \\
 \begin{figure*}[t]
 \centering
 \includegraphics[width=\textwidth]{figure/day_timeline.pdf}
-\caption{A day in \sys{}: Wednesday 20 December 1899 in one heuristic S1
-run (seed~19), drawn in the style of Figure~\ref{fig:teaser} from the
+\caption{A day in \sys{}: Wednesday 20 December 1899 in the heuristic S1
+rerun with the corrected roster (seed~19; Appendix~\ref{app:historian}), drawn in the style of Figure~\ref{fig:teaser} from the
 logged state at six moments. Rooms, roles, actions, awareness (purple
 dot), rumour hops, object states, and utterances come from the run;
 positions within a room are a layout choice, since the simulation records
@@ -1222,8 +1229,8 @@ hops, and speech bubbles quote utterances from the run.}
 \label{fig:day}
 \end{figure*}
 
-To show how the rules of \S\ref{sec:agents} play out, we trace Wednesday 20 December 1899, the third day of one heuristic S1 run
-(seed~19; Figure~\ref{fig:day}). At 09:00, before the sitting, members gather in the
+To show how the rules of \S\ref{sec:agents} play out, we trace Wednesday 20 December 1899, the third day of the heuristic S1
+rerun with the corrected roster (seed~19; Figure~\ref{fig:day}). At 09:00, before the sitting, members gather in the
 wandelgang, and Staalman passes the resignation rumour to Seret. The
 provenance log records Seret's copy with one fact changed: ``an ARP
 member may resign''. At 10:00 Gleichman opens the sitting. Members take
