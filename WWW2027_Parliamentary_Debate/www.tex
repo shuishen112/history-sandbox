@@ -101,8 +101,8 @@ digital history, parliamentary proceedings, computational social science}
 \begin{teaserfigure}
   \centering
   \includegraphics[width=\textwidth]{figure/kamer_sandbox.pdf}
-  \caption{The \sys{} sandbox on day~1 of S1, our simulated one-week sitting
-  of December 1899 (composite Binnenhof; agents seeded from public speakers,
+  \caption{The \sys{} sandbox on day~1 of a simulated one-week sitting
+  in December 1899 (composite Binnenhof; agents seeded from public speakers,
   $N{=}25$). In the Tweede Kamer, a recognised member
   speaks on the East Indies budget while an unrecognised member is refused
   the floor. In the wandelgang, Member~A tells Member~C that the Minister of
@@ -110,7 +110,7 @@ digital history, parliamentary proceedings, computational social science}
   does not enter the Handelingen. The minister, in the Department of Colonies,
   remains unaware. Right: the inspector shows the agent's role, its location
   in the environment tree, standing-order affordances, retrieved memories,
-  the S1 leak tracker, and researcher controls. No persona is playable.}
+  the leak tracker, and researcher controls. No persona is playable.}
   \Description{A top-down map of a composite Binnenhof with the Tweede Kamer
   floor, wandelgang, committee rooms, press gallery and an agent inspector.}
   \label{fig:teaser}
@@ -367,7 +367,7 @@ Orde and secondary literature on the Staten-Generaal into
 (i)~affordance rules (who may speak, recognise, vote, or sit in the
 gallery), (ii)~object schedules (sitting hours, speaker lists, budget
 debates), and (iii)~the layout of the environment tree $\mathcal{T}$
-(\S\ref{sec:world}; 6 areas, 15 subareas, and 7 objects in the S1
+(\S\ref{sec:world}; 6 areas, 15 subareas, and 7 objects in the simulated
 Binnenhof).
 
 \subsection{World: tile map and environment tree}
@@ -401,13 +401,13 @@ and initiates bills, and is where cabinets stand or fall. The Eerste Kamer
 is elected indirectly by the Provinciale Staten, sits far less often, and
 may only accept or reject bills: it has no right of amendment or
 initiative~\cite{pdc2024kamers}. Between 1888 and 1918, a period that
-includes S1, our simulated week of Tweede Kamer sittings in December 1899
+includes the week of Tweede Kamer sittings in December 1899 that we simulate
 (\S\ref{sec:experiments}), the Eerste Kamer several times blocked cabinets
 that held a Tweede Kamer majority. \sys{} therefore treats house membership as
 an institutional attribute rather than a label. A Kamerlid of the Tweede
 Kamer has no floor rights in the Eerste Kamer; ministers, who appear in
 both houses, do; and \texttt{move\_amendment} is undefined on senate tiles.
-Although S1 is a Tweede Kamer week, the Eerste Kamer is present on the map
+Although that week has only Tweede Kamer sittings, the Eerste Kamer is present on the map
 and in the affordance layer, so that ``lid der Staten-Generaal'' (member of
 the States General) is never an admissible self-description.
 
@@ -447,7 +447,7 @@ day through these rules (Figure~\ref{fig:day}).
 
 \subsubsection{Personas and period language}
 \label{sec:personas}
-S1 samples $N{=}25$ agents from attested speakers
+For the simulated week, we sample $N{=}25$ agents from attested speakers
 in Tweede Kamer sittings of 1896--1899, filtered to the offices held in
 December 1899: Gleichman as Chair, Cremer and Goeman Borgesius as
 ministers of the Pierson cabinet, Arntzenius as griffier, one journalist,
@@ -521,7 +521,7 @@ Chair (by election), and a minister may return to the benches, but a
 journalist cannot become a member by walking onto the floor. An agent can
 change role only through one of these transitions, and only when its
 condition holds in the current state of the sandbox. No appointment or
-election is scheduled in S1, so no transition occurs in the reported runs.
+election is scheduled in the simulated week, so no transition occurs in the reported runs.
 Procedure on the floor is enforced by the affordance layer, not by the
 LLM's willingness to role-play a Voorzitter.
 
@@ -630,21 +630,6 @@ against held-out Handelingen (\S\ref{sec:experiments}).
 \section{Experimental Setup}
 \label{sec:experiments}
 
-S1 (including its ablations), S2, and S3 use the heuristic backend, in
-which floor speeches are attested excerpts and conversation remarks are
-fixed sentences (seeds $\{7,11,19,29,31\}$). Bench seating and the
-heuristic allusion rule depend on Python's per-process hash randomisation,
-so floor-mention and embellishment rates, and hence the S3 points, vary
-between runs with the same seeds (floor mention for full \sys{} is
-$4.0\%$ in the reported runs and $1.6\%$ with \texttt{PYTHONHASHSEED=0}),
-whereas record length, journalist share, and role JSD are unaffected and
-awareness changes by at most two percentage points. A backbone check reruns the
-S1 \texttt{full} and \texttt{ga} conditions with \texttt{gpt-4o-mini}
-(seeds $\{7,11,19\}$). Each of these runs had a budget of 400
-completions. Most of the budget went to corridor asides, and once it was
-spent agents fell back to heuristic utterances, so at most 20 of the 205
-record lines per seed are model text.
-
 \paragraph{S1 (one-week sitting).} S1 runs $N{=}25$ agents, the scale of
 Smallville, through a composite Tweede Kamer week in December 1899. Eerste
 Kamer tiles exist and are gated, but no senate sitting opens during this
@@ -673,6 +658,21 @@ distortion $\{0.05,0.18\}$, and reports the floor-mention rate of the leak.
 Strictness $s$ enters the model in two places: it sets the heuristic
 allusion rate (\S\ref{sec:communication}), and for $s\geq2$ the Chair gives the
 floor only on every $s$-th step.
+
+\paragraph{Backends and seeds.} S1 (including its ablations), S2, and S3
+use the heuristic backend, in which floor speeches are attested excerpts and conversation remarks are
+fixed sentences (seeds $\{7,11,19,29,31\}$). Bench seating and the
+heuristic allusion rule depend on Python's per-process hash randomisation,
+so floor-mention and embellishment rates, and hence the S3 points, vary
+between runs with the same seeds (floor mention for full \sys{} is
+$4.0\%$ in the reported runs and $1.6\%$ with \texttt{PYTHONHASHSEED=0}),
+whereas record length, journalist share, and role JSD are unaffected and
+awareness changes by at most two percentage points. A backbone check reruns the
+S1 \texttt{full} and \texttt{ga} conditions with \texttt{gpt-4o-mini}
+(seeds $\{7,11,19\}$). Each of these runs had a budget of 400
+completions. Most of the budget went to corridor asides, and once it was
+spent agents fell back to heuristic utterances, so at most 20 of the 205
+record lines per seed are model text.
 
 \subsection{End-to-end evaluation}
 \label{sec:eval-e2e}
