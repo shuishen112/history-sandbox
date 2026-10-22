@@ -436,7 +436,18 @@ agent can be controlled in the first person (Appendix~\ref{app:interface}).
 \subsection{Role-constrained agents}
 \label{sec:agents}
 
-\paragraph{Population.} S1 samples $N{=}25$ agents from attested speakers
+Each agent is seeded from the archive and asked to speak in period Dutch
+(\S\ref{sec:personas}). At every step it records what it perceives and
+attempts an action chosen by its role and the sitting schedule
+(\S\ref{sec:memory}); the role automaton and the affordance layer then
+decide whether the action succeeds (\S\ref{sec:gating}); and floor
+speech, conversation, and rumours carry information between agents
+(\S\ref{sec:communication}). Appendix~\ref{app:day} traces one simulated
+day through these rules (Figure~\ref{fig:day}).
+
+\subsubsection{Personas and period language}
+\label{sec:personas}
+S1 samples $N{=}25$ agents from attested speakers
 in Tweede Kamer sittings of 1896--1899, filtered to the offices held in
 December 1899: Gleichman as Chair, Cremer and Goeman Borgesius as
 ministers of the Pierson cabinet, Arntzenius as griffier, one journalist,
@@ -459,7 +470,16 @@ parliamentary historian reviewed
 the roster, the OCR speaker cards, and the standing-order scheme
 (\S\ref{sec:eval-interview}).
 
-\paragraph{Memory and action selection.} Each agent keeps a memory stream
+The system prompt of the LLM backbone asks
+for late-nineteenth-century Dutch and lists period forms such as
+\emph{thans}, \emph{eene}, \emph{hetgeen}, and \emph{Nederlandsch}; the
+GA baseline's prompt asks only for ``period Dutch''. Archival retrieval
+and an anachronism filter, which our design specifies, were not active in
+the runs reported here (\S\ref{sec:discussion}).
+
+\subsubsection{Memory and action selection}
+\label{sec:memory}
+Each agent keeps a memory stream
 of observations, conversation, refusals, and its own speeches, each entry
 with a fixed importance by type. At every step the agent records what it
 perceives: its location, whether the sitting is open, who holds the floor,
@@ -488,7 +508,9 @@ wandelgang or a committee room, and ministers withdraw to their ministry
 in the evening. The language model therefore decides what an agent says,
 never where it goes or whether it may speak.
 
-\paragraph{Role automaton.} Each agent holds one role at a time: Chair,
+\subsubsection{Roles and affordances}
+\label{sec:gating}
+Each agent holds one role at a time: Chair,
 Kamerlid, minister, griffier, journalist, or visitor in the public gallery.
 Each role belongs to the Tweede Kamer (\texttt{commons}), the Eerste Kamer
 (\texttt{senate}), or both. We write $\rho_i^t$ for the role of agent $i$
@@ -503,7 +525,7 @@ election is scheduled in S1, so no transition occurs in the reported runs.
 Procedure on the floor is enforced by the affordance layer, not by the
 LLM's willingness to role-play a Voorzitter.
 
-\paragraph{Affordances.} Every attempted action is checked against the
+Every attempted action is checked against the
 affordance set $\mathcal{C}(\rho_i^t,v,t)$ of the agent's current node $v$,
 which encodes the Reglement van Orde as a function of the agent's role and
 house, the node's tags, and the state of the sitting. An agent may
@@ -518,7 +540,9 @@ speak on the floor''). The refusal is written to the agent's memory, and
 the agent waits for the rest of the step (Algorithm~\ref{alg:step},
 Appendix~\ref{app:alg}).
 
-\paragraph{Communication.} Agents communicate through three channels,
+\subsubsection{Communication}
+\label{sec:communication}
+Agents communicate through three channels,
 which differ in who can hear and what is recorded. \emph{Floor speech}
 requires recognition. When the Chair gives the floor (``Het woord is aan
 den heer Kuyper''), the recognised member addresses the Chair, and the
@@ -552,16 +576,6 @@ me: \ldots'' and may learn the places it names.
 Appendix~\ref{app:examples} gives an example remark from a
 \texttt{gpt-4o-mini} run.
 
-\paragraph{Period language.} The system prompt of the LLM backbone asks
-for late-nineteenth-century Dutch and lists period forms such as
-\emph{thans}, \emph{eene}, \emph{hetgeen}, and \emph{Nederlandsch}; the
-GA baseline's prompt asks only for ``period Dutch''. Archival retrieval
-and an anachronism filter, which our design specifies, were not active in
-the runs reported here (\S\ref{sec:discussion}).
-
-\paragraph{A day in the sandbox.} Appendix~\ref{app:day} traces one
-simulated day, Wednesday 20 December 1899, through these rules
-(Figure~\ref{fig:day}).
 
 %% =====================================================================
 \section{Simulated Handelingen and Calibration}
@@ -607,7 +621,7 @@ distribution of events that actually took place.
 In \sys{}, $\pi$ is set by the stenographer's rule (record iff the
 location is on-record, the sitting is open, and the speaker is recognised
 or is the Chair) together with the rule by which members allude to rumours
-on the floor (\S\ref{sec:agents}). Calibration would then fit $\theta$ by
+on the floor (\S\ref{sec:communication}). Calibration would then fit $\theta$ by
 matching $\tilde P^\theta_{\text{sim}}$ to $P_{\text{arch}}$ over several
 marginals (Appendix~\ref{app:calib}), with 1860--1889 reserved for
 calibration and 1890--1899 held out. In the runs reported here we do not
@@ -659,7 +673,7 @@ corridor dialogue as if it were Handelingen (\S\ref{sec:calibration}).
 $\{0.25,0.5,1,2,4\}$ relative to the default, crosses it with corridor
 distortion $\{0.05,0.18\}$, and reports the floor-mention rate of the leak.
 Strictness $s$ enters the model in two places: it sets the heuristic
-allusion rate (\S\ref{sec:agents}), and for $s\geq2$ the Chair gives the
+allusion rate (\S\ref{sec:communication}), and for $s\geq2$ the Chair gives the
 floor only on every $s$-th step.
 
 \subsection{End-to-end evaluation}
@@ -670,7 +684,7 @@ the wandelgang and track awareness by role. \textbf{Floor mention}: the
 share of simulated Handelingen lines that contain one of six keywords
 (\emph{wandelgang}, \emph{aftreden}, \emph{tekort}, \emph{resign},
 \emph{deficit}, \emph{leak}). \textbf{Embellishment}: the share of rumour
-hops in which a fact changed (\S\ref{sec:agents}). \textbf{Selection}: the journalist
+hops in which a fact changed (\S\ref{sec:communication}). \textbf{Selection}: the journalist
 share of the official record (archive: $0$).
 
 \subsection{Historian review}
@@ -752,7 +766,7 @@ heuristic & GA & 0.05 & 0.000 & 4.3 & 4{,}876 & 0.00 \\
 seeded with one member in the wandelgang. Members reach $27\%$ awareness
 on day~1 and $\approx 100\%$ by day~7; the press is faster ($60\%$, then
 $100\%$), and ministers lag ($0\%$, then $70\%$), as the transmission
-probabilities in \S\ref{sec:agents} imply. Only $4\%$ of Handelingen lines
+probabilities in \S\ref{sec:communication} imply. Only $4\%$ of Handelingen lines
 mention the leak. (b)~Floor mention of the leak against Chair strictness,
 which lowers the heuristic allusion rate and, from $2\times$, how often
 the Chair gives the floor.}
@@ -768,7 +782,7 @@ levels.}
 and $60\%$ of the press within one day and essentially all members and the
 press by day~7, whereas ministers remained unaware until day~3 and reached
 $70\%$ by day~7 (Figure~\ref{fig:diffusion}). This ordering follows from
-the transmission rules in \S\ref{sec:agents}: in the wandelgang the
+the transmission rules in \S\ref{sec:communication}: in the wandelgang the
 journalist hears a rumour with probability at least $0.55$ per encounter
 and a minister with about $0.10$, and ministers spend their evenings in the
 ministry rather than the wandelgang. The curves therefore show how these
@@ -787,7 +801,7 @@ holds about one recognised speech per ten-minute step of the sitting week,
 $205$ lines in all. Without it, as under GA, every member, minister, and the
 journalist speaks at every step and is recorded: the record grows to
 $4{,}876$ lines, and the journalist, one of 23 speakers, produces $4.3\%$
-of it. No role transition is triggered in S1 (\S\ref{sec:agents}), so
+of it. No role transition is triggered in S1 (\S\ref{sec:gating}), so
 --automaton is identical to the full model. Removing the rumour network
 stops diffusion entirely, because rumours travel only on that channel;
 floor speech does not pass them on. Replacing the planner with
@@ -829,7 +843,7 @@ zero, whereas GA and the affordance ablation do not. Naive calibration
 (\S\ref{sec:calibration}) dilutes the official mix by treating wandelgang
 talk as Handelingen and produces a $2.2\%$ press share that the archive
 cannot contain. \sys{}'s role JSD ($0.117$) is higher than that of replay
-because its record contains no Chair lines (\S\ref{sec:agents}) and only
+because its record contains no Chair lines (\S\ref{sec:calibration}) and only
 two ministers among 22 speakers: about $90\%$ of its lines are by members
 and $10\%$ by ministers, against $64\%$, $18\%$, and $18\%$ for members,
 government, and the Chair in the holdout. Among the agent-based
@@ -1019,7 +1033,7 @@ implemented in the runs reported here.
 
 \section{Seed and utterance examples}
 \label{app:examples}
-Each agent is seeded with a short persona and up to three excerpts of the person's actual public speech (\S\ref{sec:agents}). The agent for Abraham Kuyper, leader of the Anti-Revolutionary Party, receives the persona below
+Each agent is seeded with a short persona and up to three excerpts of the person's actual public speech (\S\ref{sec:personas}). The agent for Abraham Kuyper, leader of the Anti-Revolutionary Party, receives the persona below
 and, among its excerpts, the passage that follows it, taken from the
 sitting of 20 November 1896 with OCR errors preserved:
 \begin{quote}\small\ttfamily\raggedright
