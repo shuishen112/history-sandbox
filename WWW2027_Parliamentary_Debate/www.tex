@@ -192,8 +192,10 @@ floor however the model is prompted. The archive's own selection becomes
 the validation target: corridor talk travels with provenance and
 distortion, but an in-world stenographer writes only recognised floor
 speech, producing a simulated record that can be compared with the real
-one. Historians use the sandbox interactively: they inspect and interview
-agents, edit object states, and inject events.
+one. Researchers can pause the sandbox, step through a sitting, inspect
+agents, and interview them; other interventions are logged, but only
+opening a sitting currently changes what agents do
+(Appendix~\ref{app:interface}).
 
 Experiments with \sys{} support this design. A historian judged \sys{}'s interview answers more plausible for a
 late-1890s member than those of a Smallville-style baseline (17 wins,
@@ -364,9 +366,10 @@ advances the world with an \texttt{updateState} call, and exposes this
 state over a REST API. The interface renders each agent's current action as
 a short natural-language statement with an emoji. Role is shown only by a
 ring colour; sprites are deliberately neutral tokens. Researchers can
-inspect and interview agents, add memories, edit object states, and inject
-events, but no agent can be controlled in the first person
-(Appendix~\ref{app:interface}).
+pause the world, step through it, inspect agents, and interview them.
+Adding a memory, editing an object state, and injecting an event are also
+logged, but of these only opening a sitting changes what agents do. No
+agent can be controlled in the first person (Appendix~\ref{app:interface}).
 
 
 %% =====================================================================
@@ -890,9 +893,14 @@ about procedure and selection explicit and manipulable, and because it
 generates hypotheses for further archival work in committee minutes,
 private correspondence, and the press.
 
-\paragraph{Interactivity as method.} Inspection, interviews, and object
-edits are the intended way for historians to find errors in the
-standing-order rules. The ablations isolate those rules with a heuristic
+\paragraph{Interactivity as method.} Pausing the sandbox, stepping through
+a sitting, inspecting agents, and interviewing them let researchers check
+how the standing-order rules play out. In this paper the historian's
+review relied on interviews generated at the end of each run rather than
+on live sessions, and the other logged interventions do not yet change
+what agents do, apart from opening a sitting; making them act on the
+world is the next step towards a working tool for historians. The
+ablations isolate those rules with a heuristic
 planner, and the backbone check (Table~\ref{tab:backbone}) shows the same
 selection pattern under \texttt{gpt-4o-mini}, as expected, since the model
 writes only what agents say. The historian ranking
@@ -1100,11 +1108,12 @@ refusal, and eight most recent memories (Figure~\ref{fig:teaser}, right).
 \emph{Interview} pauses the world and poses a question, which the agent
 answers from its recent memories without writing the exchange back
 (\S\ref{sec:eval-interview}). \emph{Inner voice} adds a memory, such as
-``You heard in the wandelgang that the minister will resign'', for
-controlled information interventions. \emph{Edit object} changes an
-object state, for example closing the speaker list. \emph{Inject event}
-records a named event such as a cabinet crisis; in the current version
-only opening a sitting changes the world. No agent can be controlled in
+``You heard in the wandelgang that the minister will resign''; it can
+reach the language model's prompt but not the rumour channel.
+\emph{Edit object} changes an object state, for example closing the
+speaker list; agents perceive the new state, but no rule reads it.
+\emph{Inject event} records a named event such as a cabinet crisis; in
+the current version only opening a sitting changes the world. No agent can be controlled in
 the first person.
 
 \section{Historian review details}
