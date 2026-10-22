@@ -1,0 +1,131 @@
+{
+  "aggregate": {
+    "n": 14731,
+    "modern_vocab": 0.0,
+    "modern_vocab_filter_half": 0.0,
+    "modern_vocab_audit_half": 0.0,
+    "modern_spelling_share": 0.012449977767896843,
+    "spelling_tokens": 17992,
+    "modern_vocative_share": 0.0001783166904422254,
+    "vocative_counts": {
+      "none": 9123,
+      "period": 5607,
+      "modern": 1
+    },
+    "declension_period_share": {
+      "der_vs_van_de": 0.5170905910647912,
+      "eene_vs_een": 0.31896603910648347
+    },
+    "register_challenge": 0.19706740886565746,
+    "register_ref_other": 0.6339691806394678,
+    "register_responsive": 0.08390469078813387,
+    "register_rebuttal": 0.12151245672391556,
+    "register_adversarial": 0.2892539542461476,
+    "register_consensus": 0.005566492430927975,
+    "top_terms": []
+  },
+  "by_role": {
+    "mp": {
+      "n": 11431,
+      "modern_vocab": 0.0,
+      "modern_vocab_filter_half": 0.0,
+      "modern_vocab_audit_half": 0.0,
+      "modern_spelling_share": 0.012855113636363637,
+      "spelling_tokens": 14080,
+      "modern_vocative_share": 0.0001783166904422254,
+      "vocative_counts": {
+        "none": 5823,
+        "period": 5607,
+        "modern": 1
+      },
+      "declension_period_share": {
+        "der_vs_van_de": 0.526254059906171,
+        "eene_vs_een": 0.31322575780425277
+      },
+      "register_challenge": 0.19709561718134896,
+      "register_ref_other": 0.6319657072872015,
+      "register_responsive": 0.08809378007173475,
+      "register_rebuttal": 0.129472487096492,
+      "register_adversarial": 0.2945499081445193,
+      "register_consensus": 0.006211180124223602,
+      "top_terms": []
+    },
+    "government": {
+      "n": 3300,
+      "modern_vocab": 0.0,
+      "modern_vocab_filter_half": 0.0,
+      "modern_vocab_audit_half": 0.0,
+      "modern_spelling_share": 0.010991820040899795,
+      "spelling_tokens": 3912,
+      "modern_vocative_share": null,
+      "vocative_counts": {
+        "none": 3300
+      },
+      "declension_period_share": {
+        "der_vs_van_de": 0.47857413727720893,
+        "eene_vs_een": 0.342339576297206
+      },
+      "register_challenge": 0.19696969696969696,
+      "register_ref_other": 0.6409090909090909,
+      "register_responsive": 0.0693939393939394,
+      "register_rebuttal": 0.09393939393939393,
+      "register_adversarial": 0.27090909090909093,
+      "register_consensus": 0.0033333333333333335,
+      "top_terms": []
+    }
+  },
+  "attested": [
+    "aanpakken",
+    "budget",
+    "collega",
+    "communicatie",
+    "duurzaam",
+    "efficient",
+    "en_issue",
+    "en_okay",
+    "geachte_voorzitter",
+    "meneer",
+    "minister_president",
+    "moderne_wereld",
+    "netwerk",
+    "samenleving",
+    "stabiliteit",
+    "uitdaging"
+  ],
+  "doc_freq": {
+    "geachte_voorzitter": 80,
+    "collega": 267,
+    "en_okay": 61,
+    "minister_president": 74,
+    "stabiliteit": 56,
+    "samenleving": 71,
+    "budget": 201,
+    "aanpakken": 21,
+    "duurzaam": 104,
+    "uitdaging": 9,
+    "communicatie": 79,
+    "moderne_wereld": 5,
+    "en_issue": 7,
+    "verantwoordelijkheid_nemen": 2,
+    "inclusie": 2,
+    "meneer": 7,
+    "netwerk": 4,
+    "innovatie": 1,
+    "faciliteren": 2,
+    "systeem_compound": 2,
+    "polarisatie": 2,
+    "focus": 1,
+    "constructief": 2,
+    "efficient": 3,
+    "smartphone": 1,
+    "cohesie": 1,
+    "en_parliament": 1,
+    "participatie": 1,
+    "sessie": 1,
+    "televisie_radio": 1
+  },
+  "n_speeches": 14731,
+  "window_chars": 480,
+  "seconds": 17.7,
+  "note": "TK 1890-1899, MP + government speeches >= 80 chars, persona-excerpt sittings excluded, first 480 characters (the simulated floor-utterance length)"
+}

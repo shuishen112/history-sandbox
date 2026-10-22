@@ -1,0 +1,526 @@
+{
+  "model": "gpt-4o-mini",
+  "n_runs": 4,
+  "by_preset": {
+    "full": {
+      "member_end": 1.0,
+      "press_end": 1.0,
+      "floor_mention": 0.11707317073170732,
+      "journalist_share": 0.0,
+      "mean_procedural": 0.0,
+      "anachronism": 0.0,
+      "n_lines": 205.0,
+      "llm_calls": 800,
+      "llm_fail": 0
+    },
+    "ga": {
+      "member_end": 0.05,
+      "press_end": 0.0,
+      "floor_mention": 0.0011279737489745694,
+      "journalist_share": 0.043478260869565216,
+      "mean_procedural": 0.0,
+      "anachronism": 0.0,
+      "n_lines": 4876.0,
+      "llm_calls": 800,
+      "llm_fail": 0
+    }
+  },
+  "runs": [
+    {
+      "seed": 11,
+      "preset": "full",
+      "backend": "openai_compat",
+      "model": "gpt-4o-mini",
+      "llm_calls": 400,
+      "llm_cache": 4300,
+      "llm_fail": 0,
+      "utter_cap": 400,
+      "last_error": "",
+      "seed_agent": "a005",
+      "final_aware": {
+        "member": 1.0,
+        "government": 0.5,
+        "institutional": 0.5,
+        "press": 1.0,
+        "gallery": 0.0
+      },
+      "member_end": 1.0,
+      "press_end": 1.0,
+      "government_end": 0.5,
+      "floor_mention": 0.06341463414634146,
+      "embellishment": 0.045454545454545456,
+      "mean_procedural": 0.0,
+      "n_lines": 205,
+      "journalist_share": 0.0,
+      "anachronism": 0.0,
+      "n_refusals": 0,
+      "curve": [
+        {
+          "day": 0,
+          "aware": {
+            "member": 0.25,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 41
+        },
+        {
+          "day": 1,
+          "aware": {
+            "member": 0.35,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 82
+        },
+        {
+          "day": 2,
+          "aware": {
+            "member": 0.5,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 123
+        },
+        {
+          "day": 3,
+          "aware": {
+            "member": 0.6,
+            "government": 0.5,
+            "institutional": 0.5,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 164
+        },
+        {
+          "day": 4,
+          "aware": {
+            "member": 0.85,
+            "government": 0.5,
+            "institutional": 0.5,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        },
+        {
+          "day": 5,
+          "aware": {
+            "member": 0.9,
+            "government": 0.5,
+            "institutional": 0.5,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        },
+        {
+          "day": 6,
+          "aware": {
+            "member": 1.0,
+            "government": 0.5,
+            "institutional": 0.5,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        },
+        {
+          "day": 7,
+          "aware": {
+            "member": 1.0,
+            "government": 0.5,
+            "institutional": 0.5,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        }
+      ],
+      "interviews": {
+        "n": 0,
+        "mean_procedural": 0.0,
+        "rows": []
+      }
+    },
+    {
+      "seed": 11,
+      "preset": "ga",
+      "backend": "openai_compat",
+      "model": "gpt-4o-mini",
+      "llm_calls": 400,
+      "llm_cache": 95,
+      "llm_fail": 0,
+      "utter_cap": 400,
+      "last_error": "",
+      "seed_agent": "a005",
+      "final_aware": {
+        "member": 0.05,
+        "government": 0.0,
+        "institutional": 0.0,
+        "press": 0.0,
+        "gallery": 0.0
+      },
+      "member_end": 0.05,
+      "press_end": 0.0,
+      "government_end": 0.0,
+      "floor_mention": 0.0008203445447087777,
+      "embellishment": 0.0,
+      "mean_procedural": 0.0,
+      "n_lines": 4876,
+      "journalist_share": 0.043478260869565216,
+      "anachronism": 0.0,
+      "n_refusals": 0,
+      "curve": [
+        {
+          "day": 0,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 966
+        },
+        {
+          "day": 1,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 1932
+        },
+        {
+          "day": 2,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 2898
+        },
+        {
+          "day": 3,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 3864
+        },
+        {
+          "day": 4,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 4830
+        },
+        {
+          "day": 5,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 4853
+        },
+        {
+          "day": 6,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 4876
+        },
+        {
+          "day": 7,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 4876
+        }
+      ],
+      "interviews": {
+        "n": 0,
+        "mean_procedural": 0.0,
+        "rows": []
+      }
+    },
+    {
+      "seed": 19,
+      "preset": "full",
+      "backend": "openai_compat",
+      "model": "gpt-4o-mini",
+      "llm_calls": 400,
+      "llm_cache": 6845,
+      "llm_fail": 0,
+      "utter_cap": 400,
+      "last_error": "",
+      "seed_agent": "a005",
+      "final_aware": {
+        "member": 1.0,
+        "government": 1.0,
+        "institutional": 0.5,
+        "press": 1.0,
+        "gallery": 0.0
+      },
+      "member_end": 1.0,
+      "press_end": 1.0,
+      "government_end": 1.0,
+      "floor_mention": 0.17073170731707318,
+      "embellishment": 0.21739130434782608,
+      "mean_procedural": 0.0,
+      "n_lines": 205,
+      "journalist_share": 0.0,
+      "anachronism": 0.0,
+      "n_refusals": 0,
+      "curve": [
+        {
+          "day": 0,
+          "aware": {
+            "member": 0.15,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 41
+        },
+        {
+          "day": 1,
+          "aware": {
+            "member": 0.3,
+            "government": 0.5,
+            "institutional": 0.0,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 82
+        },
+        {
+          "day": 2,
+          "aware": {
+            "member": 0.6,
+            "government": 1.0,
+            "institutional": 0.0,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 123
+        },
+        {
+          "day": 3,
+          "aware": {
+            "member": 0.75,
+            "government": 1.0,
+            "institutional": 0.0,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 164
+        },
+        {
+          "day": 4,
+          "aware": {
+            "member": 0.85,
+            "government": 1.0,
+            "institutional": 0.0,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        },
+        {
+          "day": 5,
+          "aware": {
+            "member": 1.0,
+            "government": 1.0,
+            "institutional": 0.0,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        },
+        {
+          "day": 6,
+          "aware": {
+            "member": 1.0,
+            "government": 1.0,
+            "institutional": 0.5,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        },
+        {
+          "day": 7,
+          "aware": {
+            "member": 1.0,
+            "government": 1.0,
+            "institutional": 0.5,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        }
+      ],
+      "interviews": {
+        "n": 0,
+        "mean_procedural": 0.0,
+        "rows": []
+      }
+    },
+    {
+      "seed": 19,
+      "preset": "ga",
+      "backend": "openai_compat",
+      "model": "gpt-4o-mini",
+      "llm_calls": 400,
+      "llm_cache": 499,
+      "llm_fail": 0,
+      "utter_cap": 400,
+      "last_error": "",
+      "seed_agent": "a005",
+      "final_aware": {
+        "member": 0.05,
+        "government": 0.0,
+        "institutional": 0.0,
+        "press": 0.0,
+        "gallery": 0.0
+      },
+      "member_end": 0.05,
+      "press_end": 0.0,
+      "government_end": 0.0,
+      "floor_mention": 0.001435602953240361,
+      "embellishment": 0.0,
+      "mean_procedural": 0.0,
+      "n_lines": 4876,
+      "journalist_share": 0.043478260869565216,
+      "anachronism": 0.0,
+      "n_refusals": 0,
+      "curve": [
+        {
+          "day": 0,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 966
+        },
+        {
+          "day": 1,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 1932
+        },
+        {
+          "day": 2,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 2898
+        },
+        {
+          "day": 3,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 3864
+        },
+        {
+          "day": 4,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 4830
+        },
+        {
+          "day": 5,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 4853
+        },
+        {
+          "day": 6,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 4876
+        },
+        {
+          "day": 7,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 4876
+        }
+      ],
+      "interviews": {
+        "n": 0,
+        "mean_procedural": 0.0,
+        "rows": []
+      }
+    }
+  ]
+}

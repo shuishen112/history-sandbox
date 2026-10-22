@@ -1,0 +1,195 @@
+{
+  "holdout": {
+    "n_sittings": 731,
+    "n_speeches": 20166,
+    "roles": {
+      "chair": 3654,
+      "mp": 12808,
+      "government": 3704
+    },
+    "role_mix": {
+      "mp": 0.6351284339978182,
+      "government": 0.18367549340474065,
+      "chair": 0.18119607259744125,
+      "journalist": 0.0,
+      "other": 0.0
+    },
+    "year_min": 1890,
+    "year_max": 1899
+  },
+  "calib": {
+    "n_sittings": 2821,
+    "n_speeches": 72112,
+    "roles": {
+      "mp": 46756,
+      "chair": 11286,
+      "government": 14070
+    },
+    "role_mix": {
+      "mp": 0.6483802973152873,
+      "government": 0.1951131573108498,
+      "chair": 0.15650654537386288,
+      "journalist": 0.0,
+      "other": 0.0
+    },
+    "year_min": 1860,
+    "year_max": 1889
+  },
+  "s1": {
+    "full": {
+      "member_end": 0.9800000000000001,
+      "press_end": 1.0,
+      "government_end": 0.7,
+      "floor_mention": 0.04,
+      "embellishment": 0.15089026915113873,
+      "mean_procedural": 1.0,
+      "anachronism": 0.0,
+      "refusals": 22.0,
+      "n_lines": 205.0
+    },
+    "ga": {
+      "member_end": 0.05,
+      "press_end": 0.0,
+      "government_end": 0.0,
+      "floor_mention": 0.0,
+      "embellishment": 0.0,
+      "mean_procedural": 1.0,
+      "anachronism": 0.0,
+      "refusals": 0.0,
+      "n_lines": 4876.0
+    },
+    "no_affordance": {
+      "member_end": 0.9800000000000001,
+      "press_end": 1.0,
+      "government_end": 0.7,
+      "floor_mention": 0.03954060705496308,
+      "embellishment": 0.15089026915113873,
+      "mean_procedural": 1.0,
+      "anachronism": 0.0,
+      "refusals": 0.0,
+      "n_lines": 4876.0
+    },
+    "no_automaton": {
+      "member_end": 0.9800000000000001,
+      "press_end": 1.0,
+      "government_end": 0.7,
+      "floor_mention": 0.04,
+      "embellishment": 0.15089026915113873,
+      "mean_procedural": 1.0,
+      "anachronism": 0.0,
+      "refusals": 22.0,
+      "n_lines": 205.0
+    },
+    "no_rumour": {
+      "member_end": 0.05,
+      "press_end": 0.0,
+      "government_end": 0.0,
+      "floor_mention": 0.0,
+      "embellishment": 0.0,
+      "mean_procedural": 1.0,
+      "anachronism": 0.0,
+      "refusals": 22.0,
+      "n_lines": 205.0
+    }
+  },
+  "fidelity": {
+    "full": {
+      "role_jsd": 0.11710981690922684,
+      "length_w1": 14.89365,
+      "journalist_share": 0.0
+    },
+    "ga": {
+      "role_jsd": 0.13831185587346717,
+      "length_w1": 14.903799999999999,
+      "journalist_share": 0.043478260869565216
+    },
+    "no_affordance": {
+      "role_jsd": 0.13831185587346717,
+      "length_w1": 14.899149999999997,
+      "journalist_share": 0.043478260869565216
+    },
+    "no_automaton": {
+      "role_jsd": 0.11710981690922684,
+      "length_w1": 14.89365,
+      "journalist_share": 0.0
+    },
+    "no_rumour": {
+      "role_jsd": 0.11710981690922684,
+      "length_w1": 14.8983,
+      "journalist_share": 0.0
+    },
+    "naive": {
+      "role_jsd": 0.12933676652587658,
+      "length_w1": 15.0178,
+      "journalist_share": 0.022281370259332415
+    },
+    "rule_abm": {
+      "role_jsd": 0.0008255499503586616,
+      "length_w1": 2.09675,
+      "journalist_share": 0.0,
+      "n_speeches": 72112
+    }
+  },
+  "interventions": [
+    {
+      "chair_strictness": 0.25,
+      "distort": 0.05,
+      "floor_mention": 0.13658536585365852,
+      "member_end": 0.9833333333333334
+    },
+    {
+      "chair_strictness": 0.25,
+      "distort": 0.18,
+      "floor_mention": 0.14471544715447154,
+      "member_end": 1.0
+    },
+    {
+      "chair_strictness": 0.5,
+      "distort": 0.05,
+      "floor_mention": 0.04227642276422764,
+      "member_end": 0.9833333333333334
+    },
+    {
+      "chair_strictness": 0.5,
+      "distort": 0.18,
+      "floor_mention": 0.05040650406504065,
+      "member_end": 1.0
+    },
+    {
+      "chair_strictness": 1.0,
+      "distort": 0.05,
+      "floor_mention": 0.02926829268292683,
+      "member_end": 0.9833333333333334
+    },
+    {
+      "chair_strictness": 1.0,
+      "distort": 0.18,
+      "floor_mention": 0.03414634146341464,
+      "member_end": 1.0
+    },
+    {
+      "chair_strictness": 2.0,
+      "distort": 0.05,
+      "floor_mention": 0.0,
+      "member_end": 0.9833333333333334
+    },
+    {
+      "chair_strictness": 2.0,
+      "distort": 0.18,
+      "floor_mention": 0.0,
+      "member_end": 1.0
+    },
+    {
+      "chair_strictness": 4.0,
+      "distort": 0.05,
+      "floor_mention": 0.0,
+      "member_end": 0.9833333333333334
+    },
+    {
+      "chair_strictness": 4.0,
+      "distort": 0.18,
+      "floor_mention": 0.0,
+      "member_end": 1.0
+    }
+  ]
+}

@@ -1,0 +1,566 @@
+{
+  "n_runs": 5,
+  "member_d1": 0.05,
+  "member_end": 0.05,
+  "government_d1": 0.0,
+  "government_end": 0.0,
+  "press_d1": 0.0,
+  "press_end": 0.0,
+  "institutional_d1": 0.0,
+  "institutional_end": 0.0,
+  "mean_embellishment": 0.0,
+  "mean_floor_mention": 0.0,
+  "mean_procedural": 1.0,
+  "runs": [
+    {
+      "seed": 7,
+      "preset": "ga",
+      "n": 25,
+      "days": 7,
+      "seed_agent": "a005",
+      "curve": [
+        {
+          "day": 0,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 41
+        },
+        {
+          "day": 1,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 82
+        },
+        {
+          "day": 2,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 123
+        },
+        {
+          "day": 3,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 164
+        },
+        {
+          "day": 4,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        },
+        {
+          "day": 5,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        },
+        {
+          "day": 6,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        },
+        {
+          "day": 7,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        }
+      ],
+      "final_aware": {
+        "member": 0.05,
+        "government": 0.0,
+        "institutional": 0.0,
+        "press": 0.0,
+        "gallery": 0.0
+      },
+      "embellishment": 0.0,
+      "floor_mention_rate": 0.0,
+      "n_handelingen_lines": 205,
+      "n_corridor_talks": 276,
+      "mean_procedural": 1.0,
+      "n_refusals": 0
+    },
+    {
+      "seed": 11,
+      "preset": "ga",
+      "n": 25,
+      "days": 7,
+      "seed_agent": "a005",
+      "curve": [
+        {
+          "day": 0,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 41
+        },
+        {
+          "day": 1,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 82
+        },
+        {
+          "day": 2,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 123
+        },
+        {
+          "day": 3,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 164
+        },
+        {
+          "day": 4,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        },
+        {
+          "day": 5,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        },
+        {
+          "day": 6,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        },
+        {
+          "day": 7,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        }
+      ],
+      "final_aware": {
+        "member": 0.05,
+        "government": 0.0,
+        "institutional": 0.0,
+        "press": 0.0,
+        "gallery": 0.0
+      },
+      "embellishment": 0.0,
+      "floor_mention_rate": 0.0,
+      "n_handelingen_lines": 205,
+      "n_corridor_talks": 220,
+      "mean_procedural": 1.0,
+      "n_refusals": 0
+    },
+    {
+      "seed": 19,
+      "preset": "ga",
+      "n": 25,
+      "days": 7,
+      "seed_agent": "a005",
+      "curve": [
+        {
+          "day": 0,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 41
+        },
+        {
+          "day": 1,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 82
+        },
+        {
+          "day": 2,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 123
+        },
+        {
+          "day": 3,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 164
+        },
+        {
+          "day": 4,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        },
+        {
+          "day": 5,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        },
+        {
+          "day": 6,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        },
+        {
+          "day": 7,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        }
+      ],
+      "final_aware": {
+        "member": 0.05,
+        "government": 0.0,
+        "institutional": 0.0,
+        "press": 0.0,
+        "gallery": 0.0
+      },
+      "embellishment": 0.0,
+      "floor_mention_rate": 0.0,
+      "n_handelingen_lines": 205,
+      "n_corridor_talks": 258,
+      "mean_procedural": 1.0,
+      "n_refusals": 0
+    },
+    {
+      "seed": 29,
+      "preset": "ga",
+      "n": 25,
+      "days": 7,
+      "seed_agent": "a005",
+      "curve": [
+        {
+          "day": 0,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 41
+        },
+        {
+          "day": 1,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 82
+        },
+        {
+          "day": 2,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 123
+        },
+        {
+          "day": 3,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 164
+        },
+        {
+          "day": 4,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        },
+        {
+          "day": 5,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        },
+        {
+          "day": 6,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        },
+        {
+          "day": 7,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        }
+      ],
+      "final_aware": {
+        "member": 0.05,
+        "government": 0.0,
+        "institutional": 0.0,
+        "press": 0.0,
+        "gallery": 0.0
+      },
+      "embellishment": 0.0,
+      "floor_mention_rate": 0.0,
+      "n_handelingen_lines": 205,
+      "n_corridor_talks": 238,
+      "mean_procedural": 1.0,
+      "n_refusals": 0
+    },
+    {
+      "seed": 31,
+      "preset": "ga",
+      "n": 25,
+      "days": 7,
+      "seed_agent": "a005",
+      "curve": [
+        {
+          "day": 0,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 41
+        },
+        {
+          "day": 1,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 82
+        },
+        {
+          "day": 2,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 123
+        },
+        {
+          "day": 3,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 164
+        },
+        {
+          "day": 4,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        },
+        {
+          "day": 5,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        },
+        {
+          "day": 6,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        },
+        {
+          "day": 7,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        }
+      ],
+      "final_aware": {
+        "member": 0.05,
+        "government": 0.0,
+        "institutional": 0.0,
+        "press": 0.0,
+        "gallery": 0.0
+      },
+      "embellishment": 0.0,
+      "floor_mention_rate": 0.0,
+      "n_handelingen_lines": 205,
+      "n_corridor_talks": 232,
+      "mean_procedural": 1.0,
+      "n_refusals": 0
+    }
+  ]
+}

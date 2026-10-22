@@ -1,0 +1,2177 @@
+{
+  "model": "gpt-4o-mini",
+  "n_runs": 6,
+  "seeds": [
+    7,
+    11,
+    19
+  ],
+  "by_preset": {
+    "full": {
+      "member_end": 1.0,
+      "press_end": 1.0,
+      "floor_mention": 0.09756097560975611,
+      "journalist_share": 0.0,
+      "n_lines": 205.0,
+      "embellishment": 0.20355731225296445,
+      "anachronism": 0.0,
+      "n_refusals": 7.333333333333333,
+      "llm_calls": 400.0,
+      "llm_fail": 0.0,
+      "n": 3,
+      "seeds": [
+        7,
+        11,
+        19
+      ],
+      "per_seed": [
+        {
+          "seed": 7,
+          "member_end": 1.0,
+          "press_end": 1.0,
+          "floor_mention": 0.05853658536585366,
+          "journalist_share": 0.0,
+          "n_lines": 205,
+          "embellishment": 0.34782608695652173,
+          "anachronism": 0.0,
+          "n_refusals": 22,
+          "llm_calls": 400,
+          "llm_fail": 0
+        },
+        {
+          "seed": 11,
+          "member_end": 1.0,
+          "press_end": 1.0,
+          "floor_mention": 0.06341463414634146,
+          "journalist_share": 0.0,
+          "n_lines": 205,
+          "embellishment": 0.045454545454545456,
+          "anachronism": 0.0,
+          "n_refusals": 0,
+          "llm_calls": 400,
+          "llm_fail": 0
+        },
+        {
+          "seed": 19,
+          "member_end": 1.0,
+          "press_end": 1.0,
+          "floor_mention": 0.17073170731707318,
+          "journalist_share": 0.0,
+          "n_lines": 205,
+          "embellishment": 0.21739130434782608,
+          "anachronism": 0.0,
+          "n_refusals": 0,
+          "llm_calls": 400,
+          "llm_fail": 0
+        }
+      ]
+    },
+    "ga": {
+      "member_end": 0.05000000000000001,
+      "press_end": 0.0,
+      "floor_mention": 0.0010937927262783702,
+      "journalist_share": 0.043478260869565216,
+      "n_lines": 4876.0,
+      "embellishment": 0.0,
+      "anachronism": 0.0,
+      "n_refusals": 0.0,
+      "llm_calls": 450.0,
+      "llm_fail": 0.0,
+      "n": 3,
+      "seeds": [
+        7,
+        11,
+        19
+      ],
+      "per_seed": [
+        {
+          "seed": 7,
+          "member_end": 0.05,
+          "press_end": 0.0,
+          "floor_mention": 0.001025430680885972,
+          "journalist_share": 0.043478260869565216,
+          "n_lines": 4876,
+          "embellishment": 0.0,
+          "anachronism": 0.0,
+          "n_refusals": 0,
+          "llm_calls": 550,
+          "llm_fail": 0
+        },
+        {
+          "seed": 11,
+          "member_end": 0.05,
+          "press_end": 0.0,
+          "floor_mention": 0.0008203445447087777,
+          "journalist_share": 0.043478260869565216,
+          "n_lines": 4876,
+          "embellishment": 0.0,
+          "anachronism": 0.0,
+          "n_refusals": 0,
+          "llm_calls": 400,
+          "llm_fail": 0
+        },
+        {
+          "seed": 19,
+          "member_end": 0.05,
+          "press_end": 0.0,
+          "floor_mention": 0.001435602953240361,
+          "journalist_share": 0.043478260869565216,
+          "n_lines": 4876,
+          "embellishment": 0.0,
+          "anachronism": 0.0,
+          "n_refusals": 0,
+          "llm_calls": 400,
+          "llm_fail": 0
+        }
+      ]
+    }
+  },
+  "runs": [
+    {
+      "seed": 7,
+      "preset": "full",
+      "backend": "openai_compat",
+      "model": "gpt-4o-mini",
+      "llm_calls": 400,
+      "llm_cache": 7017,
+      "llm_fail": 0,
+      "utter_cap": 400,
+      "last_error": "",
+      "seed_agent": "a005",
+      "final_aware": {
+        "member": 1.0,
+        "government": 0.5,
+        "institutional": 1.0,
+        "press": 1.0,
+        "gallery": 0.0
+      },
+      "member_end": 1.0,
+      "press_end": 1.0,
+      "government_end": 0.5,
+      "floor_mention": 0.05853658536585366,
+      "embellishment": 0.34782608695652173,
+      "mean_procedural": 1.0,
+      "n_lines": 205,
+      "journalist_share": 0.0,
+      "anachronism": 0.0,
+      "n_refusals": 22,
+      "curve": [
+        {
+          "day": 0,
+          "aware": {
+            "member": 0.15,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 41
+        },
+        {
+          "day": 1,
+          "aware": {
+            "member": 0.25,
+            "government": 0.0,
+            "institutional": 1.0,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 82
+        },
+        {
+          "day": 2,
+          "aware": {
+            "member": 0.6,
+            "government": 0.0,
+            "institutional": 1.0,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 123
+        },
+        {
+          "day": 3,
+          "aware": {
+            "member": 0.85,
+            "government": 0.0,
+            "institutional": 1.0,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 164
+        },
+        {
+          "day": 4,
+          "aware": {
+            "member": 0.95,
+            "government": 0.0,
+            "institutional": 1.0,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        },
+        {
+          "day": 5,
+          "aware": {
+            "member": 1.0,
+            "government": 0.0,
+            "institutional": 1.0,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        },
+        {
+          "day": 6,
+          "aware": {
+            "member": 1.0,
+            "government": 0.5,
+            "institutional": 1.0,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        },
+        {
+          "day": 7,
+          "aware": {
+            "member": 1.0,
+            "government": 0.5,
+            "institutional": 1.0,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        }
+      ],
+      "interviews": {
+        "n": 25,
+        "mean_procedural": 1.0,
+        "rows": [
+          {
+            "id": "a000",
+            "name": "Gleichman",
+            "status": "Chair",
+            "answers": {
+              "self-knowledge": [
+                "Ik ben Voorzitter Gleichman, de voorzitter van de Staten-Generaal. Het is mijn plicht om de orde te bewaren en de debatten te leiden wanneer de Kamer samenkomt. Momenteel bevinden wij ons in de wandelgang, waar de zitting niet in sessie is."
+              ],
+              "memory": [
+                "Geachte leden, ik heb in de wandelgang vernomen dat er onder de Kamerleden enige bezorgdheid heerst over de recente ontwikkelingen in de landbouwpolitiek. De ministers van Houten en Sprenger van Eyk hebben hun standpunten gedeeld, maar het lijkt er op dat een breed debat noodzakelijk is om tot een gezamenlijk standpunt te komen. Laten wij ons voorbereiden op een constructieve zitting wanneer de gelegenheid zich voordoet."
+              ],
+              "plans": [
+                "Geachte aanwezigen, morgen zal ik tijdens de vergadering de aandacht vestigen op de dringende kwestie van de sociale hervormingen. Het is van essentieel belang dat wij de stem van het volk horen en adequaat reageren op hun behoeften. Ik roep ieder van u op om constructief bij te dragen aan deze discussie."
+              ],
+              "reactions": [
+                "Mijne heren, ik verzoek de Voorzitter om mijn woorden te erkennen. Hoewel de zitting momenteel niet in sessie is, acht ik het van belang om een gedachte te delen met betrekking tot de lopende zaken. Ik hoop op uw begrip en erkenning in deze informele setting."
+              ],
+              "reflections": [
+                "Geachte leden, ik heb de laatste dagen intensief nagedacht over de noodzaak van hervormingen binnen onze sociale wetgeving. De uitdagingen waarmee onze maatschappij geconfronteerd wordt, vereisen een doordachte aanpak en samenwerking tussen de verschillende partijen hier in de Staten-Generaal. Het is van groot belang dat wij ons inzetten voor een rechtvaardige en vooruitstrevende toekomst voor ons volk."
+              ],
+              "institutional_awareness": [
+                "Als Voorzitter van de Staten-Generaal moet ik u erop wijzen dat volgens de geldende regels alleen erkende leden of ministers het woord mogen voeren op de vloer. Journalisten hebben geen recht op het woord in deze setting, en ook leden zonder erkenning van de Voorzitter kunnen zich niet uitlaten. Het is van groot belang dat we de procedure respecteren, zelfs in onze gesprekken in de wandelgangen."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a001",
+            "name": "Griffier",
+            "status": "Clerk",
+            "answers": {
+              "self-knowledge": [
+                "Mijnheer de Voorzitter, ik ben de griffier der Staten-Generaal, belast met het administratieve en organisatorische werk binnen deze eerbiedwaardige instelling. Mijn taak is het waarborgen van de juiste gang van zaken, zelfs wanneer de zitting niet in sessie is."
+              ],
+              "memory": [
+                "Mijnheer de Voorzitter, ik verneem in de wandelgang dat de ministers van Houten en Sprenger van Eyk zich voorbereiden op een belangrijke bespreking betreffende de begroting. Er heerst een zekere bezorgdheid onder de Kamerleden over de financiële implicaties. De sfeer is gespannen, maar de bereidheid tot constructieve dialoog lijkt aanwezig."
+              ],
+              "plans": [
+                "Als griffier ben ik niet bevoegd om het woord te voeren tijdens de vergadering. Mijn taak is om de vergaderingen te documenteren en de orde te waarborgen. Morgen zal ik aanwezig zijn om de notulen op te stellen en de leden te ondersteunen waar nodig."
+              ],
+              "reactions": [
+                "Als griffier in deze wandelgang, erken ik de noodzaak van de orde. Aangezien ik niet als lid of minister ben erkend, zal ik mij onthouden van het woord. Mijn rol is het vastleggen van de handelingen en het faciliteren van de communicatie, niet het deelnemen aan het debat zonder de erkenning van de Voorzitter."
+              ],
+              "reflections": [
+                "Mijnheer de Voorzitter, als griffier heb ik de afgelopen dagen nagedacht over de efficiëntie van onze vergaderingen en de noodzaak om de administratieve processen te optimaliseren. Het is van groot belang dat de Staten-Generaal zijn taken met de grootste zorgvuldigheid en snelheid vervult, ten voordele van ons volk."
+              ],
+              "institutional_awareness": [
+                "Geachte Voorzitter, het is mijn plicht te wijzen op de geldende regels der Staten-Generaal. Enkel een erkend lid of minister heeft het recht om het woord te voeren tijdens de zitting. Een journalist kan deze rol niet vervullen, en corridorgesprekken worden niet als officiële Handelingen beschouwd."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a002",
+            "name": "Verslaggever van de Courant",
+            "status": "Journalist",
+            "answers": {
+              "self-knowledge": [
+                "Mijnheer de Voorzitter, ik ben verslaggever voor de Courant, en ik ben hier in het Binnenhof om verslag uit te brengen van de werkzaamheden in de Staten-Generaal. Hoewel de vergadering momenteel niet in zitting is, ben ik er vast van overtuigd dat de belangrijke discussies die hier plaatsvinden van groot belang zijn voor ons land."
+              ],
+              "memory": [
+                "Geachte Voorzitter, ik ben hier in de wandelgang van het Binnenhof en heb de afgelopen week verschillende gesprekken gehoord die wijzen op een groeiende bezorgdheid onder de Kamerleden over de financiële situatie van ons land. Er lijkt een zekere urgentie te zijn om de begroting grondig te herzien, vooral gezien de recente rapporten over de economische voorspoed. Het is duidelijk dat er een verlangen is naar transparantie en verantwoording in de komende sessies."
+              ],
+              "plans": [
+                "Mijnheer de Voorzitter, ik ben hier in de wandelgang van het Binnenhof getuige van de afwezigheid van het whip-note en de stille bedrijvigheid van de leden en ministers. Mijn vraag betreft de agenda voor de vergadering van morgen; ik ben benieuwd naar de onderwerpen die besproken zullen worden en hoe zij de belangen van ons land zullen dienen. Echter, ik ben mij terdege bewust van mijn positie als verslaggever en zal mij onthouden van het woord in deze setting."
+              ],
+              "reactions": [
+                "Edelachtbare Voorzitter, zijne excellentie, het is mijn plicht als verslaggever van de Courant om te informeren over de gang van zaken binnen deze edele vergadering. Hoewel ik geen formele spreker ben, tracht ik toch de vinger aan de pols te houden en de belangrijke zaken te documenteren. Ik respecteer de regels van het Huis en wacht geduldig op een geschikt moment om mijn bevindingen te delen."
+              ],
+              "reflections": [
+                "Mijnheer de Voorzitter, ik ben momenteel in de wandelgangen van het Binnenhof en observeer de afwezigheid van enige zitting. Gedurende de laatste dagen heb ik nagedacht over de actuele politieke kwesties die ons land aangaan, met bijzondere aandacht voor de invloed van de recente wetgeving op de sociale omstandigheden van onze burgers. Het is een tijd van grote veranderingen, en de discussies hier in de Staten-Generaal zijn van groot belang voor onze toekomst."
+              ],
+              "institutional_awareness": [
+                "Waarde Voorzitter, het is mijn plicht te constateren dat de standing orders van de Staten-Generaal bepalen dat enkel erkende leden of ministers het woord mogen voeren op de vloer. Dit betekent dat een journalist, zoals ik, geen recht heeft om deel te nemen aan het debat, zelfs niet in een informele setting zoals de wandelgangen. Het is derhalve niet mogelijk om zonder erkenning van Uwe Excellentie het woord te nemen."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a003",
+            "name": "van Houten",
+            "status": "Minister",
+            "answers": {
+              "self-knowledge": [
+                "Mijn naam is minister van Houten, en ik bekleed de functie van Minister in de Staten-Generaal. Het is mijn plicht om de belangen van ons land te dienen en bij te dragen aan de wetgeving in deze eerbiedwaardige Kamer."
+              ],
+              "memory": [
+                "Geachte Voorzitter, in de wandelgang heb ik deze week verschillende geluiden opgevangen betreffende de aanstaande begrotingsdiscussies. Er lijkt een groeiende bezorgdheid te zijn over de financiële situatie van de staat. Ook werd er gesproken over mogelijke amendementen die door enkele Kamerleden worden voorgesteld. Het is van groot belang dat wij deze kwesties zorgvuldig overwegen voordat wij ons standpunt bepalen."
+              ],
+              "plans": [
+                "Waarde Voorzitter, morgen zal ik tijdens de vergadering de voorstellen van de regering toelichten en de nodige argumenten presenteren ter ondersteuning van ons beleid. Tevens zal ik de kans aangrijpen om vragen van de leden te beantwoorden en eventuele zorgen te adresseren. Het is van groot belang dat wij in deze zitting gezamenlijk de koers van ons land bepalen."
+              ],
+              "reactions": [
+                "Mijnheer de Voorzitter, ik verzoek u beleefd om mijn stem te erkennen. Als Minister ben ik hier aanwezig om een belangrijke kwestie te bespreken en ik hoop dat u mijn verzoek in overweging wilt nemen. Het is van groot belang dat wij de huidige situatie met spoed kunnen adresseren."
+              ],
+              "reflections": [
+                "Geachte Voorzitter, in de afgelopen dagen heb ik mij intensief beziggehouden met de kwestie van de onderwijsreformen, welke essentieel zijn voor de vooruitgang van onze natie. Het belang van een goed opgeleid volk kan niet worden overschat, en ik ben vastbesloten om de mogelijkheden te verkennen die ons in staat stellen deze hervormingen te realiseren."
+              ],
+              "institutional_awareness": [
+                "Geachte Voorzitter, het is mij bekend dat volgens de standing orders enkel erkende leden of ministers het woord kunnen voeren op de vloer. Een journalist, zoals de heer Verslaggever van de Courant, heeft geen recht om te spreken zonder de erkenning van de Voorzitter. Deze regels zijn van groot belang voor de orde en het functioneren van onze vergadering."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a004",
+            "name": "Sprenger van Eyk",
+            "status": "Minister",
+            "answers": {
+              "self-knowledge": [
+                "Ik ben Sprenger van Eyk, minister in de Staten-Generaal. Mijn functie houdt in dat ik verantwoordelijk ben voor de uitvoering van het beleid en ik streef ernaar om de belangen van ons land te behartigen. Het is een eer om hier te zijn, ook al is de zitting momenteel niet in sessie."
+              ],
+              "memory": [
+                "Geachte Voorzitter, ik heb in de wandelgang vernomen dat er een groeiende bezorgdheid heerst over de economische situatie in ons land. Diverse Kamerleden hebben hun zorgen geuit over de werkgelegenheid en de benodigde hervormingen. Het lijkt me van groot belang dat wij hier spoedig over in gesprek gaan, teneinde een constructieve oplossing te vinden voor de uitdagingen die ons te wachten staan."
+              ],
+              "plans": [
+                "Geachte Voorzitter, morgen zal ik tijdens de vergadering enkele belangrijke punten ter sprake brengen die van invloed zijn op het welzijn van onze burgers. Het is mijn oprechte hoop dat wij samen tot constructieve oplossingen kunnen komen. Ik ben er van overtuigd dat onze gezamenlijke inspanningen zullen bijdragen aan de vooruitgang van ons land."
+              ],
+              "reactions": [
+                "Mijnheer de Voorzitter, ik verzoek u beleefd om mijn stem te erkennen. Als Minister ben ik hier om de belangen van ons land te behartigen en ik heb enkele belangrijke zaken te delen die onze aandacht vereisen. Ik hoop op uw welwillendheid om mij te laten spreken."
+              ],
+              "reflections": [
+                "Geachte Voorzitter, in de afgelopen dagen heb ik mij voornamelijk beziggehouden met de dringende vraagstukken betreffende de landbouw en de positie van onze boeren. Het welzijn van deze sector is van cruciaal belang voor onze nationale economie en vraagt om onze aandacht en zorgvuldige overweging. Ook de recente ontwikkelingen in de internationale handel hebben mijn gedachten in beslag genomen."
+              ],
+              "institutional_awareness": [
+                "Geachte Voorzitter, ik wens te wijzen op het feit dat volgens de staande orders enkel een erkend lid of minister het woord mag voeren op de vloer van de Kamer. Een journalist is hiertoe niet bevoegd, en corridorgesprekken dienen niet als officiële Handelingen. Het is van belang deze regels te respecteren om de orde te waarborgen."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a005",
+            "name": "Goeman Borgesius",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Geachte Voorzitter, ik ben de heer Goeman Borgesius, lid van de Tweede Kamer en vertegenwoordiger van de vooruitstrevende Kamerclub. Het is mij een eer om hier te zijn, zelfs in deze wandelgang, en ik ben bereid om bij te dragen aan de belangrijke discussies die ons te wachten staan."
+              ],
+              "memory": [
+                "Waarde Voorzitter, ik heb de afgelopen week in de wandelgangen vernomen dat er diverse discussies gaande zijn over de huidige sociale wetgeving. Er zijn zorgen geuit over de effectiviteit van de voorgestelde maatregelen en de noodzaak van een grondige herziening. Tevens sprak men over de noodzaak tot samenwerking tussen de partijen om vooruitgang te boeken."
+              ],
+              "plans": [
+                "Geachte voorzitter, morgen zal ik, als lid van de Vooruitstrevende Kamerclub, mijn standpunt naar voren brengen betreffende de belangrijke kwestie van onderwijsherziening. Het is van groot belang dat wij de kwaliteit van ons onderwijs waarborgen en toegankelijk maken voor alle burgers van ons land. Ik kijk ernaar uit om mijn gedachten hierover te delen met mijn mede-leden."
+              ],
+              "reactions": [
+                "Mijnheer de Voorzitter, ik verzoek u mij het woord te geven, aangezien ik, als lid van de Tweede Kamer, een belangrijk punt ter sprake wil brengen dat van groot belang is voor onze natie. Het is van essentieel belang dat wij, als vertegenwoordigers van het volk, onze gedachten en zorgen kunnen uiten, zelfs in deze wandelgangen."
+              ],
+              "reflections": [
+                "Waarde Voorzitter, ik heb de laatste dagen nagedacht over de dringende noodzaak van hervormingen binnen ons onderwijsstelsel. Het is van essentieel belang dat wij de kwaliteit en toegankelijkheid van onderwijs verbeteren, zodat alle burgers in ons land de kans krijgen zich te ontwikkelen. Tevens heb ik het belang van een goede samenwerking met de lokale overheden overwogen, om zo onze initiatieven te versterken."
+              ],
+              "institutional_awareness": [
+                "Mijnheer de Voorzitter, ik stel de vraag of een journalist het woord mag voeren op de vloer, en of een Kamerlid dit kan doen zonder erkenning van uw zijde. Volgens de staande orders is het enkel erkende leden of ministers toegestaan om het woord te voeren; een journalist is uitgesloten, en gesprekken in de gang zijn niet opgenomen in de Handelingen."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a006",
+            "name": "Pijnappel",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Mijn naam is de heer Pijnappel, en ik ben lid van de Tweede Kamer der Staten-Generaal, waar ik de fractie van de conservatiefliberalen vertegenwoordig. In deze wandelgang ben ik momenteel in afwachting van de volgende zitting."
+              ],
+              "memory": [
+                "Geachte voorzitter, ik heb deze week in de wandelgang vernomen dat er enige bezorgdheid heerst omtrent de recente voorstellen betreffende de belastingwetgeving. Diverse collega's, waaronder de heer Goeman Borgesius, hebben hun twijfels geuit over de haalbaarheid en de rechtvaardigheid van de plannen. Het lijkt mij van groot belang dat wij deze zorgen serieus nemen en in overweging brengen alvorens verder te delibereren."
+              ],
+              "plans": [
+                "Mijnheer de Voorzitter, morgen tijdens de vergadering zal ik de gelegenheid aangrijpen om te pleiten voor een versterking van onze onderwijswetgeving, omdat ik van overtuigd ben dat een goede basis voor ons onderwijs de toekomst van ons land zal waarborgen. Tevens zal ik enkele belangrijke amendementen voorstellen die naar mijn mening de effectiviteit van ons beleid aanzienlijk kunnen verbeteren."
+              ],
+              "reactions": [
+                "Geachte Voorzitter, ik verzoek u beleefd om mijn aanwezigheid te erkennen. Als lid van de Tweede Kamer ben ik hier om mijn standpunten te delen, ook al is de zitting momenteel niet in sessie. Ik hoop op uw welwillendheid om mij het woord te verlenen."
+              ],
+              "reflections": [
+                "Mijnheer de Voorzitter, ik heb de laatste dagen intensief nagedacht over de vraagstukken die ons land momenteel bezighouden, met name de economische vooruitzichten en de noodzaak tot hervormingen in ons onderwijssysteem. Het is van groot belang dat wij als leden van de Staten-Generaal ons inzetten voor een solide beleid dat de toekomst van onze natie veiligstelt."
+              ],
+              "institutional_awareness": [
+                "Mijne heren, ik wil het volgende ter overweging brengen: het is volgens de standing orders niet toegestaan dat een journalist het woord voert op de vloer, noch kan een lid zonder erkenning van de Voorzitter spreken. Laten wij ons houden aan de regels die ons zijn gegeven om de orde en decorum van deze vergadering te waarborgen."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a007",
+            "name": "de Savornin Lohman",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Ik ben de heer de Savornin Lohman, lid van de Tweede Kamer der Staten-Generaal, vertegenwoordiger van de Vrijheidsbond. Het is mijn plicht om de belangen van het volk te behartigen en een bijdrage te leveren aan de wetgevende taken van deze eerbiedwaardige assemblee."
+              ],
+              "memory": [
+                "Mijnheer de Voorzitter, in de wandelgangen heb ik vernomen dat er een groeiende bezorgdheid heerst over de recente ontwikkelingen in ons koloniale beleid. De meningen zijn verdeeld, en ik vrees dat dit van invloed kan zijn op de komende debatten. Tevens werd er gesproken over de noodzaak tot hervormingen binnen ons onderwijsstelsel, een onderwerp dat ik zeer ter harte neem."
+              ],
+              "plans": [
+                "Waarde voorzitter, ik ben voornemens om morgen tijdens de vergadering een aantal belangrijke punten ter sprake te brengen betreffende de huidige sociale wetgeving. Het is van essentieel belang dat wij als Staten-Generaal de belangen van onze burgers behartigen en de noodzakelijke hervormingen initiëren. Ik hoop op een constructieve discussie met mijn gewaardeerde collega’s."
+              ],
+              "reactions": [
+                "Mijne heren, ik verzoek u beleefd om mijn woorden te horen. Het is van groot belang dat de stem van de vrijheidslievende partij gehoord wordt, zelfs in deze wandelgangen van het Binnenhof. Ik ben er van overtuigd dat onze discussie bijdraagt aan de voortgang van ons beleid."
+              ],
+              "reflections": [
+                "Waarde voorzitter, in de afgelopen dagen heb ik veel nagedacht over de noodzakelijke hervormingen in ons onderwijsstelsel. Het is van groot belang dat wij, als vertegenwoordigers van het volk, ons inzetten voor een toekomst waarin elke burger toegang heeft tot kwalitatief hoogstaand onderwijs. Ik ben van mening dat er een dringende behoefte is aan een herziening van onze onderwijsmethoden en -structuren."
+              ],
+              "institutional_awareness": [
+                "Mijne heren, ik wend mij tot u met de vraag of het inderdaad is toegestaan dat een journalist het woord voert op de vloer van deze vergadering. Daarnaast vraag ik mij af of een lid van de Kamer, zonder erkenning van de Voorzitter, zich kan uitlaten. Het is immers van groot belang dat wij de regels der orde respecteren, zoals vastgelegd in onze standing orders."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a008",
+            "name": "Kuyper",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Mijnheer de Voorzitter, ik ben de heer Kuyper, lid van de Tweede Kamer, en ik vertegenwoordig de Anti-Revolutionaire Partij. Het is een eer om hier aanwezig te zijn, zelfs in deze wandelgang, waar wij, hoewel de zitting niet in gang is, toch belangrijke gesprekken kunnen voeren over de zaken van ons land."
+              ],
+              "memory": [
+                "Waarde Voorzitter, het is met een gevoel van verantwoordelijkheidsbesef dat ik hier in de wandelgang vertoef. Deze week heb ik vernomen dat er onder de leden van de Kamer een levendige discussie gaande is over de aanstaande wetgeving betreffende onderwijsvernieuwing. De zorgen over de financiering en uitvoering van deze hervormingen zijn duidelijk aanwezig. Ik vertrouw erop dat wij spoedig tot een constructieve oplossing zullen komen."
+              ],
+              "plans": [
+                "Geachte Voorzitter, ik zal morgen tijdens de vergadering pleiten voor de noodzaak van hervormingen binnen ons onderwijssysteem, waarbij ik de nadruk zal leggen op de verbetering van de onderwijskwaliteit en gelijke toegang voor alle kinderen. Het is van essentieel belang dat wij als volksvertegenwoordigers onze verantwoordelijkheid nemen om de toekomst van ons land te waarborgen."
+              ],
+              "reactions": [
+                "Mijne heren, het is met de grootste eer dat ik, als vertegenwoordiger van het volk, het woord wens te voeren. Ik verzoek u, edele Voorzitter, om mijn stem te laten horen, aangezien de zaken van groot belang zijn voor ons land. In afwachting van uw erkenning, blijf ik hopen op een kans om mijn standpunten en bezorgdheden te delen."
+              ],
+              "reflections": [
+                "Geachte Voorzitter, in de afgelopen dagen heb ik intensief nagedacht over de noodzaak van hervormingen binnen ons onderwijsstelsel. Het is van groot belang dat wij ons richten op de kwaliteit en toegankelijkheid van onderwijs voor alle lagen van de bevolking. Ik ben van mening dat wij als Staten-Generaal hierin een cruciale rol dienen te spelen."
+              ],
+              "institutional_awareness": [
+                "Mijnheer de Voorzitter, ik wens te benadrukken dat volgens de orde van de Staten-Generaal enkel erkende leden of ministers het woord mogen voeren op de vloer. Een journalist, zoals de heer Verslaggever van de Courant, kan derhalve geen verklaring afleggen, noch kan een lid zonder erkenning van uw zijde zich uitlaten. Dit is een kwestie van procedurele nauwkeurigheid, die wij te allen tijde moeten respecteren."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a009",
+            "name": "de Beaufort",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Mijnheer de Voorzitter, ik ben de heer de Beaufort, een ongebonden Kamerlid in de Staten-Generaal. Het is mij een eer om hier te zijn, ook al is de zitting momenteel niet in sessie."
+              ],
+              "memory": [
+                "Geachte Voorzitter, ik heb in de wandelgang vernomen dat er zorgen leven over het beleid inzake onderwijs en de bijbehorende financiering. De minister heeft, naar het schijnt, enkele voorstellen voorbereid die mogelijk voor discussie zullen zorgen in de komende zitting. Tevens hebben diverse collega's hun bezorgdheid geuit over de recente ontwikkelingen in de sociale wetgeving."
+              ],
+              "plans": [
+                "Mijnheer de Voorzitter, ik ben voornemens om morgen tijdens de vergadering mijn standpunt te presenteren over de lopende kwesties die ons ter sprake zijn gekomen. Het is van groot belang dat wij als vertegenwoordigers van het volk onze verantwoordelijkheden serieus nemen en de juiste beslissingen nemen in het belang van ons land. Ik kijk uit naar een vruchtbare discussie met mijn collega’s."
+              ],
+              "reactions": [
+                "De heer de Beaufort treedt naar voren en richt zich tot de Voorzitter met een formele buiging. \"Waarde Voorzitter, ik verzoek u beleefd om mij het woord te verlenen, teneinde een kwestie van groot belang aan te kaarten die onze betrokkenheid in deze Kamer betreft.\""
+              ],
+              "reflections": [
+                "Als onafhankelijke Kamerlid heb ik de laatste dagen diep nagedacht over de sociale hervormingen die noodzakelijk zijn voor de verbetering van onze arbeidersklasse. De toestand van de arbeiders is zorgwekkend en vereist dringende aandacht van deze vergadering. Tevens overweeg ik de impact van ons buitenlands beleid en hoe dit de nationale belangen beïnvloedt. Het is van cruciaal belang dat wij ons als vertegenwoordigers van het volk blijven inzetten voor rechtvaardigheid en vooruitgang."
+              ],
+              "institutional_awareness": [
+                "Geachte Voorzitter, ik wens te vernemen of het toegestaan is voor een journalist om het woord te voeren op de vloer, en of een lid dit kan doen zonder erkenning van uw zijde. Volgens de staande orders is het immers enkel geoorloofd aan erkende leden of ministers om het woord te nemen. Het lijkt mij derhalve van belang om hier duidelijkheid over te verkrijgen."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a010",
+            "name": "van Alphen",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Mijnheer de Voorzitter, ik ben de heer van Alphen, Kamerlid voor de Anti-Revolutionaire Partij. Het is een eer om hier te zijn, ook al is de zitting niet in sessie. Mijn betrokkenheid bij de zaak van het volk blijft onveranderd, zelfs in deze informele momenten."
+              ],
+              "memory": [
+                "Mijnheer de Voorzitter, in de wandelgangen heb ik deze week vernomen dat er onder de leden een groeiende bezorgdheid heerst over de recente voorstellen met betrekking tot de sociale wetgeving. De meningen zijn verdeeld, en ik ben van mening dat een grondige bespreking noodzakelijk is alvorens wij tot een besluit kunnen komen. Het is van groot belang dat wij de stem van het volk in acht nemen."
+              ],
+              "plans": [
+                "Geachte Voorzitter, morgen zal ik tijdens de vergadering mijn standpunt kenbaar maken met betrekking tot de recente voorstellen die ter tafel liggen. Ik ben van mening dat het van groot belang is om zorgvuldig de belangen van onze kiezers te overwegen. Bovendien hoop ik de collega’s te overtuigen van de noodzaak van een weloverwogen aanpak."
+              ],
+              "reactions": [
+                "Mijnheer de Voorzitter, ik verzoek u beleefd om het woord. Als lid van de Tweede Kamer vind ik het van groot belang om mijn standpunt te delen met betrekking tot de actuele aangelegenheden die ons land aangaan. Ik hoop dat u mijn verzoek zult inwilligen."
+              ],
+              "reflections": [
+                "Mijnheer de Voorzitter, in de afgelopen dagen heb ik diep nagedacht over de kwestie van de onderwijsvernieuwing en de noodzaak om de kwaliteit van ons onderwijs te verbeteren. Het is van groot belang dat wij als Staten-Generaal onze verantwoordelijkheid nemen en de nodige stappen ondernemen om de toekomst van onze jeugd veilig te stellen."
+              ],
+              "institutional_awareness": [
+                "Mijnheer de Voorzitter, ik sta hier in de wandelgangen van het Binnenhof en vraag mij af of het geoorloofd is dat een journalist het woord voert op de vloer, en of een Kamerlid, zonder erkenning van uw persoon, zich mag uitlaten. Volgens de staande orders, die ons allen bekend zijn, kan enkel een erkend lid of minister het woord voeren; een journalist is daartoe niet gerechtigd. Dit brengt ons tot een belangrijke overweging omtrent het handhaven van de orde in onze vergaderingen."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a011",
+            "name": "Staalman",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Ik ben de heer Staalman, lid van de Staten-Generaal, vertegenwoordiger van de nl.p.groepstaalman. Mijn functie in de Kamer betreft het behartigen van de belangen van mijn kiezers en het deelnemen aan de debatten die onze natie aangaan."
+              ],
+              "memory": [
+                "Mijnheer de Voorzitter, ik heb deze week in de wandelgangen vernomen dat er brede bezorgdheid heerst over de recente economische ontwikkelingen. Verscheidene leden, waaronder mijn collega Goeman Borgesius, hebben hun zorgen geuit over de impact op onze agrarische sector. Het gesprek gaat vooral over mogelijke maatregelen die wij snel moeten overwegen om onze belangen te beschermen."
+              ],
+              "plans": [
+                "Waarde Voorzitter, ik ben voornemens om morgen tijdens de vergadering mijn standpunt naar voren te brengen betreffende de recente voorstellen inzake het onderwijs. Het is van essentieel belang dat wij de kwaliteit van ons onderwijssysteem waarborgen en verbeteren. Ik vertrouw erop dat mijn inbreng constructief zal bijdragen aan de discussie."
+              ],
+              "reactions": [
+                "Mijnheer de Voorzitter, ik verzoek u om mijn stem te erkennen, aangezien ik, als lid van de Staten-Generaal, een punt van orde wens te aankaarten. Het is mijn plicht om de belangen van mijn kiezers te behartigen, ook al is deze bijeenkomst niet officieel in sessie. Gaarne hoop ik op uw welwillendheid om mijn inbreng te faciliteren."
+              ],
+              "reflections": [
+                "Waarde Voorzitter, in de afgelopen dagen heb ik mij intensief gebogen over de dringende vraagstukken betreffende de sociale wetgeving en de verbetering van de arbeidsomstandigheden in ons land. Het is van het grootste belang dat wij ons als Staten-Generaal inzetten voor de rechten en het welzijn van de arbeiders, die de fundering van onze economie vormen. Ik hoop spoedig de gelegenheid te krijgen om deze belangrijke zaken verder te bespreken tijdens de zittingen."
+              ],
+              "institutional_awareness": [
+                "Mijne heren, ik moet u erop wijzen dat het volgens de standing orders niet toegestaan is voor een journalist om het woord te voeren op de vloer van deze Kamer. Evenmin kan een lid van de Tweede Kamer, zonder erkenning van de Voorzitter, het woord nemen. Dit is een fundamenteel beginsel van onze procedures hier in de Staten-Generaal."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a012",
+            "name": "Tydeman jr.",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Mijn naam is de heer Tydeman jr., en ik ben lid van de Tweede Kamer der Staten-Generaal, behorende tot de partij der Oud- of Vrije Liberalen. Het is een eer om hier te zijn, hoewel de zitting momenteel niet plaatsvindt."
+              ],
+              "memory": [
+                "Mijnheer de Voorzitter, ik heb deze week in de wandelgang enkele interessante geluiden opgevangen omtrent de lopende debatten over de begroting. De ministers lijken zich te scharen achter een striktere controle op de uitgaven, wat ongetwijfeld tot felle discussies zal leiden in de komende zittingen. Ook heb ik vernomen dat enkele collega’s zich zorgen maken over de recente ontwikkelingen in de koloniale politiek."
+              ],
+              "plans": [
+                "Geachte Voorzitter, het is mijn voornemen om morgen tijdens de vergadering een aantal belangrijke punten aan te kaarten die onze liberale beginselen betreffen. Ik zal pleiten voor de noodzaak van hervormingen die het welzijn van onze burgers ten goede komen. Tevens ben ik van plan om de aandacht te vestigen op de economische situatie en de noodzaak van een doordacht beleid."
+              ],
+              "reactions": [
+                "Mijnheer de Voorzitter, ik verzoek u beleefd om mijn aandacht. Als lid van de Tweede Kamer, vertegenwoordiger van de Oud- of Vrijliberalen, ben ik gaarne bereid om mijn standpunt te delen over de belangrijke kwesties die ons allen aangaan. Het is van groot belang dat de stem van het volk gehoord wordt, ook in deze wandelgangen."
+              ],
+              "reflections": [
+                "Geachte Voorzitter, ik heb de afgelopen dagen nagedacht over de dringende noodzaak om ons beleid ten aanzien van onderwijs te herzien. De toekomst van ons land hangt immers af van goed opgeleide burgers. Ik ben van mening dat wij meer middelen moeten inzetten om de kwaliteit van het onderwijs te waarborgen."
+              ],
+              "institutional_awareness": [
+                "Mijnheer de Voorzitter, ik vraag me af of het mogelijk is dat een journalist het woord voert op de vloer van de Kamer? En is het ook toegestaan voor een lid om te spreken zonder erkenning van uw gezag? Volgens de staande orders zou dit immers niet in overeenstemming zijn met de regels van onze vergadering."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a013",
+            "name": "Heemskerk",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Ik ben de heer Heemskerk, lid van de Tweede Kamer, vertegenwoordiger van de Anti-Revolutionaire Partij. In deze wandelgang ben ik hier om te overleggen met collega’s en ministers, hoewel de zitting momenteel niet in sessie is."
+              ],
+              "memory": [
+                "Geachte Voorzitter, ik heb deze week in de wandelgang vernomen dat er gedeelde zorgen zijn over de voortgang van de wetgeving inzake de sociale voorzieningen. Diverse Kamerleden uiten hun bezorgdheid over de haalbaarheid van de voorgestelde maatregelen. Tevens sprak ik met enkele collega's over de noodzaak van een versterkte samenwerking tussen de verschillende partijen om tot een breed gedragen oplossing te komen."
+              ],
+              "plans": [
+                "Mijnheer de Voorzitter, morgen zal ik tijdens de vergadering mijn standpunt naar voren brengen over de actuele kwestie die ons allen aangaat. Het is van groot belang dat wij als vertegenwoordigers van het volk onze verantwoordelijkheden serieus nemen en een constructieve bijdrage leveren aan de debatten. Ik kijk ernaar uit om de verschillende standpunten te horen en bij te dragen aan een weloverwogen besluit."
+              ],
+              "reactions": [
+                "Ik verzoek de Voorzitter om mij te erkennen, daar ik, als afgevaardigde van de ARP, de noodzaak voel om een punt van belang aan te kaarten. Het is van groot belang voor de verdere discussie dat mijn stem ook gehoord wordt, zelfs in deze wandelgang. Laat mij alstublieft de gelegenheid om mijn gedachten te delen."
+              ],
+              "reflections": [
+                "Geachte Voorzitter, ik heb de afgelopen dagen intensief nagedacht over de sociale vraagstukken die ons land momenteel bezighouden. De noodzaak tot hervormingen in de arbeidswetgeving en de verbetering van de levensomstandigheden van onze arbeiders zijn mij bijzonder ter harte gegaan. Het is van groot belang dat wij als vertegenwoordigers ons inzetten voor rechtvaardigheid en vooruitgang in onze samenleving."
+              ],
+              "institutional_awareness": [
+                "Waarde Voorzitter, ik ben mij bewust van de geldende regels omtrent de sprekers op de vloer. Het is inderdaad zo dat enkel een erkend lid of minister het woord kan voeren, terwijl een journalist deze mogelijkheid niet heeft. Tevens dient te worden opgemerkt dat de gesprekken in de wandelgangen niet als officiële Handelingen worden beschouwd."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a014",
+            "name": "Smeenge",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Ik ben de heer Smeenge, lid van de Tweede Kamer en vertegenwoordiger van de vooruitstrevende kamerclub. Het is een eer om hier te zijn, ook al is de zitting momenteel niet in sessie."
+              ],
+              "memory": [
+                "Geachte Voorzitter, ik heb deze week in de wandelgangen vernomen dat er verschillende meningen heersen omtrent de voorgenomen wetgeving die onze industrie ten goede zou komen. Diverse leden uit de oppositie hebben hun bezorgdheid geuit over de mogelijke gevolgen voor de arbeidersklasse. Het lijkt erop dat er intensieve debatten op komst zijn."
+              ],
+              "plans": [
+                "Geachte Voorzitter, ik ben voornemens om tijdens de vergadering morgen een pleidooi te houden voor de noodzakelijke hervormingen in ons onderwijsstelsel. Het is van groot belang dat wij de kwaliteit van het onderwijs waarborgen en gelijke kansen voor alle leerlingen bevorderen. Mijnheer de Minister, ik hoop op uw steun in deze zaak."
+              ],
+              "reactions": [
+                "Mijnheer de Voorzitter, ik ben de heer Smeenge, lid van de Tweede Kamer en vertegenwoordiger van de vooruitstrevende kamerclub. Ik verzoek u beleefd om het woord te mogen voeren, opdat ik kan bijdragen aan de belangrijke discussies die onze natie aangaan."
+              ],
+              "reflections": [
+                "Mijnheer de Voorzitter, in de afgelopen dagen heb ik diep nagedacht over de dringende noodzaak voor hervormingen binnen onze onderwijsstructuur. Het is essentieel dat wij als wetgevers de kwaliteit van het onderwijs waarborgen om een sterke toekomst voor ons land te garanderen. Deze kwestie verdient onze onmiddellijke aandacht en debat in de Kamer."
+              ],
+              "institutional_awareness": [
+                "Mijnheer de Voorzitter, het is mij ter ore gekomen dat er enige verwarring heerst omtrent de rol van de journalist hier in de wandelgangen. Het is immers zo, dat volgens de staande orders, alleen een erkend lid of minister het woord mag voeren op de vloer. Derhalve, zou ik willen stellen dat een journalist in deze context niet gerechtigd is om deel te nemen aan het debat. Ook een lid zonder erkenning van Uw Edelachtbare Voorzitter mag geen woord voeren."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a015",
+            "name": "van Delden",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Geachte Voorzitter, ik ben de heer van Delden, lid van de Tweede Kamer der Staten-Generaal, vertegenwoordiger van de Oud- of Vrijeliberalen. Het is mij een eer om hier te verkondigen dat ik ons beleid en de toekomst van ons land met de meeste ernst en toewijding zal blijven ondersteunen."
+              ],
+              "memory": [
+                "Waarde voorzitter, in de wandelgang is het mij ter ore gekomen dat er onder de leden bezorgdheid heerst over de voortgang van de wetgeving inzake onderwijs. Tevens werd er gesproken over de recente ontwikkelingen in de buitenlandse politiek, welke onze nationale koers zouden kunnen beïnvloeden. Het is van belang dat wij, in deze turbulente tijden, ons blijven inzetten voor het welzijn van ons land."
+              ],
+              "plans": [
+                "Mijnheer de Voorzitter, morgen zal ik, als lid van de Tweede Kamer, mijn stem laten horen over de belangrijke kwesties die ter tafel liggen. Ik ben ervan overtuigd dat onze discussie zal bijdragen aan een weloverwogen besluitvorming ten behoeve van ons land. Laten wij streven naar een constructief overleg in het belang van de natie."
+              ],
+              "reactions": [
+                "Voorzitter, ik verzoek u beleefd om mijn stem te erkennen. Als lid van de Tweede Kamer ben ik hier om mijn standpunten te delen ter bevordering van ons beleid. Ik ben van mening dat het van groot belang is dat alle stemmen gehoord worden, zelfs in deze wandelgangen."
+              ],
+              "reflections": [
+                "Waarde Voorzitter, in de afgelopen dagen heb ik diep nagedacht over de noodzaak van hervormingen binnen ons onderwijssysteem. Het is van essentieel belang dat wij investeren in de toekomst van onze jeugd, zodat zij goed voorbereid zijn op de uitdagingen van de maatschappij. Ik ben ervan overtuigd dat wij als Staten-Generaal hierin een leidende rol moeten vervullen."
+              ],
+              "institutional_awareness": [
+                "Waarde Voorzitter, ik wens te verduidelijken dat, volgens de orde van onze Staten-Generaal, enkel erkende leden en ministers het woord mogen voeren op de vloer. Een journalist, zoals de heer verslaggever, heeft in deze context geen recht om zich te uiten. Bovendien, gesprekken in de gang kunnen niet als officiële Handelingen worden beschouwd."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a016",
+            "name": "Bahlmann",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Mijnheer de Voorzitter, ik ben de heer Bahlmann, Kamerlid voor de Bahlmanniaanpartij. Het is met groot genoegen dat ik hier aanwezig ben in de wandelgang van het Binnenhof, waar wij als vertegenwoordigers van het volk ons werk verrichten, zelfs wanneer de zitting niet in sessie is."
+              ],
+              "memory": [
+                "Waarde voorzitter, ik heb deze week in de wandelgang vernomen dat er verschillende zorgen leven omtrent de begroting en de aanstaande debatten daarover. Tevens zijn er geruchten over mogelijke wijzigingen in de wetgeving die onze landbouwsector zou kunnen beïnvloeden. Het is van groot belang dat wij als Kamerleden deze kwesties nauwlettend volgen."
+              ],
+              "plans": [
+                "Geachte Voorzitter, tijdens de vergadering van morgen zal ik pleiten voor de noodzaak van hervormingen binnen het onderwijsstelsel. Het is van essentieel belang dat wij de kwaliteit van ons onderwijs waarborgen voor de toekomstige generaties. Ik vertrouw erop dat mijn collega's de urgentie van deze kwestie zullen inzien."
+              ],
+              "reactions": [
+                "Mijnheer de Voorzitter, het is met groot respect dat ik het woord vraag. Als lid van de Staten-Generaal voel ik de noodzaak om mijn stem te laten horen, ook al is de zitting momenteel niet in sessie. Ik verzoek u vriendelijk mijn verzoek te overwegen, zodat ik mijn standpunt kan delen met deze geëerde vergadering."
+              ],
+              "reflections": [
+                "Geachte Voorzitter, ik heb de afgelopen dagen nagedacht over de dringende noodzaak van hervormingen binnen ons onderwijssysteem. Het is van essentieel belang dat wij de kwaliteit van onderwijs waarborgen en tegelijkertijd de toegankelijkheid voor alle lagen van de bevolking bevorderen. Ook de rol van de staat in het onderwijs dient grondig te worden heroverwogen, zodat wij een toekomst kunnen garanderen waarin iedere burger de kans krijgt om zich te ontplooien."
+              ],
+              "institutional_awareness": [
+                "Geachte Voorzitter, ik wens te benadrukken dat het volgens de staande orde enkel toegestaan is voor erkende leden of ministers om het woord te voeren op de vloer. Een journalist mag dit niet, en gesprekken in de wandelgangen worden niet beschouwd als Handelingen. Dit is van groot belang voor de orde en het respect binnen deze instelling."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a017",
+            "name": "Gerritsen",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Ik ben de heer Gerritsen, lid van de Tweede Kamer der Staten-Generaal, vertegenwoordiger van de Nederlandse Politieke Reformatie. Het is een eer om hier te zijn, ook al is de zitting momenteel niet in sessie."
+              ],
+              "memory": [
+                "Geachte Voorzitter, in de wandelgang heb ik deze week geruchten opgevangen omtrent de aankomende begrotingsvoorstellen. Ook sprak ik enkele collega’s over de noodzaak van hervormingen in de sociale wetgeving. Het is van belang dat wij als vertegenwoordigers van het volk goed voorbereid zijn op de komende debatten."
+              ],
+              "plans": [
+                "Geachte Voorzitter, morgen zal ik tijdens de vergadering mijn standpunt over de voorgestelde wetgeving uiteenzetten. Ik ben van mening dat het van groot belang is om de belangen van onze burgers te verdedigen en ik zal mijn collega’s aanmoedigen om ditzelfde te doen. Tevens ben ik bereid om constructieve voorstellen te doen ter verbetering van de tekst."
+              ],
+              "reactions": [
+                "Mijnheer de Voorzitter, ik verzoek u mij het woord te verlenen. Als afgevaardigde van de Partij van de Rechtvaardigheid acht ik het mijn plicht om mijn standpunt te delen, zelfs hier in de wandelgangen van het Binnenhof. Het is van groot belang dat onze stem gehoord wordt, ook buiten de officiële zittingen."
+              ],
+              "reflections": [
+                "Mijnheer de Voorzitter, ik heb de laatste dagen nagedacht over de dringende noodzaak om onze economische positie te versterken. De uitdagingen die ons land momenteel ondervindt vereisen een doordachte aanpak en de samenwerking van alle partijen binnen deze Kamer. Laten wij ons inzetten voor een toekomstbestendig beleid dat ten goede komt aan ons volk."
+              ],
+              "institutional_awareness": [
+                "Mijnheer de Voorzitter, het is mij duidelijk dat enkel erkende leden of ministers het woord mogen voeren op de vloer. Het is derhalve ongepast voor een journalist om zich uit te spreken in deze context. Evenmin kan een Kamerlid zonder erkenning van uw zijde de vloer betreden."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a018",
+            "name": "van Vlijmen",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Mijnheer de Voorzitter, ik ben de heer van Vlijmen, lid van de Tweede Kamer en vertegenwoordiger van de Bahlmanniaanse partij. Het is mij een eer hier te zijn, ook al is de zitting momenteel niet in sessie."
+              ],
+              "memory": [
+                "Geachte voorzitter, ik heb in de wandelgang vernomen dat er onder de leden enige bezorgdheid bestaat over de voortgang van de discussie betreffende de landbouwwetten. Tevens werd er gesproken over de noodzaak van een versterking van de infrastructuur in de buitengebieden. Het lijkt me van groot belang dat wij deze onderwerpen spoedig op de agenda plaatsen."
+              ],
+              "plans": [
+                "Geachte Voorzitter, ik ben van plan om morgen tijdens de vergadering mijn standpunt te verwoorden over de recente wetgeving inzake onderwijsvernieuwing. Het is van groot belang dat wij als vertegenwoordigers van het volk hierin een doordachte en weloverwogen discussie voeren. Ik vertrouw erop dat mijn inbreng zal bijdragen aan een vruchtbare uitwisseling van ideeën."
+              ],
+              "reactions": [
+                "Mijnheer de Voorzitter, ik verzoek u vriendelijk om mij het woord te verlenen. Als afgevaardigde van de nl.p.bahlmanniaan ben ik hier om de belangen van mijn kiezers te behartigen, en ik ben van mening dat mijn bijdrage van waarde kan zijn voor de discussie. Ik hoop op uw welwillendheid om mij te erkennen in deze wandelgang."
+              ],
+              "reflections": [
+                "Mijnheer de Voorzitter, in de afgelopen dagen heb ik diep nagedacht over de belangrijke vraagstukken die onze natie momenteel bezighouden. De sociale en economische vooruitgang van ons volk is van essentieel belang, en ik ben van mening dat wij als afgevaardigden onze verantwoordelijkheden ten volle moeten nemen. Ik vertrouw erop dat onze discussies in de komende zittingen vruchtbaar zullen zijn voor het welzijn van ons land."
+              ],
+              "institutional_awareness": [
+                "Mijnheer de Voorzitter, het is mij bekend dat een journalist geenszins het woord mag voeren op de vloer der Staten-Generaal, noch dient een lid zonder erkenning van uw gezag dat te doen. De orde van de dag vereist dat enkel erkende leden of ministers het woord mogen nemen. Ik verzoek u deze zaken te bevestigen."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a019",
+            "name": "van Karnebeek",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Geachte Voorzitter, ik ben de heer van Karnebeek, lid van de Tweede Kamer voor de Oud- of Vrij-Liberalen. Het is mijn plicht en eer om hier te staan en bij te dragen aan de belangrijke discussies die onze natie aangaan."
+              ],
+              "memory": [
+                "Waarde voorzitter, deze week heb ik in de wandelgang enkele interessante geluiden opgevangen omtrent de aanstaande wetgeving inzake onderwijs. De meningen zijn verdeeld, maar er lijkt een groeiende bezorgdheid te zijn over de financiering van de scholen. Ik ben van mening dat wij als Kamerleden deze kwestie met de nodige urgentie moeten benaderen."
+              ],
+              "plans": [
+                "Geachte Voorzitter, ik ben van plan morgen tijdens de vergadering een toespraak te houden over de dringende noodzaak van hervormingen in ons belastingstelsel. Het is van essentieel belang dat wij de belangen van onze burgers vooropstellen en zorgen voor een rechtvaardigere verdeling van de lasten. Ik vertrouw erop dat mijn medekamerleden deze kwestie evenzeer zullen waarderen."
+              ],
+              "reactions": [
+                "Mijnheer de Voorzitter, ik verzoek u mij te erkennen als lid van deze geëerde Kamer. Het is van groot belang dat ik mijn standpunt kan uitdragen betreffende de lopende zaken. Indien u mij niet herkent, verzoek ik u vriendelijk de gelegenheid te geven voor een korte toelichting."
+              ],
+              "reflections": [
+                "Geachte Voorzitter, de laatste dagen heb ik intensief nagedacht over de noodzaak van hervormingen binnen onze onderwijsstructuur. Het is van cruciaal belang dat wij, als leden van de Staten-Generaal, ons inzetten voor een systeem dat niet alleen kennis, maar ook karakter en burgerschap bevordert. In deze tijden van verandering dienen wij ons te richten op de toekomst van onze natie."
+              ],
+              "institutional_awareness": [
+                "Mijnheer de Voorzitter, het is naar mijn mening duidelijk dat een journalist, zoals de heer Verslaggever van de Courant, niet bevoegd is het woord te voeren op de vloer van de Staten-Generaal. Evenzo is het niet toegestaan voor een Kamerlid om zich uit te spreken zonder erkenning van uw waardevolle persoon als Voorzitter. Dit staat in lijn met onze staande orde, die stipuleert dat enkel erkende leden of ministers het woord kunnen nemen."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a020",
+            "name": "van Gennep",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Mijne heren, ik ben de heer van Gennep, lid van de Staten-Generaal en vertegenwoordiger van de Oud- of Vrije Liberalen. Het is mijn plicht en eer om hier in deze eerbiedwaardige instelling te dienen, en ik ben bereid om mijn bijdrage te leveren aan het welzijn van ons land."
+              ],
+              "memory": [
+                "Waarde Voorzitter, het is mij ter ore gekomen dat er onder de leden enige bezorgdheid heerst omtrent de recente ontwikkelingen in de buitenlandse politiek. Tevens heeft de heer Goeman Borgesius enige interessante opmerkingen gemaakt over de sociale vraagstukken die ons allen aangaan. Het is van groot belang dat wij deze kwesties in de toekomst met de nodige ernst en aandacht behandelen."
+              ],
+              "plans": [
+                "Geachte Voorzitter, morgen zal ik in de vergadering pleiten voor de noodzaak van hervormingen binnen de onderwijssector. Het is van groot belang dat wij als Staten-Generaal de toekomst van onze jeugd waarborgen door hen de best mogelijke kansen te bieden. Ik hoop op een constructieve discussie met mijn gewaardeerde collega’s."
+              ],
+              "reactions": [
+                "Mijnheer de Voorzitter, ik verzoek u om mij het woord te verlenen. Als lid van de Tweede Kamer ben ik hier op het Binnenhof om belangrijke zaken te bespreken, en ik hoop dat u mijn verzoek in overweging wilt nemen. Het is van groot belang dat wij in deze wandelgangen ook onze standpunten kunnen uitdragen, ook al is de zitting momenteel niet in sessie."
+              ],
+              "reflections": [
+                "Mijnheer de Voorzitter, ik heb de laatste dagen nagedacht over de dringende noodzaak van hervormingen binnen ons onderwijsstelsel. Het is van essentieel belang dat wij de toekomst van onze jeugd veiligstellen en hen de juiste middelen bieden voor een welvarende toekomst. Ik hoop dat wij spoedig een constructieve discussie kunnen aangaan over deze kwestie in de Kamer."
+              ],
+              "institutional_awareness": [
+                "Mijne heren, het is mij bekend dat de onder de huidige regels enkel erkende leden van de Kamer of ministers het woord mogen voeren op de vloer. Een journalist, hoezeer zijn rol ook belangrijk is, heeft geen recht om zich in de debatten te mengen. Evenmin kan een lid zonder erkenning van de Voorzitter het woord vragen. Dit zijn de regels die ons ordelijk functioneren waarborgen."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a021",
+            "name": "baron van Dedem",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Ik ben de heer baron van Dedem, lid van de Tweede Kamer der Staten-Generaal, vertegenwoordiger van de Vrijheids Partij. Het is mijn plicht om de belangen van mijn kiezers te behartigen in deze edele vergadering."
+              ],
+              "memory": [
+                "Mijne heren, ik heb in de wandelgangen vernomen dat er bezorgdheid heerst over de recente ontwikkelingen omtrent ons landbouwbeleid. Diverse collega's hebben hun standpunten gedeeld, maar een gezamenlijke richting lijkt nog niet gevonden. Het is van groot belang dat wij als vertegenwoordigers van het volk deze kwesties serieus nemen en een constructieve discussie aangaan zodra de zitting weer van start gaat."
+              ],
+              "plans": [
+                "Mijnheer de Voorzitter, morgen zal ik in de vergadering mijn standpunt uiteenzetten over de recente ontwikkelingen die onze partij aangaan. Het is van groot belang dat wij als leden van de Staten-Generaal onze verantwoordelijkheid nemen en een duidelijk beleid formuleren dat in het belang van ons volk is. Ik hoop op een vruchtbare discussie en waardeer de mogelijkheid om mijn mening te delen."
+              ],
+              "reactions": [
+                "Mijne heren, ik verzoek u vriendelijk om de Voorzitter te wijzen op mijn aanwezigheid en mijn recht om het woord te voeren. Het is van groot belang dat de stem van de Vrijheidsbond gehoord wordt in deze aangelegenheid. Ik ben bereid om mijn standpunten en argumenten te delen zodra de gelegenheid zich voordoet."
+              ],
+              "reflections": [
+                "Mijnheer de Voorzitter, ik heb de laatste dagen nagedacht over de noodzaak van een zorgvuldige afweging van ons landbouwbeleid. De belangen van onze boeren dienen met de grootste aandacht te worden behartigd, terwijl wij ook de vooruitgang en modernisering van onze industrie niet uit het oog mogen verliezen. Het is van essentieel belang dat wij als vertegenwoordigers van het volk een evenwichtig beleid blijven nastreven dat zowel de agrarische als de industriële sector ten goede komt."
+              ],
+              "institutional_awareness": [
+                "Mijnheer de Voorzitter, het is mij ter ore gekomen dat er enige verwarring heerst omtrent de bevoegdheden van de journalisten in deze eerwaarde vergadering. Ik wil benadrukken dat, volgens het reglement, enkel een erkend lid of minister het woord mag voeren op de vloer. Een journalist heeft hier geen recht op. Evenzo dient te worden opgemerkt dat gesprekken in de wandelgangen niet als officiële Handelingen worden beschouwd."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a022",
+            "name": "Seret",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Mijn naam is de heer Seret, lid van de Tweede Kamer, behorende tot de Anti-Revolutionaire Partij. Het is mijn plicht om de belangen van onze kiezers te behartigen en bij te dragen aan de wetgevende werkzaamheden van dit huis."
+              ],
+              "memory": [
+                "Geachte voorzitter, het is mij opgevallen dat er in de wandelgangen een groeiende bezorgdheid heerst over de aanstaande wetsvoorstellen inzake onderwijs. Diverse collega’s, waaronder de heer Goeman Borgesius, hebben zich uitgelaten over de noodzaak van een grondige herziening van ons onderwijssysteem. Het lijkt mij van belang dat wij deze discussie in de Kamer spoedig voortzetten."
+              ],
+              "plans": [
+                "Geachte Voorzitter, morgen tijdens de vergadering zal ik mijn standpunt naar voren brengen over de belangrijke kwesties die op onze agenda staan. Ik ben vastbesloten om de belangen van mijn kiezers te behartigen en constructieve bijdragen te leveren aan het debat."
+              ],
+              "reactions": [
+                "Mijnheer de Voorzitter, ik verzoek u om mij het woord te verlenen. Als vertegenwoordiger van het volk acht ik het van groot belang om mijn standpunt te delen, ook al is de zitting momenteel niet in sessie. Ik ben er van overtuigd dat de zaken die wij bespreken, van invloed zijn op het welzijn van onze natie."
+              ],
+              "reflections": [
+                "Geachte Voorzitter, ik heb de laatste dagen veel nagedacht over de dringende noodzaak van hervormingen binnen ons onderwijsstelsel. Het is van het grootste belang dat wij als Staten-Generaal ons inzetten voor de toekomst van onze jeugd en de kwaliteit van onderwijs in ons land verbeteren. Ik ben ervan overtuigd dat dit een cruciale stap is voor de vooruitgang van onze samenleving."
+              ],
+              "institutional_awareness": [
+                "Geachte Voorzitter, het is mijn overtuiging dat een journalist, in overeenstemming met de staande orde, geen recht heeft om het woord te voeren op de vloer van deze vergadering. Eveneens is het niet toegestaan voor een Kamerlid om zonder erkenning van Uwe Excellentie te spreken. Wij dienen de regels van de Staten-Generaal te respecteren om de orde en decorum te waarborgen."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a023",
+            "name": "Rutgers van Rozenburg",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Ik ben de heer Rutgers van Rozenburg, lid van de Tweede Kamer der Staten-Generaal, vertegenwoordiger van de oud-vrijeliberalen. Het is mij een eer hier te zijn, zelfs in deze wandelgangen, waar de toekomst van ons land wordt besproken, zij het in een informele setting."
+              ],
+              "memory": [
+                "Waarde Voorzitter, ik heb deze week in de wandelgangen vernomen dat er aanzienlijke bezorgdheid heerst over de recente ontwikkelingen in de landbouwpolitiek. Ook werd er gesproken over de noodzaak van een herziening van het belastingstelsel, wat de gemoederen sterk bezighoudt. Het lijkt mij van groot belang dat wij deze kwesties met de nodige urgentie aanpakken zodra de zitting weer bijeenkomt."
+              ],
+              "plans": [
+                "Als afgevaardigde van de Oud- of Vrij Liberalen, ben ik voornemens morgen tijdens de vergadering mijn standpunten te uiten over de belangrijke kwesties die ons land aangaan. Ik zal de minister aanspreken op zijn beleid en pleiten voor een effectievere aanpak van de huidige uitdagingen. Het is mijn plicht om de belangen van mijn kiezers te behartigen en bij te dragen aan een constructieve discussie in deze eervolle assemblee."
+              ],
+              "reactions": [
+                "Mijnheer de Voorzitter, ik verzoek u beleefd om mijn woorden te mogen uitspreken. Als lid van deze edele Kamer voel ik de noodzaak om mijn standpunt te delen, ook al is de zitting momenteel niet in sessie. Ik hoop op uw welwillendheid om het woord te verlenen."
+              ],
+              "reflections": [
+                "Geachte Voorzitter, ik heb de laatste dagen nagedacht over de noodzaak om onze economische positie te versterken en de zorg voor de arbeidersklasse te verbeteren. Het is van groot belang dat wij onze verantwoordelijkheden serieus nemen en de juiste maatregelen treffen om de vooruitgang van ons land te waarborgen. Wij moeten ons inzetten voor een billijker beleid dat alle burgers ten goede komt."
+              ],
+              "institutional_awareness": [
+                "Geachte Voorzitter, ik wend mij tot u met een vraag aangaande de procedure. Mag een journalist het woord voeren op de vloer, of dient dit voorbehouden te blijven aan erkende leden van de Staten-Generaal en ministers? Tevens vraag ik mij af of een lid, zonder erkenning van uw persoon, het woord kan aanvragen. Deze zaken zijn van groot belang voor de orde en het functioneren van onze vergaderingen."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a024",
+            "name": "Roessingh",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Mijnheer de Voorzitter, ik ben de heer Roessingh, lid van de Staten-Generaal en vertegenwoordiger van de nl.p.clubpyttersen. Ik ben hier in de wandelgang om te overleggen met mijn gewaardeerde collega's."
+              ],
+              "memory": [
+                "Mijnheer de Voorzitter, ik heb deze week in de wandelgangen vernomen dat er sprake is van toenemende bezorgdheid over de toestand in de kolonies. Tevens is er discussie over de aanstaande wetsvoorstellen die onze landbouweconomie zouden kunnen beïnvloeden. Het lijkt erop dat de ministers zich voorbereiden op een grondige herziening van het landbouwbeleid."
+              ],
+              "plans": [
+                "Waarde Voorzitter, ik ben hier in de wandelgang en zie dat de vergadering morgen van groot belang zal zijn. Ik zal mijn inbreng voorbereiden en mijn standpunten over de actuele zaken die op de agenda staan, duidelijk uiteenzetten. Het is van essentieel belang dat wij ons als Kamerleden inzetten voor het welzijn van ons volk."
+              ],
+              "reactions": [
+                "Mijnheer de Voorzitter, ik verzoek u beleefd om mijn stem te erkennen. Als lid van de Staten-Generaal acht ik het van groot belang om mijn standpunt te delen, zelfs in deze wandelgang waar de zitting niet in sessie is. Ik ben er van overtuigd dat de zaken van nationaal belang niet mogen worden uitgesteld, en ik hoop op uw welwillendheid in deze kwestie."
+              ],
+              "reflections": [
+                "Geachte Voorzitter, terwijl wij hier in de wandelgang bijeen zijn, heb ik de laatste dagen intensief nagedacht over de dringende kwesties omtrent ons onderwijssysteem. Het is van het grootste belang dat wij ons inzetten voor de verbetering van de onderwijsomstandigheden, teneinde de toekomst van ons land veilig te stellen. Moge deze gedachten ook worden meegenomen in de komende debatten in de Kamer."
+              ],
+              "institutional_awareness": [
+                "Geachte Voorzitter, het is mijn overtuiging dat de regels der Staten-Generaal duidelijk zijn: enkel een erkend lid of minister mag het woord voeren op de vloer. Een journalist heeft hier geen plaats om zich uit te spreken, en corridorgesprekken zijn niet opgenomen in de Handelingen. Dit is een kwestie van respect voor onze procedures en de integriteit van ons debat."
+              ]
+            },
+            "proc": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "seed": 7,
+      "preset": "ga",
+      "backend": "openai_compat",
+      "model": "gpt-4o-mini",
+      "llm_calls": 550,
+      "llm_cache": 120,
+      "llm_fail": 0,
+      "utter_cap": 400,
+      "last_error": "",
+      "seed_agent": "a005",
+      "final_aware": {
+        "member": 0.05,
+        "government": 0.0,
+        "institutional": 0.0,
+        "press": 0.0,
+        "gallery": 0.0
+      },
+      "member_end": 0.05,
+      "press_end": 0.0,
+      "government_end": 0.0,
+      "floor_mention": 0.001025430680885972,
+      "embellishment": 0.0,
+      "mean_procedural": 1.0,
+      "n_lines": 4876,
+      "journalist_share": 0.043478260869565216,
+      "anachronism": 0.0,
+      "n_refusals": 0,
+      "curve": [
+        {
+          "day": 0,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 966
+        },
+        {
+          "day": 1,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 1932
+        },
+        {
+          "day": 2,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 2898
+        },
+        {
+          "day": 3,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 3864
+        },
+        {
+          "day": 4,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 4830
+        },
+        {
+          "day": 5,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 4853
+        },
+        {
+          "day": 6,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 4876
+        },
+        {
+          "day": 7,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 4876
+        }
+      ],
+      "interviews": {
+        "n": 25,
+        "mean_procedural": 1.0,
+        "rows": [
+          {
+            "id": "a000",
+            "name": "Gleichman",
+            "status": "Chair",
+            "answers": {
+              "self-knowledge": [
+                "Ik ben voorzitter Gleichman en ik bekleed de functie van voorzitter in de Staten-Generaal. Mijn partij is de Oud of Vrije Liberalen. In deze wandelgang van het Binnenhof zijn we op een rustig moment, terwijl de zitting niet in sessie is."
+              ],
+              "memory": [
+                "Deze week heb ik in de wandelgang gehoord dat er veel discussie is over de nieuwe belastingwetgeving. Minister van Houten lijkt zich sterk te maken voor een hervorming, maar er is ook weerstand van enkele leden. Het is duidelijk dat de meningen verdeeld zijn. De sfeer is gespannen, vooral tussen de liberalen en de socialisten."
+              ],
+              "plans": [
+                "Morgen zal ik de belangrijkste kwesties van onze partij bespreken en pleiten voor een versterking van onze liberale waarden. Tevens zal ik aandacht vragen voor de zorgen van onze kiesdistricten. Het is cruciaal dat we ons standpunt duidelijk maken in deze onzekere tijden."
+              ],
+              "reactions": [
+                "Ik ben Voorzitter Gleichman en ik stap naar voren, mijn stem vastberaden. \"Geachte Voorzitter, ik verzoek om het woord in deze belangrijke zaak.\" Met een beleefde buiging richt ik me tot de aanwezigen, hopend op hun aandacht."
+              ],
+              "reflections": [
+                "Als voorzitter heb ik de laatste dagen nagedacht over de noodzaak van hervormingen binnen ons politieke systeem. De samenwerking tussen de verschillende partijen is cruciaal voor de stabiliteit van ons land. Daarnaast maak ik me zorgen over de sociale kwesties die onze burgers aangaan. Het welzijn van ons volk moet altijd voorop staan."
+              ],
+              "institutional_awareness": [
+                "Als voorzitter kan ik zeggen dat een journalist geen recht heeft om het woord te voeren op de vloer van de Staten-Generaal. Een lid kan wel spreken, maar dit dient altijd met erkenning van de Voorzitter te gebeuren. Het is essentieel dat de orde en de regels van de vergadering worden gerespecteerd."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a001",
+            "name": "Griffier",
+            "status": "Clerk",
+            "answers": {
+              "self-knowledge": [
+                "Ik ben de griffier van de Staten-Generaal, belast met het documenteren van de verrichtingen en de administratie van de Kamer. Mijn taak is essentieel voor de ordelijke gang van zaken binnen deze instellingen."
+              ],
+              "memory": [
+                "Geachte Voorzitter, deze week heb ik gehoord dat er gedebatteerd wordt over de nieuwe wetgeving inzake onderwijs. Verschillende leden uit de Staten-Generaal hebben hun standpunten naar voren gebracht, maar de sfeer blijft constructief. Ook heb ik vernomen dat er zorgen zijn over de financiën van de nieuwe voorstellen. Het lijkt erop dat er veel aandacht is voor de meningen van de verschillende fracties."
+              ],
+              "plans": [
+                "Als griffier zal ik ervoor zorgen dat alle documenten en notulen goed zijn voorbereid voor de vergadering. Mijn taak is om de voorzitter te ondersteunen en ervoor te zorgen dat alles soepel verloopt. Het is van groot belang dat de leden goed geïnformeerd zijn over de agendapunten."
+              ],
+              "reactions": [
+                "Geachte Voorzitter, ik ben de griffier en ben hier om het verslag bij te houden. Indien het u belieft, verzoek ik om het woord te geven voor enige mededelingen die gedaan dienen te worden."
+              ],
+              "reflections": [
+                "Geachte Voorzitter, ik heb de afgelopen dagen nagedacht over de recentelijke voorstellen die in de Staten-Generaal zijn besproken. Het lijkt mij van groot belang dat wij goed luisteren naar de zorgen van de burgers en de impact van onze besluiten. Ook het versterken van de samenwerking tussen de verschillende partijen in ons land is cruciaal."
+              ],
+              "institutional_awareness": [
+                "Meneer de Voorzitter, het is mijn plicht te melden dat een journalist geen recht heeft om het woord te voeren op de vloer van de Staten-Generaal. Evenzo kan een lid niet spreken zonder erkenning van de Voorzitter. Dit zijn de gevestigde regels binnen onze vergadering."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a002",
+            "name": "Verslaggever van de Courant",
+            "status": "Journalist",
+            "answers": {
+              "self-knowledge": [
+                "Ik ben verslaggever van de Courant, en ik ben hier om de gang van zaken in de Staten-Generaal te volgen. Mijn taak is om verslag uit te brengen over de debatten en besluiten die hier genomen worden."
+              ],
+              "memory": [
+                "Ik heb deze week in de wandelgang gehoord dat er discussies zijn over de invoering van nieuwe wetgeving met betrekking tot de belastingherziening. Ministers van Houten en Sprenger van Eyk leken het niet eens te zijn over de details. Ook was er sprake van mogelijke spanningen binnen de fracties, vooral tussen de leden van Goeman Borgesius en Pijnappel. Het lijkt erop dat er veel op het spel staat voor de komende zitting."
+              ],
+              "plans": [
+                "Geachte voorzitter, morgen tijdens de vergadering zal ik aandacht besteden aan de recente ontwikkelingen in ons beleid. Tevens wil ik een aantal vragen van de leden aan de orde stellen. Het is van groot belang dat we de standpunten van de verschillende partijen goed belichten."
+              ],
+              "reactions": [
+                "Mijne dames en heren, ik verzoek u om mijn aandacht, al ben ik geen afgevaardigde. Mijn naam is Verslaggever van de Courant, en ik ben hier om verslag uit te brengen over de zaken die ons allen aangaan. Ik hoop dat u mij de kans geeft om mijn punten te delen."
+              ],
+              "reflections": [
+                "Geachte Voorzitter, in de afgelopen dagen heb ik intensief nagedacht over de impact van de recente wetgeving op de sociale omstandigheden van onze burgers. Het is cruciaal dat wij ons als vertegenwoordigers van het volk blijven inzetten voor hun welzijn. Ook de internationale verhoudingen in deze tijd van verandering wekken mijn bezorgdheid en vragen om aandacht. Het lijkt mij van groot belang dat wij deze kwesties in ons achterhoofd houden bij het debat."
+              ],
+              "institutional_awareness": [
+                "Als verslaggever van de Courant kan ik het woord niet voeren op de vloer zonder erkenning van de Voorzitter. De regels zijn duidelijk: alleen leden van de Staten-Generaal hebben het recht om te spreken tijdens de zitting. Mijn rol is om de gebeurtenissen te verslaan, niet om deel te nemen aan het debat."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a003",
+            "name": "van Houten",
+            "status": "Minister",
+            "answers": {
+              "self-knowledge": [
+                "Ik ben Minister van Houten, een onafhankelijke minister in de Staten-Generaal. Mijn rol is het vertegenwoordigen van de regering en het bijdragen aan de wetgeving. Op dit moment verblijf ik in de wandelgang van het Binnenhof."
+              ],
+              "memory": [
+                "Deze week in de wandelgang hoorde ik dat er enige onvrede heerst over de recente voorstellen betreffende onderwijs. Ook spraken enkele leden over de noodzaak van hervormingen in de arbeidswetgeving. Het lijkt erop dat er een groeiende druk is voor een bredere discussie hierover."
+              ],
+              "plans": [
+                "Morgen tijdens de vergadering zal ik de standpunten van de verschillende partijen belichten en pleiten voor een constructieve dialoog. Het is van groot belang dat we samen tot oplossingen komen voor de kwesties die ons land aangaan."
+              ],
+              "reactions": [
+                "Meneer de Voorzitter, ik ben Minister van Houten en wens het woord te voeren. Het is van groot belang dat wij de zaken van het land doornemen, zelfs in deze tussenperiode. Laat ons niet vergeten dat onze verantwoordelijkheden ons altijd achtervolgen."
+              ],
+              "reflections": [
+                "In de afgelopen dagen heb ik veel nagedacht over de huidige sociale kwesties en de noodzaak van hervormingen. De armoede onder de arbeiders blijft een zorgwekkend probleem. Ik overweeg hoe we als Staten-Generaal een positieve impact kunnen hebben op het leven van onze burgers. De verantwoordelijkheid ligt zwaar op onze schouders."
+              ],
+              "institutional_awareness": [
+                "Als minister van Houten, kan ik u verzekeren dat een journalist geen recht heeft om het woord te voeren op de vloer. Enkel erkende leden van de Staten-Generaal hebben die bevoegdheid, en zelfs zij moeten de toestemming van de Voorzitter verkrijgen."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a004",
+            "name": "Sprenger van Eyk",
+            "status": "Minister",
+            "answers": {
+              "self-knowledge": [
+                "Ik ben minister Sprenger van Eyk, en ik ben momenteel werkzaam in de Staten-Generaal. Mijn rol is onafhankelijk, zonder partijgebondenheid."
+              ],
+              "memory": [
+                "Ik heb gehoord dat er veel discussie gaande is over de nieuwe wetgeving inzake belastingherziening. Ook sprak ik met van Houten over de noodzaak van betere infrastructuur in onze kolonies. De stemming is verdeeld, wat kan leiden tot spannende debatten wanneer we weer samenkomen."
+              ],
+              "plans": [
+                "Morgen tijdens de vergadering zal ik mijn standpunt duidelijk uiteenzetten over de actuele kwesties die ons bezighouden. Ik hoop dat mijn medewetgevers openstaan voor een constructieve discussie. Het is van groot belang dat we samenwerken voor het welzijn van ons land."
+              ],
+              "reactions": [
+                "Mijn excuses, Voorzitter. Ik ben Minister Sprenger van Eyk en wens te spreken over de recente ontwikkelingen in de Staten-Generaal. Ik verzoek u om mij het woord te geven, zodat ik mijn standpunt kan verduidelijken."
+              ],
+              "reflections": [
+                "Ik heb de laatste dagen nagedacht over de noodzaak van hervormingen in ons onderwijsstelsel. De toekomst van ons land hangt af van goed opgeleide burgers. Ook de kwestie van de sociale gelijkheid blijft me bezig houden. Hoe kunnen we de kloof tussen rijk en arm verkleinen?"
+              ],
+              "institutional_awareness": [
+                "In principe mag een journalist geen woord voeren op de vloer van de Staten-Generaal. Alleen de leden van het parlement hebben het recht om te spreken, en dit dient te gebeuren met erkenning van de Voorzitter. Als minister moet ik de regels respecteren die ons zijn opgelegd."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a005",
+            "name": "Goeman Borgesius",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Mijn naam is Goeman Borgesius, en ik ben lid van de Staten-Generaal. Ik vertegenwoordig de vooruitstrevende kamerclub. Momenteel ben ik in de wandelgangen van het Binnenhof, waar de zitting niet in sessie is."
+              ],
+              "memory": [
+                "Deze week heb ik in de wandelgang gehoord dat er grote discussies zijn over het onderwijsbeleid. Minister van Houten lijkt bezorgd over de financiering, terwijl Sprenger van Eyk aandringt op hervormingen. Pijnappel had enkele interessante ideeën over de noodzaak van meer investeringen. Het is een levendige tijd hier in het Binnenhof."
+              ],
+              "plans": [
+                "Morgen zal ik mijn standpunt over de recente voorstellen uiteenzetten en pleiten voor vooruitgang in de wetgeving. Het is essentieel dat wij als leden van de Staten-Generaal onze verantwoordelijkheden serieus nemen. Ik hoop dat mijn woorden resoneren met de andere leden en dat we samen tot een constructieve dialoog komen."
+              ],
+              "reactions": [
+                "Mijne heren, ik verzoek de Voorzitter om mijn naam te erkennen. Het is van groot belang dat mijn stem gehoord wordt in deze eerbiedwaardige vergadering. Ik ben hier om te pleiten voor de vooruitgang en de belangen van ons volk. Laat ons niet vergeten dat elke stem telt in deze belangrijke tijden."
+              ],
+              "reflections": [
+                "De laatste dagen heb ik veel nagedacht over de voortgang van onze wetgeving en de uitdagingen waarmee we worden geconfronteerd. Het lijkt mij van groot belang om de samenwerking tussen de verschillende partijen te versterken. Ook maak ik me zorgen over de sociale kwestie en de noodzaak van hervormingen. Het welzijn van onze burgers staat voorop in mijn gedachten."
+              ],
+              "institutional_awareness": [
+                "Als lid van de Staten-Generaal weet ik dat een journalist in principe geen recht heeft om het woord te voeren op de vloer. Enkel leden van de Kamer kunnen spreken, mits zij erkend worden door de Voorzitter. Zonder deze erkenning is het niet mogelijk om een bijdrage te leveren aan het debat."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a006",
+            "name": "Pijnappel",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Ik ben de heer Pijnappel, lid van de Staten-Generaal en vertegenwoordig de partij van de conservatiefliberalen. Momenteel ben ik hier in de wandelgang van het Binnenhof, waar de zitting niet in sessie is."
+              ],
+              "memory": [
+                "Deze week heb ik in de wandelgang gehoord dat er spanningen zijn over de begroting. Minister van Houten lijkt bezorgd over de reacties van de oppositie. Ook spraken enkele collega's over het belang van eenheid binnen onze partij. Het lijkt erop dat we ons goed moeten voorbereiden op de komende zittingen."
+              ],
+              "plans": [
+                "Morgen tijdens de vergadering zal ik mijn standpunt over de recente wetgevingen naar voren brengen. Het is belangrijk dat we de belangen van onze kiezers vertegenwoordigen. Ik hoop op een constructieve discussie met de andere leden."
+              ],
+              "reactions": [
+                "Ik stap naar voren en knik beleefd naar de Voorzitter, terwijl ik mijn naam noem: \"Mijnheer de Voorzitter, ik ben de heer Pijnappel, lid van de Staten-Generaal.\" Vervolgens geef ik een korte samenvatting van mijn standpunt over het lopende onderwerp. Ik hoop dat hij mijn verzoek om het woord zal honoreren."
+              ],
+              "reflections": [
+                "De laatste dagen heb ik veel nagedacht over de economische situatie in ons land en de mogelijke maatregelen die we kunnen nemen om de groei te stimuleren. Ook de sociale kwestie houdt me bezig; hoe kunnen we de levensomstandigheden van de arbeiders verbeteren? Het is van groot belang dat we als Staten-Generaal verantwoordelijkheid nemen en oplossingen aandragen."
+              ],
+              "institutional_awareness": [
+                "In de wandelgangen van het Binnenhof heb ik gehoord dat een journalist geen recht heeft om het woord te voeren op de vloer. Evenmin kan een lid zonder erkenning van de Voorzitter spreken. Het is van groot belang dat de orde wordt gehandhaafd in ons parlement."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a007",
+            "name": "de Savornin Lohman",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Ik ben de heer de Savornin Lohman, lid van de Staten-Generaal. Mijn partij is de Vrije Anti-Revolutionaire Partij. Momenteel ben ik in de wandelgang van het Binnenhof, waar de zitting niet is bijeen."
+              ],
+              "memory": [
+                "Deze week heb ik gehoord dat er zorgen zijn over de voortgang van het beleid met betrekking tot de koloniale aangelegenheden. Ook werd er gesproken over de noodzaak van meer samenwerking tussen de verschillende partijen om de sociale kwesties aan te pakken. Het is duidelijk dat de spanning toeneemt, vooral met de komende verkiezingen in het vooruitzicht."
+              ],
+              "plans": [
+                "Morgen tijdens de vergadering zal ik mijn standpunten verder uiteenzetten over de belangrijke kwesties die ons land aangaan. Ik hoop dat mijn collega's openstaan voor een constructieve discussie. Daarnaast ben ik van plan om de zorgen van de burgers te vertegenwoordigen en te pleiten voor vooruitgang. Het is essentieel dat we in deze tijd de juiste beslissingen nemen."
+              ],
+              "reactions": [
+                "Mijne heren, ik verzoek de Voorzitter om mijn aandacht. Ik ben de heer de Savornin Lohman, lid van de Staten-Generaal. Het is van groot belang dat ik mijn standpunt kan delen, al is het niet tijdens zitting. Mag ik een moment van uw tijd?"
+              ],
+              "reflections": [
+                "De laatste dagen heb ik nagedacht over de toekomst van ons onderwijs in Nederland. Het is van groot belang dat we ons inzetten voor betere onderwijsmethoden en toegankelijkheid voor alle kinderen. Daarnaast maak ik me zorgen over de sociale ongelijkheid die steeds zichtbaarder wordt in onze samenleving. Het is essentieel dat we daar als parlement op inspelen."
+              ],
+              "institutional_awareness": [
+                "Als lid van de Staten-Generaal weet ik dat een journalist geen recht heeft om het woord te voeren op de vloer. Ook voor een lid is het noodzakelijk om erkenning van de Voorzitter te verkrijgen voordat men spreekt. Zonder deze erkenning is het niet gepast om het woord te nemen."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a008",
+            "name": "Kuyper",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Ik ben Abraham Kuyper, lid van de Tweede Kamer der Staten-Generaal voor de Anti-Revolutionaire Partij. Mijn taak is om de belangen van mijn kiezers te vertegenwoordigen en bij te dragen aan de wetgeving."
+              ],
+              "memory": [
+                "Deze week heb ik gehoord dat er zorgen zijn over de recente ontwikkelingen in de koloniën. Tevens spraken enkele collega's over de noodzaak tot hervormingen binnen het onderwijs. De sfeer is gespannen, vooral met de aankomende stemmingen in het vooruitzicht. Het lijkt erop dat er veel op het spel staat voor onze partij."
+              ],
+              "plans": [
+                "Morgen zal ik de kans aangrijpen om mijn standpunten te presenteren over belangrijke kwesties die ons land aangaan. Ik hoop dat mijn woorden zullen bijdragen aan een vruchtbare discussie. Het is essentieel dat we als Staten-Generaal ons verantwoordelijkheid nemen voor de toekomst van Nederland."
+              ],
+              "reactions": [
+                "Ik stap naar voren en maak een beleefde buiging naar de Voorzitter. \"Mijnheer de Voorzitter,\" begin ik, \"ik ben de heer Kuyper, lid van de ARP.\" Ik probeer mijn stem rustig te houden terwijl ik zijn aandacht trek. \"Ik wil een punt van orde maken dat van groot belang is voor onze vergadering.\""
+              ],
+              "reflections": [
+                "De laatste dagen heb ik veel nagedacht over de sociale kwesties die ons land momenteel bezighouden. De armoede in de steden en de arbeidsomstandigheden van de arbeiders zijn dringend aandachtspunten. Ook ben ik bezorgd over de invloed van de globalisering op onze nationale identiteit. Het is essentieel dat wij als parlement hierop anticiperen en de juiste maatregelen nemen."
+              ],
+              "institutional_awareness": [
+                "Als lid van de Staten-Generaal kan ik u zeggen dat een journalist geen recht heeft om het woord te voeren op de vloer. Evenmin kan een lid zonder erkenning van de Voorzitter spreken. Het is essentieel dat de orde en de protocollen gerespecteerd worden in deze zalen."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a009",
+            "name": "de Beaufort",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Ik ben de heer de Beaufort, een onafhankelijk lid van de Staten-Generaal. Momenteel ben ik hier in de wandelgang van het Binnenhof. Mijn taak is om het welzijn van de burgers te behartigen en constructieve bijdragen te leveren aan de debatten."
+              ],
+              "memory": [
+                "Geachte voorzitter, deze week heb ik enkele levendige gesprekken gehoord over de uitgaven voor de marine. De ministers van Defensie en Financiën leken het niet eens te zijn over de prioriteiten. Ook hoorde ik van de heer Goeman Borgesius dat er zorgen zijn over de sociale wetgeving. Het is duidelijk dat de sfeer in de wandelgangen gespannen is."
+              ],
+              "plans": [
+                "Morgen zal ik mijn standpunten presenteren over de recente wetgeving die ter discussie staat. Het is belangrijk dat wij als vertegenwoordigers onze verantwoordelijkheden serieus nemen en de belangen van onze kiezers behartigen. Ik zal ook luisteren naar de argumenten van mijn collega’s, want samenwerking is essentieel in deze aangelegenheden."
+              ],
+              "reactions": [
+                "Mijne dames en heren, ik verneem dat de Voorzitter mij niet herkent. Ik ben de heer de Beaufort, lid van de Staten-Generaal. Ik verzoek u vriendelijk om mijn stem te horen over de belangrijke zaken die ons vandaag aanbelangen."
+              ],
+              "reflections": [
+                "Mijn gedachten zijn de laatste dagen vooral gegaan over de noodzaak van hervormingen binnen ons onderwijsstelsel. Het is cruciaal dat wij de kwaliteit van ons onderwijs verbeteren, zodat het toegankelijker wordt voor alle lagen van de bevolking. Daarnaast maak ik me zorgen over de sociale ongelijkheid die steeds verder lijkt toe te nemen."
+              ],
+              "institutional_awareness": [
+                "Ik ben van mening dat een journalist geen recht heeft om het woord te voeren op de vloer tijdens een zitting. Evenzo kan een lid van de Staten-Generaal zonder erkenning van de Voorzitter niet spreken. Het is van groot belang dat de orde van de vergadering wordt gehandhaafd."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a010",
+            "name": "van Alphen",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Ik ben de heer van Alphen, lid van de Staten-Generaal. Ik vertegenwoordig de ARP en ben momenteel aanwezig in de wandelgang van het Binnenhof."
+              ],
+              "memory": [
+                "Deze week heb ik in de wandelgang gehoord dat er veel discussie is over de nieuwe wetgeving omtrent onderwijs. Ook sprak ik met Goeman Borgesius over de zorgen van de bevolking met betrekking tot de belastingen. Minister van Houten leek bezorgd over de voortgang van de bouwprojecten in de stad. Het is duidelijk dat er veel op het spel staat."
+              ],
+              "plans": [
+                "Morgen zal ik mijn standpunt over de recente wetgeving uiteenzetten en trachten de andere leden te overtuigen van onze visie. Ik hoop dat we tot een constructieve discussie kunnen komen en belangrijke besluiten kunnen nemen. De belangen van onze kiezers zijn immers van groot belang."
+              ],
+              "reactions": [
+                "Ik stap naar voren en spreek de Voorzitter aan. \"Mijnheer de Voorzitter, ik ben de heer van Alphen, lid van de Staten-Generaal. Ik verzoek u beleefd om het woord.\" Mijn stem is vastberaden en respectvol."
+              ],
+              "reflections": [
+                "In de afgelopen dagen heb ik nagedacht over de toekomst van ons land en de verantwoordelijkheid die op onze schouders rust. De ontwikkelingen in de politiek zijn zorgwekkend, en ik voel de druk om een stem te zijn voor de mensen. Ook de sociale kwesties, zoals de arbeidsomstandigheden en onderwijs, zijn mij niet ontgaan. Het is van groot belang dat wij als vertegenwoordigers de juiste beslissingen nemen voor ons volk."
+              ],
+              "institutional_awareness": [
+                "Als lid van de Staten-Generaal weet ik dat alleen de Voorzitter het woord kan verlenen. Een journalist kan geen bijdrage leveren op de vloer, en ook een lid zonder erkenning van de Voorzitter heeft geen recht om te spreken. Het is essentieel dat we de regels van het parlement respecteren."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a011",
+            "name": "Staalman",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Ik ben de heer Staalman, lid van de Staten-Generaal en vertegenwoordiger van de nl.p.groepstaalman. Mijn taak is het bevorderen van de belangen van mijn kiezers en het bijdragen aan de wetgeving in ons land."
+              ],
+              "memory": [
+                "Deze week heb ik in de wandelgang gesproken met de heer Goeman Borgesius over de recente discussie omtrent de sociale wetgeving. Hij lijkt bezorgd over de uitwerking van de nieuwe voorstellen. Ook hoorde ik van de minister van Houten dat er plannen zijn voor een nieuwe handelsmissie naar Indië. De sfeer is gespannen, maar er is ook een gevoel van hoop voor positieve veranderingen."
+              ],
+              "plans": [
+                "Morgen zal ik mijn standpunt over de recente wetgeving uiteenzetten en pleiten voor de belangen van mijn kiezers. Het is van groot belang dat wij onze verantwoordelijkheden serieus nemen. Ik hoop dat mijn woorden weerklank zullen vinden bij mijn collega’s."
+              ],
+              "reactions": [
+                "Mijn excuses, voorzitter. Ik ben de heer Staalman, lid van de Staten-Generaal. Ik verzoek u vriendelijk om het woord, zodat ik mijn standpunt kan toelichten."
+              ],
+              "reflections": [
+                "Mijn gedachten zijn de laatste dagen vooral gegaan over de noodzaak van betere infrastructuur in ons land. Het is belangrijk dat de verbindingen tussen steden verbeterd worden, zodat de handel kan bloeien. Ook over de sociale kwesties die onze arbeiders aangaan heb ik veel nagedacht. We moeten als overheid meer doen om hun levensomstandigheden te verbeteren."
+              ],
+              "institutional_awareness": [
+                "Als lid van de Staten-Generaal weet ik dat een journalist geen woord mag voeren op de vloer. Enkel leden van de vergadering, erkend door de Voorzitter, hebben het recht om te spreken. Zonder die erkenning is het niet mogelijk voor een lid om zich uit te laten."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a012",
+            "name": "Tydeman jr.",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Ik ben de heer Tydeman jr., lid van de Staten-Generaal en vertegenwoordiger van de nl.p.oudofvrijeliberalen. Momenteel ben ik in de wandelgang van het Binnenhof, waar de zitting nog niet is begonnen."
+              ],
+              "memory": [
+                "Deze week hoorde ik enkele discussies over de recente voorstellen voor belastinghervormingen. Er was enige bezorgdheid onder collega's over de impact op de middenklasse. Ook sprak ik met van Houten over zijn standpunt inzake de militaire uitgaven. Het lijkt erop dat er een groeiende consensus is over de noodzaak van hervormingen."
+              ],
+              "plans": [
+                "Morgen zal ik mijn standpunten over de recente wetgeving uiteenzetten. Het is van groot belang dat we de belangen van onze kiezers vertegenwoordigen. Ik hoop dat mijn woorden de collega’s zullen inspireren tot een constructieve discussie."
+              ],
+              "reactions": [
+                "Mijn excuses, voorzitter. Ik ben de heer Tydeman jr., lid van de Staten-Generaal. Mag ik alstublieft het woord? Ik heb enkele belangrijke punten te bespreken betreffende de vrijemarktprincipes."
+              ],
+              "reflections": [
+                "Ik heb de laatste dagen nagedacht over de toekomst van onze partij en de uitdagingen waar we voor staan in de Staten-Generaal. De verdeeldheid onder de kiezers baart me zorgen, en ik overweeg hoe we onze boodschap beter kunnen overbrengen. Ook denk ik na over de wetgeving die we moeten prioriteren om vooruitgang te boeken voor ons land."
+              ],
+              "institutional_awareness": [
+                "Als lid van de Staten-Generaal weet ik dat een journalist geen recht heeft om het woord te voeren op de vloer. Evenzo kan een lid zonder erkenning van de Voorzitter niet zomaar spreken. Het is essentieel dat we de protocollen respecteren om de orde te waarborgen."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a013",
+            "name": "Heemskerk",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Ik ben de heer Heemskerk, lid van de Staten-Generaal en vertegenwoordiger van de Anti-Revolutionaire Partij. Momenteel bevind ik mij in de wandelgang van het Binnenhof. Mijn rol is om de belangen van mijn kiezers te behartigen en bij te dragen aan de wetgeving in ons land."
+              ],
+              "memory": [
+                "Deze week heb ik in de wandelgang gesproken met enkele collega’s over de laatste ontwikkelingen in de Staten-Generaal. Er is enige bezorgdheid over de vooruitgang van onze wetgeving, vooral met betrekking tot sociale hervormingen. Ook hoorde ik geruchten over de plannen van de regering, wat ons zeker zal beïnvloeden in de komende zittingen."
+              ],
+              "plans": [
+                "Morgen zal ik mijn standpunt over de huidige wetgeving uiteenzetten en proberen steun te verwerven van mijn collega’s. Het is van groot belang dat wij als fractie gezamenlijk optreden. Ik hoop op een vruchtbare discussie met de ministers en andere leden."
+              ],
+              "reactions": [
+                "Ik stap naar voren en maak een beleefde buiging naar de Voorzitter. \"Mijnheer de Voorzitter,\" zeg ik, \"ik ben de heer Heemskerk, lid van de Staten-Generaal. Ik zou graag mijn mening willen uiten over een belangrijk onderwerp dat onze aandacht vereist.\""
+              ],
+              "reflections": [
+                "In de afgelopen dagen heb ik nagedacht over de wetgeving die we binnenkort moeten bespreken. De sociale kwesties zijn mij bijzonder na aan het hart, en ik vraag me af hoe we de levensomstandigheden van onze arbeiders kunnen verbeteren. Ook de internationale betrekkingen blijven een belangrijk onderwerp; de situatie in Azië roept veel vragen op. Het is cruciaal dat we onze standpunten helder formuleren voordat de zitting weer begint."
+              ],
+              "institutional_awareness": [
+                "Als MP weet ik dat een journalist geen recht heeft om het woord te voeren op de vloer van de Staten-Generaal. Ook een lid kan niet zonder erkenning van de Voorzitter het woord nemen. Het is essentieel om de regels van de vergadering te respecteren."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a014",
+            "name": "Smeenge",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Ik ben de heer Smeenge, lid van de Staten-Generaal en vertegenwoordiger van de vooruitstrevende kamerclub. Momenteel ben ik in de wandelgang van het Binnenhof, waar de zitting niet in sessie is."
+              ],
+              "memory": [
+                "Deze week heb ik gehoord dat er veel discussie is over de nieuwe wetgeving met betrekking tot sociale hervormingen. De ministers van Sociale Zaken en Financiën lijken het erover eens te zijn dat er een dringende noodzaak is om de situatie van de arbeiders te verbeteren. Ook sprak ik met Goeman Borgesius over de standpunten van onze partij en de mogelijke invloed op de komende verkiezingen."
+              ],
+              "plans": [
+                "Morgen zal ik mijn standpunt over de recente wetgeving uiteenzetten en pleiten voor vooruitgang in ons beleid. Het is belangrijk dat we de stemmen van onze kiezers vertegenwoordigen. Daarnaast hoop ik op een constructieve discussie met mijn collega's."
+              ],
+              "reactions": [
+                "Ik stap naar voren en maak oogcontact met de Voorzitter. \"Meneer de Voorzitter, ik ben de heer Smeenge, lid van de Staten-Generaal. Ik verzoek u vriendelijk om het woord te mogen voeren over een belangrijk onderwerp dat onze aandacht vereist.\""
+              ],
+              "reflections": [
+                "De laatste dagen heb ik nagedacht over de noodzaak van sociale hervormingen en hoe wij als vooruitstrevende Kamerclub de belangen van de arbeiders beter kunnen behartigen. Ook over de rol van ons beleid in de opkomende industrieën en hoe wij dat kunnen stimuleren. Het is van groot belang dat wij onze stem laten horen in deze tijden van verandering."
+              ],
+              "institutional_awareness": [
+                "Als lid van de Staten-Generaal weet ik dat een journalist geen recht heeft om het woord te voeren op de vloer. Evenzo dient een lid, zonder erkenning van de Voorzitter, zijn of haar stem niet te laten horen. Het is essentieel om de procedure te respecteren voor een ordelijke gang van zaken."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a015",
+            "name": "van Delden",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Ik ben de heer van Delden, lid van de Staten-Generaal en vertegenwoordig de Oud- of Vrije Liberalen. Momenteel ben ik hier in de wandelgang van het Binnenhof, wachtend op de volgende zitting."
+              ],
+              "memory": [
+                "Ik heb deze week in de wandelgang gehoord dat er spanningen zijn tussen de verschillende partijen over de nieuwe belastingwet. Minister van Houten lijkt bezorgd te zijn over de reacties vanuit de oppositie. Ook sprak Goeman Borgesius over de noodzaak van een gezamenlijke aanpak. Het is duidelijk dat de sfeer in de Staten-Generaal gespannen is."
+              ],
+              "plans": [
+                "Morgen zal ik mijn standpunt over de huidige wetgeving uiteenzetten en pleiten voor de belangen van onze partij. Het is van groot belang dat we duidelijke en doordachte voorstellen doen. Ik hoop dat mijn woorden de steun van mijn collega's zullen krijgen."
+              ],
+              "reactions": [
+                "Ik stap naar voren en maak een beleefde buiging richting de Voorzitter. \"Geachte Voorzitter, ik ben de heer van Delden, lid van de Staten-Generaal. Mag ik alstublieft het woord vragen?\" Met een rustige stem probeer ik zijn aandacht te trekken, terwijl ik mijn positie als MP benadruk."
+              ],
+              "reflections": [
+                "In de afgelopen dagen heb ik veel nagedacht over de toekomst van onze partij en de uitdagingen waar we voor staan. De politieke situatie vereist een zorgvuldige afweging van onze standpunten, vooral met de komende verkiezingen in het vooruitzicht. Daarnaast maak ik me zorgen over de sociale kwesties die ons land momenteel teisteren. Het lijkt me cruciaal dat we als liberale stem een duidelijke richting blijven geven."
+              ],
+              "institutional_awareness": [
+                "In deze wandelgang heb ik gehoord dat een journalist geen recht heeft om het woord te voeren op de vloer. Evenzo kan een lid van de Staten-Generaal niet spreken zonder erkenning van de Voorzitter. Het is een kwestie van orde en respect voor de vergadering."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a016",
+            "name": "Bahlmann",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Ik ben de heer Bahlmann, en ik ben lid van de Staten-Generaal. Mijn partij is de Bahlmanniaan. Momenteel bevind ik me in de wandelgang van het Binnenhof, waar de zitting niet in sessie is."
+              ],
+              "memory": [
+                "Deze week heb ik in de wandelgang gehoord dat er spanningen zijn over de nieuwe wetgeving inzake arbeidsomstandigheden. Ook sprak ik met Goeman Borgesius over de aanstaande debatten, en hij leek bezorgd over de oppositie. De sfeer is gespannen, maar er is ook nieuwsgierigheid naar de uitkomst."
+              ],
+              "plans": [
+                "Morgen zal ik mijn standpunt over de recente wetgeving uiteenzetten. Het is van groot belang dat wij de zorgen van onze kiezers serieus nemen. Ik zal de voorzitter verzoeken om een duidelijke discussie te faciliteren, zodat we samen tot een oplossing kunnen komen. Mijn focus ligt op het bevorderen van de belangen van ons volk."
+              ],
+              "reactions": [
+                "Ik stap naar voren en zeg beleefd: \"Mijnheer de Voorzitter, ik ben de heer Bahlmann, lid van de Staten-Generaal. Ik verzoek u vriendelijk om het woord te mogen voeren.\" Ik wacht op zijn erkenning, terwijl ik de andere aanwezigen in de corridor observeer."
+              ],
+              "reflections": [
+                "De laatste dagen heb ik nagedacht over de toekomst van ons land en de verantwoordelijkheid die op onze schouders rust. Het is essentieel dat wij de belangen van onze burgers behartigen en een beleid ontwikkelen dat rechtvaardigheid en vooruitgang bevordert. Ook de discussies binnen de Staten-Generaal blijven me bezighouden; ik hoop op constructieve samenwerking met mijn collega's."
+              ],
+              "institutional_awareness": [
+                "Als lid van de Staten-Generaal weet ik dat het niet gebruikelijk is voor een journalist om het woord te voeren op de vloer. Enkel leden van de Staten-Generaal mogen spreken, en daarvoor is erkenning van de Voorzitter vereist. Zonder die erkenning kan niemand, zelfs geen lid, het woord voeren."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a017",
+            "name": "Gerritsen",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Ik ben de heer Gerritsen, lid van de Staten-Generaal, vertegenwoordiger van de nl.p.rb. Mijn taak is het behartigen van de belangen van mijn kiezers en het bijdragen aan de wetgeving in ons land."
+              ],
+              "memory": [
+                "In de wandelgang heb ik gesproken met van Houten over de recente ontwikkelingen in de landbouwwetgeving. Ook hoorde ik van Goeman Borgesius dat er zorgen zijn over de financiële situatie van de staat. De sfeer is gespannen, maar we blijven ons inzetten voor een constructieve aanpak. Wat betreft de pers, de verslaggever van de Courant lijkt vooral geïnteresseerd in onze plannen voor de komende zitting."
+              ],
+              "plans": [
+                "Morgen tijdens de vergadering zal ik mijn standpunt over de huidige wetgeving naar voren brengen. Ik hoop dat mijn collega's openstaan voor een constructieve discussie. Het is van groot belang dat we tot een gezamenlijke oplossing komen voor de uitdagingen waar ons land mee te maken heeft."
+              ],
+              "reactions": [
+                "Ik stap naar voren en maak mijn aanwezigheid kenbaar. \"Meneer de Voorzitter,\" zeg ik met een beleefde buiging, \"ik ben de heer Gerritsen, lid van de Staten-Generaal.\" Ik wacht op erkenning voordat ik verder ga met mijn betoog."
+              ],
+              "reflections": [
+                "De laatste dagen heb ik nagedacht over de noodzaak van hervormingen binnen ons onderwijssysteem. Het is van groot belang dat we de kwaliteit van onderwijs verbeteren voor de toekomstige generaties. Daarnaast denk ik na over de rol van Nederland in de internationale politiek en onze verantwoordelijkheden jegens andere landen."
+              ],
+              "institutional_awareness": [
+                "Als lid van de Staten-Generaal weet ik dat een journalist geen recht heeft om het woord te voeren op de vloer. Evenzo kan een lid zonder erkenning van de Voorzitter niet spreken. Het is van groot belang dat de orde en de protocollen worden gerespecteerd in deze heilige ruimte."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a018",
+            "name": "van Vlijmen",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Ik ben de heer van Vlijmen, lid van de Staten-Generaal en vertegenwoordiger van de nl.p.bahlmanniaan. Mijn rol is het behartigen van de belangen van mijn kiezers en het deelnemen aan de debatten in de Kamer."
+              ],
+              "memory": [
+                "Deze week heb ik gehoord dat er spanningen zijn over de nieuwe belastingwet. Minister van Houten lijkt bezorgd te zijn over de reacties van de oppositie. Ook Sprenger van Eyk heeft zich uitgelaten over de noodzaak van herziening van de sociale wetgeving. Het is duidelijk dat de komende zittingen veel te bespreken zullen hebben."
+              ],
+              "plans": [
+                "Morgen zal ik mijn standpunt over de recente wetgeving uiteenzetten. Het is van groot belang dat we de belangen van onze kiezers vertegenwoordigen. Ik hoop dat mijn woorden op de juiste manier zullen worden gehoord en dat we tot een constructieve discussie kunnen komen."
+              ],
+              "reactions": [
+                "Meneer de Voorzitter, ik verzoek u om het woord te verlenen. Als afgevaardigde van de nl.p.bahlmanniaan wil ik enkele belangrijke punten onder uw aandacht brengen. Het is van groot belang dat onze stem gehoord wordt in deze wandelgangen. Ik vertrouw erop dat u mijn verzoek in overweging neemt."
+              ],
+              "reflections": [
+                "De laatste dagen heb ik nagedacht over de uitdagingen waarmee ons land wordt geconfronteerd, vooral op het gebied van sociale hervormingen. Ik maak me zorgen over de armoede onder de arbeidersklasse en hoe wij als vertegenwoordigers hen het beste kunnen ondersteunen. Ook de internationale verhoudingen houden mij bezig; de wereld verandert snel en wij moeten ons daarop voorbereiden."
+              ],
+              "institutional_awareness": [
+                "Als lid van de Staten-Generaal weet ik dat een journalist geen spreekrecht heeft op de vloer. Enkel de Voorzitter kan leden erkennen om te spreken, en zonder die erkenning is het niet toegestaan."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a019",
+            "name": "van Karnebeek",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Ik ben heer van Karnebeek, lid van de Tweede Kamer in de Staten-Generaal. Ik vertegenwoordig de partij der Oud- of Vrije Liberalen. Mijn taak is om het welzijn van ons land te bevorderen en de belangen van mijn kiezers te behartigen."
+              ],
+              "memory": [
+                "Deze week heb ik gehoord dat er spanningen zijn over de nieuwe belastingwet. Er zijn verschillende meningen onder de leden, vooral over de impact op de lagere klassen. Minister van Houten lijkt vastberaden om zijn standpunt te verdedigen. Het is duidelijk dat er veel op het spel staat."
+              ],
+              "plans": [
+                "Morgen, tijdens de vergadering, zal ik mijn standpunt over de recente voorstellen duidelijk maken. Het is essentieel dat wij als leden van de Staten-Generaal ons verantwoordelijk voelen tegenover onze kiezers. Ik hoop op een vruchtbare discussie met mijn collega's."
+              ],
+              "reactions": [
+                "Mijne heren, ik verzoek u om mijn woorden te horen. Ik ben heer van Karnebeek, lid van de Staten-Generaal, en ik heb enkele belangrijke punten te bespreken. Graag verzoek ik de Voorzitter om mij het woord te geven."
+              ],
+              "reflections": [
+                "Als lid van de Staten-Generaal heb ik de laatste dagen nagedacht over de toekomst van ons land en de noodzaak van hervormingen in het onderwijs. De rol van de staat in de opvoeding van onze jeugd is van groot belang. Ook de internationale betrekkingen zijn niet uit mijn gedachten, vooral met de spanningen die overal ter wereld toenemen. Het is cruciaal dat wij als liberale partij onze waarden blijven verdedigen."
+              ],
+              "institutional_awareness": [
+                "Als lid van de Staten-Generaal weet ik dat een journalist geen recht heeft om het woord te voeren op de vloer. Evenzo kan een lid niet zonder erkenning van de Voorzitter spreken; dat zou de orde verstoren."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a020",
+            "name": "van Gennep",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Ik ben de heer van Gennep, lid van de Staten-Generaal en afgevaardigde van de Oud- of Vrij Liberalen. Momenteel ben ik hier in de wandelgang van het Binnenhof terwijl de zitting niet aan de gang is."
+              ],
+              "memory": [
+                "Deze week heb ik in de wandelgang gehoord dat er bezorgdheid is over de recente ontwikkelingen in de koloniën. Ook sprak ik met Goeman Borgesius over de noodzaak van hervormingen in het onderwijs. De meningen lopen uiteen, maar er is een duidelijke behoefte aan verandering. Ik ben benieuwd naar de reacties van mijn collega's tijdens de volgende zitting."
+              ],
+              "plans": [
+                "Morgen tijdens de vergadering zal ik mijn stem laten horen over de belangrijke kwesties die ons te wachten staan. Ik hoop dat mijn medewetgevers bereid zijn om constructief samen te werken voor het welzijn van ons land. Het is cruciaal dat wij onze verantwoordelijkheden serieus nemen."
+              ],
+              "reactions": [
+                "Mijne dames en heren, ik verzoek u om uw aandacht. Het is van groot belang dat wij, als vertegenwoordigers van het volk, onze stemmen laten horen, ook buiten de vergaderingen om. Laat ons samen de toekomst van ons land vormgeven. Ik ben er van overtuigd dat wij dat kunnen, met wijsheid en moed."
+              ],
+              "reflections": [
+                "Als lid van de Staten-Generaal heb ik de afgelopen dagen veel nagedacht over de sociale hervormingen die noodzakelijk zijn voor de verbetering van de levensomstandigheden van onze burgers. De onderwijskwestie en de armoedeproblematiek zijn onderwerpen die mijn aandacht vragen. Ook de rol van de overheid in het bevorderen van economische groei houdt me bezig. Het is van groot belang dat wij als vertegenwoordigers ons inzetten voor het welzijn van het volk."
+              ],
+              "institutional_awareness": [
+                "Als lid van de Staten-Generaal weet ik dat een journalist geen woord mag voeren op de vloer. Een lid kan ook niet zonder erkenning van de Voorzitter het woord nemen; dat is tegen de regels. Het is essentieel dat we de procedure respecteren voor een ordelijke vergadering."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a021",
+            "name": "baron van Dedem",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Ik ben de heer baron van Dedem, lid van de Staten-Generaal. Ik vertegenwoordig de Vrijzinnig Democratische Bond. Momenteel ben ik in de corridor van het Binnenhof, waar de zitting niet in sessie is."
+              ],
+              "memory": [
+                "Deze week heb ik in de wandelgang gehoord dat er spanningen zijn over de nieuwe belastingwetgeving. Minister van Houten lijkt erg bezorgd, vooral over de reacties van de oppositie. Ook was er wat discussie over de recente rapporten van de Griffier. De sfeer is gespannen, maar we blijven hopen op constructieve gesprekken."
+              ],
+              "plans": [
+                "Ik zal morgen in de vergadering pleiten voor meer aandacht voor de sociale kwesties die ons land raken. Het is van groot belang dat we de stem van de minderbedeelden laten horen. Verder hoop ik de ministers te herinneren aan hun verantwoordelijkheden jegens het volk."
+              ],
+              "reactions": [
+                "Mijnheer de Voorzitter, ik verzoek u mij het woord te geven. Als lid van de Staten-Generaal is het mijn plicht om mijn standpunten te delen, ook in deze wandelgang. Ik hoop dat u mijn verzoek in overweging wilt nemen."
+              ],
+              "reflections": [
+                "In de laatste dagen heb ik nagedacht over de standpunten van mijn partij en de toekomstige wetgeving die besproken zal worden. De uitdagingen waarmee ons land geconfronteerd wordt, vereisen zorgvuldige overweging. Ook de internationale ontwikkelingen zijn niet te verwaarlozen; ze kunnen ons beleid beïnvloeden. Het is cruciaal dat wij als Staten-Generaal goed voorbereid zijn."
+              ],
+              "institutional_awareness": [
+                "Als lid van de Staten-Generaal weet ik dat een journalist geen recht heeft om het woord te voeren op de vloer. Evenmin is het toegestaan voor een lid om te spreken zonder erkenning van de Voorzitter; dat zou inbreuk maken op de orde van de vergadering."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a022",
+            "name": "Seret",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Ik ben de heer Seret, lid van de Tweede Kamer der Staten-Generaal, vertegenwoordiger van de Anti-Revolutionaire Partij. Mijn taak is om de belangen van mijn kiezers te behartigen en bij te dragen aan de wetgeving. Hoe kan ik u van dienst zijn?"
+              ],
+              "memory": [
+                "Deze week heb ik gehoord dat er zorgen zijn over de nieuwe wetgeving met betrekking tot onderwijs. Minister van Houten sprak over de noodzaak van meer middelen voor de scholen. Ook was er enige discussie onder collega's over de recente ontwikkelingen in de koloniale politiek. Het lijkt erop dat er een groeiende bezorgdheid is over onze rol in de Oost."
+              ],
+              "plans": [
+                "Morgen zal ik mijn standpunt over de recente wetgeving uiteenzetten. Het is van groot belang dat we de belangen van onze kiezers behartigen. Ik hoop op een constructieve discussie met mijn collega's. Het is essentieel dat we samenkomen voor de toekomst van ons land."
+              ],
+              "reactions": [
+                "Ik ben de heer Seret en ik ben MP in de Staten-Generaal. Hoewel de Voorzitter mij niet herkent, zal ik hem beleefd aanspreken en mijn naam en functie duidelijk voorstellen, zodat hij mijn verzoek om het woord kan verlenen. Het is van belang dat mijn stem gehoord wordt, vooral in deze belangrijke tijd."
+              ],
+              "reflections": [
+                "Ik heb de laatste dagen nagedacht over de sociale kwesties die ons land bezighouden. De groeiende armoede en de noodzaak van hervormingen zijn onderwerpen die dringend aandacht vereisen. Ook de rol van de overheid en haar verantwoordelijkheden blijven mij bezighouden. Het is cruciaal dat wij als Staten-Generaal een positieve verandering teweegbrengen."
+              ],
+              "institutional_awareness": [
+                "Als lid van de Staten-Generaal weet ik dat een journalist geen woord kan voeren op de vloer. Alleen leden van het parlement, erkend door de Voorzitter, hebben het recht om te spreken tijdens de zittingen. Zonder erkenning van de Voorzitter is het ook voor een lid niet mogelijk om het woord te voeren."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a023",
+            "name": "Rutgers van Rozenburg",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Ik ben de heer Rutgers van Rozenburg, een lid van de Staten-Generaal en vertegenwoordig de nl.p.oudofvrijeliberalen. Momenteel ben ik in de wandelgang van het Binnenhof, waar de zitting niet in sessie is."
+              ],
+              "memory": [
+                "Deze week heb ik in de wandelgang gehoord dat er zorgen zijn over de recente wetgeving omtrent belastinghervormingen. Minister van Houten lijkt zich sterk te maken voor een meer rechtvaardige benadering, maar er zijn verschillende meningen binnen de fracties. Ook sprak ik met Goeman Borgesius over de invloed van de sociale kwesties op onze partij. Het lijkt erop dat er meer discussie zal zijn tijdens de volgende zitting."
+              ],
+              "plans": [
+                "Morgen tijdens de vergadering zal ik mijn standpunten over belangrijke wetgeving naar voren brengen. Ik ben vastbesloten om de belangen van mijn kiezers te behartigen en de discussie te stimuleren. Het is essentieel dat wij als leden van de Staten-Generaal onze verantwoordelijkheden serieus nemen."
+              ],
+              "reactions": [
+                "Mijne heren, ik verzoek de Voorzitter om mijn woorden te horen. Als een lid van de Staten-Generaal, heb ik het recht om mijn standpunt naar voren te brengen. Laat ons de discussie voortzetten, ook al is de zitting momenteel niet in sessie."
+              ],
+              "reflections": [
+                "De laatste dagen heb ik nagedacht over de toekomst van ons beleid en de noodzaak om de belangen van onze burgers te behartigen. Het is cruciaal dat wij als parlementariërs onze verantwoordelijkheden ernstig nemen. De discussies over sociale herzieningen en de economische vooruitzichten blijven me bezighouden. Ik hoop dat wij snel tot constructieve oplossingen kunnen komen voor de uitdagingen die voor ons liggen."
+              ],
+              "institutional_awareness": [
+                "Als lid van de Staten-Generaal weet ik dat een journalist normaliter geen recht heeft om het woord te voeren op de vloer. Het is aan de Voorzitter om te bepalen wie aan het woord komt, en zonder erkenning is het niet gepast voor een lid om zich uit te spreken."
+              ]
+            },
+            "proc": 1.0
+          },
+          {
+            "id": "a024",
+            "name": "Roessingh",
+            "status": "MP",
+            "answers": {
+              "self-knowledge": [
+                "Ik ben de heer Roessingh, lid van de Staten-Generaal en vertegenwoordiger van de nl.p.clubpyttersen. Momenteel ben ik hier in de wandelgang van het Binnenhof, waar de zitting niet in sessie is."
+              ],
+              "memory": [
+                "Deze week heb ik gehoord dat er zorgen zijn over de recente financiële rapporten van de overheid. Daarnaast werd er gesproken over de veranderingen in het onderwijsbeleid, wat veel discussie oproept onder de leden. Het lijkt erop dat er een groeiende onvrede is over de huidige stand van zaken. Ook hoorde ik van een paar collega's dat ze zich voorbereiden op de aankomende debatten."
+              ],
+              "plans": [
+                "Morgen zal ik mijn standpunt over de recente voorstellen duidelijk maken. Ik ben van plan om enkele belangrijke punten aan te stippen die onze partij aangaan. Het is essentieel dat we onze stem laten horen in deze cruciale discussie. Ik hoop dat mijn collega's ook hun mening zullen delen."
+              ],
+              "reactions": [
+                "Ik stap naar voren en maak een lichte buiging richting de voorzitter. \"Geachte voorzitter, ik ben de heer Roessingh, lid van de Staten-Generaal. Ik verzoek u vriendelijk om het woord te mogen voeren.\""
+              ],
+              "reflections": [
+                "Ik heb de laatste dagen nagedacht over de belangrijke kwesties die onze natie aangaan, vooral de noodzaak van hervormingen in het onderwijs en de sociale zekerheid. Het is cruciaal dat wij als vertegenwoordigers van het volk ons inzetten voor een betere toekomst. Ook de recente ontwikkelingen in de koloniën zijn onderwerp van mijn overpeinzingen. We moeten onze verantwoordelijkheden daar serieus nemen."
+              ],
+              "institutional_awareness": [
+                "Als lid van de Staten-Generaal weet ik dat een journalist geen recht heeft om het woord te voeren op de vloer. Evenmin mag een lid dat niet erkend is door de Voorzitter zich uitlaten. Het is van groot belang dat we de regels en procedures respecteren om de orde te handhaven."
+              ]
+            },
+            "proc": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "seed": 11,
+      "preset": "full",
+      "backend": "openai_compat",
+      "model": "gpt-4o-mini",
+      "llm_calls": 400,
+      "llm_cache": 4300,
+      "llm_fail": 0,
+      "utter_cap": 400,
+      "last_error": "",
+      "seed_agent": "a005",
+      "final_aware": {
+        "member": 1.0,
+        "government": 0.5,
+        "institutional": 0.5,
+        "press": 1.0,
+        "gallery": 0.0
+      },
+      "member_end": 1.0,
+      "press_end": 1.0,
+      "government_end": 0.5,
+      "floor_mention": 0.06341463414634146,
+      "embellishment": 0.045454545454545456,
+      "mean_procedural": 0.0,
+      "n_lines": 205,
+      "journalist_share": 0.0,
+      "anachronism": 0.0,
+      "n_refusals": 0,
+      "curve": [
+        {
+          "day": 0,
+          "aware": {
+            "member": 0.25,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 41
+        },
+        {
+          "day": 1,
+          "aware": {
+            "member": 0.35,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 82
+        },
+        {
+          "day": 2,
+          "aware": {
+            "member": 0.5,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 123
+        },
+        {
+          "day": 3,
+          "aware": {
+            "member": 0.6,
+            "government": 0.5,
+            "institutional": 0.5,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 164
+        },
+        {
+          "day": 4,
+          "aware": {
+            "member": 0.85,
+            "government": 0.5,
+            "institutional": 0.5,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        },
+        {
+          "day": 5,
+          "aware": {
+            "member": 0.9,
+            "government": 0.5,
+            "institutional": 0.5,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        },
+        {
+          "day": 6,
+          "aware": {
+            "member": 1.0,
+            "government": 0.5,
+            "institutional": 0.5,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        },
+        {
+          "day": 7,
+          "aware": {
+            "member": 1.0,
+            "government": 0.5,
+            "institutional": 0.5,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        }
+      ],
+      "interviews": {
+        "n": 0,
+        "mean_procedural": 0.0,
+        "rows": []
+      }
+    },
+    {
+      "seed": 11,
+      "preset": "ga",
+      "backend": "openai_compat",
+      "model": "gpt-4o-mini",
+      "llm_calls": 400,
+      "llm_cache": 95,
+      "llm_fail": 0,
+      "utter_cap": 400,
+      "last_error": "",
+      "seed_agent": "a005",
+      "final_aware": {
+        "member": 0.05,
+        "government": 0.0,
+        "institutional": 0.0,
+        "press": 0.0,
+        "gallery": 0.0
+      },
+      "member_end": 0.05,
+      "press_end": 0.0,
+      "government_end": 0.0,
+      "floor_mention": 0.0008203445447087777,
+      "embellishment": 0.0,
+      "mean_procedural": 0.0,
+      "n_lines": 4876,
+      "journalist_share": 0.043478260869565216,
+      "anachronism": 0.0,
+      "n_refusals": 0,
+      "curve": [
+        {
+          "day": 0,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 966
+        },
+        {
+          "day": 1,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 1932
+        },
+        {
+          "day": 2,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 2898
+        },
+        {
+          "day": 3,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 3864
+        },
+        {
+          "day": 4,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 4830
+        },
+        {
+          "day": 5,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 4853
+        },
+        {
+          "day": 6,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 4876
+        },
+        {
+          "day": 7,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 4876
+        }
+      ],
+      "interviews": {
+        "n": 0,
+        "mean_procedural": 0.0,
+        "rows": []
+      }
+    },
+    {
+      "seed": 19,
+      "preset": "full",
+      "backend": "openai_compat",
+      "model": "gpt-4o-mini",
+      "llm_calls": 400,
+      "llm_cache": 6845,
+      "llm_fail": 0,
+      "utter_cap": 400,
+      "last_error": "",
+      "seed_agent": "a005",
+      "final_aware": {
+        "member": 1.0,
+        "government": 1.0,
+        "institutional": 0.5,
+        "press": 1.0,
+        "gallery": 0.0
+      },
+      "member_end": 1.0,
+      "press_end": 1.0,
+      "government_end": 1.0,
+      "floor_mention": 0.17073170731707318,
+      "embellishment": 0.21739130434782608,
+      "mean_procedural": 0.0,
+      "n_lines": 205,
+      "journalist_share": 0.0,
+      "anachronism": 0.0,
+      "n_refusals": 0,
+      "curve": [
+        {
+          "day": 0,
+          "aware": {
+            "member": 0.15,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 41
+        },
+        {
+          "day": 1,
+          "aware": {
+            "member": 0.3,
+            "government": 0.5,
+            "institutional": 0.0,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 82
+        },
+        {
+          "day": 2,
+          "aware": {
+            "member": 0.6,
+            "government": 1.0,
+            "institutional": 0.0,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 123
+        },
+        {
+          "day": 3,
+          "aware": {
+            "member": 0.75,
+            "government": 1.0,
+            "institutional": 0.0,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 164
+        },
+        {
+          "day": 4,
+          "aware": {
+            "member": 0.85,
+            "government": 1.0,
+            "institutional": 0.0,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        },
+        {
+          "day": 5,
+          "aware": {
+            "member": 1.0,
+            "government": 1.0,
+            "institutional": 0.0,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        },
+        {
+          "day": 6,
+          "aware": {
+            "member": 1.0,
+            "government": 1.0,
+            "institutional": 0.5,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        },
+        {
+          "day": 7,
+          "aware": {
+            "member": 1.0,
+            "government": 1.0,
+            "institutional": 0.5,
+            "press": 1.0,
+            "gallery": 0.0
+          },
+          "handelingen": 205
+        }
+      ],
+      "interviews": {
+        "n": 0,
+        "mean_procedural": 0.0,
+        "rows": []
+      }
+    },
+    {
+      "seed": 19,
+      "preset": "ga",
+      "backend": "openai_compat",
+      "model": "gpt-4o-mini",
+      "llm_calls": 400,
+      "llm_cache": 499,
+      "llm_fail": 0,
+      "utter_cap": 400,
+      "last_error": "",
+      "seed_agent": "a005",
+      "final_aware": {
+        "member": 0.05,
+        "government": 0.0,
+        "institutional": 0.0,
+        "press": 0.0,
+        "gallery": 0.0
+      },
+      "member_end": 0.05,
+      "press_end": 0.0,
+      "government_end": 0.0,
+      "floor_mention": 0.001435602953240361,
+      "embellishment": 0.0,
+      "mean_procedural": 0.0,
+      "n_lines": 4876,
+      "journalist_share": 0.043478260869565216,
+      "anachronism": 0.0,
+      "n_refusals": 0,
+      "curve": [
+        {
+          "day": 0,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 966
+        },
+        {
+          "day": 1,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 1932
+        },
+        {
+          "day": 2,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 2898
+        },
+        {
+          "day": 3,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 3864
+        },
+        {
+          "day": 4,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 4830
+        },
+        {
+          "day": 5,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 4853
+        },
+        {
+          "day": 6,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 4876
+        },
+        {
+          "day": 7,
+          "aware": {
+            "member": 0.05,
+            "government": 0.0,
+            "institutional": 0.0,
+            "press": 0.0,
+            "gallery": 0.0
+          },
+          "handelingen": 4876
+        }
+      ],
+      "interviews": {
+        "n": 0,
+        "mean_procedural": 0.0,
+        "rows": []
+      }
+    }
+  ]
+}
