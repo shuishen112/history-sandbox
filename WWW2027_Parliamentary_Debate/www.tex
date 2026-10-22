@@ -60,7 +60,7 @@ speech, comparable with the real, selective record. Under
 the transmission and allusion rules we encode, a resignation rumour
 reached almost all members yet appeared in only $4\%$ of the record. Like the real Handelingen, the simulated record contains no
 speech by journalists; without the floor rules, journalists produce
-$4.3\%$ of it, and swapping the heuristic planner for \texttt{gpt-4o-mini}
+$4.3\%$ of it, and swapping the heuristic backend for \texttt{gpt-4o-mini}
 changes neither result. Silence in the Handelingen therefore cannot by
 itself be read as ignorance. More broadly, present-day bias in LLM-agent
 simulation lies not only in the model's language but in the world it is
@@ -185,7 +185,7 @@ composite Binnenhof, the parliamentary complex in The Hague
 they spoke: agents are seeded from attested speakers and their recorded
 speech in the 1814--1899 proceedings. Institutions decide who may act: as
 in Smallville, the world is a 2D map backed by an environment tree, but
-every edge of that tree is gated by the agent's role (Chair, member,
+every action in that tree is gated by the agent's role (Chair, member,
 minister, clerk, journalist), the Reglement van Orde (the standing
 orders), and whether the sitting is open, so a journalist cannot take the
 floor however the model is prompted. The archive's own selection becomes
@@ -202,7 +202,7 @@ late-1890s member than those of a Smallville-style baseline (17 wins,
 8 losses, 11 ties). Institutional outcomes, in turn, did not depend on the
 backbone. Like the real Handelingen, the simulated record contains no
 speech by journalists; without the floor rules, journalists produce
-$4.3\%$ of it, and replacing the heuristic planner with
+$4.3\%$ of it, and replacing the heuristic backend with
 \texttt{gpt-4o-mini} changes neither figure. Finally, under the
 transmission and allusion rules we encode, the record diverged sharply
 from what parliament knew: a resignation rumour reached almost all members
@@ -266,9 +266,9 @@ a game-master agent turns the actions that agents describe into outcomes
 in the world. Work on electronic institutions~\cite{esteva2001electronic}
 and the grammar of institutions~\cite{crawford1995grammar} specifies the
 roles, rules, and protocols of interaction outside the agents themselves.
-\sys{} adopts the sandbox and cognitive loop of Generative Agents but,
-like these institutional approaches, enforces its standing orders in the
-world rather than through a model. It also follows the
+\sys{} adopts the sandbox design of Generative Agents (tile map,
+environment tree, memory stream) but, like these institutional approaches,
+enforces its standing orders in the world rather than through a model. It also follows the
 generative standard: its claims concern which institutional rules suffice
 to produce the patterns in the record (\S\ref{sec:discussion}).
 
@@ -465,15 +465,12 @@ Staten-Generaal. The journalist is the only role not drawn from a
 \texttt{speech} element: the Handelingen do not record the press gallery,
 which is precisely why the sandbox includes this role. The griffier is a
 named office-holder (Arntzenius, in office 1888--1920); the stenographer is
-a separate role, implemented as the observation model $O_\phi$. A
-parliamentary historian reviewed
-the roster, the OCR speaker cards, and the standing-order scheme
-(\S\ref{sec:eval-interview}).
+a separate role that writes the simulated record (\S\ref{sec:calibration}).
 
 The system prompt of the LLM backbone asks
 for late-nineteenth-century Dutch and lists period forms such as
 \emph{thans}, \emph{eene}, \emph{hetgeen}, and \emph{Nederlandsch}; the
-GA baseline's prompt asks only for ``period Dutch''. Archival retrieval
+Smallville-style baseline asks only for ``period Dutch''. Archival retrieval
 and an anachronism filter, which our design specifies, were not active in
 the runs reported here (\S\ref{sec:discussion}).
 
@@ -567,9 +564,9 @@ travel on a separate, structured channel. A rumour is a set of facts (who,
 what, how much, where, and when) with a provenance chain of hops. At each
 encounter, the speaker may pass on a rumour it knows, with probability
 $0.28$ in the wandelgang, $0.10$ in other off-record places, and $0.02$ on
-the floor; in the wandelgang this probability is multiplied by $0.35$ for
-ministers, the Chair, and the griffier, and raised to at least $0.55$ for
-the journalist. With probability $d$, the corridor distortion ($0.18$ by
+the floor; in the wandelgang it is multiplied by $0.35$ for hearers who
+are ministers, the Chair, or the griffier, and is at least $0.55$ for the
+journalist as hearer. With probability $d$, the corridor distortion ($0.18$ by
 default), one fact changes at the hop, for example ``this week'' becoming
 ``after the vote''. The hearer perceives the rumour as ``[speaker] told
 me: \ldots'' and may learn the places it names.
@@ -585,7 +582,7 @@ the floor into the simulated Handelingen $Y^t$. Corridor talk, committee
 speech, and the journalist's notes never enter it. In the reported runs,
 the Chair's recognitions and rulings are logged as events but not written
 as lines, so the simulated record contains no speech by the Chair. This
-in-world process is the observation model $O_\phi$ used below. The
+in-world process mirrors the archive's selection, formalised below. The
 griffier does not operate the stenograph.
 
 \paragraph{Selection-aware comparison.} Let $x$ denote the features of an
@@ -802,7 +799,7 @@ $4{,}876$ lines, and the journalist, one of 23 speakers, produces $4.3\%$
 of it. No role transition is triggered in S1 (\S\ref{sec:gating}), so
 --automaton is identical to the full model. Removing the rumour network
 stops diffusion entirely, because rumours travel only on that channel;
-floor speech does not pass them on. Replacing the planner with
+floor speech does not pass them on. Replacing the heuristic backend with
 \texttt{gpt-4o-mini} leaves the selection diagnostics unchanged
 (Table~\ref{tab:backbone}), as expected, since the model writes only what
 agents say, not who speaks or where. Its effect is confined to content:
@@ -865,11 +862,8 @@ that the agents discover.
 \emph{internet} and \emph{covid}) against the simulated record and finds
 none on either backend. Because most record lines are attested excerpts,
 this says little about the model's own language. Procedure, not prompt
-wording, keeps the press off the record. With the affordance layer, the
-journalist has no lines in the simulated Handelingen, which hold 205
-lines; without it, the journalist produces $4.3\%$ of a record of
-$4{,}876$ lines, on both backbones (Tables~\ref{tab:interview}
-and~\ref{tab:backbone}). This inverts the situation in
+wording, keeps the press off the record on both backbones
+(Tables~\ref{tab:interview} and~\ref{tab:backbone}). This inverts the situation in
 Smallville, where the language model made agents overly
 cooperative~\cite{park2023generative}; in \sys{}, the world's procedure
 decides who may speak.
@@ -919,12 +913,17 @@ the order in which roles learn of the leak and the effect of Chair
 strictness, follow directly from transmission and allusion rules that we
 set by hand. Their value lies in making these assumptions explicit and
 showing how they combine over a week of sittings, not in emerging
-unprompted. The sandbox cannot establish what any historical
-member thought; agents' reflections are model artefacts, not recovered
-voices. The sandbox is valuable because it makes historians' assumptions
-about procedure and selection explicit and manipulable, and because it
-generates hypotheses for further archival work in committee minutes,
-private correspondence, and the press.
+unprompted. The ablations isolate the standing-order rules with the
+heuristic backend, and the backbone check (Table~\ref{tab:backbone}) shows
+the same selection pattern under \texttt{gpt-4o-mini}, as expected, since
+the model writes only what agents say. The historian ranking
+(Table~\ref{tab:historian}) is a first measurement of believability; it
+complements the selection test rather than replacing it. The sandbox
+cannot establish what any historical member thought; agents' utterances
+are model artefacts, not recovered voices. The sandbox is valuable because
+it makes historians' assumptions about procedure and selection explicit
+and manipulable, and because it generates hypotheses for further archival
+work in committee minutes, private correspondence, and the press.
 
 \paragraph{Interactivity as method.} Pausing the sandbox, stepping through
 a sitting, inspecting agents, and interviewing them let researchers check
@@ -932,13 +931,7 @@ how the standing-order rules play out. In this paper the historian's
 review relied on interviews generated at the end of each run rather than
 on live sessions, and the other logged interventions do not yet change
 what agents do, apart from opening a sitting; making them act on the
-world is the next step towards a working tool for historians. The
-ablations isolate those rules with a heuristic
-planner, and the backbone check (Table~\ref{tab:backbone}) shows the same
-selection pattern under \texttt{gpt-4o-mini}, as expected, since the model
-writes only what agents say. The historian ranking
-(Table~\ref{tab:historian}) is a first measurement of believability; it
-complements the selection test rather than replacing it.
+world is the next step towards a working tool for historians.
 
 \paragraph{Limitations.} The 1814--1899 slice is OCR-noisy, speaker
 strings do not identify unique persons, and 1890s party labels denote
@@ -986,14 +979,14 @@ speakers and their speech supply the agents, and standing orders encoded
 in the world decide who may act and what is recorded. This procedure held
 regardless of the backbone: journalists never entered the simulated
 Handelingen, whereas without the floor rules they produced $4.3\%$ of it
-under both the heuristic planner and \texttt{gpt-4o-mini}. The record also
+under both the heuristic backend and \texttt{gpt-4o-mini}. The record also
 diverged from what parliament knew: a rumour known to almost all members
 appeared in only $4\%$ of official lines, so silence in the record does
 not imply ignorance. Present-day bias in LLM agents thus lies in the worlds they
 are placed in as well as in what they say. Encoding the period's
 institutions removes the former; the latter remains with the language
 model and is the next target for archival retrieval and anachronism
-filtering (\S\ref{sec:discussion}).
+filtering.
 
 %% =====================================================================
 \begin{acks}
