@@ -221,7 +221,7 @@ In summary, we make the following contributions:
   affordances encode the standing orders, including the split between the
   Tweede Kamer (lower house) and the Eerste Kamer (upper house), together
   with a parliamentary role automaton. This procedural gating holds
-  regardless of the backbone (\S\ref{sec:sandbox}, \S\ref{sec:agents}).
+  regardless of the backbone (\S\ref{sec:world}, \S\ref{sec:agents}).
   \item \textbf{An archive-to-sandbox pipeline and a simulated
   Handelingen.} We build the world, its rules, and a population of attested
   public speakers, seeded with their recorded speech, from PoliticalMashup
@@ -323,7 +323,55 @@ lives.
 \section{The \sys{} Sandbox}
 \label{sec:sandbox}
 
+The sandbox has three parts, which answer the three challenges of
+\S\ref{sec:intro}. An archive-to-sandbox pipeline (\S\ref{sec:pipeline})
+supplies the world's rules and a population of attested speakers. The
+world (\S\ref{sec:world}) and the role-constrained agents
+(\S\ref{sec:agents}) decide who may act, and an in-world stenographer
+turns recognised floor speech into a simulated record that is compared
+with the real one (\S\ref{sec:calibration}). Algorithm~\ref{alg:step}
+(Appendix~\ref{app:alg}) summarises one step.
+
+\subsection{Archive-to-sandbox pipeline}
+\label{sec:pipeline}
+
+\paragraph{Sources.} We use the non-semanticized PoliticalMashup release of
+the Dutch parliamentary proceedings~\cite{marx2012dutchparl}: one XML
+document per sitting from 1814 to April 2012, released under CC0. Our
+working slice covers \textbf{1814--1899}: 8{,}745 sittings, of which
+6{,}340 are Tweede Kamer sittings (\texttt{pm:house="commons"}), 2{,}036
+are Eerste Kamer sittings (\texttt{senate}), and 369 are early or
+unlabelled meetings. Of these, 7{,}348 files contain at least one
+\texttt{speech} element, yielding \textbf{138{,}214} speaker-attributed
+speeches (Table~\ref{tab:corpus}, Appendix~\ref{app:tables}).
+PoliticalMashup records 852 distinct \texttt{pm:member-ref}
+identifiers; raw \texttt{pm:speaker} strings are far more numerous because
+of OCR variation. Role attributes on speech elements are dominated by
+\texttt{mp}, followed by \texttt{government} and \texttt{chair}. Party
+references in the later nineteenth century include liberals,
+conservatives, anti-revolutionaries, Catholics, and, by the 1890s, the
+SDAP. The full corpus of Marx et al.\ continues to 2012; we leave the
+post-1899 portion to future work.
+
+
+\paragraph{Event extraction.} A schema-constrained parser reads each
+sitting's Dublin Core header (date, title, house, legislative period) and
+every \texttt{speech} element (speaker, role, function, party, member-ref,
+text). OCR noise is retained as a property of the archive: unless a
+member-ref is present, personas inherit the \emph{documented} name string
+rather than a cleaned modern spelling. Every field keeps its source
+attribution.
+
+\paragraph{From records to world.} Historians translate the Reglement van
+Orde and secondary literature on the Staten-Generaal into
+(i)~affordance rules (who may speak, recognise, vote, or sit in the
+gallery), (ii)~object schedules (sitting hours, speaker lists, budget
+debates), and (iii)~the layout of the environment tree $\mathcal{T}$
+(\S\ref{sec:world}; 6 areas, 15 subareas, and 7 objects in the S1
+Binnenhof).
+
 \subsection{World: tile map and environment tree}
+\label{sec:world}
 
 The world is a 2D tile map of a composite Binnenhof
 (Figure~\ref{fig:teaser}). Its layout and institutions are calibrated to
@@ -371,61 +419,22 @@ is open or closed, the gavel opens and adjourns the sitting, the stenograph
 is idle or recording, and a Kamerstuk (parliamentary paper) moves from
 tabled to in debate to voted.
 
-
-\subsection{Time, engine, and interface}
-
-One simulation step corresponds to $10$ minutes of in-world time.
+\paragraph{Time, engine, and interface.} One simulation step corresponds
+to $10$ minutes of in-world time.
 Sittings open on weekdays at 10:00 and adjourn at 17:00, matching the
 rhythm of the Handelingen. \sys{} follows the server--client design of
 open-source Smallville implementations~\cite{smallvillerepo}: a simulation
 server holds the environment tree, object states, and agent memories,
 advances the world with an \texttt{updateState} call, and exposes this
-state over a REST API. The interface renders each agent's current action as
-a short natural-language statement with an emoji. Role is shown only by a
-ring colour; sprites are deliberately neutral tokens. Researchers can
+state over a REST API. The interface shows each agent's action as an emoji
+with a short statement; role is shown only by a ring colour. Researchers can
 pause the world, step through it, inspect agents, and interview them.
 Adding a memory, editing an object state, and injecting an event are also
 logged, but of these only opening a sitting changes what agents do. No
 agent can be controlled in the first person (Appendix~\ref{app:interface}).
 
-
-%% =====================================================================
-\section{Archive-to-Sandbox Pipeline}
-\label{sec:pipeline}
-
-\paragraph{Sources.} We use the non-semanticized PoliticalMashup release of
-the Dutch parliamentary proceedings~\cite{marx2012dutchparl}: one XML
-document per sitting from 1814 to April 2012, released under CC0. Our
-working slice covers \textbf{1814--1899}: 8{,}745 sittings, of which
-6{,}340 are Tweede Kamer sittings (\texttt{pm:house="commons"}), 2{,}036
-are Eerste Kamer sittings (\texttt{senate}), and 369 are early or
-unlabelled meetings. Of these, 7{,}348 files contain at least one
-\texttt{speech} element, yielding \textbf{138{,}214} speaker-attributed
-speeches (Table~\ref{tab:corpus}, Appendix~\ref{app:tables}).
-PoliticalMashup records 852 distinct \texttt{pm:member-ref}
-identifiers; raw \texttt{pm:speaker} strings are far more numerous because
-of OCR variation. Role attributes on speech elements are dominated by
-\texttt{mp}, followed by \texttt{government} and \texttt{chair}. Party
-references in the later nineteenth century include liberals,
-conservatives, anti-revolutionaries, Catholics, and, by the 1890s, the
-SDAP. The full corpus of Marx et al.\ continues to 2012; we leave the
-post-1899 portion to future work.
-
-
-\paragraph{Event extraction.} A schema-constrained parser reads each
-sitting's Dublin Core header (date, title, house, legislative period) and
-every \texttt{speech} element (speaker, role, function, party, member-ref,
-text). OCR noise is retained as a property of the archive: unless a
-member-ref is present, personas inherit the \emph{documented} name string
-rather than a cleaned modern spelling. Every field keeps its source
-attribution.
-
-\paragraph{From records to world.} Historians translate the Reglement van
-Orde and secondary literature on the Staten-Generaal into
-(i)~affordance rules (who may speak, recognise, vote, or sit in the
-gallery), (ii)~object schedules (sitting hours, speaker lists, budget
-debates), and (iii)~the layout of $\mathcal{T}$ (6 areas, 15 subareas, and
-7 objects in the S1 Binnenhof).
+\subsection{Role-constrained agents}
+\label{sec:agents}
 
 \paragraph{Population.} S1 samples $N{=}25$ agents from attested speakers
 in Tweede Kamer sittings of 1896--1899, filtered to the offices held in
@@ -450,10 +459,6 @@ parliamentary historian reviewed
 the roster, the OCR speaker cards, and the standing-order scheme
 (\S\ref{sec:eval-interview}).
 
-%% =====================================================================
-\section{Role-Constrained Generative Agents}
-\label{sec:agents}
-
 \paragraph{Memory and action selection.} Each agent keeps a memory stream
 of observations, conversation, refusals, and its own speeches, each entry
 with a fixed importance by type. At every step the agent records what it
@@ -474,7 +479,7 @@ Agents~\cite{park2023generative}, \sys{} does not rank memories by
 recency, importance, and relevance, does not synthesise reflections, and
 does not ask the model to plan. Where an agent goes and which action it
 attempts are set by rules tied to its role and to the sitting schedule.
-Sittings open on weekdays at 10:00 and close at 17:00. During a sitting,
+During a sitting,
 members and ministers sit on their benches and ask for the floor; the
 Chair opens and adjourns the sitting and, whenever nobody holds the floor,
 gives it to the next member or minister in rotation; and the journalist
@@ -547,19 +552,6 @@ me: \ldots'' and may learn the places it names.
 Appendix~\ref{app:examples} gives an example remark from a
 \texttt{gpt-4o-mini} run.
 
-\paragraph{A day in the sandbox.} Appendix~\ref{app:day} traces one
-simulated day, Wednesday 20 December 1899, through these rules
-(Figure~\ref{fig:day}).
-
-\paragraph{The simulated Handelingen.} While the sitting is open, the
-stenographer writes each speech by the recognised member or minister on
-the floor into the simulated Handelingen $Y^t$. Corridor talk, committee
-speech, and the journalist's notes never enter it. In the reported runs,
-the Chair's recognitions and rulings are logged as events but not written
-as lines, so the simulated record contains no speech by the Chair. This
-in-world process is the observation model $O_\phi$ used in
-\S\ref{sec:calibration}. The griffier does not operate the stenograph.
-
 \paragraph{Period language.} The system prompt of the LLM backbone asks
 for late-nineteenth-century Dutch and lists period forms such as
 \emph{thans}, \emph{eene}, \emph{hetgeen}, and \emph{Nederlandsch}; the
@@ -567,12 +559,24 @@ GA baseline's prompt asks only for ``period Dutch''. Archival retrieval
 and an anachronism filter, which our design specifies, were not active in
 the runs reported here (\S\ref{sec:discussion}).
 
+\paragraph{A day in the sandbox.} Appendix~\ref{app:day} traces one
+simulated day, Wednesday 20 December 1899, through these rules
+(Figure~\ref{fig:day}).
 
 %% =====================================================================
-\section{Selection-Aware Calibration}
+\section{Simulated Handelingen and Calibration}
 \label{sec:calibration}
 
-Let $x$ denote the features of an event such as a speech, a leak, or a
+\paragraph{The simulated Handelingen.} While the sitting is open, the
+stenographer writes each speech by the recognised member or minister on
+the floor into the simulated Handelingen $Y^t$. Corridor talk, committee
+speech, and the journalist's notes never enter it. In the reported runs,
+the Chair's recognitions and rulings are logged as events but not written
+as lines, so the simulated record contains no speech by the Chair. This
+in-world process is the observation model $O_\phi$ used below. The griffier does not operate the stenograph.
+
+\paragraph{Selection-aware calibration.} Let $x$ denote the features of an
+event such as a speech, a leak, or a
 vote (speaker role, party, house, topic, duration), and let
 $P^\theta_{\text{sim}}$ be the distribution of simulated events under
 parameters $\theta$ (Chair strictness, corridor distortion, willingness to
@@ -1015,7 +1019,7 @@ implemented in the runs reported here.
 
 \section{Seed and utterance examples}
 \label{app:examples}
-Each agent is seeded with a short persona and up to three excerpts of the person's actual public speech (\S\ref{sec:pipeline}). The agent for Abraham Kuyper, leader of the Anti-Revolutionary Party, receives the persona below
+Each agent is seeded with a short persona and up to three excerpts of the person's actual public speech (\S\ref{sec:agents}). The agent for Abraham Kuyper, leader of the Anti-Revolutionary Party, receives the persona below
 and, among its excerpts, the passage that follows it, taken from the
 sitting of 20 November 1896 with OCR errors preserved:
 \begin{quote}\small\ttfamily\raggedright

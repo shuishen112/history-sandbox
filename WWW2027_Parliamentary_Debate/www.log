@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.10.22)  22 OCT 2026 11:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.10.22)  22 OCT 2026 11:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1292,7 +1292,7 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 12.0pt on input line 119.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 10.0pt on input line 119.
-<figure/kamer_sandbox.pdf, id=110, 1385.175pt x 858.0858pt>
+<figure/kamer_sandbox.pdf, id=106, 1385.175pt x 858.0858pt>
 File: figure/kamer_sandbox.pdf Graphic file (type pdf)
 <use figure/kamer_sandbox.pdf>
 Package pdftex.def Info: figure/kamer_sandbox.pdf  used on input line 119.
@@ -1385,36 +1385,33 @@ Underfull \vbox (badness 4752) has occurred while \output is active []
 
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/sc' will be
 (Font)              scaled to size 10.95pt on input line 323.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 334.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 334.
  [3.3]
-[4.4] [5.5]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 7.3pt on input line 382.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 5.5pt on input line 382.
 
+[4.4] [5.5]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sc' will be
-(Font)              scaled to size 8.0pt on input line 701.
+(Font)              scaled to size 8.0pt on input line 705.
 LaTeX Font Info:    Font shape `T1/zi4/b/n' will be
-(Font)              scaled to size 9.0pt on input line 717.
+(Font)              scaled to size 9.0pt on input line 721.
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 8.0pt on input line 726.
-<figure/fig_diffusion.pdf, id=1840, 245.718pt x 166.22101pt>
+(Font)              scaled to size 8.0pt on input line 730.
+<figure/fig_diffusion.pdf, id=1845, 245.718pt x 166.22101pt>
 File: figure/fig_diffusion.pdf Graphic file (type pdf)
 <use figure/fig_diffusion.pdf>
-Package pdftex.def Info: figure/fig_diffusion.pdf  used on input line 737.
+Package pdftex.def Info: figure/fig_diffusion.pdf  used on input line 741.
 (pdftex.def)             Requested size: 245.55338pt x 166.11913pt.
-<figure/fig_strictness.pdf, id=1841, 245.718pt x 166.22101pt>
+<figure/fig_strictness.pdf, id=1846, 245.718pt x 166.22101pt>
 File: figure/fig_strictness.pdf Graphic file (type pdf)
 <use figure/fig_strictness.pdf>
-Package pdftex.def Info: figure/fig_strictness.pdf  used on input line 743.
+Package pdftex.def Info: figure/fig_strictness.pdf  used on input line 747.
 (pdftex.def)             Requested size: 245.55338pt x 166.11913pt.
- [6.6]
-[7.7 <./figure/fig_diffusion.pdf> <./figure/fig_strictness.pdf>]
+ [6.6] [7.7 <./figure/fig_diffusion.pdf> <./figure/fig_strictness.pdf>]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.2pt on input line 870.
-
-Excluding 'acks' comment. (./www.bbl
+(Font)              scaled to size 6.2pt on input line 874.
+ Excluding 'acks' comment. (./www.bbl
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [8.8]
@@ -1432,29 +1429,29 @@ LaTeX Info: Redefining \tempurl on input line 363.
 LaTeX Info: Redefining \tempurl on input line 514.
  [9.9])
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 995.
+put line 999.
 
 
 Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 1024.
+surrounding objects on input line 1028.
 
 [10.10]
-Overfull \hbox (11.02022pt too wide) in paragraph at lines 1153--1166
+Overfull \hbox (11.02022pt too wide) in paragraph at lines 1157--1170
  [][] 
  []
 
 
-Overfull \hbox (2.65242pt too wide) in paragraph at lines 1172--1188
+Overfull \hbox (2.65242pt too wide) in paragraph at lines 1176--1192
  [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<figure/day_timeline.pdf, id=2005, 1355.0625pt x 1001.66219pt>
+<figure/day_timeline.pdf, id=2010, 1355.0625pt x 1001.66219pt>
 File: figure/day_timeline.pdf Graphic file (type pdf)
 <use figure/day_timeline.pdf>
-Package pdftex.def Info: figure/day_timeline.pdf  used on input line 1194.
+Package pdftex.def Info: figure/day_timeline.pdf  used on input line 1198.
 (pdftex.def)             Requested size: 506.295pt x 374.24683pt.
 
 
@@ -1475,14 +1472,14 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `www.out' has not changed.
-(rerunfilecheck)             Checksum: 7CAEFF6AB2D2D7FFDE2056FDA44488EE;4174.
+(rerunfilecheck)             Checksum: 1940155FEB0503E0AD4F3F2D9B393D91;3983.
  ) 
 Here is how much of TeX's memory you used:
- 33860 strings out of 476106
- 618685 string characters out of 5793932
+ 33864 strings out of 476106
+ 618794 string characters out of 5793932
  1980975 words of memory out of 5000000
  54145 multiletter control sequences out of 15000+600000
- 800759 words of font info for 635 fonts, out of 8000000 for 9000
+ 801013 words of font info for 637 fonts, out of 8000000 for 9000
  220 hyphenation exceptions out of 8191
  90i,16n,131p,1000b,807s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4
@@ -1500,10 +1497,10 @@ texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/newtx/txmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/newtx/txsys.pfb>
-Output written on www.pdf (12 pages, 4852589 bytes).
+Output written on www.pdf (12 pages, 4852791 bytes).
 PDF statistics:
- 3118 PDF objects out of 3580 (max. 8388607)
- 893 compressed objects within 9 object streams
- 135 named destinations out of 1000 (max. 500000)
- 124665 words of extra memory for PDF output out of 128383 (max. 10000000)
+ 3123 PDF objects out of 3580 (max. 8388607)
+ 898 compressed objects within 9 object streams
+ 136 named destinations out of 1000 (max. 500000)
+ 124657 words of extra memory for PDF output out of 128383 (max. 10000000)
 
