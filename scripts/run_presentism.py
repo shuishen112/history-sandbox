@@ -381,7 +381,7 @@ def main() -> None:
     args = p.parse_args()
 
     if args.hash_seed != "random" and os.environ.get("PYTHONHASHSEED") != args.hash_seed:
-        # Agent.preferred_location uses hash(id) % 2: fix it so runs replay.
+        # Seating used to use salted hash(id); Kamer now uses stable_mod. Keep the pin anyway.
         os.execve(sys.executable, [sys.executable, *sys.argv], {**os.environ, "PYTHONHASHSEED": args.hash_seed})
     if args.backend == "live" and not (args.live and args.max_completions > 0):
         sys.exit("--backend live spends API credit: pass --live and --max-completions N")

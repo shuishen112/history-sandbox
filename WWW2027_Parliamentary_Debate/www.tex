@@ -1,7 +1,7 @@
 %% =====================================================================
 %%  DRAFT — ACM two-column (sigconf), anonymous review mode
 %%  Kamer: archive-grounded generative-agent sandbox of Dutch parliament
-%%  S1/S2/S3 numbers from runs/kamer/s1.json and runs/kamer/paper_exps.json.
+%%  S1/S2/S3 numbers from runs/kamer/paper_exps.json (stable hash, PYTHONHASHSEED=0).
 %% =====================================================================
 \documentclass[sigconf,review,anonymous]{acmart}
 
@@ -58,7 +58,7 @@ may watch from the press gallery but never take the floor. An in-world
 stenographer writes a \emph{simulated Handelingen} of recognised floor
 speech, comparable with the real, selective record. Under
 the transmission and allusion rules we encode, a resignation rumour
-reached almost all members yet appeared in only $4\%$ of the record. Like the real Handelingen, the simulated record contains no
+reached almost all members yet appeared in only $2\%$ of the record. Like the real Handelingen, the simulated record contains no
 speech by journalists; without the floor rules, journalists produce
 $4.3\%$ of it, and swapping the heuristic backend for \texttt{gpt-4o-mini}
 changes neither result. Silence in the Handelingen therefore cannot by
@@ -206,7 +206,7 @@ $4.3\%$ of it, and replacing the heuristic backend with
 \texttt{gpt-4o-mini} changes neither figure. Finally, under the
 transmission and allusion rules we encode, the record diverged sharply
 from what parliament knew: a resignation rumour reached almost all members
-within a week but appeared in only $4\%$ of the simulated record
+within a week but appeared in only $2\%$ of the simulated record
 (\S\ref{sec:results}). These results suggest that institutional outcomes
 are better secured by encoding procedure in the world than by relying on
 the language model, and that
@@ -658,13 +658,9 @@ floor only on every $s$-th step.
 
 \paragraph{Backends and seeds.} S1 (including its ablations), S2, and S3
 use the heuristic backend, in which floor speeches are attested excerpts and conversation remarks are
-fixed sentences (seeds $\{7,11,19,29,31\}$). Bench seating and the
-heuristic allusion rule depend on Python's per-process hash randomisation,
-so floor-mention and embellishment rates, and hence the S3 points, vary
-between runs with the same seeds (floor mention for full \sys{} is
-$4.0\%$ in the reported runs and $1.6\%$ with \texttt{PYTHONHASHSEED=0}),
-whereas record length, journalist share, and role JSD are unaffected and
-awareness changes by at most two percentage points. A backbone check reruns the
+fixed sentences (seeds $\{7,11,19,29,31\}$). All reported runs set
+\texttt{PYTHONHASHSEED=0}, and bench seating and the heuristic allusion
+rule use a process-independent hash. A backbone check reruns the
 S1 \texttt{full} and \texttt{ga} conditions with \texttt{gpt-4o-mini}
 (seeds $\{7,11,19\}$). Each of these runs had a budget of 400
 completions. Most of the budget went to corridor asides, and once it was
@@ -711,9 +707,9 @@ journalists' share of those lines (archive: $0$).}
 \toprule
 Condition & Memb.\ aware & Floor leak & Journ.\ \% & Lines \\
 \midrule
-\sys{} (full) & 0.98 & 0.040 & \textbf{0.0} & 205 \\
-\quad -- affordance & 0.98 & 0.040 & 4.3 & 4{,}876 \\
-\quad -- automaton & 0.98 & 0.040 & 0.0 & 205 \\
+\sys{} (full) & 0.96 & 0.022 & \textbf{0.0} & 205 \\
+\quad -- affordance & 0.96 & 0.021 & 4.3 & 4{,}876 \\
+\quad -- automaton & 0.96 & 0.022 & 0.0 & 205 \\
 \quad -- rumour & 0.05 & 0.000 & 0.0 & 205 \\
 GA~\cite{park2023generative} & 0.05 & 0.000 & 4.3 & 4{,}876 \\
 \bottomrule
@@ -735,7 +731,7 @@ model.}
 \toprule
 Backbone & Cond. & Memb. & Floor & Journ.\ \% & Lines & Emb. \\
 \midrule
-heuristic & \sys{} & 0.98 & 0.040 & \textbf{0.0} & 205 & 0.15 \\
+heuristic & \sys{} & 0.96 & 0.022 & \textbf{0.0} & 205 & 0.16 \\
 \texttt{gpt-4o-mini} & \sys{} & 1.00 & 0.098 & \textbf{0.0} & 205 & 0.20 \\
 heuristic & GA & 0.05 & 0.000 & 4.3 & 4{,}876 & 0.00 \\
 \texttt{gpt-4o-mini} & GA & 0.05 & 0.001 & 4.3 & 4{,}876 & 0.00 \\
@@ -758,13 +754,13 @@ heuristic & GA & 0.05 & 0.000 & 4.3 & 4{,}876 & 0.00 \\
 \label{fig:cf}
 \end{subfigure}
 \caption{Corridor rumour and official record. (a)~A resignation rumour is
-seeded with one member in the wandelgang. Members reach $27\%$ awareness
-on day~1 and $\approx 100\%$ by day~7; the press is faster ($60\%$, then
-$100\%$), and ministers lag ($0\%$, then $70\%$), as the transmission
-probabilities in \S\ref{sec:communication} imply. Only $4\%$ of Handelingen lines
+seeded with one member in the wandelgang. Members reach $32\%$ awareness
+on day~1 and $96\%$ by day~7; the press is faster ($40\%$, then
+$100\%$), and ministers lag ($10\%$, then $30\%$), as the transmission
+probabilities in \S\ref{sec:communication} imply. Only $2\%$ of Handelingen lines
 mention the leak. (b)~Floor mention of the leak against Chair strictness,
-which lowers the heuristic allusion rate and, from $2\times$, how often
-the Chair gives the floor.}
+which lowers the heuristic allusion rate and, from $4\times$, drives
+floor mention to zero.}
 \Description{Two line charts side by side. Left: share of members, press,
 ministers, and Chair or griffier aware of the leak over the S1 week, with
 the weekend shaded. Right: share of floor lines mentioning the leak against
@@ -773,20 +769,20 @@ levels.}
 \label{fig:s1s3}
 \end{figure*}
 
-\paragraph{Leak diffusion.} A single seeded leak reached $27\%$ of members
-and $60\%$ of the press within one day and essentially all members and the
-press by day~7, whereas ministers remained unaware until day~3 and reached
-$70\%$ by day~7 (Figure~\ref{fig:diffusion}). This ordering follows from
+\paragraph{Leak diffusion.} A single seeded leak reached $32\%$ of members
+and $40\%$ of the press within one day and $96\%$ of members and all of
+the press by day~7, whereas ministers reached $30\%$
+(Figure~\ref{fig:diffusion}). This ordering follows from
 the transmission rules in \S\ref{sec:communication}: in the wandelgang the
 journalist hears a rumour with probability at least $0.55$ per encounter
 and a minister with about $0.10$, and ministers spend their evenings in the
 ministry rather than the wandelgang. The curves therefore show how these
 encoded assumptions play out over a week of sittings, not an asymmetry
-that arises unprompted. The same leak appeared in only $4\%$ of simulated
+that arises unprompted. The same leak appeared in only $2\%$ of simulated
 Handelingen lines (Table~\ref{tab:interview}): an aware member alludes to
 it on roughly one sitting day in twelve at the default Chair strictness,
 and journalists cannot speak on the floor. Rumour hops embellished a
-detail $15\%$ of the time, close to the distortion probability of $0.18$.
+detail $16\%$ of the time, close to the distortion probability of $0.18$.
 Without the corridor network (GA or --rumour), awareness stays at the
 seeded member ($5\%$).
 
@@ -803,10 +799,10 @@ floor speech does not pass them on. Replacing the heuristic backend with
 \texttt{gpt-4o-mini} leaves the selection diagnostics unchanged
 (Table~\ref{tab:backbone}), as expected, since the model writes only what
 agents say, not who speaks or where. Its effect is confined to content:
-floor mentions of the leak rise from $4\%$ to $10\%$, because the model
+floor mentions of the leak rise from $2\%$ to $10\%$, because the model
 alludes to the rumour more readily than the heuristic rule. The higher
-embellishment rate ($20\%$ vs.\ $15\%$) and member awareness ($1.00$
-vs.\ $0.98$) are not model effects, since rumour transmission and
+embellishment rate ($20\%$ vs.\ $16\%$) and member awareness ($1.00$
+vs.\ $0.96$) are not model effects, since rumour transmission and
 distortion do not involve the language model; they reflect the different
 seeds.
 
@@ -823,7 +819,7 @@ Method & Role JSD $\downarrow$ & Journ.\ \% $\downarrow$ & Notes \\
 Archive (holdout) & --- & 0.0 & 20{,}166 speeches \\
 Rule-ABM (1860--89 mix) & 0.001 & 0.0 & replay, no agents \\
 GA~\cite{park2023generative} & 0.138 & 4.3 & ungated floor \\
-\sys{} (naive calib.) & 0.129 & 2.2 & corridor counted \\
+\sys{} (naive calib.) & 0.131 & 1.8 & corridor counted \\
 \sys{} (full) & 0.117 & \textbf{0.0} & 205 lines / week \\
 \bottomrule
 \end{tabular}
@@ -836,26 +832,24 @@ replaying the preceding thirty years matches \emph{who speaks}
 appear}. The archive never records a journalist; \sys{} reproduces that
 zero, whereas GA and the affordance ablation do not. Naive calibration
 (\S\ref{sec:calibration}) dilutes the official mix by treating wandelgang
-talk as Handelingen and produces a $2.2\%$ press share that the archive
+talk as Handelingen and produces a $1.8\%$ press share that the archive
 cannot contain. \sys{}'s role JSD ($0.117$) is higher than that of replay
 because its record contains no Chair lines (\S\ref{sec:calibration}) and only
 two ministers among 22 speakers: about $90\%$ of its lines are by members
 and $10\%$ by ministers, against $64\%$, $18\%$, and $18\%$ for members,
 government, and the Chair in the holdout. Among the agent-based
 conditions, \sys{} has the lowest role JSD (GA $0.138$, naive calibration
-$0.129$).
+$0.131$).
 
 
 
-\paragraph{Interventions.} Floor mention falls from $14\%$ at
-$0.25\times$ Chair strictness to $3\%$ at the default ($4\%$ over the five
-seeds of Table~\ref{tab:interview}) and to $0$ at $2\times$ and above
-(Figure~\ref{fig:cf}). This follows from how
+\paragraph{Interventions.} Floor mention falls from $8\%$ at
+$0.25\times$ Chair strictness to $2\%$ at the default, $1\%$ at
+$2\times$, and $0$ at $4\times$ (Figure~\ref{fig:cf}). This follows from how
 strictness is encoded (\S\ref{sec:experiments}): it lowers the rate at
 which aware members allude to the rumour and, from $2\times$, halves or
 quarters the number of recognised speeches. Corridor distortion, which
-changes only the content of rumours, shifts the rate by under one
-percentage point. S3 therefore shows how the record responds to the
+changes only the content of rumours, leaves the rate unchanged. S3 therefore shows how the record responds to the
 strictness parameter as we encoded it, rather than testing a mechanism
 that the agents discover.
 
@@ -981,7 +975,7 @@ regardless of the backbone: journalists never entered the simulated
 Handelingen, whereas without the floor rules they produced $4.3\%$ of it
 under both the heuristic backend and \texttt{gpt-4o-mini}. The record also
 diverged from what parliament knew: a rumour known to almost all members
-appeared in only $4\%$ of official lines, so silence in the record does
+appeared in only $2\%$ of official lines, so silence in the record does
 not imply ignorance. Present-day bias in LLM agents thus lies in the worlds they
 are placed in as well as in what they say. Encoding the period's
 institutions removes the former; the latter remains with the language
@@ -1148,14 +1142,14 @@ merge, as the Bahlmannianen and Schaepmannianen did into a Roman Catholic
 bloc in 1896. Following this review, S1 seeds the Pierson cabinet in office
 at $t_0$ (Cremer at Colonies, Goeman Borgesius at Interior, Gleichman in
 the chair, Arntzenius as griffier) and drops van Houten, Sprenger van Eyk,
-and Gerritsen, who did not hold those posts in December 1899. The runs
-behind Tables~\ref{tab:interview}--\ref{tab:historian} and
-Figure~\ref{fig:s1s3}, including the \texttt{gpt-4o-mini} interviews and the
-remark in Appendix~\ref{app:examples}, predate this roster correction. A
-heuristic rerun with the corrected roster and \texttt{PYTHONHASHSEED=0}
-gives the same awareness, record length, journalist share, and role JSD;
-minister identity does not change who may speak. Appendix~\ref{app:day}
-traces a day of that rerun.
+and Gerritsen, who did not hold those posts in December 1899. The heuristic
+runs behind Tables~\ref{tab:interview} and~\ref{tab:main}, the heuristic
+rows of Table~\ref{tab:backbone}, and Figure~\ref{fig:s1s3} use the
+corrected cabinet. The \texttt{gpt-4o-mini} runs, including the interviews
+ranked in Table~\ref{tab:historian} and the remark in
+Appendix~\ref{app:examples}, predate the correction; minister identity does
+not change who may speak. Appendix~\ref{app:day} traces a day of an earlier
+heuristic run with the corrected cabinet.
 
 \section{Sandbox objects and corpus slice}
 \label{app:tables}
@@ -1212,8 +1206,9 @@ Calibration TK 1860--1889 (S2) & 2{,}821 & 72{,}112 & --- \\
 \begin{figure*}[t]
 \centering
 \includegraphics[width=\textwidth]{figure/day_timeline.pdf}
-\caption{A day in \sys{}: Wednesday 20 December 1899 in the heuristic S1
-rerun with the corrected roster (seed~19; Appendix~\ref{app:historian}), drawn in the style of Figure~\ref{fig:teaser} from the
+\caption{A day in \sys{}: Wednesday 20 December 1899 in an earlier
+heuristic S1 run with the corrected cabinet (seed~19;
+Appendix~\ref{app:historian}), drawn in the style of Figure~\ref{fig:teaser} from the
 logged state at six moments. Rooms, roles, actions, awareness (purple
 dot), rumour hops, object states, and utterances come from the run;
 positions within a room are a layout choice, since the simulation records
@@ -1229,8 +1224,8 @@ hops, and speech bubbles quote utterances from the run.}
 \label{fig:day}
 \end{figure*}
 
-To show how the rules of \S\ref{sec:agents} play out, we trace Wednesday 20 December 1899, the third day of the heuristic S1
-rerun with the corrected roster (seed~19; Figure~\ref{fig:day}). At 09:00, before the sitting, members gather in the
+To show how the rules of \S\ref{sec:agents} play out, we trace Wednesday 20 December 1899, the third day of an earlier heuristic S1
+run with the corrected cabinet (seed~19; Figure~\ref{fig:day}). At 09:00, before the sitting, members gather in the
 wandelgang, and Staalman passes the resignation rumour to Seret. The
 provenance log records Seret's copy with one fact changed: ``an ARP
 member may resign''. At 10:00 Gleichman opens the sitting. Members take

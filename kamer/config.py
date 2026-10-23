@@ -2,8 +2,17 @@
 
 from __future__ import annotations
 
+import hashlib
 from dataclasses import dataclass, field
 from typing import Literal
+
+
+def stable_mod(key: str, n: int) -> int:
+    """Process-independent bucket. Do not use salted ``hash()`` for experiment logic."""
+    if n <= 0:
+        return 0
+    digest = hashlib.blake2b(key.encode("utf-8"), digest_size=8).digest()
+    return int.from_bytes(digest, "little") % n
 
 
 STEP_MINUTES = 10
