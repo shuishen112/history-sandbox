@@ -50,9 +50,9 @@ Found while reading the code and replaying `runs/kamer/llm_cache.jsonl`:
    difference therefore comes from the prompt, which is the side the paper
    says the constraints are moved out of. A prompt-matched control is
    included below.
-5. **The world can add presentism too.** The corridor object `whip_note`
-   (a Westminster whip) is described to agents and appears in 68 distinct
-   Kamer corridor completions ("de afwezigheid van den whip").
+5. **The world can add presentism too.** The corridor object was a
+   Westminster `whip_note`; it is now a period *circulaire van de
+   kamerclub*, so the world does not prompt English "whip".
 6. **The historian pack was probably rewritten by an LLM.** None of the 76
    rated texts in `historian-site/data/interviews.json` (frozen) appear
    verbatim in `runs/kamer/s1_llm.json`. The pack's register is "off-record

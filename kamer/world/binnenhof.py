@@ -144,7 +144,7 @@ def build_tree() -> tuple[EnvironmentTree, list[tuple[str, str]]]:
         ("stenograph", "stenograph", "stenographers"),
         ("voting_box", "voting_box", "centre_aisle"),
         ("press_gallery_desk", "press_gallery_desk", "gallery_desk"),
-        ("whip_note", "whip_note", "corridor"),
+        ("circulaire", "circulaire", "corridor"),
     ]
     for oid, kind, nid in objects:
         machine = OBJECT_MACHINES[kind]
@@ -238,7 +238,7 @@ def build_chamber(cfg: SimConfig | None = None) -> ChamberWorld:
         ("stenograph", "stenograph", "stenographers"),
         ("voting_box", "voting_box", "centre_aisle"),
         ("press_gallery_desk", "press_gallery_desk", "gallery_desk"),
-        ("whip_note", "whip_note", "corridor"),
+        ("circulaire", "circulaire", "corridor"),
     ]:
         store.add(
             StatefulObject(

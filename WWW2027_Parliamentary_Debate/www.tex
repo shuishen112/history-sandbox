@@ -472,7 +472,8 @@ for late-nineteenth-century Dutch and lists period forms such as
 \emph{thans}, \emph{eene}, \emph{hetgeen}, and \emph{Nederlandsch}; the
 Smallville-style baseline asks only for ``period Dutch''. Archival retrieval
 and an anachronism filter, which our design specifies, were not active in
-the runs reported here (\S\ref{sec:discussion}).
+the 400-completion backbone check; they are on in the presentism audit
+(\S\ref{sec:experiments}).
 
 \subsubsection{Memory and action selection}
 \label{sec:memory}
@@ -667,6 +668,16 @@ completions. Most of the budget went to corridor asides, and once it was
 spent agents fell back to heuristic utterances, so at most 20 of the 205
 record lines per seed are model text.
 
+\paragraph{Presentism audit.} A separate \texttt{gpt-4o-mini} run (seeds
+$\{7,11,19\}$) scores every floor, corridor, and interview completion against
+a Dutch/English lexicon, with terms attested in the 1890--1899 Tweede Kamer
+holdout removed. Every simulated Handelingen line in this run is model
+text. Four conditions isolate world, prompt, and guards:
+\textbf{GA}; \textbf{GA+period prompt} (Smallville world, \sys{} system
+prompt); \textbf{\sys{} world} (standing orders, no retrieval or filter);
+and \textbf{\sys{}+guards} (world plus archival RAG and an anachronism
+filter). Agents hear the previous floor speech, so a rebuttal is possible.
+
 \subsection{End-to-end evaluation}
 \label{sec:eval-e2e}
 \textbf{Corridor diffusion}: we seed the rumour ``the Minister of Colonies
@@ -853,15 +864,40 @@ changes only the content of rumours, leaves the rate unchanged. S3 therefore sho
 strictness parameter as we encoded it, rather than testing a mechanism
 that the agents discover.
 
-\paragraph{Audit.} The vocabulary audit matches nine modern terms (such as
-\emph{internet} and \emph{covid}) against the simulated record and finds
-none on either backend. Because most record lines are attested excerpts,
-this says little about the model's own language. Procedure, not prompt
-wording, keeps the press off the record on both backbones
-(Tables~\ref{tab:interview} and~\ref{tab:backbone}). This inverts the situation in
-Smallville, where the language model made agents overly
-cooperative~\cite{park2023generative}; in \sys{}, the world's procedure
-decides who may speak.
+\paragraph{Audit.} The nine-term English check on the 400-completion
+backbone (mostly attested excerpts) finds no modern hits, which says little
+about the model's own language. The presentism run scores every model
+utterance (Table~\ref{tab:presentism}). On the simulated record, modern
+vocabulary falls from $10.5\%$ under GA to $5.0\%$ with only the period
+prompt, $3.6\%$ with the \sys{} world, and $0.3\%$ after retrieval and the
+filter (holdout Handelingen: $0.0\%$). Adversarial markers rise from
+$1.4\%$ (GA) to $10.6\%$ with standing orders, against $28.9\%$ in the
+archive: the world restores some of the period's conflict, but not the
+archive's rate. Off-record interviews remain presentist until the filter
+($18.4\%$ to $2.7\%$). Procedure, not prompt wording, still keeps the
+press off the record on both backbones
+(Tables~\ref{tab:interview} and~\ref{tab:backbone}).
+
+\begin{table}[t]
+\caption{Presentism on simulated Handelingen lines (\texttt{gpt-4o-mini},
+3-seed mean). Every line is model text. Modern vocab.\ is the share of
+distinct completions hitting a holdout-cleared lexicon; adversarial is the
+share with a period conflict marker. Brackets: min--max across seeds.}
+\label{tab:presentism}
+\centering\small
+\setlength{\tabcolsep}{3.2pt}
+\begin{tabular}{lcc}
+\toprule
+Condition & Modern vocab.\ \% & Adversarial \% \\
+\midrule
+Handelingen 1890--1899 & 0.0 & 28.9 \\
+GA~\cite{park2023generative} & 10.5 [8--14] & 1.4 [1--2] \\
+GA + period prompt & 5.0 [2--9] & 7.2 [6--8] \\
+\sys{} world & 3.6 [2--6] & 10.6 [7--14] \\
+\sys{} + RAG/filter & \textbf{0.3} [0--1] & 8.8 [7--11] \\
+\bottomrule
+\end{tabular}
+\end{table}
 
 \begin{table}[t]
 \caption{TrueSkill ranking of pause-and-interview answers by one historian
@@ -937,10 +973,10 @@ sitting even though senate tiles and affordances exist in the world. A
 single historian ranked the interviews. The implementation is also simpler than the
 Generative Agents architecture: it has no memory ranking, reflection, or
 model-driven planning; conversations are single remarks; agents do not
-hear the content of floor speeches; and archival retrieval and the
-anachronism filter were not active, so at most 20 of the 205 record lines
-per seed are model text. We release seeds, configurations, and the
-DutchParl parser.
+hear the content of floor speeches in the 400-completion backbone (they do
+in the presentism run). Archival retrieval and the anachronism filter are
+on only in that presentism run, where every record line is model text.
+We release seeds, configurations, and the DutchParl parser.
 
 %% =====================================================================
 \section{Ethical Considerations}
@@ -977,10 +1013,9 @@ under both the heuristic backend and \texttt{gpt-4o-mini}. The record also
 diverged from what parliament knew: a rumour known to almost all members
 appeared in only $2\%$ of official lines, so silence in the record does
 not imply ignorance. Present-day bias in LLM agents thus lies in the worlds they
-are placed in as well as in what they say. Encoding the period's
-institutions removes the former; the latter remains with the language
-model and is the next target for archival retrieval and anachronism
-filtering.
+are placed in as well as in what they say. Encoding the period's institutions removes the former. Retrieval and
+filtering cut modern vocabulary in the simulated record from $10.5\%$
+(GA) to $0.3\%$; adversarial register remains below the archive.
 
 %% =====================================================================
 \begin{acks}
@@ -1172,7 +1207,7 @@ Kamerstuk & tabled, in debate, voted, withdrawn & government, chair \\
 Stenograph & idle, recording, paused & stenographer \\
 Voting box & closed, open, counted & chair, griffier \\
 Press-gallery desk & empty, occupied & journalist \\
-Whip note & none, circulating, spent & members \\
+Kamerclub circular & none, circulating, spent & members \\
 \bottomrule
 \end{tabular}
 \end{table}
