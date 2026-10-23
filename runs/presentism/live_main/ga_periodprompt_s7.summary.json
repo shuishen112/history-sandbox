@@ -1,0 +1,25 @@
+{
+  "condition": "ga_periodprompt",
+  "seed": 7,
+  "backend": "live",
+  "model": "gpt-4o-mini",
+  "debate_context": "on",
+  "n_record_lines": 4876,
+  "n_record_llm": 4876,
+  "n_record_fallback": 0,
+  "counts": {
+    "committee:api": 140,
+    "committee:cache": 580,
+    "dialogue:api": 268,
+    "dialogue:cache": 3,
+    "floor:api": 4665,
+    "floor:cache": 211,
+    "interview:api": 150,
+    "solo_talk:skipped": 17000
+  },
+  "completions_requested": 6017,
+  "regenerations": 0,
+  "api_calls": 5223,
+  "api_fail": 0,
+  "seconds": 7058.2
+}

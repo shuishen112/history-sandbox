@@ -1,0 +1,24 @@
+{
+  "condition": "kamer_noguard",
+  "seed": 11,
+  "backend": "live",
+  "model": "gpt-4o-mini",
+  "debate_context": "on",
+  "n_record_lines": 205,
+  "n_record_llm": 205,
+  "n_record_fallback": 0,
+  "counts": {
+    "committee:api": 186,
+    "committee:cache": 534,
+    "dialogue:api": 255,
+    "dialogue:cache": 5,
+    "floor:api": 205,
+    "interview:api": 150,
+    "solo_talk:skipped": 17030
+  },
+  "completions_requested": 1335,
+  "regenerations": 0,
+  "api_calls": 796,
+  "api_fail": 0,
+  "seconds": 1119.3
+}

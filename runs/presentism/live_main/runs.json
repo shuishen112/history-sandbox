@@ -1,0 +1,58 @@
+{
+  "args": {
+    "backend": "live",
+    "live": "True",
+    "max_completions": "8000",
+    "conditions": "ga_periodprompt",
+    "seeds": "19",
+    "n": "25",
+    "days": "7",
+    "kinds": [
+      "committee",
+      "dialogue",
+      "floor",
+      "interview"
+    ],
+    "debate_context": "on",
+    "interviews": "True",
+    "max_regen": "1",
+    "utter_cap": "0",
+    "model": "gpt-4o-mini",
+    "base_url": "",
+    "read_cache": "None",
+    "tag": "live_main",
+    "out_cache": "runs/presentism/live_main/caches/ga_periodprompt_s19.jsonl",
+    "log_prompts": "False",
+    "hash_seed": "0",
+    "read_caches": "[PosixPath('runs/kamer/llm_cache.jsonl')]",
+    "out_dir": "runs/presentism/live_main",
+    "spent": "5228"
+  },
+  "runs": [
+    {
+      "condition": "ga_periodprompt",
+      "seed": 19,
+      "backend": "live",
+      "model": "gpt-4o-mini",
+      "debate_context": "on",
+      "n_record_lines": 4876,
+      "n_record_llm": 4876,
+      "n_record_fallback": 0,
+      "counts": {
+        "committee:api": 182,
+        "committee:cache": 538,
+        "dialogue:api": 231,
+        "dialogue:cache": 3,
+        "floor:api": 4665,
+        "floor:cache": 211,
+        "interview:api": 150,
+        "solo_talk:skipped": 17000
+      },
+      "completions_requested": 5980,
+      "regenerations": 0,
+      "api_calls": 5228,
+      "api_fail": 0,
+      "seconds": 7098.8
+    }
+  ]
+}
