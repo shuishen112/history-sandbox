@@ -102,7 +102,7 @@ def run_one(
         "n_lines": len(lines),
         "journalist_share": mix["journalist_share"],
         "anachronism": anachronism_rate(ln.get("text") or "" for ln in lines),
-        "n_refusals": sum(1 for a in sim.agents.values() if a.last_refusal),
+        "n_refusals": sum(int(getattr(a, "n_refusals", 0)) for a in sim.agents.values()),
         "curve": [{"day": c["day"], "aware": c["aware"], "handelingen": c["n_handelingen_lines"]} for c in curve],
         "interviews": interviews,
     }

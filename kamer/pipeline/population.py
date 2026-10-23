@@ -82,9 +82,27 @@ STATUS_NL = {
 
 def load_roster(path: Path | str = "data/speakers.json") -> list[dict]:
     p = Path(path)
-    if p.exists():
-        return json.loads(p.read_text(encoding="utf-8"))
-    return FALLBACK_ROSTER
+    if not p.exists():
+        return FALLBACK_ROSTER
+    raw = json.loads(p.read_text(encoding="utf-8"))
+    if isinstance(raw, dict):
+        items = raw.get("items") or raw.get("speakers") or []
+    else:
+        items = raw
+    out: list[dict] = []
+    for rec in items:
+        if not isinstance(rec, dict) or rec.get("catch"):
+            continue
+        row = dict(rec)
+        row["role"] = rec.get("role") or rec.get("suggested_role") or "mp"
+        row["function"] = rec.get("function") or rec.get("suggested_function") or "De heer"
+        row["party"] = rec.get("party") or rec.get("suggested_party") or ""
+        out.append(row)
+    names = {r.get("name") for r in out}
+    for name, spec in PIERSON_1899_MINISTERS.items():
+        if name not in names:
+            out.append({"name": name, "excerpts": [], **spec})
+    return out or FALLBACK_ROSTER
 
 
 def _apply_period(rec: dict) -> dict | None:
@@ -142,6 +160,9 @@ def build_population(world: ChamberWorld, backend: CognitiveBackend, n: int = 25
         return Agent(spec, backend)
 
     chairs = [r for r in roster if _role_status(r.get("role", "")) == "Chair"]
+    gleichman = [r for r in roster if r.get("name") == "Gleichman"]
+    if gleichman:
+        chairs = gleichman + [c for c in chairs if c.get("name") != "Gleichman"]
     ministers = [r for r in roster if _role_status(r.get("role", "")) == "Minister"]
     mps = [r for r in roster if _role_status(r.get("role", "")) == "MP"]
     # Prefer named Pierson ministers even if the dump still tagged them as mp.

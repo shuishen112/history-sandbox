@@ -1,15 +1,15 @@
 {
-  "note": "Heuristic: 5-seed mean from paper_exps.json. LLM: gpt-4o-mini, 3-seed mean (7, 11, 19), 400 completions per full run (runs/kamer/s1_llm.json).",
+  "note": "Heuristic: 5-seed mean from paper_exps.json (stable hash, PYTHONHASHSEED=0). LLM: gpt-4o-mini, 3-seed mean (7, 11, 19), 400 completions per full run (runs/kamer/s1_llm.json).",
   "heuristic": {
     "seeds": [7, 11, 19, 29, 31],
     "full": {
-      "member_end": 0.98,
-      "floor_mention": 0.04,
+      "member_end": 0.96,
+      "floor_mention": 0.022,
       "journalist_share": 0.0,
       "n_lines": 205,
       "anachronism": 0.0,
-      "embellishment": 0.151,
-      "refusals": 22
+      "embellishment": 0.160,
+      "refusals": 0
     },
     "ga": {
       "member_end": 0.05,
@@ -30,11 +30,7 @@
       "n_lines": 205,
       "anachronism": 0.0,
       "embellishment": 0.204,
-      "refusals_mean": 7.33,
-      "refusals_per_seed": {"7": 22, "11": 0, "19": 0},
-      "llm_calls": 400,
-      "per_seed_floor": {"7": 0.0585, "11": 0.0634, "19": 0.1707},
-      "per_seed_emb": {"7": 0.348, "11": 0.045, "19": 0.217}
+      "llm_calls": 400
     },
     "ga": {
       "member_end": 0.05,
@@ -43,7 +39,6 @@
       "n_lines": 4876,
       "anachronism": 0.0,
       "embellishment": 0.0,
-      "refusals": 0,
       "llm_calls_mean": 450
     }
   }

@@ -10,7 +10,7 @@ from maroon.agents.memory import MemoryStream
 from maroon.agents.spatial import SpatialMemory
 
 from kamer.agents.role import RoleAutomaton, stratum
-from kamer.config import MAX_REPLAN, SITTING_CLOSE_HOUR, SITTING_OPEN_HOUR
+from kamer.config import MAX_REPLAN, SITTING_CLOSE_HOUR, SITTING_OPEN_HOUR, stable_mod
 from kamer.world.standing_orders import check_action
 
 if TYPE_CHECKING:
@@ -93,6 +93,7 @@ class Agent:
         self.inbox_text: list[str] = []
         self.retrieved: list[str] = []
         self.last_refusal: str = ""
+        self.n_refusals: int = 0
         self.utterance: str = ""
         self.relations: dict[str, float] = {}
         self.automaton = RoleAutomaton()
@@ -154,7 +155,7 @@ class Agent:
             return "tribune" if sitting else "corridor"
         # MPs: benches during sitting, wandelgang around it, committee some hours
         if sitting:
-            return "left_benches" if hash(self.id) % 2 == 0 else "right_benches"
+            return "left_benches" if stable_mod(self.id, 2) == 0 else "right_benches"
         if world.clock.hour == 9 or world.clock.hour >= 17:
             return "corridor"
         if world.clock.hour >= 14 and not sitting:
@@ -259,7 +260,7 @@ class Agent:
             world.rumours
             and world.rumours.aware(self.id, "leak")
             and self.status in {"MP", "Journalist"}
-            and hash((self.id, world.clock.day_index())) % bucket == 0
+            and stable_mod(f"{self.id}:{world.clock.day_index()}", bucket) == 0
         ):
             leak = " Zonder de geruchten uit de wandelgang te willen bevestigen, vraag ik of de begrooting sluit."
         if self.excerpts:
@@ -287,6 +288,7 @@ class Agent:
                 self.current_action = "move"
             else:
                 self.last_refusal = result.refusal_text()
+                self.n_refusals += 1
                 self.memory.add(self.last_refusal, world.clock.step, importance=6, kind="refusal")
                 self.current_action = "wait"
         action = self.choose_action(world)
@@ -296,6 +298,7 @@ class Agent:
             if result.allowed:
                 break
             self.last_refusal = result.refusal_text()
+            self.n_refusals += 1
             self.memory.add(self.last_refusal, world.clock.step, importance=7, kind="refusal")
             action = "wait"
         else:

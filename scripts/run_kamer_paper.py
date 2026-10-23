@@ -3,7 +3,16 @@
 from __future__ import annotations
 
 import json
+import os
+import sys
 from pathlib import Path
+
+if os.environ.get("PYTHONHASHSEED") != "0":
+    os.execve(
+        sys.executable,
+        [sys.executable, *sys.argv],
+        {**os.environ, "PYTHONHASHSEED": "0"},
+    )
 
 from kamer.config import SimConfig
 from kamer.eval.emergence import daily_curve, floor_mention_rate
@@ -47,7 +56,8 @@ def run_one(seed: int, preset: str, days: int = 7, n: int = 25, **kw) -> dict:
     last = curve[-1]["aware"] if curve else {}
     lines = handelingen_lines(sim)
     interviews = run_interviews(sim, n)
-    refusals = sum(1 for a in sim.agents.values() if a.last_refusal)
+    refusals = sum(int(getattr(a, "n_refusals", 0)) for a in sim.agents.values())
+    agents_refused = sum(1 for a in sim.agents.values() if int(getattr(a, "n_refusals", 0)) > 0)
     texts = [ln.get("text") or "" for ln in lines]
     return {
         "seed": seed,
@@ -63,6 +73,8 @@ def run_one(seed: int, preset: str, days: int = 7, n: int = 25, **kw) -> dict:
         "lines": lines,
         "naive_extra": naive_lines(sim),
         "refusals": refusals,
+        "agents_refused": agents_refused,
+        "curve": [{"day": c["day"], "aware": c["aware"]} for c in curve],
         "anachronism": anachronism_rate(texts),
         "n_steps": sim.world.clock.step,
         "kw": kw,
@@ -140,8 +152,23 @@ def main() -> None:
             "mean_procedural": mean_key(runs, "mean_procedural"),
             "anachronism": mean_key(runs, "anachronism"),
             "refusals": mean_key(runs, "refusals"),
+            "agents_refused": mean_key(runs, "agents_refused"),
             "n_lines": mean_key(runs, "n_lines"),
         }
+
+    curves = {}
+    for preset, runs in by_preset.items():
+        by_day: dict[int, dict[str, list[float]]] = {}
+        for r in runs:
+            for c in r.get("curve") or []:
+                d = int(c["day"])
+                by_day.setdefault(d, {})
+                for k, v in (c.get("aware") or {}).items():
+                    by_day[d].setdefault(k, []).append(float(v))
+        curves[preset] = [
+            {"day": d, "aware": {k: sum(vs) / len(vs) for k, vs in aware.items()}}
+            for d, aware in sorted(by_day.items())
+        ]
 
     out = {
         "holdout": {k: v for k, v in holdout.items() if k != "lengths"},
@@ -149,6 +176,8 @@ def main() -> None:
         "s1": s1,
         "fidelity": fidelity,
         "interventions": interventions,
+        "curves": curves,
+        "pythonhashseed": os.environ.get("PYTHONHASHSEED", ""),
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)
     # drop bulky line dumps
