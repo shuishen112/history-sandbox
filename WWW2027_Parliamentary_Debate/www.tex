@@ -67,7 +67,10 @@ LLM-agent simulation therefore lies in the world as well as in the model's
 language: an ungated sandbox writes a present-day assumption, that anyone
 may speak anywhere, into every simulated record whatever the backbone.
 Encoding the period's procedure removes this institutional bias and
-confines the model's own bias to what agents say.
+confines the model's own bias to what agents say. When the model writes
+every record line, a period prompt, the world, and archival retrieval with
+filtering lower modern vocabulary from $10.5\%$ to $0.3\%$, but the
+simulated debate remains far less adversarial than the archive.
 \end{abstract}
 
 % CCS concepts hidden for submission; restore for the camera-ready version.
@@ -101,16 +104,12 @@ digital history, parliamentary proceedings, computational social science}
 \begin{teaserfigure}
   \centering
   \includegraphics[width=\textwidth]{figure/kamer_sandbox.pdf}
-  \caption{The \sys{} sandbox on day~1 of a simulated one-week sitting
-  in December 1899 (composite Binnenhof; agents seeded from public speakers,
-  $N{=}25$). In the Tweede Kamer, a recognised member
-  speaks on the East Indies budget while an unrecognised member is refused
-  the floor. In the wandelgang, Member~A tells Member~C that the Minister of
-  Colonies may resign (rumour hop~2); a journalist overhears, but the leak
-  does not enter the Handelingen. The minister, in the Department of Colonies,
-  remains unaware. Right: the inspector shows the agent's role, its location
-  in the environment tree, standing-order affordances, retrieved memories,
-  the leak tracker, and researcher controls. No persona is playable.}
+  \caption{The \sys{} sandbox on day~1 of a simulated week in December 1899
+  ($N{=}25$). A recognised member speaks on the East Indies budget while an
+  unrecognised member is refused the floor; in the wandelgang, a rumour that
+  the Minister of Colonies may resign passes between members and reaches a
+  journalist but not the Handelingen. Right: the agent inspector (role,
+  location, affordances, memories, leak tracker, researcher controls).}
   \Description{A top-down map of a composite Binnenhof with the Tweede Kamer
   floor, wandelgang, committee rooms, press gallery and an agent inspector.}
   \label{fig:teaser}
@@ -207,7 +206,10 @@ $4.3\%$ of it, and replacing the heuristic backend with
 sharply from what parliament knew: under the transmission and allusion
 rules we encode, a resignation rumour reached almost all members within a
 week but appeared in only $2\%$ of the simulated record
-(\S\ref{sec:results}). These results suggest that institutional outcomes
+(\S\ref{sec:results}). When the model writes every record line, a period
+prompt, the world, and archival retrieval with filtering lower modern
+vocabulary from $10.5\%$ to $0.3\%$, but the simulated debate remains far
+less adversarial than the archive. These results suggest that institutional outcomes
 are better secured by encoding procedure in the world than by relying on
 the language model, and that
 silence in the Handelingen cannot by itself be read as ignorance.
@@ -216,12 +218,11 @@ In summary, we make the following contributions:
 \begin{itemize}[leftmargin=*,nosep]
   \item \textbf{Countering present-day bias outside the language model.} A
   design that places historical constraints in the archive and in the world
-  rather than in the prompt alone, implemented in \sys{}: an interactive
-  tile world of the Binnenhof whose environment tree, object states, and
-  affordances encode the standing orders, including the split between the
-  Tweede Kamer (lower house) and the Eerste Kamer (upper house), together
-  with a parliamentary role automaton. This procedural gating holds
-  regardless of the backbone (\S\ref{sec:world}, \S\ref{sec:agents}).
+  rather than in the prompt alone, implemented in \sys{}: a tile world of
+  the Binnenhof whose environment tree, object states, and affordances
+  encode the standing orders of both chambers, together with a
+  parliamentary role automaton. This procedural gating holds regardless of
+  the backbone (\S\ref{sec:world}, \S\ref{sec:agents}).
   \item \textbf{An archive-to-sandbox pipeline and a simulated
   Handelingen.} We build the world, its rules, and a population of attested
   public speakers, seeded with their recorded speech, from PoliticalMashup
@@ -234,8 +235,10 @@ In summary, we make the following contributions:
   ablations of the standing orders and the rumour network, and a backbone
   check with \texttt{gpt-4o-mini}; a selection-aware comparison with
   held-out Handelingen from 1890--1899 (S2); and an intervention on Chair
-  strictness (S3). We also report a historian's
-  ranking of agent interviews (\S\ref{sec:experiments}--\S\ref{sec:results}).
+  strictness (S3). A presentism audit, in which the model writes every
+  record line, separates the effects of prompt, world, and guards, and a
+  historian ranks agent interviews
+  (\S\ref{sec:experiments}--\S\ref{sec:results}).
 \end{itemize}
 
 %% =====================================================================
@@ -246,9 +249,7 @@ In summary, we make the following contributions:
 agent-based models (ABMs) explain macro phenomena from local
 rules~\cite{schelling1971dynamic,epstein1996growing}; the generative
 standard requires that a candidate explanation actually grow the
-phenomenon~\cite{epstein2006generative}. Historical ABMs, notably of
-Ancestral Pueblo settlement~\cite{axtell2002population}, rely on
-hand-crafted rules that cannot represent debate. Social
+phenomenon~\cite{epstein2006generative}. Social
 simulacra~\cite{park2022social} first used LLMs to populate prototypes of
 online communities, and Generative Agents~\cite{park2023generative} gave
 25 agents in Smallville a memory stream, reflection, and planning.
@@ -395,18 +396,15 @@ which determines whether the stenographer may write, and a house tag
 (\texttt{commons} or \texttt{senate}).
 
 \paragraph{Two chambers.} The Staten-Generaal has been bicameral since 1815.
-The Tweede Kamer is directly elected, conducts day-to-day politics, amends
-and initiates bills, and is where cabinets stand or fall. The Eerste Kamer
-is elected indirectly by the Provinciale Staten, sits far less often, and
-may only accept or reject bills: it has no right of amendment or
-initiative~\cite{pdc2024kamers}. Between 1888 and 1918, a period that
-includes the week of Tweede Kamer sittings in December 1899 that we simulate
-(\S\ref{sec:experiments}), the Eerste Kamer several times blocked cabinets
-that held a Tweede Kamer majority. \sys{} therefore treats house membership as
+The directly elected Tweede Kamer amends and initiates bills and decides
+whether cabinets stand. The Eerste Kamer, elected by the Provinciale
+Staten, sits far less often and may only accept or reject
+bills~\cite{pdc2024kamers}, yet between 1888 and 1918 it several times
+blocked cabinets that held a Tweede Kamer majority. \sys{} therefore treats house membership as
 an institutional attribute rather than a label. A Kamerlid of the Tweede
 Kamer has no floor rights in the Eerste Kamer; ministers, who appear in
 both houses, do; and \texttt{move\_amendment} is undefined on senate tiles.
-Although that week has only Tweede Kamer sittings, the Eerste Kamer is present on the map
+Although the simulated week has only Tweede Kamer sittings, the Eerste Kamer is present on the map
 and in the affordance layer, so that ``lid der Staten-Generaal'' (member of
 the States General) is never an admissible self-description.
 
@@ -425,8 +423,7 @@ rhythm of the Handelingen. \sys{} follows the server--client design of
 open-source Smallville implementations~\cite{smallvillerepo}: a simulation
 server holds the environment tree, object states, and agent memories,
 advances the world with an \texttt{updateState} call, and exposes this
-state over a REST API. The interface shows each agent's action as an emoji
-with a short statement; role is shown only by a ring colour. Researchers can
+state over a REST API. Researchers can
 pause the world, step through it, inspect agents, and interview them.
 Adding a memory, editing an object state, and injecting an event are also
 logged, but of these only opening a sitting changes what agents do. No
@@ -469,9 +466,13 @@ a separate role that writes the simulated record (\S\ref{sec:calibration}).
 The system prompt of the LLM backbone asks
 for late-nineteenth-century Dutch and lists period forms such as
 \emph{thans}, \emph{eene}, \emph{hetgeen}, and \emph{Nederlandsch}; the
-Smallville-style baseline asks only for ``period Dutch''. \sys{}'s design
-also includes archival retrieval and an anachronism filter; neither was
-active in the runs reported here (\S\ref{sec:discussion}).
+Smallville-style baseline asks only for ``period Dutch''. The presentism
+audit (\S\ref{sec:experiments}) adds two guards: archival retrieval puts
+the two most similar opening passages of 1860--1889 Tweede Kamer speeches
+(the calibration slice, never the holdout) in each prompt as a register
+and spelling reference, and an anachronism filter regenerates a draft once
+if it contains a term from one half of the modern lexicon, keeping the
+other half for auditing. Neither guard is active in S1--S3.
 
 \subsubsection{Memory and action selection}
 \label{sec:memory}
@@ -659,10 +660,23 @@ fixed sentences (seeds $\{7,11,19,29,31\}$). All reported runs set
 \texttt{PYTHONHASHSEED=0}, and bench seating and the heuristic allusion
 rule use a process-independent hash. A backbone check reruns the
 S1 \texttt{full} and \texttt{ga} conditions with \texttt{gpt-4o-mini}
-(seeds $\{7,11,19\}$). Each of these runs had a budget of 400
-completions. Most of the budget went to corridor asides, and once it was
-spent agents fell back to heuristic utterances, so at most 20 of the 205
-record lines per seed are model text.
+(seeds $\{7,11,19\}$). Each run had a budget of 400 completions, mostly
+spent on corridor asides, after which agents fell back to heuristic
+utterances; at most 20 of the 205 record lines per seed are model text.
+
+\paragraph{Presentism audit.} A separate \texttt{gpt-4o-mini} run (seeds
+$\{7,11,19\}$) uses the model for every floor, corridor, and interview
+turn, so every record line is model text, and agents hear the previous
+floor speech. Four conditions separate world, prompt, and guards:
+\textbf{GA}; \textbf{GA + period prompt} (Smallville-style world, \sys{}
+system prompt); \textbf{\sys{} world} (no guards); and
+\textbf{\sys{} + guards}. We score distinct completions against the
+1890--1899 holdout (14{,}731 speeches, first 480 characters): the share
+with a term from a 38-term Dutch and English modern lexicon (16 terms
+attested in the holdout removed), with an adversarial marker (a challenge
+cue, or a reference to another speaker with a contrastive conjunction),
+and with a consensus cue. Intervals are 95\% cluster-bootstrap intervals
+over seeds and turns.
 
 \subsection{End-to-end evaluation}
 \label{sec:eval-e2e}
@@ -773,15 +787,11 @@ the press by day~7, whereas ministers reached $30\%$
 the transmission rules in \S\ref{sec:communication}: in the wandelgang the
 journalist hears a rumour with probability at least $0.55$ per encounter
 and a minister with about $0.10$, and ministers spend their evenings in the
-ministry rather than the wandelgang. The curves therefore show how these
-encoded assumptions play out over a week of sittings, not an asymmetry
-that arises unprompted. The same leak appeared in only $2\%$ of simulated
+ministry rather than the wandelgang. The same leak appeared in only $2\%$ of simulated
 Handelingen lines (Table~\ref{tab:interview}): an aware member alludes to
 it on roughly one sitting day in twelve at the default Chair strictness,
 and journalists cannot speak on the floor. Rumour hops embellished a
 detail $16\%$ of the time, close to the distortion probability of $0.18$.
-Without the corridor network (GA or --rumour), awareness stays at the
-seeded member ($5\%$).
 
 \paragraph{Mechanisms.} The affordance layer is what makes the
 Handelingen selective (Table~\ref{tab:interview}). With it, the record
@@ -851,39 +861,54 @@ $2\times$, and $0$ at $4\times$ (Figure~\ref{fig:cf}). This follows from how
 strictness is encoded (\S\ref{sec:experiments}): it lowers the rate at
 which aware members allude to the rumour and, from $2\times$, halves or
 quarters the number of recognised speeches. Corridor distortion, which
-changes only the content of rumours, leaves the rate unchanged. S3 therefore shows how the record responds to the
-strictness parameter as we encoded it, rather than testing a mechanism
-that the agents discover.
+changes only the content of rumours, leaves the rate unchanged.
 
-\paragraph{Audit.} The vocabulary audit matches nine modern terms (such as
-\emph{internet} and \emph{covid}) against the simulated record and finds
-none on either backend. Because most record lines are attested excerpts,
-this says little about the model's own language.
+\paragraph{Presentism audit.} A nine-term English check finds no modern
+term in the S1 records, which consist mostly of attested excerpts. In the
+presentism audit every record line is model text
+(Table~\ref{tab:presentism}). Under GA, $10.5\%$ of record lines contain
+a modern term, $1.4\%$ an adversarial marker, and $49.9\%$ a consensus
+cue (archive: $0.0\%$, $28.9\%$, $0.6\%$). The period prompt halves
+modern vocabulary and cuts modern spelling from $93\%$ to $27\%$. The
+\sys{} world lowers modern vocabulary to $3.6\%$, within the prompt-only
+interval, raises adversarial markers to $10.6\%$, and lowers consensus
+cues to $26.2\%$. Retrieval removes modern forms of address ($37\%$ to
+$0\%$) without verbatim copying, and the filter brings modern vocabulary
+to $0.3\%$; on the lexicon half the filter never sees, the rate stays at
+$0.3\%$, so the filter removes the terms it targets rather than modern
+language in general. No condition reaches the archive's register. In
+interviews, $13$--$18\%$ of answers contain a modern term in every
+condition until the filter ($2.7\%$), and self-description errors are
+$4\%$ in all four conditions.
 
 \begin{table}[t]
-\caption{TrueSkill ranking of pause-and-interview answers by one historian
-(\sys{} with LLM vs.\ Smallville-style GA). Attention checks passed: $2/2$.
-Higher $\mu$ is better; $\sigma$ is the posterior uncertainty.}
-\label{tab:historian}
+\caption{Presentism audit on simulated Handelingen lines
+(\texttt{gpt-4o-mini}, 3 seeds; every line is model text). Shares of
+distinct completions with a modern term, an adversarial marker, or a
+consensus cue; brackets give 95\% cluster-bootstrap intervals.}
+\label{tab:presentism}
 \centering\small
-\setlength{\tabcolsep}{3.5pt}
-\begin{tabular}{lcccc}
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{lccc}
 \toprule
-Condition & $\mu_{\text{bel}}$ & $\sigma$ & $\mu_{\text{proc}}$ & $\sigma$ \\
+Condition & Modern \% & Adversarial \% & Consensus \% \\
 \midrule
-\sys{} (full, LLM) & \textbf{28.3} & 1.8 & \textbf{27.8} & 2.2 \\
-GA~\cite{park2023generative} & 21.7 & 1.8 & 22.2 & 2.2 \\
+Handelingen 1890--1899 & 0.0 & 28.9 & 0.6 \\
+GA~\cite{park2023generative} & 10.5 [8--14] & 1.4 [1--2] & 49.9 [48--51] \\
+GA + period prompt & 5.0 [2--9] & 7.2 [6--8] & 34.2 [30--39] \\
+\sys{} world & 3.6 [2--6] & 10.6 [7--14] & 26.2 [21--31] \\
+\sys{} + guards & \textbf{0.3} [0--1] & 8.8 [7--11] & 22.9 [17--29] \\
+\quad before filter & 2.3 [0--5] & 8.9 [7--11] & 23.7 [17--30] \\
 \bottomrule
-\end{tabular}\\[4pt]
-{\raggedright\scriptsize Pairwise (full vs.\ GA): believability 17--8--11
-(win--loss--tie); procedure 12--5--19. One further pair, from an earlier
-version of the task, was left unranked with a written comment (``Kamerlid der Tweede/Eerste Kamer'', not ``MP'').\par}
+\end{tabular}
 \end{table}
 
 \paragraph{Historian review.} The rater passed both attention checks,
 which planted obvious anachronisms (a Twitter livestream; ``I am a large
 language model''). On the remaining pairs, \sys{} outranked the
-Smallville-style ablation on both criteria (Table~\ref{tab:historian}).
+Smallville-style ablation on both criteria (17--8--11 for believability,
+12--5--19 for procedure; Table~\ref{tab:historian},
+Appendix~\ref{app:historian}).
 Ties were more frequent for procedure than for believability, consistent
 with both systems being prompted about recognition. The standing-order
 vignettes matched the intended $\pi$: a journalist on the floor is out of
@@ -905,21 +930,11 @@ the order in which roles learn of the leak and the effect of Chair
 strictness, follow directly from transmission and allusion rules that we
 set by hand. Their value lies in making these assumptions explicit and
 showing how they combine over a week of sittings, not in emerging
-unprompted. The historian ranking (Table~\ref{tab:historian}) is a first
-measurement of believability and complements the selection test. No run
-can establish what a historical member thought: agents' utterances are
-model artefacts, not recovered voices. The sandbox instead makes
+unprompted. No run can establish what a historical member thought:
+agents' utterances are model artefacts, not recovered voices. The sandbox instead makes
 historians' assumptions about procedure and selection explicit and
 manipulable, and it generates hypotheses for further archival work in
 committee minutes, private correspondence, and the press.
-
-\paragraph{Interactivity as method.} Pausing the sandbox, stepping through
-a sitting, inspecting agents, and interviewing them let researchers check
-how the standing-order rules play out. In this paper the historian's
-review relied on interviews generated at the end of each run rather than
-on live sessions, and the other logged interventions do not yet change
-what agents do, apart from opening a sitting; making them act on the
-world is the next step towards a working tool for historians.
 
 \paragraph{Limitations.} The 1814--1899 slice is OCR-noisy, speaker
 strings do not identify unique persons, and 1890s party labels denote
@@ -927,12 +942,15 @@ kamerclubs rather than mass parties. The Binnenhof is a composite, and the
 journalist is a synthetic observer. S1 is a 25-agent Tweede Kamer week, so
 it cannot match the role mix of a full chamber, and it runs no Eerste Kamer
 sitting even though senate tiles and affordances exist in the world. A
-single historian ranked the interviews. The implementation is also simpler
+single historian ranked interviews generated at the end of each run rather
+than in live sessions, and logged interventions other than opening a
+sitting do not yet change what agents do. The implementation is also simpler
 than the Generative Agents architecture: it has no memory ranking,
 reflection, or model-driven planning; conversations are single remarks;
-agents do not hear the content of floor speeches; and archival retrieval
-and the anachronism filter were not active, so the simulated record
-consists mostly of attested excerpts (\S\ref{sec:experiments}). We release seeds, configurations, and the
+agents hear the content of floor speeches only in the presentism audit;
+and archival retrieval and the anachronism filter are active only there,
+so the S1--S3 records consist mostly of attested excerpts
+(\S\ref{sec:experiments}). We release seeds, configurations, and the
 DutchParl parser.
 
 %% =====================================================================
@@ -952,9 +970,9 @@ selection, and diffusion, not what a named member ``really thought''.
 (5)~\emph{Consultation.} The project is designed with historians of
 Dutch politics. The labelling reported here was carried out with informed,
 task-specific consent, and the rater could skip any item.
-(6)~\emph{Copyright.} The source corpus is released under CC0, and
-Auteurswet art.~11 places official proceedings outside copyright. We cite
-Marx et al.~\cite{marx2012dutchparl} as the source of the corpus.
+(6)~\emph{Copyright.} The corpus is released under
+CC0~\cite{marx2012dutchparl}, and Auteurswet art.~11 places official
+proceedings outside copyright.
 
 %% =====================================================================
 \section{Conclusion}
@@ -971,9 +989,10 @@ diverged from what parliament knew: a rumour known to almost all members
 appeared in only $2\%$ of official lines, so silence in the record does
 not imply ignorance. Present-day bias in LLM agents thus lies in the worlds they
 are placed in as well as in what they say. Encoding the period's
-institutions removes the former; the latter remains with the language
-model and is the next target for archival retrieval and anachronism
-filtering.
+institutions removes the former. For the latter, a period prompt, the
+world, and archival retrieval with filtering lower modern vocabulary in
+model-written records from $10.5\%$ to $0.3\%$, but the register stays far
+more consensual than in the 1890s Handelingen.
 
 %% =====================================================================
 \begin{acks}
@@ -1123,6 +1142,25 @@ the first person.
 
 \section{Historian review details}
 \label{app:historian}
+\begin{table}[t]
+\caption{TrueSkill ranking of pause-and-interview answers by one historian
+(\sys{} with LLM vs.\ Smallville-style GA). Attention checks passed: $2/2$.
+Higher $\mu$ is better; $\sigma$ is the posterior uncertainty. Pairwise
+(win--loss--tie): believability 17--8--11, procedure 12--5--19. One further
+pair, from an earlier version of the task, was left unranked with a
+written comment (``Kamerlid der Tweede/Eerste Kamer'', not ``MP'').}
+\label{tab:historian}
+\centering\small
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{lcccc}
+\toprule
+Condition & $\mu_{\text{bel}}$ & $\sigma$ & $\mu_{\text{proc}}$ & $\sigma$ \\
+\midrule
+\sys{} (full, LLM) & \textbf{28.3} & 1.8 & \textbf{27.8} & 2.2 \\
+GA~\cite{park2023generative} & 21.7 & 1.8 & 22.2 & 2.2 \\
+\bottomrule
+\end{tabular}
+\end{table}
 The rater
 asked us to separate the griffier from the stenographer, to let Kamerleden
 speak in afdeelingen without plenary recognition, to let ministers talk in
@@ -1142,7 +1180,10 @@ corrected cabinet. The \texttt{gpt-4o-mini} runs, including the interviews
 ranked in Table~\ref{tab:historian} and the remark in
 Appendix~\ref{app:examples}, predate the correction; minister identity does
 not change who may speak. Appendix~\ref{app:day} traces a day of an earlier
-heuristic run with the corrected cabinet.
+heuristic run with the corrected cabinet. The presentism audit
+(Table~\ref{tab:presentism}) uses the current code, in which synthetic
+cards are excluded from the roster and the corridor object is a kamerclub
+circular.
 
 \section{Sandbox objects and corpus slice}
 \label{app:tables}
@@ -1165,7 +1206,7 @@ Kamerstuk & tabled, in debate, voted, withdrawn & government, chair \\
 Stenograph & idle, recording, paused & stenographer \\
 Voting box & closed, open, counted & chair, griffier \\
 Press-gallery desk & empty, occupied & journalist \\
-Whip note & none, circulating, spent & members \\
+Kamerclub circular & none, circulating, spent & members \\
 \bottomrule
 \end{tabular}
 \end{table}

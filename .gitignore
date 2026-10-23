@@ -1,4 +1,6 @@
 data/interviews_raw.json
+openai.key
+*.key
 
 # latexmk build caches
 *.fdb_latexmk

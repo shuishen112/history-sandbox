@@ -57,6 +57,10 @@ def _role_status(raw: str) -> str:
         return "Chair"
     if raw in {"government", "minister"}:
         return "Minister"
+    if raw in {"journalist", "verslaggever"}:
+        return "Journalist"
+    if raw in {"clerk", "griffier"}:
+        return "Clerk"
     return "MP"
 
 
@@ -91,7 +95,7 @@ def load_roster(path: Path | str = "data/speakers.json") -> list[dict]:
         items = raw
     out: list[dict] = []
     for rec in items:
-        if not isinstance(rec, dict) or rec.get("catch"):
+        if not isinstance(rec, dict) or rec.get("catch") or rec.get("synthetic"):
             continue
         row = dict(rec)
         row["role"] = rec.get("role") or rec.get("suggested_role") or "mp"
@@ -175,8 +179,16 @@ def build_population(world: ChamberWorld, backend: CognitiveBackend, n: int = 25
         ministers = FALLBACK_ROSTER[1:3]
     if not mps:
         mps = FALLBACK_ROSTER[3:]
-    minister_names = {m.get("name") for m in ministers[:2]}
-    mps = [r for r in mps if r.get("name") not in minister_names]
+    reserved = {m.get("name") for m in ministers[:2]} | {
+        "Verslaggever van de Courant",
+        "Arntzenius",
+        "Griffier",
+    }
+    mps = [
+        r for r in mps
+        if r.get("name") not in reserved
+        and _role_status(r.get("role", "")) == "MP"
+    ]
 
     agents.append(make(0, chairs[0], "Chair"))
     agents.append(make(1, {"name": "Arntzenius", "function": "griffier", "role": "clerk"}, "Clerk"))

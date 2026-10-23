@@ -37,7 +37,7 @@ OBJECT_MACHINES: dict[str, dict[str, Any]] = {
         "default": "empty",
         "changed_by": ["journalist"],
     },
-    "whip_note": {
+    "circulaire": {
         "states": ["none", "circulating", "spent"],
         "default": "none",
         "changed_by": ["mp"],
@@ -61,6 +61,13 @@ class StatefulObject:
             extra = f" ({self.payload.get('title', 'bill')})"
         elif self.kind == "stenograph" and self.state == "recording":
             extra = f" (page={self.payload.get('page', '?')})"
+        elif self.kind == "circulaire":
+            state_nl = {
+                "none": "niet aanwezig",
+                "circulating": "in omloop",
+                "spent": "reeds rondgedeeld",
+            }.get(self.state, self.state)
+            return f"circulaire van de kamerclub is {state_nl}"
         return f"{self.kind} is {self.state}{extra}"
 
     def set_state(self, new_state: str, **payload: Any) -> None:
