@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{59}
+\begin{thebibliography}{55}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -221,16 +221,6 @@
 \href{https://doi.org/10.2307/2082975}{doi:\nolinkurl{10.2307/2082975}}
 
 
-\bibitem[Durmus et~al\mbox{.}(2023)]%
-        {durmus2023global}
-\bibfield{author}{\bibinfo{person}{Esin Durmus} {et~al\mbox{.}}}
-  \bibinfo{year}{2023}\natexlab{}.
-\newblock \bibinfo{title}{Towards Measuring the Representation of Subjective
-  Global Opinions in Language Models}.
-\newblock
-\showeprint[arxiv]{2306.16388}~[cs.CL]
-
-
 \bibitem[Ehrmann et~al\mbox{.}(2023)]%
         {ehrmann2023ner}
 \bibfield{author}{\bibinfo{person}{Maud Ehrmann}, \bibinfo{person}{Ahmed
@@ -385,22 +375,6 @@
 \showeprint[arxiv]{2311.17227}~[cs.AI]
 
 
-\bibitem[Ivey et~al\mbox{.}(2024)]%
-        {ivey2024real}
-\bibfield{author}{\bibinfo{person}{Jonathan Ivey}, \bibinfo{person}{Shivani
-  Kumar}, \bibinfo{person}{Jiayu Liu}, \bibinfo{person}{Hua Shen},
-  \bibinfo{person}{Sushrita Rakshit}, \bibinfo{person}{Rohan Raju},
-  \bibinfo{person}{Haotian Zhang}, \bibinfo{person}{Aparna Ananthasubramaniam},
-  \bibinfo{person}{Junghwan Kim}, \bibinfo{person}{Bowen Yi},
-  \bibinfo{person}{Dustin Wright}, \bibinfo{person}{Abraham Israeli},
-  \bibinfo{person}{Anders~Giovanni M{\o}ller}, \bibinfo{person}{Lechen Zhang},
-  {and} \bibinfo{person}{David Jurgens}.} \bibinfo{year}{2024}\natexlab{}.
-\newblock \bibinfo{title}{Real or Robotic? Assessing Whether {LLMs} Accurately
-  Simulate Qualities of Human Responses in Dialogue}.
-\newblock
-\showeprint[arxiv]{2409.08330}
-
-
 \bibitem[Li et~al\mbox{.}(2025)]%
         {li2025digitaltwins}
 \bibfield{author}{\bibinfo{person}{Rui Li}, \bibinfo{person}{Heming Xia},
@@ -413,17 +387,6 @@
   Linguistics: ACL 2025}}. \bibinfo{publisher}{Association for Computational
   Linguistics}, \bibinfo{address}{Vienna, Austria},
   \bibinfo{pages}{15738--15763}.
-\newblock
-
-
-\bibitem[Liang et~al\mbox{.}(2025)]%
-        {liang2025virtual}
-\bibfield{author}{\bibinfo{person}{Chen Liang}, \bibinfo{person}{Wenguan Wang},
-  {and} \bibinfo{person}{Yi Yang}.} \bibinfo{year}{2025}\natexlab{}.
-\newblock \showarticletitle{Towards Human-like Virtual Beings: Simulating Human
-  Behavior in {3D} Scenes}. In \bibinfo{booktitle}{\emph{Proceedings of the
-  IEEE/CVF International Conference on Computer Vision}}.
-  \bibinfo{pages}{10753--10763}.
 \newblock
 
 
@@ -740,11 +703,11 @@
 \showeprint[arxiv]{2312.03664}~[cs.AI]
 
 
-\bibitem[Wang et~al\mbox{.}(2025b)]%
+\bibitem[Wang et~al\mbox{.}(2025)]%
         {wang2025identity}
 \bibfield{author}{\bibinfo{person}{Angelina Wang}, \bibinfo{person}{Jamie
   Morgenstern}, {and} \bibinfo{person}{John~P. Dickerson}.}
-  \bibinfo{year}{2025}\natexlab{b}.
+  \bibinfo{year}{2025}\natexlab{}.
 \newblock \showarticletitle{Large language models that replace human
   participants can harmfully misportray and flatten identity groups}.
 \newblock \bibinfo{journal}{\emph{Nature Machine Intelligence}}
@@ -752,17 +715,6 @@
   \bibinfo{pages}{400--411}.
 \newblock
 \href{https://doi.org/10.1038/s42256-025-00986-z}{doi:\nolinkurl{10.1038/s42256-025-00986-z}}
-
-
-\bibitem[Wang et~al\mbox{.}(2025a)]%
-        {wang2025desire}
-\bibfield{author}{\bibinfo{person}{Yiding Wang}, \bibinfo{person}{Yuxuan Chen},
-  \bibinfo{person}{Fangwei Zhong}, \bibinfo{person}{Long Ma}, {and}
-  \bibinfo{person}{Yizhou Wang}.} \bibinfo{year}{2025}\natexlab{a}.
-\newblock \bibinfo{title}{Simulating Human-like Daily Activities with
-  Desire-driven Autonomy}.
-\newblock
-\showeprint[arxiv]{2412.06435}
 
 
 \bibitem[Wang et~al\mbox{.}(2023)]%

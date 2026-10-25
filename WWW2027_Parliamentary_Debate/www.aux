@@ -21,8 +21,8 @@
 \citation{epstein2006generative}
 \citation{park2022social}
 \citation{park2023generative}
-\citation{wang2023humanoid,wang2025desire}
-\citation{wu2025indoorworld,liang2025virtual}
+\citation{wang2023humanoid}
+\citation{wu2025indoorworld}
 \citation{bougie2025citysim}
 \citation{al2024projectsid,piao2025agentsociety}
 \citation{argyle2023outofone,aher2023turing}
@@ -35,15 +35,13 @@
 \citation{esteva2001electronic}
 \citation{crawford1995grammar}
 \citation{santurkar2023opinions}
-\citation{durmus2023global}
 \citation{tao2024cultural}
 \citation{atari2023which}
-\citation{wang2025identity}
 \citation{cheng2023compost}
-\citation{bender2021parrots}
+\citation{wang2025identity}
 \citation{ziems2024css}
 \citation{tjuatja2024biases,bisbee2024synthetic}
-\citation{ivey2024real,zhou2026sim2real}
+\citation{zhou2026sim2real}
 \citation{li2025digitaltwins,chen2026traces,cheng2026longhorizon}
 \citation{park2024thousand}
 \citation{shao2023characterllm}
@@ -66,11 +64,11 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Archive-to-sandbox pipeline}{3}{subsection.3.1}\protected@file@percent }
 \newlabel{sec:pipeline}{{3.1}{3}{Archive-to-sandbox pipeline}{subsection.3.1}{}}
 \@writefile{toc}{\contentsline {paragraph}{Sources.}{3}{section*.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Event extraction.}{3}{section*.9}\protected@file@percent }
 \citation{park2023generative}
 \citation{pdc2024kamers}
 \citation{smallvillerepo}
 \citation{park2023generative}
-\@writefile{toc}{\contentsline {paragraph}{Event extraction.}{4}{section*.9}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{From records to world.}{4}{section*.10}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}World: tile map and environment tree}{4}{subsection.3.2}\protected@file@percent }
 \newlabel{sec:world}{{3.2}{4}{World: tile map and environment tree}{subsection.3.2}{}}
@@ -104,6 +102,8 @@
 \@writefile{toc}{\contentsline {paragraph}{Presentism audit.}{6}{section*.19}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces S1 outcomes (heuristic backend, $N{=}25$, 7 days, 5-seed mean). Memb.\ aware is the share of members who know the leak; Floor leak is the share of simulated Handelingen lines that mention it; Journ.\ \% is the journalists' share of those lines (archive: $0$).}}{6}{table.caption.20}\protected@file@percent }
 \newlabel{tab:interview}{{1}{6}{S1 outcomes (heuristic backend, $N{=}25$, 7 days, 5-seed mean). Memb.\ aware is the share of members who know the leak; Floor leak is the share of simulated Handelingen lines that mention it; Journ.\ \% is the journalists' share of those lines (archive: $0$)}{table.caption.20}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces S1 backbone check. Heuristic rows are the 5-seed means from Table\nonbreakingspace \ref {tab:interview}; \texttt  {gpt-4o-mini} rows are 3-seed means ($\{7,11,19\}$). Emb.\ is the share of rumour hops that embellish a detail. Journalist share and line count are unchanged; the LLM alludes to the leak on the floor more often (range $0.059$--$0.171$). Memb.\ and Emb.\ differ only through the seeds, since rumour transmission does not involve the model.}}{6}{table.caption.21}\protected@file@percent }
+\newlabel{tab:backbone}{{2}{6}{S1 backbone check. Heuristic rows are the 5-seed means from Table~\ref {tab:interview}; \texttt {gpt-4o-mini} rows are 3-seed means ($\{7,11,19\}$). Emb.\ is the share of rumour hops that embellish a detail. Journalist share and line count are unchanged; the LLM alludes to the leak on the floor more often (range $0.059$--$0.171$). Memb.\ and Emb.\ differ only through the seeds, since rumour transmission does not involve the model}{table.caption.21}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1}End-to-end evaluation}{6}{subsection.4.1}\protected@file@percent }
 \newlabel{sec:eval-e2e}{{4.1}{6}{End-to-end evaluation}{subsection.4.1}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Historian review}{6}{subsection.4.2}\protected@file@percent }
@@ -119,8 +119,6 @@
 \newlabel{sub@fig:cf}{{b}{7}{Chair-strictness intervention (S3, 3-seed mean)}{figure.caption.22}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Corridor rumour and official record. (a)\nonbreakingspace A resignation rumour is seeded with one member in the wandelgang. Members reach $32\%$ awareness on day\nonbreakingspace 1 and $96\%$ by day\nonbreakingspace 7; the press is faster ($40\%$, then $100\%$), and ministers lag ($10\%$, then $30\%$), as the transmission probabilities in \S  \ref {sec:communication} imply. Only $2\%$ of Handelingen lines mention the leak. (b)\nonbreakingspace Floor mention of the leak against Chair strictness, which lowers the heuristic allusion rate and, from $4\times $, drives floor mention to zero.}}{7}{figure.caption.22}\protected@file@percent }
 \newlabel{fig:s1s3}{{2}{7}{Corridor rumour and official record. (a)~A resignation rumour is seeded with one member in the wandelgang. Members reach $32\%$ awareness on day~1 and $96\%$ by day~7; the press is faster ($40\%$, then $100\%$), and ministers lag ($10\%$, then $30\%$), as the transmission probabilities in \S \ref {sec:communication} imply. Only $2\%$ of Handelingen lines mention the leak. (b)~Floor mention of the leak against Chair strictness, which lowers the heuristic allusion rate and, from $4\times $, drives floor mention to zero}{figure.caption.22}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces S1 backbone check. Heuristic rows are the 5-seed means from Table\nonbreakingspace \ref {tab:interview}; \texttt  {gpt-4o-mini} rows are 3-seed means ($\{7,11,19\}$). Emb.\ is the share of rumour hops that embellish a detail. Journalist share and line count are unchanged; the LLM alludes to the leak on the floor more often (range $0.059$--$0.171$). Memb.\ and Emb.\ differ only through the seeds, since rumour transmission does not involve the model.}}{7}{table.caption.21}\protected@file@percent }
-\newlabel{tab:backbone}{{2}{7}{S1 backbone check. Heuristic rows are the 5-seed means from Table~\ref {tab:interview}; \texttt {gpt-4o-mini} rows are 3-seed means ($\{7,11,19\}$). Emb.\ is the share of rumour hops that embellish a detail. Journalist share and line count are unchanged; the LLM alludes to the leak on the floor more often (range $0.059$--$0.171$). Memb.\ and Emb.\ differ only through the seeds, since rumour transmission does not involve the model}{table.caption.21}{}}
 \@writefile{toc}{\contentsline {paragraph}{Mechanisms.}{7}{section*.24}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Backbone.}{7}{section*.25}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Selection-aware fidelity on held-out Tweede Kamer speeches (1890--1899). Role JSD: lower is better. Journalist \% should be $0$.}}{7}{table.caption.26}\protected@file@percent }
@@ -145,6 +143,7 @@
 \@writefile{toc}{\contentsline {paragraph}{Commitments for a parliamentary sandbox.}{8}{section*.34}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {8}Conclusion}{8}{section.8}\protected@file@percent }
 \newlabel{sec:conclusion}{{8}{8}{Conclusion}{section.8}{}}
+\@writefile{toc}{\contentsline {section}{References}{8}{section*.36}\protected@file@percent }
 \bibcite{al2024projectsid}{{2}{2024}{{AL et~al\mbox  {.}}}{{}}}
 \bibcite{argyle2023outofone}{{3}{2023}{{Argyle et~al\mbox  {.}}}{{}}}
 \bibcite{atari2023which}{{4}{2023}{{Atari et~al\mbox  {.}}}{{}}}
@@ -157,81 +156,78 @@
 \bibcite{cheng2023compost}{{11}{2023}{{Cheng et~al\mbox  {.}}}{{}}}
 \bibcite{cheng2026longhorizon}{{12}{2026}{{Cheng et~al\mbox  {.}}}{{}}}
 \bibcite{crawford1995grammar}{{13}{1995}{{Crawford and Ostrom}}{{}}}
-\bibcite{durmus2023global}{{14}{2023}{{Durmus et~al\mbox  {.}}}{{}}}
-\bibcite{ehrmann2023ner}{{15}{2023}{{Ehrmann et~al\mbox  {.}}}{{}}}
-\bibcite{epstein2006generative}{{16}{2006}{{Epstein}}{{}}}
-\bibcite{epstein1996growing}{{17}{1996}{{Epstein and Axtell}}{{}}}
-\bibcite{erjavec2023parlamint}{{18}{2023}{{Erjavec et~al\mbox  {.}}}{{}}}
-\bibcite{esteva2001electronic}{{19}{2001}{{Esteva et~al\mbox  {.}}}{{}}}
-\bibcite{ferguson1997virtual}{{20}{1997}{{Ferguson}}{{}}}
-\bibcite{gao2024llmabm}{{21}{2024}{{Gao et~al\mbox  {.}}}{{}}}
-\bibcite{gao2023s3}{{22}{2025}{{Gao et~al\mbox  {.}}}{{}}}
-\bibcite{gavin2014abm}{{23}{2014}{{Gavin}}{{}}}
-\bibcite{herbrich2006trueskill}{{24}{2007}{{Herbrich et~al\mbox  {.}}}{{}}}
-\bibcite{horton2023homosilicus}{{25}{2026}{{Horton et~al\mbox  {.}}}{{}}}
-\bibcite{hua2023waragent}{{26}{2023}{{Hua et~al\mbox  {.}}}{{}}}
-\bibcite{ivey2024real}{{27}{2024}{{Ivey et~al\mbox  {.}}}{{}}}
-\bibcite{li2025digitaltwins}{{28}{2025}{{Li et~al\mbox  {.}}}{{}}}
-\bibcite{liang2025virtual}{{29}{2025}{{Liang et~al\mbox  {.}}}{{}}}
-\bibcite{marx2010dutchparl}{{30}{2010}{{Marx and Schuth}}{{}}}
-\bibcite{marx2012dutchparl}{{31}{2012}{{Marx et~al\mbox  {.}}}{{}}}
-\bibcite{mollin2007hansard}{{32}{2007}{{Mollin}}{{}}}
-\bibcite{smallvillerepo}{{33}{2023}{{nmatter1}}{{}}}
-\bibcite{park2023generative}{{34}{2023}{{Park et~al\mbox  {.}}}{{}}}
-\bibcite{park2022social}{{35}{2022}{{Park et~al\mbox  {.}}}{{}}}
-\bibcite{park2024thousand}{{36}{2024}{{Park et~al\mbox  {.}}}{{}}}
-\bibcite{pdc2024kamers}{{37}{2024}{{Parlementair Documentatie Centrum}}{{}}}
-\bibcite{piao2025agentsociety}{{38}{2026}{{Piao et~al\mbox  {.}}}{{}}}
-\bibcite{rauh2020parlspeech}{{39}{2020}{{Rauh and Schwalbach}}{{}}}
-\bibcite{romanowska2021abm}{{40}{2021}{{Romanowska et~al\mbox  {.}}}{{}}}
-\bibcite{santurkar2023opinions}{{41}{2023}{{Santurkar et~al\mbox  {.}}}{{}}}
-\bibcite{schelling1971dynamic}{{42}{1971}{{Schelling}}{{}}}
-\bibcite{shao2023characterllm}{{43}{2023}{{Shao et~al\mbox  {.}}}{{}}}
-\@writefile{toc}{\contentsline {section}{References}{9}{section*.36}\protected@file@percent }
-\bibcite{slembrouck1992hansard}{{44}{1992}{{Slembrouck}}{{}}}
-\bibcite{stoler2009archival}{{45}{2009}{{Stoler}}{{}}}
-\bibcite{tao2024cultural}{{46}{2024}{{Tao et~al\mbox  {.}}}{{}}}
-\bibcite{tevelde2015sprekende}{{47}{2015}{{te~Velde}}{{}}}
-\bibcite{tjuatja2024biases}{{48}{2024}{{Tjuatja et~al\mbox  {.}}}{{}}}
-\bibcite{trouillot1995silencing}{{49}{1995}{{Trouillot}}{{}}}
-\bibcite{turpijn2008mannen}{{50}{2008}{{Turpijn}}{{}}}
-\bibcite{tornberg2023simulating}{{51}{2023}{{Törnberg et~al\mbox  {.}}}{{}}}
-\bibcite{varnum2024historical}{{52}{2024}{{Varnum et~al\mbox  {.}}}{{}}}
-\bibcite{vezhnevets2023concordia}{{53}{2023}{{Vezhnevets et~al\mbox  {.}}}{{}}}
-\bibcite{wang2025identity}{{54}{2025b}{{Wang et~al\mbox  {.}}}{{}}}
-\bibcite{wang2025desire}{{55}{2025a}{{Wang et~al\mbox  {.}}}{{}}}
-\bibcite{wang2023humanoid}{{56}{2023}{{Wang et~al\mbox  {.}}}{{}}}
-\bibcite{wu2025indoorworld}{{57}{2025}{{Wu et~al\mbox  {.}}}{{}}}
-\bibcite{zhou2026sim2real}{{58}{2026}{{Zhou et~al\mbox  {.}}}{{}}}
-\bibcite{ziems2024css}{{59}{2024}{{Ziems et~al\mbox  {.}}}{{}}}
+\bibcite{ehrmann2023ner}{{14}{2023}{{Ehrmann et~al\mbox  {.}}}{{}}}
+\bibcite{epstein2006generative}{{15}{2006}{{Epstein}}{{}}}
+\bibcite{epstein1996growing}{{16}{1996}{{Epstein and Axtell}}{{}}}
+\bibcite{erjavec2023parlamint}{{17}{2023}{{Erjavec et~al\mbox  {.}}}{{}}}
+\bibcite{esteva2001electronic}{{18}{2001}{{Esteva et~al\mbox  {.}}}{{}}}
+\bibcite{ferguson1997virtual}{{19}{1997}{{Ferguson}}{{}}}
+\bibcite{gao2024llmabm}{{20}{2024}{{Gao et~al\mbox  {.}}}{{}}}
+\bibcite{gao2023s3}{{21}{2025}{{Gao et~al\mbox  {.}}}{{}}}
+\bibcite{gavin2014abm}{{22}{2014}{{Gavin}}{{}}}
+\bibcite{herbrich2006trueskill}{{23}{2007}{{Herbrich et~al\mbox  {.}}}{{}}}
+\bibcite{horton2023homosilicus}{{24}{2026}{{Horton et~al\mbox  {.}}}{{}}}
+\bibcite{hua2023waragent}{{25}{2023}{{Hua et~al\mbox  {.}}}{{}}}
+\bibcite{li2025digitaltwins}{{26}{2025}{{Li et~al\mbox  {.}}}{{}}}
+\bibcite{marx2010dutchparl}{{27}{2010}{{Marx and Schuth}}{{}}}
+\bibcite{marx2012dutchparl}{{28}{2012}{{Marx et~al\mbox  {.}}}{{}}}
+\bibcite{mollin2007hansard}{{29}{2007}{{Mollin}}{{}}}
+\bibcite{smallvillerepo}{{30}{2023}{{nmatter1}}{{}}}
+\bibcite{park2023generative}{{31}{2023}{{Park et~al\mbox  {.}}}{{}}}
+\bibcite{park2022social}{{32}{2022}{{Park et~al\mbox  {.}}}{{}}}
+\bibcite{park2024thousand}{{33}{2024}{{Park et~al\mbox  {.}}}{{}}}
+\bibcite{pdc2024kamers}{{34}{2024}{{Parlementair Documentatie Centrum}}{{}}}
+\bibcite{piao2025agentsociety}{{35}{2026}{{Piao et~al\mbox  {.}}}{{}}}
+\bibcite{rauh2020parlspeech}{{36}{2020}{{Rauh and Schwalbach}}{{}}}
+\bibcite{romanowska2021abm}{{37}{2021}{{Romanowska et~al\mbox  {.}}}{{}}}
+\bibcite{santurkar2023opinions}{{38}{2023}{{Santurkar et~al\mbox  {.}}}{{}}}
+\bibcite{schelling1971dynamic}{{39}{1971}{{Schelling}}{{}}}
+\bibcite{shao2023characterllm}{{40}{2023}{{Shao et~al\mbox  {.}}}{{}}}
+\bibcite{slembrouck1992hansard}{{41}{1992}{{Slembrouck}}{{}}}
+\bibcite{stoler2009archival}{{42}{2009}{{Stoler}}{{}}}
+\bibcite{tao2024cultural}{{43}{2024}{{Tao et~al\mbox  {.}}}{{}}}
+\bibcite{tevelde2015sprekende}{{44}{2015}{{te~Velde}}{{}}}
+\bibcite{tjuatja2024biases}{{45}{2024}{{Tjuatja et~al\mbox  {.}}}{{}}}
+\bibcite{trouillot1995silencing}{{46}{1995}{{Trouillot}}{{}}}
+\bibcite{turpijn2008mannen}{{47}{2008}{{Turpijn}}{{}}}
+\bibcite{tornberg2023simulating}{{48}{2023}{{Törnberg et~al\mbox  {.}}}{{}}}
+\bibcite{varnum2024historical}{{49}{2024}{{Varnum et~al\mbox  {.}}}{{}}}
+\bibcite{vezhnevets2023concordia}{{50}{2023}{{Vezhnevets et~al\mbox  {.}}}{{}}}
+\bibcite{wang2025identity}{{51}{2025}{{Wang et~al\mbox  {.}}}{{}}}
+\bibcite{wang2023humanoid}{{52}{2023}{{Wang et~al\mbox  {.}}}{{}}}
+\bibcite{wu2025indoorworld}{{53}{2025}{{Wu et~al\mbox  {.}}}{{}}}
+\bibcite{zhou2026sim2real}{{54}{2026}{{Zhou et~al\mbox  {.}}}{{}}}
+\bibcite{ziems2024css}{{55}{2024}{{Ziems et~al\mbox  {.}}}{{}}}
 \citation{trouillot1995silencing}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces One sandbox step of \textsc  {Kamer}{}}}{10}{algorithm.1}\protected@file@percent }
+\newlabel{alg:step}{{1}{10}{One sandbox step of \sys {}}{algorithm.1}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {A}Sandbox step}{10}{appendix.A}\protected@file@percent }
 \newlabel{app:alg}{{A}{10}{Sandbox step}{appendix.A}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {B}Seed and utterance examples}{10}{appendix.B}\protected@file@percent }
 \newlabel{app:examples}{{B}{10}{Seed and utterance examples}{appendix.B}{}}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces One sandbox step of \textsc  {Kamer}{}}}{10}{algorithm.1}\protected@file@percent }
-\newlabel{alg:step}{{1}{10}{One sandbox step of \sys {}}{algorithm.1}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {C}Calibration objective}{10}{appendix.C}\protected@file@percent }
 \newlabel{app:calib}{{C}{10}{Calibration objective}{appendix.C}{}}
 \newlabel{eq:calib}{{2}{10}{Calibration objective}{equation.C.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {D}Simulated and real silence}{10}{appendix.D}\protected@file@percent }
+\newlabel{app:silence}{{D}{10}{Simulated and real silence}{appendix.D}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {E}Interface and researcher controls}{10}{appendix.E}\protected@file@percent }
+\newlabel{app:interface}{{E}{10}{Interface and researcher controls}{appendix.E}{}}
+\@writefile{toc}{\contentsline {paragraph}{Actions and their display.}{10}{section*.37}\protected@file@percent }
 \citation{park2023generative}
-\@writefile{toc}{\contentsline {section}{\numberline {D}Simulated and real silence}{11}{appendix.D}\protected@file@percent }
-\newlabel{app:silence}{{D}{11}{Simulated and real silence}{appendix.D}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {E}Interface and researcher controls}{11}{appendix.E}\protected@file@percent }
-\newlabel{app:interface}{{E}{11}{Interface and researcher controls}{appendix.E}{}}
-\@writefile{toc}{\contentsline {paragraph}{Actions and their display.}{11}{section*.37}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces TrueSkill ranking of pause-and-interview answers by one historian (\textsc  {Kamer}{} with LLM vs.\ Smallville-style GA). Attention checks passed: $2/2$. Higher $\mu $ is better; $\sigma $ is the posterior uncertainty. Pairwise (win--loss--tie): believability 17--8--11, procedure 12--5--19. One further pair, from an earlier version of the task, was left unranked with a written comment (``Kamerlid der Tweede/Eerste Kamer'', not ``MP'').}}{11}{table.caption.40}\protected@file@percent }
+\newlabel{tab:historian}{{5}{11}{TrueSkill ranking of pause-and-interview answers by one historian (\sys {} with LLM vs.\ Smallville-style GA). Attention checks passed: $2/2$. Higher $\mu $ is better; $\sigma $ is the posterior uncertainty. Pairwise (win--loss--tie): believability 17--8--11, procedure 12--5--19. One further pair, from an earlier version of the task, was left unranked with a written comment (``Kamerlid der Tweede/Eerste Kamer'', not ``MP'')}{table.caption.40}{}}
 \@writefile{toc}{\contentsline {paragraph}{Partial spatial knowledge.}{11}{section*.38}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Researcher controls.}{11}{section*.39}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {F}Historian review details}{11}{appendix.F}\protected@file@percent }
 \newlabel{app:historian}{{F}{11}{Historian review details}{appendix.F}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces TrueSkill ranking of pause-and-interview answers by one historian (\textsc  {Kamer}{} with LLM vs.\ Smallville-style GA). Attention checks passed: $2/2$. Higher $\mu $ is better; $\sigma $ is the posterior uncertainty. Pairwise (win--loss--tie): believability 17--8--11, procedure 12--5--19. One further pair, from an earlier version of the task, was left unranked with a written comment (``Kamerlid der Tweede/Eerste Kamer'', not ``MP'').}}{11}{table.caption.40}\protected@file@percent }
-\newlabel{tab:historian}{{5}{11}{TrueSkill ranking of pause-and-interview answers by one historian (\sys {} with LLM vs.\ Smallville-style GA). Attention checks passed: $2/2$. Higher $\mu $ is better; $\sigma $ is the posterior uncertainty. Pairwise (win--loss--tie): believability 17--8--11, procedure 12--5--19. One further pair, from an earlier version of the task, was left unranked with a written comment (``Kamerlid der Tweede/Eerste Kamer'', not ``MP'')}{table.caption.40}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {G}Sandbox objects and corpus slice}{11}{appendix.G}\protected@file@percent }
 \newlabel{app:tables}{{G}{11}{Sandbox objects and corpus slice}{appendix.G}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Representative sandbox objects and their states.}}{11}{table.caption.41}\protected@file@percent }
-\newlabel{tab:objects}{{6}{11}{Representative sandbox objects and their states}{table.caption.41}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Working slice of DutchParl (1814--1899) used to seed \textsc  {Kamer}{}. The S1 speaker pool is the first 80 Tweede Kamer sittings of 1896--1899 and holds 205 distinct speaker strings.}}{11}{table.caption.42}\protected@file@percent }
-\newlabel{tab:corpus}{{7}{11}{Working slice of DutchParl (1814--1899) used to seed \sys {}. The S1 speaker pool is the first 80 Tweede Kamer sittings of 1896--1899 and holds 205 distinct speaker strings}{table.caption.42}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Representative sandbox objects and their states.}}{11}{table.caption.42}\protected@file@percent }
+\newlabel{tab:objects}{{6}{11}{Representative sandbox objects and their states}{table.caption.42}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Working slice of DutchParl (1814--1899) used to seed \textsc  {Kamer}{}. The S1 speaker pool is the first 80 Tweede Kamer sittings of 1896--1899 and holds 205 distinct speaker strings.}}{11}{table.caption.43}\protected@file@percent }
+\newlabel{tab:corpus}{{7}{11}{Working slice of DutchParl (1814--1899) used to seed \sys {}. The S1 speaker pool is the first 80 Tweede Kamer sittings of 1896--1899 and holds 205 distinct speaker strings}{table.caption.43}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {H}A day in the sandbox}{11}{appendix.H}\protected@file@percent }
+\newlabel{app:day}{{H}{11}{A day in the sandbox}{appendix.H}{}}
 \newlabel{tocindent-1}{0pt}
 \newlabel{tocindent0}{0pt}
 \newlabel{tocindent1}{8.37pt}
@@ -239,9 +235,7 @@
 \newlabel{tocindent3}{16.51498pt}
 \newlabel{tocindent4}{0pt}
 \newlabel{tocindent5}{0pt}
-\@writefile{toc}{\contentsline {section}{\numberline {H}A day in the sandbox}{12}{appendix.H}\protected@file@percent }
-\newlabel{app:day}{{H}{12}{A day in the sandbox}{appendix.H}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces A day in \textsc  {Kamer}{}: Wednesday 20 December 1899 in an earlier heuristic S1 run with the corrected cabinet (seed\nonbreakingspace 19; Appendix\nonbreakingspace \ref {app:historian}), drawn in the style of Figure\nonbreakingspace \ref {fig:teaser} from the logged state at six moments. Rooms, roles, actions, awareness (purple dot), rumour hops, object states, and utterances come from the run; positions within a room are a layout choice, since the simulation records only the room. Staalman passes the rumour to Seret before the sitting; Seret alludes to it on the floor and the stenographer records the speech; Cremer, the Minister of Colonies, speaks without having heard it and withdraws to his department after the adjournment; the journalist hears the rumour in the wandelgang at 18:00.}}{13}{figure.caption.43}\protected@file@percent }
-\newlabel{fig:day}{{3}{13}{A day in \sys {}: Wednesday 20 December 1899 in an earlier heuristic S1 run with the corrected cabinet (seed~19; Appendix~\ref {app:historian}), drawn in the style of Figure~\ref {fig:teaser} from the logged state at six moments. Rooms, roles, actions, awareness (purple dot), rumour hops, object states, and utterances come from the run; positions within a room are a layout choice, since the simulation records only the room. Staalman passes the rumour to Seret before the sitting; Seret alludes to it on the floor and the stenographer records the speech; Cremer, the Minister of Colonies, speaks without having heard it and withdraws to his department after the adjournment; the journalist hears the rumour in the wandelgang at 18:00}{figure.caption.43}{}}
-\newlabel{TotPages}{{13}{13}{}{page.13}{}}
-\gdef \@abspage@last{13}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces A day in \textsc  {Kamer}{}: Wednesday 20 December 1899 in an earlier heuristic S1 run with the corrected cabinet (seed\nonbreakingspace 19; Appendix\nonbreakingspace \ref {app:historian}), drawn in the style of Figure\nonbreakingspace \ref {fig:teaser} from the logged state at six moments. Rooms, roles, actions, awareness (purple dot), rumour hops, object states, and utterances come from the run; positions within a room are a layout choice, since the simulation records only the room.}}{12}{figure.caption.41}\protected@file@percent }
+\newlabel{fig:day}{{3}{12}{A day in \sys {}: Wednesday 20 December 1899 in an earlier heuristic S1 run with the corrected cabinet (seed~19; Appendix~\ref {app:historian}), drawn in the style of Figure~\ref {fig:teaser} from the logged state at six moments. Rooms, roles, actions, awareness (purple dot), rumour hops, object states, and utterances come from the run; positions within a room are a layout choice, since the simulation records only the room}{figure.caption.41}{}}
+\newlabel{TotPages}{{12}{12}{}{page.12}{}}
+\gdef \@abspage@last{12}

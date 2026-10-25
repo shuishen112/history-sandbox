@@ -19,51 +19,49 @@ Warning--page numbers missing in both pages and numpages fields in esteva2001ele
 Warning--page numbers missing in both pages and numpages fields in gao2024llmabm
 Warning--page numbers missing in both pages and numpages fields in gavin2014abm
 Warning--empty address in herbrich2006trueskill
-Warning--empty publisher in liang2025virtual
-Warning--empty address in liang2025virtual
 Warning--page numbers missing in both pages and numpages fields in marx2010dutchparl
 Warning--empty address in park2023generative
 Warning--empty address in park2022social
 Warning--empty address in santurkar2023opinions
-You've used 59 entries,
+You've used 55 entries,
             6273 wiz_defined-function locations,
-            1876 strings with 32132 characters,
-and the built_in function-call counts, 66323 in all, are:
-= -- 7980
-> -- 2717
+            1859 strings with 31221 characters,
+and the built_in function-call counts, 61977 in all, are:
+= -- 7532
+> -- 2482
 < -- 0
-+ -- 932
-- -- 942
-* -- 5213
-:= -- 6900
-add.period$ -- 290
-call.type$ -- 59
-change.case$ -- 524
-chr.to.int$ -- 58
-cite$ -- 72
-duplicate$ -- 5538
-empty$ -- 3892
-format.name$ -- 1121
-if$ -- 15541
-int.to.chr$ -- 3
++ -- 848
+- -- 859
+* -- 4844
+:= -- 6399
+add.period$ -- 273
+call.type$ -- 55
+change.case$ -- 481
+chr.to.int$ -- 55
+cite$ -- 66
+duplicate$ -- 5200
+empty$ -- 3651
+format.name$ -- 1027
+if$ -- 14585
+int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 159
-newline$ -- 545
-num.names$ -- 415
-pop$ -- 2117
+missing$ -- 154
+newline$ -- 514
+num.names$ -- 388
+pop$ -- 1974
 preamble$ -- 1
-purify$ -- 980
+purify$ -- 910
 quote$ -- 0
-skip$ -- 2118
+skip$ -- 1978
 stack$ -- 0
-substring$ -- 4674
-swap$ -- 563
+substring$ -- 4403
+swap$ -- 534
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1423
-warning$ -- 13
-while$ -- 338
+type$ -- 1306
+warning$ -- 11
+while$ -- 319
 width$ -- 0
-write$ -- 1194
-(There were 13 warnings)
+write$ -- 1125
+(There were 11 warnings)

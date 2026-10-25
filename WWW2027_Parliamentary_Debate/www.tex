@@ -253,8 +253,8 @@ phenomenon~\cite{epstein2006generative}. Social
 simulacra~\cite{park2022social} first used LLMs to populate prototypes of
 online communities, and Generative Agents~\cite{park2023generative} gave
 25 agents in Smallville a memory stream, reflection, and planning. Later
-systems add needs, emotions, and desires~\cite{wang2023humanoid,wang2025desire},
-ground behaviour in physical environments~\cite{wu2025indoorworld,liang2025virtual},
+systems add needs and emotions~\cite{wang2023humanoid}, ground behaviour
+in physical environments~\cite{wu2025indoorworld},
 and scale to cities~\cite{bougie2025citysim} and
 societies~\cite{al2024projectsid,piao2025agentsociety}. LLMs also simulate
 survey respondents~\cite{argyle2023outofone,aher2023turing}, economic
@@ -267,25 +267,23 @@ a game-master agent turns the actions that agents describe into outcomes
 in the world. Work on electronic institutions~\cite{esteva2001electronic}
 and the grammar of institutions~\cite{crawford1995grammar} specifies the
 roles, rules, and protocols of interaction outside the agents themselves.
-\sys{} adopts the sandbox design of Generative Agents (tile map,
-environment tree, memory stream) but, like these institutional approaches,
-enforces its standing orders in the world rather than through a model. It also follows the
-generative standard: its claims concern which institutional rules suffice
-to produce the patterns in the record (\S\ref{sec:discussion}).
+\sys{} adopts the sandbox design of Generative Agents but, like these
+institutional approaches, enforces its standing orders in the world rather
+than through a model, and claims only that these rules suffice to produce
+the patterns in the record (\S\ref{sec:discussion}).
 
 \paragraph{Present-day bias and behavioural fidelity.} LLMs trained on
 contemporary Web text reproduce the views of particular present-day
-populations: some US demographic groups~\cite{santurkar2023opinions}, the
-USA and parts of Europe~\cite{durmus2023global}, English-speaking and
-Protestant European countries~\cite{tao2024cultural}, and WEIRD
+populations: some US demographic groups~\cite{santurkar2023opinions},
+English-speaking and Protestant European
+countries~\cite{tao2024cultural}, and WEIRD
 populations more generally~\cite{atari2023which}. Simulated personas can
-flatten identity groups~\cite{wang2025identity}, exaggerate them into
-caricature~\cite{cheng2023compost}, and encode representational
-harms~\cite{bender2021parrots}, and convincing simulated behaviour may
+caricature identity groups~\cite{cheng2023compost} or flatten
+them~\cite{wang2025identity}, and convincing simulated behaviour may
 still be unfounded~\cite{ziems2024css}. Studies of behavioural fidelity
 compare simulations with real data: LLMs miss human response biases in
 surveys~\cite{tjuatja2024biases,bisbee2024synthetic}, are more cooperative
-than people in dialogue~\cite{ivey2024real,zhou2026sim2real}, and struggle
+than people in dialogue~\cite{zhou2026sim2real}, and struggle
 to reproduce real behaviour over long
 horizons~\cite{li2025digitaltwins,chen2026traces,cheng2026longhorizon},
 while agents built from qualitative interviews replicate their
@@ -316,13 +314,11 @@ exchanges~\cite{slembrouck1992hansard,mollin2007hansard}.
 The Handelingen likewise omit what the Chair did not recognise and what
 members chose not to say on the floor, and the Tweede Kamer of the
 period built its authority through such rules and
-practices~\cite{turpijn2008mannen}. \sys{} uses the corpus both as a
-\emph{seed} (personas, speech style, sitting calendars) and as a
-\emph{validation target} (who spoke, for how long, on which topics, and in
-which house), and treats its selection as a design constraint: the sandbox
-generates hypotheses about \emph{processes}, including the process that
-produced the record, and never offers testimony about unrecorded inner
-lives.
+practices~\cite{turpijn2008mannen}. \sys{} uses the corpus as both
+\emph{seed} and \emph{validation target}, and treats its selection as a
+design constraint: the sandbox generates hypotheses about
+\emph{processes}, including the process that produced the record, not
+testimony about unrecorded inner lives.
 
 %% =====================================================================
 \section{The \sys{} Sandbox}
@@ -1189,6 +1185,23 @@ heuristic run with the corrected cabinet. The presentism audit
 cards are excluded from the roster and the corridor object is a kamerclub
 circular.
 
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figure/day_timeline.pdf}
+\caption{A day in \sys{}: Wednesday 20 December 1899 in an earlier
+heuristic S1 run with the corrected cabinet (seed~19;
+Appendix~\ref{app:historian}), drawn in the style of Figure~\ref{fig:teaser} from the
+logged state at six moments. Rooms, roles, actions, awareness (purple
+dot), rumour hops, object states, and utterances come from the run;
+positions within a room are a layout choice, since the simulation records
+only the room.}
+\Description{Six crops of the Binnenhof sandbox map at 09:00, 10:00,
+11:30, 12:30, 17:00, and 18:00. Agent tokens carry role-coloured rings and
+a purple dot when they know the rumour; dashed purple arcs mark rumour
+hops, and speech bubbles quote utterances from the run.}
+\label{fig:day}
+\end{figure*}
+
 \section{Sandbox objects and corpus slice}
 \label{app:tables}
 Table~\ref{tab:objects} lists the stateful objects of the Binnenhof, and
@@ -1241,27 +1254,6 @@ Calibration TK 1860--1889 (S2) & 2{,}821 & 72{,}112 & --- \\
 
 \section{A day in the sandbox}
 \label{app:day}
-\begin{figure*}[t]
-\centering
-\includegraphics[width=\textwidth]{figure/day_timeline.pdf}
-\caption{A day in \sys{}: Wednesday 20 December 1899 in an earlier
-heuristic S1 run with the corrected cabinet (seed~19;
-Appendix~\ref{app:historian}), drawn in the style of Figure~\ref{fig:teaser} from the
-logged state at six moments. Rooms, roles, actions, awareness (purple
-dot), rumour hops, object states, and utterances come from the run;
-positions within a room are a layout choice, since the simulation records
-only the room. Staalman passes the rumour to Seret before the sitting; Seret
-alludes to it on the floor and the stenographer records the speech;
-Cremer, the Minister of Colonies, speaks without having heard it and
-withdraws to his department after the adjournment; the journalist hears
-the rumour in the wandelgang at 18:00.}
-\Description{Six crops of the Binnenhof sandbox map at 09:00, 10:00,
-11:30, 12:30, 17:00, and 18:00. Agent tokens carry role-coloured rings and
-a purple dot when they know the rumour; dashed purple arcs mark rumour
-hops, and speech bubbles quote utterances from the run.}
-\label{fig:day}
-\end{figure*}
-
 To show how the rules of \S\ref{sec:agents} play out, we trace Wednesday 20 December 1899, the third day of an earlier heuristic S1
 run with the corrected cabinet (seed~19; Figure~\ref{fig:day}). At 09:00, before the sitting, members gather in the
 wandelgang, and Staalman passes the resignation rumour to Seret. The
