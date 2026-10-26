@@ -196,9 +196,11 @@ agents, and interview them. Other interventions are logged, but only
 opening a sitting currently changes what agents do
 (Appendix~\ref{app:interface}).
 
-Experiments with \sys{} support this design. A historian judged \sys{}'s
-interview answers more plausible for a late-1890s member than those of a Smallville-style baseline (17 wins,
-8 losses, 11 ties). Institutional outcomes, in turn, did not depend on the
+Experiments with \sys{} support this design. Two historians, rating
+blind, each judged \sys{}'s interview answers more plausible for a
+late-1890s member than those of a Smallville-style baseline (17--8--11 and
+17--7--12 wins--losses--ties), though they often disagreed on individual
+answers. Institutional outcomes, in turn, did not depend on the
 backbone. Like the real Handelingen, the simulated record contains no
 speech by journalists; without the floor rules, journalists produce
 $4.3\%$ of it, and replacing the heuristic backend with
@@ -236,8 +238,8 @@ In summary, we make the following contributions:
   check with \texttt{gpt-4o-mini}; a selection-aware comparison with
   held-out Handelingen from 1890--1899 (S2); and an intervention on Chair
   strictness (S3). A presentism audit, in which the model writes every
-  record line, separates the effects of prompt, world, and guards, and a
-  historian ranks agent interviews
+  record line, separates the effects of prompt, world, and guards, and two
+  historians rank agent interviews
   (\S\ref{sec:experiments}--\S\ref{sec:results}).
 \end{itemize}
 
@@ -640,7 +642,7 @@ world~\cite{park2023generative}; \textbf{--affordance};
 speeches from 1890--1899 (731 sittings and 20{,}166 speeches; role mix
 $64\%$ MP, $18\%$ government, $18\%$ chair, $0\%$ journalist) and use
 1860--1889 (72{,}112 speeches) as the calibration slice. No parameter of
-\sys{} is fitted to this slice; it serves the Rule-ABM baseline. We compare
+\sys{} is fitted to this slice. We compare
 the role mix (Jensen--Shannon divergence) and the share of official lines
 spoken by a journalist. Besides GA, we include two baselines:
 \textbf{Rule-ABM} replays the empirical 1860--1889 role
@@ -661,8 +663,8 @@ fixed sentences (seeds $\{7,11,19,29,31\}$). All reported runs set
 rule use a process-independent hash. A backbone check reruns the
 S1 \texttt{full} and \texttt{ga} conditions with \texttt{gpt-4o-mini}
 (seeds $\{7,11,19\}$). Each run had a budget of 400 completions, mostly
-spent on corridor asides, after which agents fell back to heuristic
-utterances; at most 20 of the 205 record lines per seed are model text.
+spent on corridor asides, then fell back to heuristic utterances; at most
+20 of 205 record lines per seed are model text.
 
 \paragraph{Presentism audit.} A separate \texttt{gpt-4o-mini} run (seeds
 $\{7,11,19\}$) uses the model for every floor, corridor, and interview
@@ -675,8 +677,8 @@ system prompt); \textbf{\sys{} world} (no guards); and
 with a term from a 38-term Dutch and English modern lexicon (16 terms
 attested in the holdout removed), with an adversarial marker (a challenge
 cue, or a reference to another speaker with a contrastive conjunction),
-and with a consensus cue. Intervals are 95\% cluster-bootstrap intervals
-over seeds and turns.
+and with a consensus cue. Intervals are 95\% cluster bootstraps over
+seeds and turns.
 
 \subsection{End-to-end evaluation}
 \label{sec:eval-e2e}
@@ -695,12 +697,12 @@ A specialist in Dutch parliamentary history completed five labelling tasks
 on a web interface: the role scheme, OCR speaker cards ($n{=}41$), the S1
 personas ($n{=}25$), standing-order vignettes ($n{=}18$), and a blinded
 pairwise ranking of pause-and-interview answers ($n{=}38$ pairs, with two
-attention checks). Rankings are aggregated with
+attention checks). A second historian independently completed the last
+two tasks. Rankings are aggregated per rater with
 TrueSkill~\cite{herbrich2006trueskill} on two criteria: believability
 (could this public person have said this, off the floor, in late-1890s
 Dutch?) and historical-procedural plausibility. The conditions (\sys{} with
-an LLM backbone vs.\ a Smallville-style ablation) were hidden from the
-rater.
+an LLM vs.\ a Smallville-style ablation) were hidden from both raters.
 
 %% =====================================================================
 \section{Results}
@@ -903,19 +905,20 @@ GA + period prompt & 5.0 [2--9] & 7.2 [6--8] & 34.2 [30--39] \\
 \end{tabular}
 \end{table}
 
-\paragraph{Historian review.} The rater passed both attention checks,
+\paragraph{Historian review.} Both raters passed every attention check,
 which planted obvious anachronisms (a Twitter livestream; ``I am a large
-language model''). On the remaining pairs, \sys{} outranked the
-Smallville-style ablation on both criteria (17--8--11 for believability,
-12--5--19 for procedure; Table~\ref{tab:historian},
-Appendix~\ref{app:historian}).
-Ties were more frequent for procedure than for believability, consistent
-with both systems being prompted about recognition. The standing-order
-vignettes matched the intended $\pi$: a journalist on the floor is out of
-order and off the record, as is an unrecognised interruption, whereas
-wandelgang talk is in order but not part of the Handelingen.
-Appendix~\ref{app:historian} lists the changes the rater requested, the
-OCR-card results, and the resulting roster correction.
+language model''). On the remaining 36 pairs, each preferred \sys{} to the
+Smallville-style ablation on both criteria (believability 17--8--11 and
+17--7--12, procedure 12--5--19 and 13--6--17; Table~\ref{tab:historian}).
+They agreed on individual pairs only slightly above chance (Cohen's
+$\kappa = 0.12$ and $0.09$), mostly because one saw a tie where the other
+saw a preference. Averaged over raters ($-1$ to $1$), the preference for
+\sys{} is $0.26$ $[0.06, 0.46]$ for believability and $0.19$
+$[0.03, 0.36]$ for procedure (95\% bootstrap over pairs). The first
+rater's verdicts on the three standing-order vignettes (a journalist on the
+floor, an unrecognised interruption, wandelgang talk) matched the intended
+$\pi$; the second marked all three uncertain, and both questioned the
+stenographer rule (Appendix~\ref{app:historian}).
 
 
 
@@ -928,21 +931,20 @@ evidence: mechanisms that, under explicit assumptions, generate patterns
 consistent with the Handelingen. Several patterns reported here, including
 the order in which roles learn of the leak and the effect of Chair
 strictness, follow directly from transmission and allusion rules that we
-set by hand. Their value lies in making these assumptions explicit and
-showing how they combine over a week of sittings, not in emerging
-unprompted. No run can establish what a historical member thought:
-agents' utterances are model artefacts, not recovered voices. The sandbox instead makes
-historians' assumptions about procedure and selection explicit and
-manipulable, and it generates hypotheses for further archival work in
-committee minutes, private correspondence, and the press.
+set by hand. Their value lies in making historians' assumptions about
+procedure and selection explicit and manipulable, and in showing how they
+combine over a week of sittings, not in emerging unprompted. Agents'
+utterances are model artefacts, not recovered voices; the sandbox
+generates hypotheses for further archival work in committee minutes,
+private correspondence, and the press.
 
 \paragraph{Limitations.} The 1814--1899 slice is OCR-noisy, speaker
 strings do not identify unique persons, and 1890s party labels denote
 kamerclubs rather than mass parties. The Binnenhof is a composite, and the
 journalist is a synthetic observer. S1 is a 25-agent Tweede Kamer week, so
 it cannot match the role mix of a full chamber, and it runs no Eerste Kamer
-sitting even though senate tiles and affordances exist in the world. A
-single historian ranked interviews generated at the end of each run rather
+sitting even though senate tiles and affordances exist in the world. Two
+historians ranked interviews generated at the end of each run rather
 than in live sessions, and logged interventions other than opening a
 sitting do not yet change what agents do. The implementation is also simpler
 than the Generative Agents architecture: it has no memory ranking,
@@ -959,7 +961,7 @@ DutchParl parser.
 
 \paragraph{Commitments for a parliamentary sandbox.}
 (1)~\emph{Public persons in public roles.} Agents are seeded from
-attested speakers in CC0 proceedings; we do not invent private lives,
+attested speakers in CC0 proceedings; we invent no private lives,
 families, or unrecorded interiors.
 (2)~\emph{No gamification.} There is no playable persona, no score, and
 no first-person control of the Chair or of ministers.
@@ -968,11 +970,10 @@ Handelingen, is labelled and kept separate from the archival XML.
 (4)~\emph{Procedure over psychology.} Claims concern standing orders,
 selection, and diffusion, not what a named member ``really thought''.
 (5)~\emph{Consultation.} The project is designed with historians of
-Dutch politics. The labelling reported here was carried out with informed,
-task-specific consent, and the rater could skip any item.
-(6)~\emph{Copyright.} The corpus is released under
-CC0~\cite{marx2012dutchparl}, and Auteurswet art.~11 places official
-proceedings outside copyright.
+Dutch politics. The labelling reported here had informed, task-specific
+consent, and raters could skip any item.
+(6)~\emph{Copyright.} The corpus is CC0~\cite{marx2012dutchparl}, and
+Auteurswet art.~11 places official proceedings outside copyright.
 
 %% =====================================================================
 \section{Conclusion}
@@ -1104,10 +1105,9 @@ action from a fixed repertoire: move, speak, request the floor, talk, take
 notes, recognise a speaker, open or adjourn the sitting, record, or wait.
 The action follows from the agent's role, its location, and the sitting
 schedule, and is then checked against the affordance layer. The interface
-shows each action as an emoji above the agent's token, such as a
-microphone for floor speech, a raised hand for a request for the floor,
-and a speech balloon for conversation, together with the agent's current
-utterance in a bubble; clicking the agent opens the inspector
+shows each action as an emoji above the agent's token (a microphone for
+floor speech) and the agent's current utterance in a bubble; clicking the
+agent opens the inspector
 (Figure~\ref{fig:teaser}, right). Smallville uses a language model to
 turn each action into emojis; in \sys{} the mapping from action to emoji
 is fixed.
@@ -1143,25 +1143,27 @@ the first person.
 \section{Historian review details}
 \label{app:historian}
 \begin{table}[t]
-\caption{TrueSkill ranking of pause-and-interview answers by one historian
-(\sys{} with LLM vs.\ Smallville-style GA). Attention checks passed: $2/2$.
-Higher $\mu$ is better; $\sigma$ is the posterior uncertainty. Pairwise
-(win--loss--tie): believability 17--8--11, procedure 12--5--19. One further
-pair, from an earlier version of the task, was left unranked with a
-written comment (``Kamerlid der Tweede/Eerste Kamer'', not ``MP'').}
+\caption{Interview answers ranked by two historians on the same 36 pairs
+(\sys{} with LLM vs.\ Smallville-style GA): \sys{} wins--losses--ties
+and per-rater TrueSkill $\mu$ (higher is better) with posterior $\sigma$.
+Both passed $2/2$ attention checks. The first rater left one further pair,
+from an earlier task version, unranked with a comment (``Kamerlid der
+Tweede/Eerste Kamer'', not ``MP'').}
 \label{tab:historian}
 \centering\small
-\setlength{\tabcolsep}{3.5pt}
-\begin{tabular}{lcccc}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{llcccc}
 \toprule
-Condition & $\mu_{\text{bel}}$ & $\sigma$ & $\mu_{\text{proc}}$ & $\sigma$ \\
+Rater & Criterion & W--L--T & $\mu_{\text{\sys{}}}$ & $\mu_{\text{GA}}$ & $\sigma$ \\
 \midrule
-\sys{} (full, LLM) & \textbf{28.3} & 1.8 & \textbf{27.8} & 2.2 \\
-GA~\cite{park2023generative} & 21.7 & 1.8 & 22.2 & 2.2 \\
+1 & Believability & 17--8--11 & \textbf{28.3} & 21.7 & 1.8 \\
+  & Procedure & 12--5--19 & \textbf{27.8} & 22.2 & 2.2 \\
+2 & Believability & 17--7--12 & \textbf{26.6} & 23.4 & 1.9 \\
+  & Procedure & 13--6--17 & \textbf{26.6} & 23.4 & 2.1 \\
 \bottomrule
 \end{tabular}
 \end{table}
-The rater
+The first rater
 asked us to separate the griffier from the stenographer, to let Kamerleden
 speak in afdeelingen without plenary recognition, to let ministers talk in
 the wandelgang, and, in the comment that most changed the world, to stop
@@ -1184,6 +1186,13 @@ heuristic run with the corrected cabinet. The presentism audit
 (Table~\ref{tab:presentism}) uses the current code, in which synthetic
 cards are excluded from the roster and the corridor object is a kamerclub
 circular.
+
+The second rater accepted seven of the eight standing-order rules and the
+map, and rejected the stenographer rule, which the first had revised
+because the Handelingen also record interruptions that the recognised
+speaker answers (not yet modelled). Both judged all but three of the 14
+non-vignette excerpts in order and on record, so that task does not
+separate the conditions.
 
 \begin{figure*}[t]
 \centering

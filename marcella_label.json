@@ -1,0 +1,627 @@
+{
+  "schema": "kamer-historian-v1",
+  "reviewer": "Marcella Schute",
+  "exported": "2026-10-26T12:14:58.438Z",
+  "interviews": {
+    "pair-012": {
+      "bel": "R",
+      "hist": "tie",
+      "ref": "",
+      "left": "ga_llm",
+      "right": "full_llm",
+      "category": "self-knowledge",
+      "role": "Clerk",
+      "agent_id": "a001",
+      "catch": false
+    },
+    "pair-009": {
+      "bel": "R",
+      "hist": "R",
+      "ref": "",
+      "left": "ga_llm",
+      "right": "full_llm",
+      "category": "reactions",
+      "role": "Journalist",
+      "agent_id": "a002",
+      "catch": false
+    },
+    "pair-014": {
+      "bel": "R",
+      "hist": "tie",
+      "ref": "",
+      "left": "full_llm",
+      "right": "ga_llm",
+      "category": "plans",
+      "role": "Clerk",
+      "agent_id": "a001",
+      "catch": false
+    },
+    "pair-019": {
+      "bel": "L",
+      "hist": "tie",
+      "ref": "",
+      "left": "full_llm",
+      "right": "ga_llm",
+      "category": "memory",
+      "role": "Minister",
+      "agent_id": "a003",
+      "catch": false
+    },
+    "pair-035": {
+      "bel": "R",
+      "hist": "R",
+      "ref": "",
+      "left": "full_llm",
+      "right": "ga_llm",
+      "category": "institutional_awareness",
+      "role": "MP",
+      "agent_id": "a005",
+      "catch": false
+    },
+    "pair-000": {
+      "bel": "R",
+      "hist": "R",
+      "ref": "",
+      "left": "ga_llm",
+      "right": "full_llm",
+      "category": "self-knowledge",
+      "role": "Chair",
+      "agent_id": "a000",
+      "catch": false
+    },
+    "pair-catch-modern": {
+      "bel": "R",
+      "hist": "R",
+      "ref": "Left one is in English. Does not seem correct",
+      "left": "catch_anachronism",
+      "right": "full_llm",
+      "category": "institutional_awareness",
+      "role": "Chair",
+      "agent_id": "a000",
+      "catch": true
+    },
+    "pair-034": {
+      "bel": "tie",
+      "hist": "tie",
+      "ref": "",
+      "left": "ga_llm",
+      "right": "full_llm",
+      "category": "reflections",
+      "role": "MP",
+      "agent_id": "a005",
+      "catch": false
+    },
+    "pair-028": {
+      "bel": "tie",
+      "hist": "tie",
+      "ref": "",
+      "left": "full_llm",
+      "right": "ga_llm",
+      "category": "reflections",
+      "role": "Minister",
+      "agent_id": "a004",
+      "catch": false
+    },
+    "pair-017": {
+      "bel": "L",
+      "hist": "L",
+      "ref": "",
+      "left": "ga_llm",
+      "right": "full_llm",
+      "category": "institutional_awareness",
+      "role": "Clerk",
+      "agent_id": "a001",
+      "catch": false
+    },
+    "pair-catch-empty": {
+      "bel": "L",
+      "hist": "L",
+      "ref": "Right one is in English. Not correct",
+      "left": "full_llm",
+      "right": "catch_anachronism",
+      "category": "self-knowledge",
+      "role": "MP",
+      "agent_id": "a024",
+      "catch": true
+    },
+    "pair-021": {
+      "bel": "L",
+      "hist": "L",
+      "ref": "",
+      "left": "full_llm",
+      "right": "ga_llm",
+      "category": "reactions",
+      "role": "Minister",
+      "agent_id": "a003",
+      "catch": false
+    },
+    "pair-027": {
+      "bel": "R",
+      "hist": "R",
+      "ref": "",
+      "left": "ga_llm",
+      "right": "full_llm",
+      "category": "reactions",
+      "role": "Minister",
+      "agent_id": "a004",
+      "catch": false
+    },
+    "pair-024": {
+      "bel": "L",
+      "hist": "L",
+      "ref": "",
+      "left": "full_llm",
+      "right": "ga_llm",
+      "category": "self-knowledge",
+      "role": "Minister",
+      "agent_id": "a004",
+      "catch": false
+    },
+    "pair-020": {
+      "bel": "L",
+      "hist": "L",
+      "ref": "",
+      "left": "full_llm",
+      "right": "ga_llm",
+      "category": "plans",
+      "role": "Minister",
+      "agent_id": "a003",
+      "catch": false
+    },
+    "pair-031": {
+      "bel": "R",
+      "hist": "tie",
+      "ref": "",
+      "left": "ga_llm",
+      "right": "full_llm",
+      "category": "memory",
+      "role": "MP",
+      "agent_id": "a005",
+      "catch": false
+    },
+    "pair-005": {
+      "bel": "R",
+      "hist": "R",
+      "ref": "",
+      "left": "full_llm",
+      "right": "ga_llm",
+      "category": "institutional_awareness",
+      "role": "Chair",
+      "agent_id": "a000",
+      "catch": false
+    },
+    "pair-015": {
+      "bel": "R",
+      "hist": "R",
+      "ref": "",
+      "left": "ga_llm",
+      "right": "full_llm",
+      "category": "reactions",
+      "role": "Clerk",
+      "agent_id": "a001",
+      "catch": false
+    },
+    "pair-023": {
+      "bel": "tie",
+      "hist": "tie",
+      "ref": "",
+      "left": "ga_llm",
+      "right": "full_llm",
+      "category": "institutional_awareness",
+      "role": "Minister",
+      "agent_id": "a003",
+      "catch": false
+    },
+    "pair-030": {
+      "bel": "tie",
+      "hist": "tie",
+      "ref": "",
+      "left": "ga_llm",
+      "right": "full_llm",
+      "category": "self-knowledge",
+      "role": "MP",
+      "agent_id": "a005",
+      "catch": false
+    },
+    "pair-013": {
+      "bel": "tie",
+      "hist": "tie",
+      "ref": "",
+      "left": "full_llm",
+      "right": "ga_llm",
+      "category": "memory",
+      "role": "Clerk",
+      "agent_id": "a001",
+      "catch": false
+    },
+    "pair-011": {
+      "bel": "L",
+      "hist": "tie",
+      "ref": "",
+      "left": "full_llm",
+      "right": "ga_llm",
+      "category": "institutional_awareness",
+      "role": "Journalist",
+      "agent_id": "a002",
+      "catch": false
+    },
+    "pair-003": {
+      "bel": "R",
+      "hist": "R",
+      "ref": "",
+      "left": "ga_llm",
+      "right": "full_llm",
+      "category": "reactions",
+      "role": "Chair",
+      "agent_id": "a000",
+      "catch": false
+    },
+    "pair-001": {
+      "bel": "tie",
+      "hist": "R",
+      "ref": "",
+      "left": "full_llm",
+      "right": "ga_llm",
+      "category": "memory",
+      "role": "Chair",
+      "agent_id": "a000",
+      "catch": false
+    },
+    "pair-006": {
+      "bel": "tie",
+      "hist": "tie",
+      "ref": "",
+      "left": "ga_llm",
+      "right": "full_llm",
+      "category": "self-knowledge",
+      "role": "Journalist",
+      "agent_id": "a002",
+      "catch": false
+    },
+    "pair-010": {
+      "bel": "tie",
+      "hist": "tie",
+      "ref": "",
+      "left": "full_llm",
+      "right": "ga_llm",
+      "category": "reflections",
+      "role": "Journalist",
+      "agent_id": "a002",
+      "catch": false
+    },
+    "pair-007": {
+      "bel": "tie",
+      "hist": "tie",
+      "ref": "",
+      "left": "ga_llm",
+      "right": "full_llm",
+      "category": "memory",
+      "role": "Journalist",
+      "agent_id": "a002",
+      "catch": false
+    },
+    "pair-033": {
+      "bel": "R",
+      "hist": "R",
+      "ref": "",
+      "left": "ga_llm",
+      "right": "full_llm",
+      "category": "reactions",
+      "role": "MP",
+      "agent_id": "a005",
+      "catch": false
+    },
+    "pair-022": {
+      "bel": "tie",
+      "hist": "tie",
+      "ref": "",
+      "left": "ga_llm",
+      "right": "full_llm",
+      "category": "reflections",
+      "role": "Minister",
+      "agent_id": "a003",
+      "catch": false
+    },
+    "pair-008": {
+      "bel": "R",
+      "hist": "R",
+      "ref": "It is not clear to me what the position is of the person and so this makes it hard to interpret the answer",
+      "left": "ga_llm",
+      "right": "full_llm",
+      "category": "plans",
+      "role": "Journalist",
+      "agent_id": "a002",
+      "catch": false
+    },
+    "pair-016": {
+      "bel": "L",
+      "hist": "L",
+      "ref": "",
+      "left": "full_llm",
+      "right": "ga_llm",
+      "category": "reflections",
+      "role": "Clerk",
+      "agent_id": "a001",
+      "catch": false
+    },
+    "pair-025": {
+      "bel": "L",
+      "hist": "tie",
+      "ref": "",
+      "left": "ga_llm",
+      "right": "full_llm",
+      "category": "memory",
+      "role": "Minister",
+      "agent_id": "a004",
+      "catch": false
+    },
+    "pair-002": {
+      "bel": "L",
+      "hist": "L",
+      "ref": "",
+      "left": "ga_llm",
+      "right": "full_llm",
+      "category": "plans",
+      "role": "Chair",
+      "agent_id": "a000",
+      "catch": false
+    },
+    "pair-032": {
+      "bel": "R",
+      "hist": "R",
+      "ref": "",
+      "left": "ga_llm",
+      "right": "full_llm",
+      "category": "plans",
+      "role": "MP",
+      "agent_id": "a005",
+      "catch": false
+    },
+    "pair-018": {
+      "bel": "L",
+      "hist": "L",
+      "ref": "",
+      "left": "full_llm",
+      "right": "ga_llm",
+      "category": "self-knowledge",
+      "role": "Minister",
+      "agent_id": "a003",
+      "catch": false
+    },
+    "pair-004": {
+      "bel": "R",
+      "hist": "R",
+      "ref": "",
+      "left": "full_llm",
+      "right": "ga_llm",
+      "category": "reflections",
+      "role": "Chair",
+      "agent_id": "a000",
+      "catch": false
+    },
+    "pair-029": {
+      "bel": "tie",
+      "hist": "tie",
+      "ref": "",
+      "left": "ga_llm",
+      "right": "full_llm",
+      "category": "institutional_awareness",
+      "role": "Minister",
+      "agent_id": "a004",
+      "catch": false
+    },
+    "pair-026": {
+      "bel": "tie",
+      "hist": "tie",
+      "ref": "",
+      "left": "ga_llm",
+      "right": "full_llm",
+      "category": "plans",
+      "role": "Minister",
+      "agent_id": "a004",
+      "catch": false
+    }
+  },
+  "rules": {
+    "recognition": {
+      "verdict": "agree",
+      "note": ""
+    },
+    "journalist": {
+      "verdict": "agree",
+      "note": ""
+    },
+    "corridor": {
+      "verdict": "agree",
+      "note": ""
+    },
+    "chair_opens": {
+      "verdict": "agree",
+      "note": ""
+    },
+    "stenographer": {
+      "verdict": "reject",
+      "note": ""
+    },
+    "no_possess": {
+      "verdict": "agree",
+      "note": ""
+    },
+    "public_only": {
+      "verdict": "agree",
+      "note": ""
+    },
+    "leak": {
+      "verdict": "agree",
+      "note": ""
+    }
+  },
+  "map": {
+    "verdict": "yes",
+    "note": "Should \"adience\" be added to the press gallery as observers?"
+  },
+  "procedure": {
+    "proc-001": {
+      "in_order": "yes",
+      "on_record": "yes",
+      "anachronism": "no",
+      "note": "",
+      "hidden": "archive",
+      "source": "archive",
+      "catch": false
+    },
+    "proc-006": {
+      "in_order": "yes",
+      "on_record": "yes",
+      "anachronism": "no",
+      "note": "",
+      "hidden": "full",
+      "source": "simulation",
+      "catch": false
+    },
+    "proc-000": {
+      "in_order": "yes",
+      "on_record": "yes",
+      "anachronism": "no",
+      "note": "",
+      "hidden": "archive",
+      "source": "archive",
+      "catch": false
+    },
+    "proc-005": {
+      "in_order": "yes",
+      "on_record": "yes",
+      "anachronism": "no",
+      "note": "",
+      "hidden": "archive",
+      "source": "archive",
+      "catch": false
+    },
+    "proc-004": {
+      "in_order": "yes",
+      "on_record": "yes",
+      "anachronism": "no",
+      "note": "",
+      "hidden": "archive",
+      "source": "archive",
+      "catch": false
+    },
+    "proc-012": {
+      "in_order": "yes",
+      "on_record": "yes",
+      "anachronism": "no",
+      "note": "",
+      "hidden": "ga",
+      "source": "simulation",
+      "catch": false
+    },
+    "proc-003": {
+      "in_order": "uncertain",
+      "on_record": "uncertain",
+      "anachronism": "uncertain",
+      "note": "",
+      "hidden": "archive",
+      "source": "archive",
+      "catch": false
+    },
+    "proc-017": {
+      "in_order": "no",
+      "on_record": "no",
+      "anachronism": "yes",
+      "note": "Twitter did not exist back then",
+      "hidden": "catch_anachronism",
+      "source": "vignette",
+      "catch": true
+    },
+    "proc-008": {
+      "in_order": "yes",
+      "on_record": "yes",
+      "anachronism": "no",
+      "note": "",
+      "hidden": "full",
+      "source": "simulation",
+      "catch": false
+    },
+    "proc-010": {
+      "in_order": "yes",
+      "on_record": "yes",
+      "anachronism": "no",
+      "note": "",
+      "hidden": "ga",
+      "source": "simulation",
+      "catch": false
+    },
+    "proc-014": {
+      "in_order": "uncertain",
+      "on_record": "uncertain",
+      "anachronism": "uncertain",
+      "note": "",
+      "hidden": "vignette_journalist",
+      "source": "vignette",
+      "catch": false
+    },
+    "proc-016": {
+      "in_order": "uncertain",
+      "on_record": "uncertain",
+      "anachronism": "uncertain",
+      "note": "",
+      "hidden": "vignette_corridor",
+      "source": "vignette",
+      "catch": false
+    },
+    "proc-002": {
+      "in_order": "yes",
+      "on_record": "yes",
+      "anachronism": "no",
+      "note": "",
+      "hidden": "archive",
+      "source": "archive",
+      "catch": false
+    },
+    "proc-013": {
+      "in_order": "yes",
+      "on_record": "yes",
+      "anachronism": "no",
+      "note": "",
+      "hidden": "ga",
+      "source": "simulation",
+      "catch": false
+    },
+    "proc-015": {
+      "in_order": "uncertain",
+      "on_record": "uncertain",
+      "anachronism": "uncertain",
+      "note": "",
+      "hidden": "vignette_unrecognised",
+      "source": "vignette",
+      "catch": false
+    },
+    "proc-011": {
+      "in_order": "yes",
+      "on_record": "yes",
+      "anachronism": "no",
+      "note": "",
+      "hidden": "ga",
+      "source": "simulation",
+      "catch": false
+    },
+    "proc-007": {
+      "in_order": "uncertain",
+      "on_record": "uncertain",
+      "anachronism": "no",
+      "note": "",
+      "hidden": "full",
+      "source": "simulation",
+      "catch": false
+    },
+    "proc-009": {
+      "in_order": "yes",
+      "on_record": "yes",
+      "anachronism": "no",
+      "note": "",
+      "hidden": "full",
+      "source": "simulation",
+      "catch": false
+    }
+  }
+}
